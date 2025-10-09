@@ -1,0 +1,31 @@
+name: sc_cuda_11.8
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - h5py
+  - matplotlib
+  - seaborn
+  - scanpy
+  - anndata
+  - umap-learn
+  - pynndescent
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchvision
+  - torchaudio
+  - tqdm
+
+  - pip:
+      - pygam==0.10.1
+      - scvi-tools==1.1.2
