@@ -1,0 +1,28 @@
+name: samap_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - h5py
+  - scanpy
+  - anndata
+  - umap-learn
+  - pynndescent
+  - matplotlib
+  - seaborn
+  - tqdm
+  - jupyterlab
+  - ipykernel
+  - igraph
+  - python-igraph
+  - leidenalg
+  - pip:
+      - samap==1.0.15
+      - holoviews-samap==1.0.1
+      - toytree==3.0.10
+      - toyplot==2.0.0

@@ -1,12 +1,33 @@
+*.h5ad
+*.csv
+*.txt
+*.tsv
+*.fa
+*.fasta
+*.gff
+*.gtf
+
+*.out
+*.err
+*.log
+logs/
+
 .ipynb_checkpoints/
 
 __pycache__/
 *.pyc
+*.pyo
+.DS_Store
 
-*.h5
-*.h5ad
-*.csv
-*.tsv
-*.gz
-*.zip
-*.tar
+# results and large outputs
+results/
+samaps/
+blast/alignments/
+filter_transcripts/output/
+pseudotime/results/
+
+*.lock
+*.bak
+*.tmp
+*.swp
+.env
