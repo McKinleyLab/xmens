@@ -1,0 +1,55 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_e.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_e_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_e.svg"
+ ],
+ "written": "2026-11-03T00:18:41",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_e_transferred_vs_human.ipynb",
+ "notebook_md5": "42f91817a0d5e63f801eadbaf70d6fbe",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": true
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "HUMAN_CELLS": "results/samap_figures/final/tables/human_cells.csv",
+  "OUT": "results/figures/samap_supp/final/panels",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "panel": {
+  "letter": "e",
+  "row": 1,
+  "col": 4,
+  "colspan": 8,
+  "chart_family": "scatter + binned median",
+  "message": "order preserved by compartment"
+ },
+ "spearman_rho": {
+  "all human cells": 0.7344,
+  "decidual cells": 0.7276,
+  "fibroblasts": 0.2603
+ },
+ "n": {
+  "all human cells": 47352,
+  "decidual cells": 22960,
+  "fibroblasts": 24392
+ }
+}

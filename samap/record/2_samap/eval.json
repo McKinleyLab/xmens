@@ -1,0 +1,59 @@
+{
+  "n_cells_joint": 90730,
+  "alignment": {
+    "hs": {
+      "hs": 0.0,
+      "mm": 0.6674296467557758
+    },
+    "mm": {
+      "hs": 0.6523362485855648,
+      "mm": 0.0
+    }
+  },
+  "mean_alignment": 0.6598829476706702,
+  "within_hs": {
+    "sample_mixing": {
+      "observed_other_sample_frac": 0.6589352669062499,
+      "expected_other_sample_frac": 0.8291900666685645,
+      "mixing_ratio": 0.794673372720989,
+      "n_samples": 6
+    },
+    "knn_celltype_agreement": 0.8862657817433967,
+    "leiden_vs_celltype_ARI": 0.12480219526381031,
+    "leiden_vs_celltype_NMI": 0.21838180958241074,
+    "leiden_vs_sample_NMI": 0.1470116253953078,
+    "knn_subtype_agreement": 0.8862657817433967,
+    "leiden_vs_subtype_ARI": 0.12480219526381031,
+    "leiden_vs_subtype_NMI": 0.21838180958241074
+  },
+  "within_mm": {
+    "sample_mixing": {
+      "observed_other_sample_frac": 0.3499364968836888,
+      "expected_other_sample_frac": 0.8835262426444553,
+      "mixing_ratio": 0.3960680283092719,
+      "n_samples": 9
+    },
+    "knn_celltype_agreement": 0.9567001917352778,
+    "leiden_vs_celltype_ARI": 0.12349240021434181,
+    "leiden_vs_celltype_NMI": 0.29082331517361093,
+    "leiden_vs_sample_NMI": 0.49015925178396086,
+    "knn_subtype_agreement": 0.8141001436788655,
+    "leiden_vs_subtype_ARI": 0.2012303699266569,
+    "leiden_vs_subtype_NMI": 0.39327295868186984
+  },
+  "celltype_mapping": {
+    "hs_decidual_cell": {
+      "mm_decidual_cell": 0.5646310830001091,
+      "mm_endometrial_fibroblast": 0.12049181390469677
+    },
+    "hs_endometrial_fibroblast": {
+      "mm_decidual_cell": 0.10544669678797444,
+      "mm_endometrial_fibroblast": 0.5782444988181761
+    }
+  },
+  "arm": "vanilla",
+  "latent_keys": {
+    "hs": null,
+    "mm": null
+  }
+}

@@ -1,0 +1,58 @@
+step 1 mouse manifest: identical (n_cells_full 43197, n_genes_full 33698, gene_filter_min_cells 432, n_genes_grn 14245, n_tfs_in_list 1860, n_tfs_retained 1179, raw_source layers['counts'])
+step 1 mouse pooled loom: genes: identical (14,245 vs 14,245)
+step 1 mouse pooled loom: nuclei: identical (43,197 vs 43,197)
+step 1 mouse pooled loom: counts: identical (14,245 genes x 43,197 nuclei)
+step 1 mouse pooled h5ad: nuclei and genes: identical
+step 1 mouse pooled h5ad: raw counts: identical (43,197 x 33,698, 89,230,050 non-zero)
+step 1 mouse pooled h5ad: X_scVI (the sketches' embedding): identical (43,197 x 30)
+step 1 human manifest: identical (n_cells_full 47533, n_genes_full 36601, gene_filter_min_cells 475, n_genes_grn 15011, n_tfs_in_list 1892, n_tfs_retained 1308, raw_source layers['counts'])
+step 1 human pooled loom: genes: identical (15,011 vs 15,011)
+step 1 human pooled loom: nuclei: identical (47,533 vs 47,533)
+step 1 human pooled loom: counts: identical (15,011 genes x 47,533 nuclei)
+step 1 human pooled h5ad: nuclei and genes: identical
+step 1 human pooled h5ad: raw counts: identical (47,533 x 36,601, 88,483,311 non-zero)
+step 1 human pooled h5ad: X_scVI (the sketches' embedding): identical (47,533 x 30)
+step 2 mouse 1000 sketch: nuclei and genes: identical (15,000 nuclei, 14,245 genes)
+step 2 human 1000 sketch: nuclei and genes: identical (15,000 nuclei, 15,011 genes)
+step 4 mouse floor 6: recurrence report: identical (same bytes, 771 TFs)
+step 4 mouse floor 6: consensus regulons: identical (193 regulons, same targets and weights and run counts)
+step 4 mouse floor 6: auc_mtx.csv (comparator AUCell, all genes): identical (same bytes)
+step 4 mouse floor 6: auc_by_timepoint.tsv (comparator AUCell, all genes): identical (same bytes)
+step 4 mouse floor 2: recurrence report: identical (same bytes, 771 TFs)
+step 4 mouse floor 2: consensus regulons: identical (193 regulons, same targets and weights and run counts)
+step 4 mouse floor 2: auc_mtx.csv (comparator AUCell, all genes): identical (same bytes)
+step 4 mouse floor 2: auc_by_timepoint.tsv (comparator AUCell, all genes): identical (same bytes)
+step 4 mouse AUCell: consensus_regulons.yaml: identical (same bytes)
+step 4 mouse AUCell: auc_mtx_weighted.csv (the activity of record): identical (same bytes, 43,197 nuclei x 193 regulons)
+step 4 mouse AUCell: auc_mtx_unweighted.csv (for comparison): identical (same bytes, 43,197 nuclei x 193 regulons)
+step 4 human floor 6: recurrence report: identical (same bytes, 941 TFs)
+step 4 human floor 6: consensus regulons: identical (141 regulons, same targets and weights and run counts)
+step 4 human floor 6: auc_mtx.csv (comparator AUCell, all genes): identical (same bytes)
+step 4 human floor 6: auc_by_timepoint.tsv (comparator AUCell, all genes): identical (same bytes)
+step 4 human floor 2: recurrence report: identical (same bytes, 941 TFs)
+step 4 human floor 2: consensus regulons: identical (141 regulons, same targets and weights and run counts)
+step 4 human floor 2: auc_mtx.csv (comparator AUCell, all genes): identical (same bytes)
+step 4 human floor 2: auc_by_timepoint.tsv (comparator AUCell, all genes): identical (same bytes)
+step 4 human AUCell: consensus_regulons.yaml: identical (same bytes)
+step 4 human AUCell: auc_mtx_weighted.csv (the activity of record): identical (same bytes, 47,533 nuclei x 141 regulons)
+step 4 human AUCell: auc_mtx_unweighted.csv (for comparison): identical (same bytes, 47,533 nuclei x 141 regulons)
+step 5 mouse rho of every regulon with pseudotime: identical (193 rows x 1 columns, same values)
+step 5 human rho of every regulon with pseudotime: identical (141 rows x 1 columns, same values)
+step 5 both Fig. 5E table (111 TF pairs): identical (same bytes as the table of record (sha256 6c3c99e0...))
+step 5 both Fig. 5E counts at |rho| >= 0.2: identical (up in both 18, down in both 8, up human, down mouse 14, down human, up mouse 0)
+step 6 both Fig. 5E SVG: identical (same bytes as the manuscript panel)
+step 6 both Fig. S28 SVG: every text label and number: identical (84 labels, same order (the manuscript file was drawn with Helvetica Neue, so its bytes differ))
+step 6 mouse Fig. S28 input: floor-2 consensus links: identical (208,899 rows x 5 columns, same values)
+step 6 human Fig. S28 input: floor-2 consensus links: identical (116,800 rows x 5 columns, same values)
+step 6 mouse Fig. S28 input: regulon sizes in single runs: identical (regulons per run {'min': 293, 'median': 315.0, 'max': 334}, 771 TFs)
+step 6 human Fig. S28 input: regulon sizes in single runs: identical (regulons per run {'min': 278, 'median': 306.0, 'max': 336}, 941 TFs)
+
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_scenic/compare_with_record_20261106_130849.tsv
+
+summary (comparisons per step):
+  1 pooled objects         identical 14
+  2 GRNBoost2              identical 2, not run 198
+  3 cisTarget              not run 200
+  4 consensus and AUCell   identical 22
+  5 correlations           identical 4
+  6 figures                identical 6

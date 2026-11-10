@@ -1,0 +1,25 @@
+{
+ "written": "2026-11-02T18:49:19",
+ "source": "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/runs_raw/vanilla_raw/samap_transferred_pt_harmonized.h5ad",
+ "source_sha256": "62fb75d7c2ca3e739299be48695476b6c7a8ac48a05c9226c3c0cb47b8a3ad84",
+ "non_obs_objects_identical": 49,
+ "obs_columns": [
+  "species",
+  "sample",
+  "timepoint",
+  "cell_type",
+  "transferred_mouse_pseudotime",
+  "transferred_mouse_fibdec"
+ ],
+ "counts": {
+  "human_with_transferred_pseudotime": 47352,
+  "human_with_transferred_fibdec": 47509,
+  "transferred_fibdec_counts": {
+   "endometrial_fibroblast": 25575,
+   "decidual_cell": 21934
+  },
+  "mouse_rows_with_any_transfer": 0
+ },
+ "new_sha256": "ce15b9d45b9c774e847f3c2a43358c1b59ea3a4f630049a082e7b87db1a58b4b",
+ "bytes": 1530794054
+}

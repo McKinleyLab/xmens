@@ -1,0 +1,9 @@
+Ensembl release of the proteomes (checked 7 Nov 2026)
+
+The proteomes step 0 reads are byte-identical to the decompressed Ensembl release-113 files:
+  https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/pep/Homo_sapiens.GRCh38.pep.all.fa.gz
+  https://ftp.ensembl.org/pub/release-113/fasta/mus_musculus/pep/Mus_musculus.GRCm39.pep.all.fa.gz
+sha256 of the decompressed downloads and of the files used:
+  human  f38587d8e87564a08f99378c3416b47a866cd0aff5ed0bdeaeab0ca2d2a8ea3b  /n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Homo_sapiens.GRCh38.pep.all.fa
+  mouse  54cb3f64f6dd1d0a398713016e866c355cff8e21968f8d18e0d60f7b498712d6  /n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa
+  downloads: human f38587d8e87564a08f99378c3416b47a866cd0aff5ed0bdeaeab0ca2d2a8ea3b, mouse 54cb3f64f6dd1d0a398713016e866c355cff8e21968f8d18e0d60f7b498712d6

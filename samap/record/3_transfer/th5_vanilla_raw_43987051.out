@@ -1,0 +1,8 @@
+loading runs_raw/vanilla_raw/samap.pkl ...
+INFO: Loaded SAMAP object from runs_raw/vanilla_raw/samap.pkl
+joint object: (90730, 70299)
+  attached transferred_mm_coarse: 47533 cells, median confidence 1.000
+  attached transferred_mm_fine: 47533 cells, median confidence 0.850
+  attached transferred_hs_coarse: 43197 cells, median confidence 0.954
+writing runs_raw/vanilla_raw/samap_transferred.h5ad ...
+done: runs_raw/vanilla_raw/samap_transferred.h5ad (1.53 GB)

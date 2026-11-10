@@ -1,0 +1,21 @@
+pseudobulk_id	donor	state	n_cells	labels	menstrual_phase_at_collection	Data_source	n_cells_endometrium	n_cells_myometrium	library_size
+donor=39__state=decidual	39	decidual	3976	dS1:108;dS2:2423;dS3:1445	luteal	Wang	3976	0	31373988
+donor=39__state=reference	39	reference	26	C7-Fibroblast:26	luteal	Wang	26	0	171135
+donor=58__state=decidual	58	decidual	2286	dS1:51;dS2:1339;dS3:896	luteal	Wang	2286	0	25291602
+donor=58__state=reference	58	reference	40	C7-Fibroblast:40	luteal	Wang	40	0	389263
+donor=A13__state=decidual	A13	decidual	9566	dS1:97;dS2:4345;dS3:5124	follicular	GarciaAlonso	8769	797	90882163
+donor=A13__state=reference	A13	reference	251	C7-Fibroblast:251	follicular	GarciaAlonso	4	247	1282177
+donor=A30__state=decidual	A30	decidual	2751	dS1:1722;dS2:899;dS3:130	luteal	GarciaAlonso	2751	0	5969229
+donor=A30__state=reference	A30	reference	448	C7-Fibroblast:448	luteal	GarciaAlonso	448	0	795350
+donor=D1__state=decidual	D1	decidual	1941	dS1:76;dS2:800;dS3:1065	luteal	This_study	1072	869	25238816
+donor=D1__state=reference	D1	reference	240	C7-Fibroblast:240	luteal	This_study	0	240	1646073
+donor=D2__state=decidual	D2	decidual	2183	dS1:5;dS2:366;dS3:1812	follicular	This_study	1847	336	26622114
+donor=D2__state=reference	D2	reference	125	C7-Fibroblast:125	follicular	This_study	0	125	1188519
+donor=D3__state=decidual	D3	decidual	1036	dS1:35;dS2:806;dS3:195	not applicable	This_study	274	762	8403285
+donor=D3__state=reference	D3	reference	56	C7-Fibroblast:56	not applicable	This_study	0	56	485537
+donor=D5__state=decidual	D5	decidual	317	dS2:290;dS3:27	follicular	This_study	0	317	2769075
+donor=D5__state=reference	D5	reference	25	C7-Fibroblast:25	follicular	This_study	0	25	172153
+donor=E1__state=decidual	E1	decidual	5362	dS1:444;dS2:3313;dS3:1605	luteal	GarciaAlonso	5362	0	66158222
+donor=E1__state=reference	E1	reference	59	C7-Fibroblast:59	luteal	GarciaAlonso	59	0	549998
+donor=E3__state=decidual	E3	decidual	1363	dS2:885;dS3:478	follicular	GarciaAlonso	1363	0	18124952
+donor=E3__state=reference	E3	reference	21	C7-Fibroblast:21	follicular	GarciaAlonso	21	0	200637

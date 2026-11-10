@@ -1,0 +1,274 @@
+{
+ "inputs": {
+  "mouse_h5ad": {
+   "path": "/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad",
+   "sha256": "573c1f8a6a384ccce102de4c5244a9165b1d3fc4fe71fad0284e1acd60e6c6f0"
+  },
+  "human_h5ad": {
+   "path": "/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_Human_Only_Fib_Dec_Cells.h5ad",
+   "sha256": "00dcc9686de56b433e3b18f29dcc6e425fbd8c887fc8b67bf410e0c5c4445996"
+  },
+  "pairs": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/ortholog_pairs_one2one.csv",
+   "sha256": "8e00db6a2346d92f1f0800ac00e3cc139df0558695ba92f4b64e06413466812a"
+  },
+  "pt_record_mouse": {
+   "path": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_10_22_harmonized_pt/runs/mouse_pca_released/cells.parquet",
+   "sha256": "f1160f48c8a052a8182515c81a1c2883d880e2f9281e026a1101ffae8c5ecacc"
+  },
+  "pt_record_human": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/data/interim/human_pt_2026_10_30_run4_a40/cells.parquet",
+   "sha256": "956a07cdb97d9a99dd769088a66e717b60956b81b45cb3e3d625057dacb2f94f"
+  },
+  "record_overlap": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/methods_overlap.json",
+   "sha256": "f9bd00ce5bc23ad097c3060273d63dc90b35f61cfdd783eb67e23209604cbca4"
+  },
+  "record_selection": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv",
+   "sha256": "8f04f02cb06fa3743b5b32750e5fdfab8d942e73fbb9a3987bc03e8ae49af05b"
+  },
+  "previous_selection": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_harmonized_nall/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv",
+   "sha256": "abe2de5c1a5550d96f4be0a9dda538477ce1e6f6fd43d20c93021dfabec05a9e"
+  },
+  "mi_mouse": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_mouse_nall/mi_all.csv",
+   "sha256": "7351f3fe7729e756a45022fbd3aa678b2d60860493e8896213cf492ec7c96527"
+  },
+  "mi_human": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_human_nall/mi_all.csv",
+   "sha256": "6bcfc0a3fc47fc9c9c0351e80916ab8751bfde6f6c8a92455c928f13b154eed2"
+  }
+ },
+ "mouse": {
+  "n_obs": 43197,
+  "n_vars": 33698,
+  "n_with_pseudotime": 42290,
+  "nan_by_subtype": {
+   "decAp": 907
+  },
+  "counts_integer": true,
+  "n_unique_pseudotime": 41880,
+  "pseudotime_min_max": [
+   2.3646252069047056e-05,
+   1.0
+  ],
+  "uns_pseudotime": {
+   "description": "moscot TemporalProblem on stromal scVI latent (eps 1e-3, tau 0.95, scale_cost mean) -> CellRank RealTimeKernel (self_transitions all, conn_weight 0.2, threshold auto; same-day kNN 15 on PCA of the stromal latent's pooled 3,000 HVGs) -> symmetrized, 15 diffusion components -> scanpy DPT n_dcs 15; root = earliest-timepoint fibroblast at the fibroblast end of the trajectory component; rank = average-tie rank / n over the run's cells",
+   "n_cells": 42290,
+   "n_dcs": 15,
+   "root": "ACCCTTGAGCATGAAT-1-uninduced_mck8b"
+  },
+  "subtypes": {
+   "dec2": 14434,
+   "eFib2i": 8775,
+   "eFib2": 4764,
+   "eFib3": 3886,
+   "dec3": 3856,
+   "dec1": 3722,
+   "eFib1": 2073,
+   "eFibP": 780
+  },
+  "timepoints": {
+   "1.5_dpi_late": 10656,
+   "3.5_dpi": 10649,
+   "uninduced": 9333,
+   "4.5_dpi_bleeding": 5442,
+   "2.5_dpi": 3524,
+   "1.5_dpi_early": 2686
+  },
+  "record_check": {
+   "table": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_10_22_harmonized_pt/runs/mouse_pca_released/cells.parquet",
+   "n_record": 42290,
+   "n_record_finite": 42290,
+   "same_nuclei": true,
+   "max_abs_diff": 0.0,
+   "n_missing_in_record": 0
+  },
+  "spearman_pt_vs_timepoint_methods_encoding": {
+   "rho": 0.6219,
+   "n": 42290,
+   "unmapped": []
+  },
+  "disp_n_genes": 27064
+ },
+ "human": {
+  "n_obs": 47533,
+  "n_vars": 36601,
+  "n_with_pseudotime": 47533,
+  "nan_by_subtype": {},
+  "counts_integer": true,
+  "n_unique_pseudotime": 46704,
+  "pseudotime_min_max": [
+   2.103801569435971e-05,
+   1.0
+  ],
+  "uns_pseudotime": {
+   "description": "moscot TemporalProblem on stromal scVI latent (eps 1e-3, tau 0.95, scale_cost mean) -> CellRank RealTimeKernel (self_transitions all, conn_weight 0.2, threshold auto; same-day kNN 15 on PCA of the stromal latent's pooled 3,000 HVGs) -> symmetrized, 15 diffusion components -> scanpy DPT n_dcs 15; root = earliest-timepoint fibroblast at the fibroblast end of the trajectory component; rank = average-tie rank / n over the run's cells. Human stromal scVI latent refit on the 47,533 fibroblast and decidual nuclei only, with the mouse settings (30 Oct 2026). The pseudotime was computed on that latent (latent_copy), not on obsm X_scVI, the stromal-lineage latent of 04b_reintegrate that gives the UMAP. The script is harmonized_pseudotime.py with only the latent path changed.",
+   "n_cells": 47533,
+   "n_dcs": 15,
+   "root": "CGGGTCATCAGATTGC-1-secretory_mck6c"
+  },
+  "subtypes": {
+   "endometrial_fibroblast": 24425,
+   "decidual_cell": 23108
+  },
+  "timepoints": {
+   "menstrual": 24092,
+   "secretory": 23441
+  },
+  "record_check": {
+   "table": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/data/interim/human_pt_2026_10_30_run4_a40/cells.parquet",
+   "n_record": 47533,
+   "n_record_finite": 47533,
+   "same_nuclei": true,
+   "max_abs_diff": 0.0,
+   "n_missing_in_record": 0
+  },
+  "spearman_pt_vs_timepoint_methods_encoding": {
+   "rho": 0.3198,
+   "n": 47533,
+   "unmapped": []
+  },
+  "disp_n_genes": 31735
+ },
+ "yang": {
+  "genes_missing": [],
+  "shape": [
+   42290,
+   63
+  ],
+  "n_induced": 32957,
+  "timepoints": {
+   "1.5_dpi_late": 10656,
+   "3.5_dpi": 10649,
+   "uninduced": 9333,
+   "4.5_dpi_bleeding": 5442,
+   "2.5_dpi": 3524,
+   "1.5_dpi_early": 2686
+  },
+  "spearman_pt_vs_day": 0.6192,
+  "unmapped_timepoints": []
+ },
+ "mi": {
+  "arms": {
+   "mouse": "pt_harmonized_mouse_nall",
+   "human": "pt_harmonized_human_nall"
+  },
+  "tested": {
+   "mouse": 14261,
+   "human": 15008
+  },
+  "significant": {
+   "mouse": 14261,
+   "human": 14887
+  },
+  "thr_nats": {
+   "mouse": 0.0703682525841338,
+   "human": 0.02728268964174116
+  },
+  "top_genomewide": {
+   "mouse": 1426,
+   "human": 1489
+  },
+  "N": 9587,
+  "K_mouse": 1133,
+  "n_human": 1201,
+  "shared": 373,
+  "expected": 141.935,
+  "fold": 2.628,
+  "log10_p": -83.71,
+  "record_overlap": {
+   "N": 9587,
+   "K": 1133,
+   "n": 1201,
+   "k": 373,
+   "expected": 141.93522478356107,
+   "fold": 2.6279593425014314,
+   "log10_p": -83.70989626027217
+  },
+  "matches_record": true,
+  "percell_mouse": [
+   42290,
+   1135
+  ],
+  "percell_human": [
+   47533,
+   1203
+  ]
+ },
+ "crossspecies": {
+  "mi_arms": {
+   "mouse": "pt_harmonized_mouse_nall",
+   "human": "pt_harmonized_human_nall"
+  },
+  "universe": 9638,
+  "k_top": 964,
+  "pool": 273,
+  "pool_in_shared_topdecile": 273,
+  "shared_topdecile": 373,
+  "n_r_gt": 92,
+  "rmin": 0.8,
+  "phase_counts_r_gt": {
+   "late": 62,
+   "early": 29,
+   "mid": 1
+  },
+  "median_r50_pool": 0.627,
+  "n_selected": 28,
+  "r50_range_selected": [
+   0.8819,
+   0.9906
+  ],
+  "same_genes_as_record": true,
+  "same_order_as_record": true,
+  "max_abs_diff_vs_record": {
+   "r50": 1.1102230246251565e-16,
+   "r20": 1.1102230246251565e-16,
+   "centroid": 1.1102230246251565e-16
+  },
+  "previous_selection": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_harmonized_nall/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv",
+  "prev_columns": [
+   "human",
+   "mouse",
+   "profile_r_50bins",
+   "profile_r_20bins",
+   "phase",
+   "pt_centroid",
+   "peak_h",
+   "peak_m"
+  ],
+  "overlap_with_previous": 26,
+  "order": [
+   "RGMA",
+   "MATN2",
+   "DPYD",
+   "MYCBP2",
+   "COL6A1",
+   "IGFBP5",
+   "RORA",
+   "REV3L",
+   "KCNMA1",
+   "ROR2",
+   "PRKCE",
+   "IGF1",
+   "PLEKHH2",
+   "PALLD",
+   "GJA1",
+   "CD63",
+   "SIPA1L1",
+   "TJP1",
+   "CEBPB",
+   "FBXW7",
+   "P4HB",
+   "CALU",
+   "RAB7A",
+   "ELL",
+   "ZNF697",
+   "MCL1",
+   "BNIP3L",
+   "SERPINE1"
+  ]
+ }
+}

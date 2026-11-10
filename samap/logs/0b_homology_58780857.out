@@ -1,0 +1,26 @@
+/n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Homo_sapiens.GRCh38.pep.all.fa: sha256 as pinned
+/n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa: sha256 as pinned
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/0_homology.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_fresh_fit/notebooks/0_homology.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Homo_sapiens.GRCh38.pep.all.fa: 122,314 proteins with a gene symbol, 1,531 without
+Mus_musculus.GRCm39.pep.all.fa: 66,442 proteins with a gene symbol, 116 without
+
+hu_vs_mu {"lines": 12833563, "kept": 12666306, "dropped_query_without_symbol": 159024, "dropped_target_without_symbol": 8229, "gene_pairs": 1615662, "known_orthologs_found": {"HAND2/Hand2": true, "FOXO1/Foxo1": true, "IL11/Il11": true, "WNT5A/Wnt5a": true, "PGR/Pgr": true}, "map": "hs_to_mm.txt", "map_sha256": "c3369c2192ca914b201b46d488bc037f6d424f28793cf34351c93cc8e6ff7231"}
+
+mu_vs_hu {"lines": 12780006, "kept": 12613274, "dropped_query_without_symbol": 8270, "dropped_target_without_symbol": 158461, "gene_pairs": 1616943, "known_orthologs_found": {"HAND2/Hand2": true, "FOXO1/Foxo1": true, "IL11/Il11": true, "WNT5A/Wnt5a": true, "PGR/Pgr": true}, "map": "mm_to_hs.txt", "map_sha256": "46a8d7d3d18ea7b7441458e38da4ea66872ea3613c718270742551fbebd5f403"}
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_fresh_fit/0_homology/hsmm: ['homology.json', 'hs_to_mm.txt', 'mm_to_hs.txt']
+
+Ending Cell 6------------------------------------------

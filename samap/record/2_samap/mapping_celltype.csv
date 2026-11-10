@@ -1,0 +1,5 @@
+,hs_decidual_cell,hs_endometrial_fibroblast,mm_decidual_cell,mm_endometrial_fibroblast
+hs_decidual_cell,0.0,0.0,0.5646310830001091,0.12049181390469677
+hs_endometrial_fibroblast,0.0,0.0,0.10544669678797444,0.5782444988181761
+mm_decidual_cell,0.5646310830001091,0.10544669678797444,0.0,0.0
+mm_endometrial_fibroblast,0.12049181390469677,0.5782444988181761,0.0,0.0

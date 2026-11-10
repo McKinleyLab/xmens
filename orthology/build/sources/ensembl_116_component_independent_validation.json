@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "classes": {
+      "both_expanded": 117,
+      "human_expansion": 202,
+      "mouse_expansion": 397,
+      "one_to_one": 16314
+    },
+    "components": 17030,
+    "membership_rows": 36334,
+    "non_protein_coding_attrition_edges": 1072,
+    "primary_edges": 22692,
+    "raw_homologies": 23764,
+    "raw_source_rows": {
+      "ensembl_116_homo_sapiens_protein_default_human_mouse.tsv.gz": 0,
+      "ensembl_116_mus_musculus_protein_default_human_mouse.tsv.gz": 23764
+    },
+    "stable_tree_rows": 23764
+  },
+  "independent_assertions": {
+    "all_components_have_both_species": true,
+    "annotation_metadata_exact": true,
+    "component_classification_reproduced": true,
+    "declared_copy_numbers_exact": true,
+    "deterministic_component_ids_reproduced": true,
+    "each_gene_in_exactly_one_component": true,
+    "edge_endpoint_membership_exact": true,
+    "exact_final_schema": true,
+    "incident_homology_types_exact": true,
+    "incident_stable_tree_ids_exact": true,
+    "raw_union_partitions_into_primary_plus_attrition": true,
+    "stable_tree_join_complete": true
+  },
+  "sha256": {
+    "ensembl_human_mouse_components.tsv": "7c69c3a567f7e94dca9ef0a42be94da29ce196b9bb2bc8db0339339db654cdb7"
+  },
+  "status": "PASS"
+}

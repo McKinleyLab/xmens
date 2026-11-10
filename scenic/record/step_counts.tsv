@@ -1,0 +1,24 @@
+step	quantity	mouse	human	source
+1	nuclei	43197	47533	<species>_dsc_pooled.manifest.json
+1	genes	33698	36601	<species>_dsc_pooled.manifest.json
+1	nuclei a gene must be detected in (1%)	432	475	<species>_dsc_pooled.manifest.json
+1	genes in the pooled loom	14245	15011	<species>_dsc_pooled.manifest.json
+1	TFs in the TF list	1860	1892	<species>_dsc_pooled.manifest.json
+1	TFs among the loom's genes	1179	1308	<species>_dsc_pooled.manifest.json
+2	runs (seeds 1000-1099)	100	100	adjacencies_sketch15k/
+2	nuclei per sketch	15000	15000	looms_sketch15k/*.manifest.json
+2	links per run (min / median / max)	1,197,399 / 1,217,108 / 1,243,056	1,217,598 / 1,237,683 / 1,254,885	adjacencies_sketch15k/
+3	regulons per run (min / median / max)	293 / 315 / 334	278 / 306 / 336	record/outputs/perrun_sizes.json
+3	TFs with a regulon in at least one run	771	941	record/outputs/perrun_sizes.json
+4	floor 6: regulons kept (in >= 80 of 100 runs, >= 10 targets)	193	141	consensus_sketch15k_weighted_soft_occ6/recurrence_report.tsv
+4	floor 6: median targets per kept regulon	294	194	consensus_sketch15k_weighted_soft_occ6/recurrence_report.tsv
+4	floor 2: regulons kept (in >= 80 of 100 runs, >= 10 targets)	193	141	consensus_sketch15k_weighted_soft/recurrence_report.tsv
+4	floor 2: median targets per kept regulon	784	532	consensus_sketch15k_weighted_soft/recurrence_report.tsv
+4	activity of record (nuclei x regulons)	43,197 x 193	47,533 x 141	consensus_sketch15k_weighted_soft_occ6_pyscenic_cli/auc_mtx_weighted.csv
+5	regulons with a rho	193	141	record/outputs/regulon_rho_pseudotime_*_fibdec_latent.tsv
+5	TF pairs (Ensembl one-to-one, a regulon in both species)	111	111	record/outputs/regulon_quadrants_input_fibdec_latent.csv
+5	pairs with |rho| >= 0.2 in both species	40	40	record/outputs/regulon_quadrants_input_fibdec_latent.csv
+5	up in both	18	18	record/outputs/regulon_quadrants_input_fibdec_latent.csv
+5	down in both	8	8	record/outputs/regulon_quadrants_input_fibdec_latent.csv
+5	up in human, down in mouse	14	14	record/outputs/regulon_quadrants_input_fibdec_latent.csv
+5	down in human, up in mouse	0	0	record/outputs/regulon_quadrants_input_fibdec_latent.csv

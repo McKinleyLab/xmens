@@ -1,0 +1,10 @@
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad: 43,197 nuclei x 33,698 genes
+42,290 nuclei with a pseudotime; 907 without, dropped
+14,261 genes detected in at least 1% of nuclei
+14,261 of them with at least 10 counts: the genes tested
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test/inputs/mouse: 42,290 nuclei x 14,261 genes
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_Human_Only_Fib_Dec_Cells.h5ad: 47,533 nuclei x 36,601 genes
+47,533 nuclei with a pseudotime; 0 without, dropped
+15,008 genes detected in at least 1% of nuclei
+15,008 of them with at least 10 counts: the genes tested
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test/inputs/human: 47,533 nuclei x 15,008 genes

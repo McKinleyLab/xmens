@@ -1,0 +1,47 @@
+{
+ "arms": {
+  "mouse": "pt_harmonized_mouse_nall",
+  "human": "pt_harmonized_human_nall"
+ },
+ "tested": {
+  "mouse": 14261,
+  "human": 15008
+ },
+ "significant": {
+  "mouse": 14261,
+  "human": 14887
+ },
+ "thr_nats": {
+  "mouse": 0.0703682525841338,
+  "human": 0.02728268964174116
+ },
+ "top_genomewide": {
+  "mouse": 1426,
+  "human": 1489
+ },
+ "N": 9587,
+ "K_mouse": 1133,
+ "n_human": 1201,
+ "shared": 373,
+ "expected": 141.935,
+ "fold": 2.628,
+ "log10_p": -83.71,
+ "record_overlap": {
+  "N": 9587,
+  "K": 1133,
+  "n": 1201,
+  "k": 373,
+  "expected": 141.93522478356107,
+  "fold": 2.6279593425014314,
+  "log10_p": -83.70989626027217
+ },
+ "matches_record": true,
+ "percell_mouse": [
+  42290,
+  1135
+ ],
+ "percell_human": [
+  47533,
+  1203
+ ]
+}

@@ -1,0 +1,12 @@
+chunk 0 of 1500: genes 0 to 9 (10 genes), 47,533 nuclei, 1000 permutations
+LINC01409: MI 0.0131 nats, p 0.000999
+LINC01128: MI 0.0028 nats, p 0.000999
+LINC00115: MI 0.0016 nats, p 0.001998
+AL645608.6: MI 0.0040 nats, p 0.000999
+LINC02593: MI 0.0024 nats, p 0.000999
+SAMD11: MI 0.0202 nats, p 0.000999
+NOC2L: MI 0.0094 nats, p 0.000999
+KLHL17: MI 0.0032 nats, p 0.000999
+HES4: MI 0.0213 nats, p 0.000999
+ISG15: MI 0.0395 nats, p 0.000999
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test/chunks/human/mi_000.csv

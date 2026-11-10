@@ -1,0 +1,2 @@
+[worker 000] genes [0:10) = 10  pt_key=pt_harmonized_rank  perms=1001  subsample_cells=0
+[worker 000] wrote 10 genes -> /n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_human_nall/results/mi_000.csv

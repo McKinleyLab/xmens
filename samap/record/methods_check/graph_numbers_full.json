@@ -1,0 +1,295 @@
+{
+ "record_fit_fit_time_labels": {
+  "K": 20.0,
+  "symmetric_graph": false,
+  "clusters": [
+   "hs_decidual_cell",
+   "hs_endometrial_fibroblast",
+   "mm_decidual_cell",
+   "mm_endometrial_fibroblast"
+  ],
+  "alignment": {
+   "hs_decidual_cell|mm_decidual_cell": 0.5646310830001091,
+   "hs_decidual_cell|mm_endometrial_fibroblast": 0.12049181390469677,
+   "hs_endometrial_fibroblast|mm_decidual_cell": 0.10544669678797444,
+   "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5782444988181761
+  },
+  "directional_mean_over_K": {
+   "hs_decidual_cell->mm_decidual_cell": 0.5563976117800069,
+   "hs_decidual_cell->mm_endometrial_fibroblast": 0.12049181390469677,
+   "hs_endometrial_fibroblast->mm_decidual_cell": 0.10544669678797444,
+   "hs_endometrial_fibroblast->mm_endometrial_fibroblast": 0.5540715999869849,
+   "mm_decidual_cell->hs_decidual_cell": 0.5646310830001091,
+   "mm_decidual_cell->hs_endometrial_fibroblast": 0.06651877096978953,
+   "mm_endometrial_fibroblast->hs_decidual_cell": 0.09803745339676652,
+   "mm_endometrial_fibroblast->hs_endometrial_fibroblast": 0.5782444988181761
+  },
+  "compartments": {
+   "hs_decidual_cell": {
+    "n": 21648,
+    "mean_total_weight": 13.53778851369402,
+    "max_total_weight": 19.99031866789152,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 5
+   },
+   "hs_endometrial_fibroblast": {
+    "n": 25885,
+    "mean_total_weight": 13.190365935499237,
+    "max_total_weight": 19.9844988479546,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 19
+   },
+   "mm_decidual_cell": {
+    "n": 22919,
+    "mean_total_weight": 12.622997079397965,
+    "max_total_weight": 19.994297925451434,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     3,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 0
+   },
+   "mm_endometrial_fibroblast": {
+    "n": 20278,
+    "mean_total_weight": 13.525639044298792,
+    "max_total_weight": 19.989616891820678,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 1
+   }
+  },
+  "hs_no_cross_neighbor": 24,
+  "hs_n": 47533,
+  "mm_no_cross_neighbor": 1,
+  "mm_n": 43197
+ },
+ "record_mapping_celltype_csv": {
+  "hs_decidual_cell": {
+   "hs_decidual_cell": 0.0,
+   "hs_endometrial_fibroblast": 0.0,
+   "mm_decidual_cell": 0.5646310830001091,
+   "mm_endometrial_fibroblast": 0.1204918139046967
+  },
+  "hs_endometrial_fibroblast": {
+   "hs_decidual_cell": 0.0,
+   "hs_endometrial_fibroblast": 0.0,
+   "mm_decidual_cell": 0.1054466967879744,
+   "mm_endometrial_fibroblast": 0.5782444988181761
+  },
+  "mm_decidual_cell": {
+   "hs_decidual_cell": 0.5646310830001091,
+   "hs_endometrial_fibroblast": 0.1054466967879744,
+   "mm_decidual_cell": 0.0,
+   "mm_endometrial_fibroblast": 0.0
+  },
+  "mm_endometrial_fibroblast": {
+   "hs_decidual_cell": 0.1204918139046967,
+   "hs_endometrial_fibroblast": 0.5782444988181761,
+   "mm_decidual_cell": 0.0,
+   "mm_endometrial_fibroblast": 0.0
+  }
+ },
+ "graph_identical_record_joint_vs_Samap_Final": true,
+ "record_fit_final_labels": {
+  "K": 20.0,
+  "symmetric_graph": false,
+  "clusters": [
+   "hs_decidual_cell",
+   "hs_endometrial_fibroblast",
+   "mm_decidual_cell",
+   "mm_endometrial_fibroblast"
+  ],
+  "alignment": {
+   "hs_decidual_cell|mm_decidual_cell": 0.5816496519981688,
+   "hs_decidual_cell|mm_endometrial_fibroblast": 0.12085482607898498,
+   "hs_endometrial_fibroblast|mm_decidual_cell": 0.08247793581120245,
+   "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5796453155389493
+  },
+  "directional_mean_over_K": {
+   "hs_decidual_cell->mm_decidual_cell": 0.5521836447975456,
+   "hs_decidual_cell->mm_endometrial_fibroblast": 0.12085482607898498,
+   "hs_endometrial_fibroblast->mm_decidual_cell": 0.08247793581120245,
+   "hs_endometrial_fibroblast->mm_endometrial_fibroblast": 0.5796453155389493,
+   "mm_decidual_cell->hs_decidual_cell": 0.5816496519981688,
+   "mm_decidual_cell->hs_endometrial_fibroblast": 0.04950020197173134,
+   "mm_endometrial_fibroblast->hs_decidual_cell": 0.10214578161609629,
+   "mm_endometrial_fibroblast->hs_endometrial_fibroblast": 0.5741361705988463
+  },
+  "compartments": {
+   "hs_decidual_cell": {
+    "n": 23108,
+    "mean_total_weight": 13.460769417530562,
+    "max_total_weight": 19.99031866789152,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 5
+   },
+   "hs_endometrial_fibroblast": {
+    "n": 24425,
+    "mean_total_weight": 13.242465027003057,
+    "max_total_weight": 19.981541825681763,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 19
+   },
+   "mm_decidual_cell": {
+    "n": 22919,
+    "mean_total_weight": 12.622997079397965,
+    "max_total_weight": 19.994297925451434,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     3,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 0
+   },
+   "mm_endometrial_fibroblast": {
+    "n": 20278,
+    "mean_total_weight": 13.525639044298792,
+    "max_total_weight": 19.989616891820678,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 1
+   }
+  },
+  "hs_no_cross_neighbor": 24,
+  "hs_n": 47533,
+  "mm_no_cross_neighbor": 1,
+  "mm_n": 43197
+ },
+ "fresh_fit_final_labels": {
+  "K": 20.0,
+  "symmetric_graph": false,
+  "clusters": [
+   "hs_decidual_cell",
+   "hs_endometrial_fibroblast",
+   "mm_decidual_cell",
+   "mm_endometrial_fibroblast"
+  ],
+  "alignment": {
+   "hs_decidual_cell|mm_decidual_cell": 0.5725659644962838,
+   "hs_decidual_cell|mm_endometrial_fibroblast": 0.13045978978861278,
+   "hs_endometrial_fibroblast|mm_decidual_cell": 0.08149540037885258,
+   "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5742728938328164
+  },
+  "directional_mean_over_K": {
+   "hs_decidual_cell->mm_decidual_cell": 0.5315123832040016,
+   "hs_decidual_cell->mm_endometrial_fibroblast": 0.13045978978861278,
+   "hs_endometrial_fibroblast->mm_decidual_cell": 0.08149540037885258,
+   "hs_endometrial_fibroblast->mm_endometrial_fibroblast": 0.5649671223116499,
+   "mm_decidual_cell->hs_decidual_cell": 0.5725659644962838,
+   "mm_decidual_cell->hs_endometrial_fibroblast": 0.05026090429416635,
+   "mm_endometrial_fibroblast->hs_decidual_cell": 0.09881140626037471,
+   "mm_endometrial_fibroblast->hs_endometrial_fibroblast": 0.5742728938328164
+  },
+  "compartments": {
+   "hs_decidual_cell": {
+    "n": 23108,
+    "mean_total_weight": 13.239443459852223,
+    "max_total_weight": 19.99113571655426,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 2
+   },
+   "hs_endometrial_fibroblast": {
+    "n": 24425,
+    "mean_total_weight": 12.929250453810027,
+    "max_total_weight": 19.978169753057486,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     0,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 12
+   },
+   "mm_decidual_cell": {
+    "n": 22919,
+    "mean_total_weight": 12.456537375809024,
+    "max_total_weight": 19.99447766275619,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     4,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 0
+   },
+   "mm_endometrial_fibroblast": {
+    "n": 20278,
+    "mean_total_weight": 13.461686001863862,
+    "max_total_weight": 19.9899325412676,
+    "n_total_gt_K": 0,
+    "cross_neighbors_min_median_max": [
+     3,
+     20.0,
+     20
+    ],
+    "n_no_cross_neighbor": 0
+   }
+  },
+  "hs_no_cross_neighbor": 14,
+  "hs_n": 47533,
+  "mm_no_cross_neighbor": 0,
+  "mm_n": 43197
+ },
+ "fresh_mapping_celltype_csv": {
+  "hs_decidual_cell": {
+   "hs_decidual_cell": 0.0,
+   "hs_endometrial_fibroblast": 0.0,
+   "mm_decidual_cell": 0.5725659644962838,
+   "mm_endometrial_fibroblast": 0.1304597897886127
+  },
+  "hs_endometrial_fibroblast": {
+   "hs_decidual_cell": 0.0,
+   "hs_endometrial_fibroblast": 0.0,
+   "mm_decidual_cell": 0.0814954003788526,
+   "mm_endometrial_fibroblast": 0.5742728938328163
+  },
+  "mm_decidual_cell": {
+   "hs_decidual_cell": 0.5725659644962838,
+   "hs_endometrial_fibroblast": 0.0814954003788526,
+   "mm_decidual_cell": 0.0,
+   "mm_endometrial_fibroblast": 0.0
+  },
+  "mm_endometrial_fibroblast": {
+   "hs_decidual_cell": 0.1304597897886127,
+   "hs_endometrial_fibroblast": 0.5742728938328163,
+   "mm_decidual_cell": 0.0,
+   "mm_endometrial_fibroblast": 0.0
+  }
+ }
+}

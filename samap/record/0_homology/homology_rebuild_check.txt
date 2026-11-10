@@ -1,0 +1,8 @@
+# HMMER homology arm rebuild check — 2026-09-10T18:15:09-04:00
+expected hits (check.sh): hu_vs_mu 123845, mu_vs_hu 66558
+HITS hu_vs_mu 12833563
+HITS mu_vs_hu 12780006
+IDENTICAL hs_to_mm
+IDENTICAL mm_to_hs
+snakemake -n homology_build:
+Nothing to be done (all requested files are present and up to date).

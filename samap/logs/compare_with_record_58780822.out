@@ -1,0 +1,20 @@
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/compare_with_record_20261107_194722.csv: 151 comparisons
+
+result        differs  identical  not compared  same  value
+step                                                       
+2 fit               0          0             1     0      0
+3 transfer          1          6             1     0      3
+4 statistics        1         11             0     0      0
+5 figures           0         39             0     0      0
+numbers             0          0             1    87      0
+
+not identical:
+        step                             item  result run record                                                              detail
+  3 transfer obs transferred_mouse_pseudotime differs                      transferred_mouse_pseudotime: largest difference 1.11e-16
+4 statistics             tables/joint.parquet differs            transferred_mm_dpt_pseudotime_ranknorm: largest difference 1.11e-16
+
+measured:
+      step                                                 item result   run record                       detail
+3 transfer    transferred pseudotime: Pearson r with the record  value   1.0    1.0 47352 human nuclei with both
+3 transfer transferred pseudotime: Spearman rho with the record  value   1.0    1.0                             
+3 transfer            transferred cell type: same as the record  value 47533  47533                 human nuclei

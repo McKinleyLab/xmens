@@ -1,0 +1,12 @@
+pseudobulk_id	timepoint	group	n_cells	n_samples	samples
+timepoint=1_dpi_early__group=decidual	1_dpi_early	decidual	1263	1	1_dpi_early_mck1
+timepoint=1_dpi_early__group=fibroblast	1_dpi_early	fibroblast	1425	1	1_dpi_early_mck1
+timepoint=1_dpi_late__group=decidual	1_dpi_late	decidual	5654	2	1_dpi_late_mck12a;1_dpi_late_mck12b
+timepoint=1_dpi_late__group=fibroblast	1_dpi_late	fibroblast	5133	2	1_dpi_late_mck12a;1_dpi_late_mck12b
+timepoint=2_dpi__group=decidual	2_dpi	decidual	2404	1	2_dpi_mck15
+timepoint=2_dpi__group=fibroblast	2_dpi	fibroblast	1170	1	2_dpi_mck15
+timepoint=3_dpi__group=decidual	3_dpi	decidual	8675	2	3_dpi_mck10a;3_dpi_mck10b
+timepoint=3_dpi__group=fibroblast	3_dpi	fibroblast	1998	2	3_dpi_mck10a;3_dpi_mck10b
+timepoint=4_dpi_bleeding__group=decidual	4_dpi_bleeding	decidual	4859	1	4_dpi_bleeding_mck11a
+timepoint=4_dpi_bleeding__group=fibroblast	4_dpi_bleeding	fibroblast	1282	1	4_dpi_bleeding_mck11a
+timepoint=uninduced__group=fibroblast	uninduced	fibroblast	9270	2	uninduced_mck8a;uninduced_mck8b

@@ -1,0 +1,51 @@
+=== stain runs/vanilla (Tue Sep  1 22:07:46 EDT 2026) ===
+loading runs/vanilla/samap.pkl
+INFO: Loaded SAMAP object from runs/vanilla/samap.pkl
+  wrote runs/vanilla/staining/stain_hs_from_mm_coarse.png
+agreement mm->hs (coarse): 0.770
+  wrote runs/vanilla/staining/stain_hs_from_mm_fine.png
+  wrote runs/vanilla/staining/stain_mm_from_hs_coarse.png
+agreement hs->mm (coarse): 0.882
+skip hs->mm fine: hs has no fine labels beyond coarse
+done
+=== stain runs/harmony (Tue Sep  1 22:14:52 EDT 2026) ===
+loading runs/harmony/samap.pkl
+INFO: Loaded SAMAP object from runs/harmony/samap.pkl
+  wrote runs/harmony/staining/stain_hs_from_mm_coarse.png
+agreement mm->hs (coarse): 0.763
+  wrote runs/harmony/staining/stain_hs_from_mm_fine.png
+  wrote runs/harmony/staining/stain_mm_from_hs_coarse.png
+agreement hs->mm (coarse): 0.889
+skip hs->mm fine: hs has no fine labels beyond coarse
+done
+=== stain runs_raw/vanilla_raw (Tue Sep  1 22:20:17 EDT 2026) ===
+loading runs_raw/vanilla_raw/samap.pkl
+INFO: Loaded SAMAP object from runs_raw/vanilla_raw/samap.pkl
+  wrote runs_raw/vanilla_raw/staining/stain_hs_from_mm_coarse.png
+agreement mm->hs (coarse): 0.825
+  wrote runs_raw/vanilla_raw/staining/stain_hs_from_mm_fine.png
+  wrote runs_raw/vanilla_raw/staining/stain_mm_from_hs_coarse.png
+agreement hs->mm (coarse): 0.897
+skip hs->mm fine: hs has no fine labels beyond coarse
+done
+=== stain runs_raw/harmony_raw (Tue Sep  1 22:24:25 EDT 2026) ===
+loading runs_raw/harmony_raw/samap.pkl
+INFO: Loaded SAMAP object from runs_raw/harmony_raw/samap.pkl
+  wrote runs_raw/harmony_raw/staining/stain_hs_from_mm_coarse.png
+agreement mm->hs (coarse): 0.823
+  wrote runs_raw/harmony_raw/staining/stain_hs_from_mm_fine.png
+  wrote runs_raw/harmony_raw/staining/stain_mm_from_hs_coarse.png
+agreement hs->mm (coarse): 0.905
+skip hs->mm fine: hs has no fine labels beyond coarse
+done
+=== stain runs_raw/vanilla_raw_nofilter (Tue Sep  1 22:28:51 EDT 2026) ===
+loading runs_raw/vanilla_raw_nofilter/samap.pkl
+INFO: Loaded SAMAP object from runs_raw/vanilla_raw_nofilter/samap.pkl
+  wrote runs_raw/vanilla_raw_nofilter/staining/stain_hs_from_mm_coarse.png
+agreement mm->hs (coarse): 0.795
+  wrote runs_raw/vanilla_raw_nofilter/staining/stain_hs_from_mm_fine.png
+  wrote runs_raw/vanilla_raw_nofilter/staining/stain_mm_from_hs_coarse.png
+agreement hs->mm (coarse): 0.884
+skip hs->mm fine: hs has no fine labels beyond coarse
+done
+=== done (Tue Sep  1 22:35:20 EDT 2026) ===

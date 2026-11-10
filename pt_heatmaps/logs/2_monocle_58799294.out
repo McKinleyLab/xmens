@@ -1,0 +1,15 @@
+[  32 s] human: 47533 nuclei x 36601 genes
+Removing 809 outliers
+Warning messages:
+1: `group_by_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `group_by()` instead.
+ℹ See vignette('programming') for more help
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+2: `select_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `select()` instead.
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+[ 286 s] dispersion trend over 31735 genes: asymptDisp 0.88827, extraPois 0.272493
+[ 440 s] 1201 genes on 47533 nuclei; fallback fits: 0
+[ 441 s] wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_08_xmens_pt_heatmaps/z

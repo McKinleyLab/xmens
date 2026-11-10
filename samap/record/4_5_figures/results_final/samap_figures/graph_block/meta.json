@@ -1,0 +1,13 @@
+{
+ "joint": "/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Samap_Final.h5ad",
+ "joint_bytes": 1530794054,
+ "joint_sha256": "ce15b9d45b9c774e847f3c2a43358c1b59ea3a4f630049a082e7b87db1a58b4b",
+ "mapping_K": 20,
+ "n_human": 47533,
+ "n_mouse": 43197,
+ "nnz": 948226,
+ "row_nnz_min": 0,
+ "row_nnz_median": 20.0,
+ "row_nnz_max": 20,
+ "rows_without_mouse_edge": 24
+}

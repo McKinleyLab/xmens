@@ -1,0 +1,15 @@
+{
+  "pt_key": "pt_harmonized_rank",
+  "layer": "log1p_cp10k_derived_from_counts",
+  "min_counts": 10,
+  "min_detect_frac": 0.01,
+  "min_counts_source": "counts",
+  "n_cells_dropped_missing_pt": 0,
+  "n_cells": 47533,
+  "n_genes": 15008,
+  "n_chunks": 1500,
+  "seed": 0,
+  "h5ad": "results/mi_dpt/pt_harmonized_human_nall/input.h5ad",
+  "perms": 1001,
+  "subsample_cells": 0
+}

@@ -1,0 +1,171 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_g.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_g_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_g.svg"
+ ],
+ "written": "2026-11-03T00:20:10",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_g_permutation_statistics.ipynb",
+ "notebook_md5": "b26a6fbc3b5573b4ea71a27f9a468281",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": true
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "NULL_REPLICATES": "results/samap_figures/final/ptnull/null_replicates.csv",
+  "EXAMPLE_TRANSFERS": "results/samap_figures/final/ptnull/example_transfers.csv",
+  "HUMAN_CELLS": "results/samap_figures/final/tables/human_cells.csv",
+  "OUT": "results/figures/samap_supp/final/panels",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/null_replicates.csv",
+   "role": "null_replicates",
+   "bytes": 395755,
+   "mtime": "2026-11-03T00:19:46",
+   "sha256": "600a123e4af12bd0193f1ef3b48af6aa7e3016940543380e653b485417b31020"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/example_transfers.csv",
+   "role": "example_transfers",
+   "bytes": 4393310,
+   "mtime": "2026-11-03T00:19:46",
+   "sha256": "0ef9b9c11976405b67f6fdf6762e57b9095d008433b35d9ec9df3c6cfc0b64a1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "panel": {
+  "letter": "g",
+  "row": 2,
+  "col": 7,
+  "colspan": 5,
+  "chart_family": "null strips",
+  "message": "observed vs 1,000 shuffles"
+ },
+ "permutation_observed": {
+  "rho_all": 0.7344,
+  "rho_decidual": 0.7276,
+  "rho_fibroblast": 0.2603,
+  "moran_all": 0.66,
+  "moran_within_decidual": 0.5531,
+  "moran_within_fibroblast": 0.3377
+ },
+ "permutation_replicates": {
+  "uniform": 1000,
+  "within_compartment": 1000
+ },
+ "comparison": [
+  {
+   "design": "uniform",
+   "statistic": "rho_all",
+   "observed": 0.7344,
+   "median_of_shuffles": 0.0026,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "uniform",
+   "statistic": "rho_decidual",
+   "observed": 0.7276,
+   "median_of_shuffles": -0.0024,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "uniform",
+   "statistic": "rho_fibroblast",
+   "observed": 0.2603,
+   "median_of_shuffles": 0.0022,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "uniform",
+   "statistic": "moran_all",
+   "observed": 0.66,
+   "median_of_shuffles": 0.0218,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "uniform",
+   "statistic": "moran_within_decidual",
+   "observed": 0.5531,
+   "median_of_shuffles": 0.0271,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "uniform",
+   "statistic": "moran_within_fibroblast",
+   "observed": 0.3377,
+   "median_of_shuffles": 0.0125,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "rho_all",
+   "observed": 0.7344,
+   "median_of_shuffles": 0.5524,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "rho_decidual",
+   "observed": 0.7276,
+   "median_of_shuffles": 0.094,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "rho_fibroblast",
+   "observed": 0.2603,
+   "median_of_shuffles": 0.1623,
+   "shuffles_at_or_above_observed": 6,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "moran_all",
+   "observed": 0.66,
+   "median_of_shuffles": 0.4807,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "moran_within_decidual",
+   "observed": 0.5531,
+   "median_of_shuffles": 0.2319,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  },
+  {
+   "design": "within_compartment",
+   "statistic": "moran_within_fibroblast",
+   "observed": 0.3377,
+   "median_of_shuffles": 0.2668,
+   "shuffles_at_or_above_observed": 0,
+   "shuffles": 1000
+  }
+ ]
+}

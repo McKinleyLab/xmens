@@ -1,0 +1,2603 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_a_umap_mouse_pseudotime.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_a_umap_mouse_pseudotime.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Nuclei drawn: {'mouse_with_pseudotime': 42290, 'mouse_apoptotic': 907, 'human': 47533}
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_a.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_a_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_a.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_a.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_b_umap_transferred_pseudotime.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_b_umap_transferred_pseudotime.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Nuclei drawn: {'human_with_value': 47352, 'human_without_value': 181, 'mouse': 43197}
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_b.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_b_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_b.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_b.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_c_umap_human_pseudotime.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_c_umap_human_pseudotime.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Nuclei drawn: {'human_with_pseudotime': 47533, 'human_without_pseudotime': 0, 'mouse': 43197}
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_c.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_c_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_c.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_c.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_d_edge_share.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_d_edge_share.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Matching share: {'human_to_mouse/endometrial_fibroblast': 0.8754, 'human_to_mouse/decidual_cell': 0.8204, 'mouse_to_human/endometrial_fibroblast': 0.849, 'mouse_to_human/decidual_cell': 0.9216}
+
+                                       endometrial_fibroblast  decidual_cell
+direction      source_compartment                                           
+human_to_mouse endometrial_fibroblast                0.875434       0.124566
+               decidual_cell                         0.179566       0.820434
+mouse_to_human endometrial_fibroblast                0.848960       0.151040
+               decidual_cell                         0.078429       0.921571
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_d.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_d_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_d.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_d.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_e_transferred_vs_human.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_e_transferred_vs_human.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Human nuclei with both values: 47352 of 47533
+
+                     n  spearman_rho
+all human cells  47352        0.7344
+decidual cells   22960        0.7276
+fibroblasts      24392        0.2603
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_e.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_e_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_e.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_e.provenance.json
+
+Ending Cell 15-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_f_sections_shuffled.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_f_sections_shuffled.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Nuclei drawn per section: {'menstrual': {'nuclei': 14498, 'no_value': 76}, 'secretory': {'nuclei': 18443, 'no_value': 41}}
+
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_f.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_f_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_f.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_f.provenance.json
+
+Ending Cell 15-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_g_permutation_statistics.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_g_permutation_statistics.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Transfers per design: {'uniform': 1000, 'within_compartment': 1000, 'observed': 1}
+
+                design                statistic  observed  median_of_shuffles  \
+0              uniform                  rho_all    0.7344              0.0026   
+1              uniform             rho_decidual    0.7276             -0.0024   
+2              uniform           rho_fibroblast    0.2603              0.0022   
+3              uniform                moran_all    0.6600              0.0218   
+4              uniform    moran_within_decidual    0.5531              0.0271   
+5              uniform  moran_within_fibroblast    0.3377              0.0125   
+6   within_compartment                  rho_all    0.7344              0.5524   
+7   within_compartment             rho_decidual    0.7276              0.0940   
+8   within_compartment           rho_fibroblast    0.2603              0.1623   
+9   within_compartment                moran_all    0.6600              0.4807   
+10  within_compartment    moran_within_decidual    0.5531              0.2319   
+11  within_compartment  moran_within_fibroblast    0.3377              0.2668   
+
+    shuffles_at_or_above_observed  shuffles  
+0                               0      1000  
+1                               0      1000  
+2                               0      1000  
+3                               0      1000  
+4                               0      1000  
+5                               0      1000  
+6                               0      1000  
+7                               0      1000  
+8                               6      1000  
+9                               0      1000  
+10                              0      1000  
+11                              0      1000  
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Font: Nimbus Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_g.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_g_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_g.svg']
+
+<IPython.core.display.Image object>
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/panels/sfig_samap_panel_g.provenance.json
+
+Ending Cell 15-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/sfig_samap_compose.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/sfig_samap_compose.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Panel font Nimbus Sans; letters drawn with ('/usr/share/fonts/urw-base35/NimbusSans-Bold.otf', 0)
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/sfig_samap.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/sfig_samap_600dpi.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/sfig_samap.svg']; 2125 x 2443 px = 180 x 207 mm
+
+<IPython.core.display.Image object>
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/sfig_samap/sfig_samap.provenance.json
+
+Ending Cell 12-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/fig6c_umap_transferred_pseudotime.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/fig6c_umap_transferred_pseudotime.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Nuclei: {'umap_human_with_value': 47352, 'umap_human_no_value': 181, 'umap_mouse_context': 43197}
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: DejaVu Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime.pdf']
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime_humanonly.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime_humanonly.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_pseudotime_humanonly.pdf']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/fig6c_umap_transferred_pseudotime.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/fig6e_sections_transferred_pseudotime.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/fig6e_sections_transferred_pseudotime.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Human nuclei: 47533 drawn candidates
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: DejaVu Sans
+
+secretory: {'libraries': ['secretory_mck6a', 'secretory_mck6b', 'secretory_mck6c'], 'drawn': 18443, 'no_value': 41, 'median_transferred': 0.2608, 'limits_um': [(400, 5500), (750, 5250)], 'rotation_deg': -90, 'mirrored_left_right': True}
+
+menstrual: {'libraries': ['menstrual_mck5a', 'menstrual_mck5b', 'menstrual_mck5c'], 'drawn': 14498, 'no_value': 76, 'median_transferred': 0.6291, 'limits_um': None, 'rotation_deg': 90, 'mirrored_left_right': True}
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-secretory-transferred_pseudotime-spatial.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-secretory-transferred_pseudotime-spatial.pdf', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-secretory-transferred_pseudotime-spatial.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.pdf', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-spatial_key_transferred_pseudotime.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-spatial_key_transferred_pseudotime.pdf', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/20261027-spatial_key_transferred_pseudotime.svg']
+
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/fig6e_sections_transferred_pseudotime.provenance.json
+
+Ending Cell 13-----------------------------------------
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures/fig6_umap_transferred_cell_type.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/notebooks/5_figures/fig6_umap_transferred_cell_type.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/5_figures
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Nuclei: {'umap_human_labelled': 47509, 'umap_human_no_mouse_neighbor': 24, 'umap_mouse_context': 43197, 'transferred': {'decidual_cell': 21934, 'endometrial_fibroblast': 25575}, 'exact_ties': 0}
+
+Agreement with native labels: {'agree': 40032, 'percent_of_labelled': np.float64(84.26), 'percent_of_all_human': np.float64(84.22), 'by_native_cell_type': {'decidual_cell': {'agree': 18780, 'labelled': 23103, 'all': 23108}, 'endometrial_fibroblast': {'agree': 21252, 'labelled': 24406, 'all': 24425}}, 'median_vote_share': 1.0}
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Font: DejaVu Sans
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type.pdf']
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+findfont: Font family 'Helvetica Neue' not found.
+
+findfont: Font family 'Helvetica' not found.
+
+Wrote ['/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type_humanonly.png', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type_humanonly.svg', '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/umap_dark_transferred_cell_type_humanonly.pdf']
+
+<IPython.core.display.Image object>
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_from_fit_of_record/5_figures/fig6/fig6_umap_transferred_cell_type.provenance.json
+
+Ending Cell 13-----------------------------------------

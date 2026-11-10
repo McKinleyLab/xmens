@@ -1,0 +1,5 @@
+Reading /n/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa
+  66558 proteins, 116 without gene_symbol, 5038 truncated at 1022 AA
+  22110 unique gene symbols
+Loading ESM2-650M
+Saved 22110 gene embeddings → /n/eddy_lab/users/nhilgert/data/proteomes/embeddings/Mus_musculus.GRCm39.gene_symbol_to_embedding_ESM2.pt

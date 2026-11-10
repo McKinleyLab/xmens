@@ -1,0 +1,14 @@
+=== TASK INFO ===
+Array job:   7992260
+Task ID:     5 of 32
+Host:        holy8a27309.rc.fas.harvard.edu
+Threads:     4
+Query:       /n/eddy_lab/users/nhilgert/data/proteomes/chunks/hs/Homo_sapiens.GRCh38.pep.all.fa.5 (3871 sequences)
+Target:      /n/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa (66558 sequences)
+Output tbl:  /n/eddy_lab/users/nhilgert/data/proteomes/hm/hu_vs_mu/hu_5.tbl
+Start:       Fri Apr 24 14:17:57 EDT 2026
+
+
+=== DONE ===
+End:         Fri Apr 24 14:56:29 EDT 2026
+Hits in tbl: 390224

@@ -1,0 +1,36 @@
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_samap_from_fit_of_record/compare_with_record_20261106_130621.csv: 128 comparisons
+
+result        differs  identical  not compared  same  value
+step                                                       
+2 fit               0          0             1     0      0
+3 transfer          2          5             0     0      3
+4 statistics        1         11             0     0      0
+5 figures          15         24             0     0      0
+numbers             0          0             0    66      0
+
+not identical:
+        step                                                             item  result run record                                                              detail
+  3 transfer                                 obs transferred_mouse_pseudotime differs                      transferred_mouse_pseudotime: largest difference 1.11e-16
+  3 transfer                                        every dataset outside obs differs  48     48                                                      uns/provenance
+4 statistics                                             tables/joint.parquet differs            transferred_mm_dpt_pseudotime_ranknorm: largest difference 1.11e-16
+   5 figures fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.svg differs                                                                  byte for byte
+   5 figures fig6/20261027-Human-secretory-transferred_pseudotime-spatial.svg differs                                                                  byte for byte
+   5 figures             fig6/20261027-spatial_key_transferred_pseudotime.svg differs                                                                  byte for byte
+   5 figures                         fig6/umap_dark_transferred_cell_type.svg differs                                                                  byte for byte
+   5 figures               fig6/umap_dark_transferred_cell_type_humanonly.svg differs                                                                  byte for byte
+   5 figures                        fig6/umap_dark_transferred_pseudotime.svg differs                                                                  byte for byte
+   5 figures              fig6/umap_dark_transferred_pseudotime_humanonly.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_a.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_b.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_c.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_d.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_e.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_f.svg differs                                                                  byte for byte
+   5 figures                         sfig_samap/panels/sfig_samap_panel_g.svg differs                                                                  byte for byte
+   5 figures                                        sfig_samap/sfig_samap.svg differs                                                                  byte for byte
+
+measured:
+      step                                                 item result   run record                       detail
+3 transfer    transferred pseudotime: Pearson r with the record  value   1.0    1.0 47352 human nuclei with both
+3 transfer transferred pseudotime: Spearman rho with the record  value   1.0    1.0                             
+3 transfer            transferred cell type: same as the record  value 47533  47533                 human nuclei

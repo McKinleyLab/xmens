@@ -1,0 +1,17 @@
+{
+  "arm": "vanilla",
+  "started_at": "2026-09-01T19:11:00.118849",
+  "hs": "inputs_raw/hs_fib_dec_all_raw.h5ad",
+  "mm": "inputs_raw/mm_fib_dec_all_raw.h5ad",
+  "maps_dir": "/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/samap_integrate/homology/hsmm_hmmer",
+  "batch_key": null,
+  "n_iter": 3,
+  "min_expression": 1.0,
+  "latent_keys": {
+    "hs": null,
+    "mm": null
+  },
+  "samap_run_minutes": 33.146433651447296,
+  "finished_at": "2026-09-01T20:00:11.373283",
+  "mean_alignment": 0.6598829476706702
+}

@@ -1,0 +1,40 @@
+{
+ "object": "/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_All_Cells.h5ad",
+ "object_sha256": "de53189f98c300e3552685a7cc44e319f6a501f9961ff0c091272ff81f0b00ea",
+ "nuclei_in_object": 57033,
+ "gene_threshold": "count > 0 in >= 570 of 57,033 nuclei (1%)",
+ "genes_by_rule": 14861,
+ "table1_genes_added": 42,
+ "genes_ranked": 14903,
+ "auc_window_top_genes": 745,
+ "share_detecting_fewer_than_window": 0.0953,
+ "nuclei_scored": 12324,
+ "timepoint": "3.5_dpi",
+ "seed": 0,
+ "seed_agreement_spearman": {
+  "PDZ": 0.935,
+  "TDZ": 0.945,
+  "SDZ": 0.989,
+  "VSZ": 0.969,
+  "MD": 0.94,
+  "udStr": 0.974
+ },
+ "S24B_nuclei_drawn": 7701,
+ "S24B_ceilings": {
+  "PDZ": 0.345,
+  "TDZ": 0.284,
+  "SDZ": 0.3166,
+  "VSZ": 0.2284,
+  "MD": 0.0494,
+  "udStr": 0.2452
+ },
+ "S24A_nuclei": 10649,
+ "S24A_ceilings": {
+  "PDZ": 0.3631,
+  "TDZ": 0.292,
+  "SDZ": 0.3207,
+  "VSZ": 0.2348,
+  "MD": 0.0491,
+  "udStr": 0.2474
+ }
+}

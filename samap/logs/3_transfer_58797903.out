@@ -1,0 +1,71 @@
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_Human_Only_Fib_Dec_Cells.h5ad: sha256 as pinned
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad: sha256 as pinned
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/3_transfer.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/notebooks/3_transfer.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+joint object /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/2_samap/samap_joint.h5ad: 90730 nuclei (47533 human, 43197 mouse); human x mouse block (47533, 43197), 948592 edges
+
+mouse pseudotime: 42290 of 43197 nuclei; rank normalization changes it by at most 0.0e+00
+
+{'endometrial_fibroblast': 26157, 'decidual_cell': 21362, 'unmapped': 14} 47373 human nuclei with a transferred pseudotime
+
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+{
+ "human_nuclei": 47533,
+ "cell_type": {
+  "labelled": 47519,
+  "unmapped": 14,
+  "ties": 0,
+  "median_vote_share": 1.0,
+  "counts": {
+   "endometrial_fibroblast": 26157,
+   "decidual_cell": 21362
+  },
+  "agree_with_native": 39519,
+  "agree_share_of_labelled": 0.8316,
+  "agree_share_of_all": 0.8314,
+  "agree_by_native": {
+   "decidual_cell": {
+    "nuclei": 23108,
+    "agree": 18235,
+    "share": 0.7891
+   },
+   "endometrial_fibroblast": {
+    "nuclei": 24425,
+    "agree": 21284,
+    "share": 0.8714
+   }
+  }
+ },
+ "pseudotime": {
+  "with_value": 47373,
+  "without_value": 160,
+  "without_value_no_mouse_edge": 14,
+  "without_value_only_mouse_neighbors_without_pseudotime": 146,
+  "median_by_timepoint": {
+   "menstrual": 0.6057,
+   "secretory": 0.2552
+  }
+ }
+}
+
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/3_transfer: ['Samap_Final.h5ad', 'summary.json', 'transfers.csv']
+
+Ending Cell 9------------------------------------------

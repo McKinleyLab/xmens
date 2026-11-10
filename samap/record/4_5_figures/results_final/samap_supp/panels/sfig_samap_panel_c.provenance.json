@@ -1,0 +1,74 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_c.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_c_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_c.svg"
+ ],
+ "written": "2026-11-03T00:18:35",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_c_umap_human_pseudotime.ipynb",
+ "notebook_md5": "6143fcf668083fc23270161c667cabc7",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "JOINT": "results/samap_figures/final/tables/joint.parquet",
+  "MOUSE_CELLS": "results/samap_figures/final/tables/mouse_cells.csv",
+  "HUMAN_CELLS": "results/samap_figures/final/tables/human_cells.csv",
+  "OUT": "results/figures/samap_supp/final/panels",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/joint.parquet",
+   "role": "joint",
+   "bytes": 2565586,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/mouse_cells.csv",
+   "role": "mouse_cells",
+   "bytes": 3634810,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1c9aa9dd614c526eb8d439dd0376a120b2f114a35a265b6a236a79e33edb61af"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "panel": {
+  "letter": "c",
+  "row": 0,
+  "col": 8,
+  "colspan": 4,
+  "chart_family": "embedding",
+  "message": "human values"
+ },
+ "embedding_outliers_flagged": {
+  "mouse": 46,
+  "human": 6
+ },
+ "embedding_outliers_not_drawn": {
+  "mouse": 0,
+  "human": 0
+ },
+ "nuclei_drawn": {
+  "human_with_pseudotime": 47533,
+  "human_without_pseudotime": 0,
+  "mouse": 43197
+ }
+}

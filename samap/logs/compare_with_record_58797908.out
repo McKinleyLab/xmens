@@ -1,0 +1,59 @@
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/compare_with_record_20261107_220756.csv: 61 comparisons
+
+result      differs  identical  not compared  same  value
+step                                                     
+0 homology        0          0             1     0      0
+1 inputs          0          0             1     0      0
+2 fit             2          1             0     0      2
+3 transfer        3          4             1     0      3
+numbers          34          0             0     9      0
+
+not identical:
+      step                                                                          item  result       run    record                                                                                     detail
+     2 fit                                                  joint graph (connectivities) differs   3536140   3535699                                                       4454890 entries differ, largest by 1
+     2 fit                                                                    joint UMAP differs                                                                             largest coordinate difference 13.2
+3 transfer                                              obs transferred_mouse_pseudotime differs                                                            transferred_mouse_pseudotime: missing values differ
+3 transfer                                                  obs transferred_mouse_fibdec differs                                                                   transferred_mouse_fibdec: 1227 values differ
+3 transfer                                  every dataset outside obs and uns/provenance differs        47        47 obsm/X_umap; obsp/connectivities/data; obsp/connectivities/indices; obsp/connectivities...
+   numbers                                                     fig6c.umap_human_no_value differs     160.0     181.0                                                                              difference 21
+   numbers                                                   fig6c.umap_human_with_value differs   47373.0   47352.0                                                                              difference 21
+   numbers                                    final_object.human_with_transferred_fibdec differs   47519.0   47509.0                                                                              difference 10
+   numbers                                final_object.human_with_transferred_pseudotime differs   47373.0   47352.0                                                                              difference 21
+   numbers                          final_object.transferred_fibdec_counts.decidual_cell differs   21362.0   21934.0                                                                             difference 572
+   numbers                 final_object.transferred_fibdec_counts.endometrial_fibroblast differs   26157.0   25575.0                                                                             difference 582
+   numbers                                                      fit.eval.alignment.hs.mm differs  0.668703   0.66743                                                                         difference 0.00127
+   numbers                                                      fit.eval.alignment.mm.hs differs  0.648688  0.652336                                                                         difference 0.00365
+   numbers                   fit.eval.celltype_mapping.hs_decidual_cell.mm_decidual_cell differs  0.551328  0.564631                                                                          difference 0.0133
+   numbers          fit.eval.celltype_mapping.hs_decidual_cell.mm_endometrial_fibroblast differs  0.137951  0.120492                                                                          difference 0.0175
+   numbers          fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_decidual_cell differs  0.104625  0.105447                                                                        difference 0.000822
+   numbers fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_endometrial_fibroblast differs  0.584663  0.578244                                                                         difference 0.00642
+   numbers                                                       fit.eval.mean_alignment differs  0.658695  0.659883                                                                         difference 0.00119
+   numbers                                     fit.eval.within_hs.knn_celltype_agreement differs  0.886428  0.886266                                                                        difference 0.000162
+   numbers                                      fit.eval.within_hs.knn_subtype_agreement differs  0.886428  0.886266                                                                        difference 0.000162
+   numbers                                     fit.eval.within_hs.leiden_vs_celltype_ARI differs  0.127205  0.124802                                                                          difference 0.0024
+   numbers                                     fit.eval.within_hs.leiden_vs_celltype_NMI differs  0.222601  0.218382                                                                         difference 0.00422
+   numbers                                       fit.eval.within_hs.leiden_vs_sample_NMI differs  0.145775  0.147012                                                                         difference 0.00124
+   numbers                                      fit.eval.within_hs.leiden_vs_subtype_ARI differs  0.127205  0.124802                                                                          difference 0.0024
+   numbers                                      fit.eval.within_hs.leiden_vs_subtype_NMI differs  0.222601  0.218382                                                                         difference 0.00422
+   numbers                   fit.eval.within_hs.sample_mixing.expected_other_sample_frac differs  0.829194   0.82919                                                                         difference 4.1e-06
+   numbers                                 fit.eval.within_hs.sample_mixing.mixing_ratio differs  0.795472  0.794673                                                                        difference 0.000799
+   numbers                   fit.eval.within_hs.sample_mixing.observed_other_sample_frac differs  0.659601  0.658935                                                                        difference 0.000666
+   numbers                                     fit.eval.within_mm.knn_celltype_agreement differs  0.956657    0.9567                                                                        difference 4.36e-05
+   numbers                                      fit.eval.within_mm.knn_subtype_agreement differs   0.81407    0.8141                                                                        difference 2.97e-05
+   numbers                                     fit.eval.within_mm.leiden_vs_celltype_ARI differs  0.123686  0.123492                                                                        difference 0.000193
+   numbers                                     fit.eval.within_mm.leiden_vs_celltype_NMI differs  0.294174  0.290823                                                                         difference 0.00335
+   numbers                                       fit.eval.within_mm.leiden_vs_sample_NMI differs  0.476606  0.490159                                                                          difference 0.0136
+   numbers                                      fit.eval.within_mm.leiden_vs_subtype_ARI differs  0.203774   0.20123                                                                         difference 0.00254
+   numbers                                      fit.eval.within_mm.leiden_vs_subtype_NMI differs  0.401174  0.393273                                                                          difference 0.0079
+   numbers                   fit.eval.within_mm.sample_mixing.expected_other_sample_frac differs   0.88352  0.883526                                                                        difference 6.05e-06
+   numbers                                 fit.eval.within_mm.sample_mixing.mixing_ratio differs  0.396024  0.396068                                                                        difference 4.42e-05
+   numbers                   fit.eval.within_mm.sample_mixing.observed_other_sample_frac differs  0.349895  0.349936                                                                        difference 4.15e-05
+   numbers                                                       fit.meta.mean_alignment differs  0.658695  0.659883                                                                         difference 0.00119
+
+measured:
+      step                                                 item result       run record                                  detail
+     2 fit                  joint graph: edges shared (Jaccard)  value    0.5807    1.0         2597937 of 3535699 record edges
+     2 fit mouse neighbors of each human nucleus (mean Jaccard)  value    0.4441    1.0 identical for 254 of 47533 human nuclei
+3 transfer    transferred pseudotime: Pearson r with the record  value  0.990475    1.0            47309 human nuclei with both
+3 transfer transferred pseudotime: Spearman rho with the record  value  0.988326    1.0                                        
+3 transfer            transferred cell type: same as the record  value     46306  47533                            human nuclei

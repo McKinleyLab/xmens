@@ -1,0 +1,22 @@
+Cevrim_XMens_Only_Fib_Dec_Cells_pseudotime.h5ad 5895a028472d3e3df5880cf1435f3c6b3adede7ae9481dde93ad705326e96385 5895a028472d3e3df5880cf1435f3c6b3adede7ae9481dde93ad705326e96385
+Cevrim_Human_Only_Fib_Dec_Cells_pseudotime.h5ad 683d9e08f9865cea1950b17b750fda573f02f319d2e63b34be8f98c810bff511 683d9e08f9865cea1950b17b750fda573f02f319d2e63b34be8f98c810bff511
+/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks:
+total 1058622
+drwxr-sr-x. 5 nhilgert eddy_lab       375 Nov  6 16:03 .
+drwxr-sr-x. 8 nhilgert eddy_lab       173 Nov  6 13:32 ..
+-rw-r--r--. 1 nhilgert eddy_lab 442118992 Nov  6 13:17 Cevrim_Human_Only_Fib_Dec_Cells_pseudotime.h5ad
+-rw-r--r--. 1 nhilgert eddy_lab 427524327 Nov  6 13:18 Cevrim_XMens_Only_Fib_Dec_Cells_pseudotime.h5ad
+drwxr-sr-x. 6 nhilgert eddy_lab       431 Nov  6 15:59 deseq2
+-rw-r--r--. 1 nhilgert eddy_lab     23544 Nov  6 13:13 pseudotime_human.ipynb
+-rw-r--r--. 1 nhilgert eddy_lab     19933 Nov  6 13:13 pseudotime_mouse.ipynb
+drwxr-sr-x. 2 nhilgert eddy_lab       484 Nov  6 16:02 pseudotime_runs
+-rw-r--r--. 1 nhilgert eddy_lab     42072 Nov  6 12:35 spatial_qc.ipynb
+drwxr-sr-x. 2 nhilgert eddy_lab       681 Nov  6 12:55 zone_modules_S24
+-rw-r--r--. 1 nhilgert eddy_lab    576500 Nov  6 12:55 zone_modules_S24.ipynb
+
+/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_pseudotime_notebooks:
+total 0
+drwxr-sr-x. 2 nhilgert eddy_lab 4096 Nov  6 16:03 .
+drwxr-sr-x. 2 nhilgert eddy_lab 4096 Nov  6 15:58 ..
+drwxr-sr-x. 2 nhilgert eddy_lab 4096 Nov  6 13:11 test_fit_latent_2_epochs
+MOVE_DONE

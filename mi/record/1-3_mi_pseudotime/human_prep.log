@@ -1,0 +1,5 @@
+[prep] reading results/mi_dpt/pt_harmonized_human_nall/input.h5ad
+[prep] detection filter >= 1.00% of cells: 15,008/36,601 genes kept
+[prep] 15,008 genes remain after min_counts=10 (summed over counts)
+[prep] layer 'derive_from_counts' absent; deriving log1p(CP10K) from 'counts' (recorded in manifest)
+[prep] wrote matrices + manifest to /n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_human_nall  (47,533 cells x 15,008 genes, 1500 chunks)

@@ -1,0 +1,75 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/4_statistics.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_samap_from_fit_of_record/notebooks/4_statistics.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+{"joint": 90730, "mouse": 43197, "human": 47533, "mouse_with_pseudotime": 42290, "human_with_transferred_pseudotime": 47352, "human_positioned": 33247}
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+{"joint": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_samap_from_fit_of_record/3_transfer/Samap_Final.h5ad", "joint_bytes": 1527889926, "joint_sha256": "a86dbf7542a67a83a16b779e017612fdf24479368b58860cf227c02e77252f1f", "mapping_K": 20, "n_human": 47533, "n_mouse": 43197, "nnz": 948226, "row_nnz_min": 0, "row_nnz_median": 20.0, "row_nnz_max": 20, "rows_without_mouse_edge": 24}
+
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+                                       endometrial_fibroblast  decidual_cell
+direction      source_compartment                                           
+human_to_mouse endometrial_fibroblast                   0.875          0.125
+               decidual_cell                            0.180          0.820
+mouse_to_human endometrial_fibroblast                   0.849          0.151
+               decidual_cell                            0.078          0.922
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+      native_cell_type  nuclei  labelled  agree  agree_share_of_labelled  agree_share_of_all
+                   all   47533     47509  40032                   0.8426              0.8422
+         decidual_cell   23108     23103  18780                   0.8129              0.8127
+endometrial_fibroblast   24425     24406  21252                   0.8708              0.8701
+
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+recomputed transfer: NaN pattern identical True, max |diff| 1.11e-16
+
+{'all': 47352, 'decidual': 22960, 'fibroblast': 24392} {'menstrual': 14422, 'secretory': 18708}
+
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+uniform: 1000 replicates done
+
+within_compartment: 1000 replicates done
+
+              statistic  observed  uniform_mean  uniform_max  uniform_n_ge_obs  within_compartment_mean  within_compartment_max  within_compartment_n_ge_obs
+                rho_all     0.734         0.004        0.170                 0                    0.552                   0.598                            0
+           rho_decidual     0.728        -0.003        0.199                 0                    0.094                   0.202                            0
+         rho_fibroblast     0.260         0.003        0.171                 0                    0.161                   0.292                            6
+              moran_all     0.660         0.023        0.066                 0                    0.481                   0.507                            0
+  moran_within_decidual     0.553         0.029        0.087                 0                    0.232                   0.259                            0
+moran_within_fibroblast     0.338         0.013        0.052                 0                    0.267                   0.285                            0
+human pseudotime, Moran's I: {'moran_menstrual': 0.6879, 'moran_secretory': 0.5842, 'moran_all': 0.6361, 'moran_within_decidual': 0.6253, 'moran_within_fibroblast': 0.3168}
+
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_samap_from_fit_of_record/4_statistics: ['edge_share', 'graph_block', 'label_agreement.csv', 'ptnull', 'statistics.json', 'tables']
+
+Ending Cell 18-----------------------------------------

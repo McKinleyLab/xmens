@@ -1,0 +1,22 @@
+libraries:
+  /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1-monocle2
+  /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1
+  /n/sw/helmod-rocky8/apps/Core/R/4.4.1-fasrc01/lib64/R/library
+monocle 2.34.0 is already installed in /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1-monocle2 
+dplyr 1.1.4 is already installed in /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1-monocle2 
+monocle 2.34.0 loads from /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1-monocle2 
+dplyr 1.1.4 loads from /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1-monocle2 
+VGAM 1.1.14 loads from /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1 
+Biobase 2.66.0 loads from /n/lab_storage/eddy_lab/users/nhilgert/R/library-4.4.1 
+Removing 13 outliers
+Warning messages:
+1: `group_by_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `group_by()` instead.
+ℹ See vignette('programming') for more help
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+2: `select_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `select()` instead.
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+estimateDispersions() ran on simulated data: dispersion trend over 200 genes

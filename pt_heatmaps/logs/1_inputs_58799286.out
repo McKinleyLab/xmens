@@ -1,0 +1,4 @@
+mouse: 42,290 nuclei with a pseudotime (907 without), 33,698 genes, 87,794,106 non-zero counts
+human: 47,533 nuclei with a pseudotime (0 without), 36,601 genes, 88,483,311 non-zero counts
+MI heatmaps: N 9,587 pairs, 1,133 top mouse genes (K), 1,201 top human genes (n), 373 in both (k)
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_08_xmens_pt_heatmaps/inputs

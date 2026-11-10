@@ -1,0 +1,52 @@
+{
+ "written": "2026-11-02T15:49:00",
+ "inputs": {
+  "curves_human": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/work/mi/curves_human.tsv",
+   "sha256": "ff0574f9c6522c927f55146121cb80924788f99d8b223028ddad22b300a677d2"
+  },
+  "curves_mouse": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/work/mi/curves_mouse.tsv",
+   "sha256": "39014ec3cdffda20688f82c3de197700689011ff1522e64f6a62a1ff8dbbd96a"
+  },
+  "genes_human": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/inputs/mi/topdecile_human.csv",
+   "sha256": "9c7f1ee7aad70f200e7a43c98fa3a0fa8cbe8d55ff3ec27966c1cbb8442aaa46"
+  },
+  "genes_mouse": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/inputs/mi/topdecile_mouse.csv",
+   "sha256": "57a9c0461ff916cf5665b2d525a1bfe879da5b191f1353c4cc24413676eccac1"
+  },
+  "cells_human": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/inputs/common/cells_human.tsv.gz",
+   "sha256": "dec01ad92c4ae15c66157f4a9d04f63a1faed08030e80f1474e8b98a2d90347a"
+  },
+  "cells_mouse": {
+   "path": "/Users/nickhilgert/.claude-science/orgs/06f88a99-9105-4941-a8cf-87e6b02aff65/workspaces/54778756-a0f6-40d7-9eae-e83d645e82e2/pkg/2026-11-02_pseudotime_heatmaps_final_objects/inputs/common/cells_mouse.tsv.gz",
+   "sha256": "772b6a487af8506f1e508fd1e22184143c0aba25e668d60f289cb4ebcea1cf44"
+  }
+ },
+ "n_genes": {
+  "human": 1201,
+  "mouse": 1133
+ },
+ "n_shared": {
+  "human": 373,
+  "mouse": 373
+ },
+ "n_cells": {
+  "human": 47533,
+  "mouse": 42290
+ },
+ "clipped_values": {
+  "human": 539,
+  "mouse": 348
+ },
+ "zclip": 3.0,
+ "shared_column": false,
+ "order": "centroid",
+ "fallback_fits": {
+  "human": 0,
+  "mouse": 0
+ }
+}

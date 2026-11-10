@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "SAMap (samap_harmony_uv)",
+ "language": "python"
+}

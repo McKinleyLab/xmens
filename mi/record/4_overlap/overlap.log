@@ -1,0 +1,7 @@
+pt_harmonized_unind_mouse_nall: 13,597 genes
+pt_harmonized_indmatch_mouse_nall: 14,117 genes
+pt_harmonized_mouse_nall: 14,261 genes
+pt_harmonized_human_nall: 15,008 genes
+16,275 one-to-one pairs from /n/lab_storage/eddy_lab/users/nhilgert/human_ivd_repro/orthogroups/ensembl_human_mouse_components.tsv
+Methods overlap: N 9,587, K 1,133, n 1,201, k 373, fold 2.628, log10 p -83.7099
+wrote results/mi_dpt/overlap_of_record

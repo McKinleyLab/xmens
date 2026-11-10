@@ -1,0 +1,225 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks/2_samap.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/notebooks/2_samap.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/xmens_samap/notebooks
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Executing notebook with kernel: samap
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+[21:19:07] hs: (47533, 36601) from /n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/inputs_raw/hs_fib_dec_all_raw.h5ad
+
+[21:20:14] hs: SAM.run done
+
+[21:20:32] mm: (43197, 33698) from /n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/inputs_raw/mm_fib_dec_all_raw.h5ad
+
+[21:21:08] mm: SAM.run done
+
+INFO: Using backend: cpu
+
+INFO: Not updating the manifold...
+
+INFO: Not updating the manifold...
+
+INFO: 18870 'hs' gene symbols match between the datasets and the BLAST graph.
+
+INFO: 20973 'mm' gene symbols match between the datasets and the BLAST graph.
+
+[21:31:47] SAMAP init done
+
+INFO: Prepping datasets for translation.
+
+INFO: Translating feature spaces pairwise.
+
+INFO: Projecting data into joint latent space. 40.87s
+
+INFO: Correcting data with means. 0.28s
+
+INFO: Expanding neighbourhoods of species hs...
+
+INFO: Expanding neighbourhoods of species mm...
+
+INFO: Indegree coarsening
+
+INFO: Rescaling edge weights by expression correlations.
+
+INFO: Concatenating SAM objects...
+
+INFO: Iteration 1 complete.
+
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.608938
+mm  0.561943  0.000000
+
+INFO: Calculating gene-gene correlations in the homology graph...
+
+INFO: Correlation: estimated Xavg 23.826 GB (density~63.5%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+
+INFO: Prepping datasets for translation.
+
+INFO: Translating feature spaces pairwise.
+
+INFO: Projecting data into joint latent space. 38.43s
+
+INFO: Correcting data with means. 0.23s
+
+INFO: Expanding neighbourhoods of species hs...
+
+INFO: Expanding neighbourhoods of species mm...
+
+INFO: Indegree coarsening
+
+INFO: Rescaling edge weights by expression correlations.
+
+INFO: Concatenating SAM objects...
+
+INFO: Iteration 2 complete.
+
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.663807
+mm  0.633232  0.000000
+
+INFO: Calculating gene-gene correlations in the homology graph...
+
+INFO: Correlation: estimated Xavg 23.856 GB (density~63.6%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+
+INFO: Prepping datasets for translation.
+
+INFO: Translating feature spaces pairwise.
+
+INFO: Projecting data into joint latent space. 36.58s
+
+INFO: Correcting data with means. 0.24s
+
+INFO: Expanding neighbourhoods of species hs...
+
+INFO: Expanding neighbourhoods of species mm...
+
+INFO: Indegree coarsening
+
+INFO: Rescaling edge weights by expression correlations.
+
+INFO: Concatenating SAM objects...
+
+INFO: Iteration 3 complete.
+
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.668703
+mm  0.648688  0.000000
+
+INFO: Running UMAP on the stitched manifolds.
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+INFO: Elapsed time: 32.17 minutes.
+
+[22:03:57] SAMAP run done
+
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+INFO: Saved SAMAP object to /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/2_samap.partial/samap.pkl
+
+[22:04:33] wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/2_samap.partial/samap.pkl
+
+[22:04:38] wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/2_samap.partial/samap_joint.h5ad: (90730, 70299), obs ['hs_sample', 'hs_cell_barcode', 'hs_timepoint', 'hs_coarse_refined', 'hs_fine_refined', 'hs_origin_lineage', 'hs_lineage', 'hs_cell_type', 'hs_subtype', 'hs_annotation_level', 'hs_cell_subtype', 'hs_dpt_pseudotime_provenance', 'hs_spatial_qc_reason', 'hs_cell_type_annotations', 'hs_cell_subtype_annotations', 'hs_leiden_clusters', 'mm_sample', 'mm_cell_barcode', 'mm_timepoint', 'mm_coarse_refined', 'mm_fine_refined', 'mm_origin_lineage', 'mm_cell_type', 'mm_cell_subtype', 'mm_spatial_qc_reason', 'mm_cell_type_annotations', 'mm_cell_subtype_annotations', 'mm_leiden_clusters', 'batch', 'species', 'sample', 'timepoint', 'cell_type_annotations', 'cell_subtype_annotations']
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+[22:04:38] alignment scores: {'hs': {'hs': 0.0, 'mm': 0.6687028724459909}, 'mm': {'hs': 0.6486880314396879, 'mm': 0.0}}; mean 0.659
+
+[22:04:45] joint leiden: 14 clusters
+
+hs {"sample_mixing": {"observed_other_sample_frac": 0.6596008226605591, "expected_other_sample_frac": 0.8291941633558484, "mixing_ratio": 0.7954721002751338, "n_samples": 6}, "knn_celltype_agreement": 0.8864278814264792, "leiden_vs_celltype_ARI": 0.12720502585475257, "leiden_vs_celltype_NMI": 0.2226005632732623, "leiden_vs_sample_NMI": 0.14577509197142702, "knn_subtype_agreement": 0.8864278814264792, "leiden_vs_subtype_ARI": 0.12720502585475257, "leiden_vs_subtype_NMI": 0.2226005632732623}
+
+mm {"sample_mixing": {"observed_other_sample_frac": 0.34989504092913304, "expected_other_sample_frac": 0.883520191728905, "mixing_ratio": 0.3960238194946575, "n_samples": 9}, "knn_celltype_agreement": 0.9566565631299383, "leiden_vs_celltype_ARI": 0.12368561893630763, "leiden_vs_celltype_NMI": 0.29417403240026463, "leiden_vs_sample_NMI": 0.4766055775585578, "knn_subtype_agreement": 0.8140704010515525, "leiden_vs_subtype_ARI": 0.20377384042587596, "leiden_vs_subtype_NMI": 0.40117382357802833}
+
+{
+ "hs_decidual_cell": {
+  "mm_decidual_cell": 0.5513280817231607,
+  "mm_endometrial_fibroblast": 0.13795057183929446
+ },
+ "hs_endometrial_fibroblast": {
+  "mm_decidual_cell": 0.10462509069977326,
+  "mm_endometrial_fibroblast": 0.5846631795694754
+ }
+}
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+{
+ "arm": "vanilla_raw (stock SAMap on raw counts)",
+ "started": "2026-11-07T21:18:51",
+ "finished": "2026-11-07T22:04:58",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "inputs": {
+  "hs": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/inputs_raw/hs_fib_dec_all_raw.h5ad",
+   "sha256": "326b1017f67b9e67c5a4bd37b3eaa1ed94525d119e7c4df98206d9bb081c7377"
+  },
+  "mm": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/inputs_raw/mm_fib_dec_all_raw.h5ad",
+   "sha256": "bf86e9a4dbcb13107a1ec10f93392f5802aa7f14b9844fab3fc4b8ad1d2b542f"
+  }
+ },
+ "maps": {
+  "hs_to_mm.txt": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/samap_integrate/homology/hsmm_hmmer/hsmm/hs_to_mm.txt",
+   "sha256": "c3369c2192ca914b201b46d488bc037f6d424f28793cf34351c93cc8e6ff7231"
+  },
+  "mm_to_hs.txt": {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/samap_integrate/homology/hsmm_hmmer/hsmm/mm_to_hs.txt",
+   "sha256": "46a8d7d3d18ea7b7441458e38da4ea66872ea3613c718270742551fbebd5f403"
+  }
+ },
+ "preprocess": {
+  "sum_norm": "cell_median",
+  "norm": "log",
+  "thresh_low": 0.0,
+  "thresh_high": 0.96,
+  "min_expression": 1
+ },
+ "sam_run": {
+  "preprocessing": "StandardScaler",
+  "npcs": 100,
+  "weight_PCs": false,
+  "k": 20,
+  "n_genes": 3000,
+  "weight_mode": "rms",
+  "verbose": false
+ },
+ "n_iterations": 3,
+ "ncpus": 8,
+ "mean_alignment": 0.6586954519428394,
+ "versions": {
+  "sc-samap": "3.0.1",
+  "anndata": "0.12.19",
+  "scanpy": "1.11.5",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "hnswlib": "0.8.0",
+  "umap-learn": "0.5.12",
+  "scikit-learn": "1.9.0"
+ }
+}
+[22:05:00] wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_restructured_fresh_fit/2_samap: ['eval.json', 'figures', 'mapping_celltype.csv', 'mapping_subtype.csv', 'mapping_timepoint.csv', 'meta.json', 'samap.pkl', 'samap_joint.h5ad']
+
+Ending Cell 13-----------------------------------------

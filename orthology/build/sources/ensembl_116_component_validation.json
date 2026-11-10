@@ -1,0 +1,69 @@
+{
+  "assertions": {
+    "all_components_bipartite": true,
+    "all_members_protein_coding": true,
+    "both_species_specific_dumps_consumed": true,
+    "each_gene_in_one_component": true,
+    "many2many_explicitly_enumerated": true,
+    "no_unusual_components": true,
+    "one2many_copy_numbers_valid": true,
+    "one_by_one_calls_are_one2one": true,
+    "one_stable_gene_tree_per_component": true,
+    "orientation_canonicalization_symmetric": true,
+    "tree_join_complete": true,
+    "union_homology_ids_unique_or_identical": true
+  },
+  "component_id_rule": "lexicographically sort (sorted human gene tuple, sorted mouse gene tuple); assign ENS116_HMCOMP_%06d",
+  "counts": {
+    "component_classes": {
+      "both_expanded": 117,
+      "human_expansion": 202,
+      "mouse_expansion": 397,
+      "one_to_one": 16314
+    },
+    "component_summary_rows": 17030,
+    "components": 17030,
+    "edge_rows": 22692,
+    "excluded_biotype_pairs": {
+      "IG_C_gene|IG_C_gene": 21,
+      "IG_V_gene|IG_LV_gene": 2,
+      "IG_V_gene|IG_V_gene": 839,
+      "TR_C_gene|TR_C_gene": 5,
+      "TR_V_gene|TR_V_gene": 196,
+      "protein_coding|IG_C_gene": 8,
+      "protein_coding|TR_V_gene": 1
+    },
+    "excluded_non_protein_coding_homology_ids": 1072,
+    "homology_types": {
+      "ortholog_many2many": 4339,
+      "ortholog_one2many": 2039,
+      "ortholog_one2one": 16314
+    },
+    "human_annotation_genes": 78941,
+    "human_member_genes": 17688,
+    "membership_rows": 36334,
+    "mouse_annotation_genes": 78348,
+    "mouse_member_genes": 18646,
+    "multi_tree_components": 0,
+    "non_protein_coding_attrition_rows": 1072,
+    "primary_protein_coding_homology_ids": 22692,
+    "raw_unique_homology_ids": 23764,
+    "source_rows": {
+      "ensembl_116_homo_sapiens_protein_default_human_mouse.tsv.gz": 0,
+      "ensembl_116_mus_musculus_protein_default_human_mouse.tsv.gz": 23764
+    },
+    "stable_gene_tree_rows": 23764,
+    "unique_canonical_gene_edges": 22692
+  },
+  "multi_tree_component_ids": [],
+  "object_name": "ensembl_human_mouse_coortholog_component",
+  "official_ensembl_hog": false,
+  "release": "Ensembl 116",
+  "sha256": {
+    "ensembl_116_human_mouse_component_summary.tsv.gz": "c43d9245b8b00f3343e301535bf821fc5ce6c75d56b15d6b187b7ebb7090d192",
+    "ensembl_116_human_mouse_edges.tsv.gz": "365df0281c3f834b6a8419fe6b6b32850f6417df50d54a7c205a2b8baf332cc7",
+    "ensembl_116_non_protein_coding_homology_attrition.tsv.gz": "4a0f48206625f8639517ffab98942d14a7688d9335f4799b8d0d77e155085932",
+    "ensembl_human_mouse_components.tsv": "7c69c3a567f7e94dca9ef0a42be94da29ce196b9bb2bc8db0339339db654cdb7"
+  },
+  "source_placement_note": "Ensembl species-specific files contain arbitrary nonredundant subsets; both were consumed and unioned, so per-file mirror symmetry is not expected."
+}

@@ -1,0 +1,13 @@
+{
+  "pt_key": "pt_harmonized_rank",
+  "layer": "log1p_cp10k_derived_from_counts",
+  "min_counts": 10,
+  "min_detect_frac": 0.01,
+  "n_cells": 42290,
+  "n_genes": 14261,
+  "n_chunks": 200,
+  "seed": 0,
+  "h5ad": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_mouse/source_subset.h5ad",
+  "perms": 1001,
+  "subsample_cells": 0
+}

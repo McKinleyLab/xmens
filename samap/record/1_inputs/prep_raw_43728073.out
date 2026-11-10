@@ -1,0 +1,23 @@
+Loading /n/netscratch/eddy_lab/Everyone/nhilgert/2026_08_28_Cevrim_Human_Only_Fib_Dec_Cells.h5ad ...
+  (47533, 36601); obs columns: ['sample', 'cell_barcode', 'timepoint', 'coarse_refined', 'fine_refined', 'origin_lineage', 'lineage', 'cell_type', 'subtype', 'annotation_level', 'x_um_dbscan', 'y_um_dbscan', 'cell_subtype', 'stro7_margin', 'dpt_pseudotime', 'dpt_pseudotime_provenance', 'x_um_qc', 'y_um_qc', 'spatial_qc_reason']
+  obsm keys: ['X_scVI', 'X_scVI_wholetissue', 'X_spatial', 'X_umap_scVI', 'X_umap_wholetissue']
+  layers: ['counts']
+  fib/dec cells: 47533
+  samples: ['menstrual_mck5a', 'menstrual_mck5b', 'menstrual_mck5c', 'secretory_mck6a', 'secretory_mck6b', 'secretory_mck6c']
+  timepoints: ['menstrual', 'secretory']
+  .X <- RAW; layers dropped; .raw deleted
+  guard OK: RAW COUNTS — integer-valued, .X max = 1243, library sizes median=3189, CV=0.612 (variable, as counts must be)
+Writing inputs_raw/hs_fib_dec_all_raw.h5ad ...
+Done.
+Loading /n/netscratch/eddy_lab/Everyone/nhilgert/2026_08_28_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad ...
+  (43197, 33698); obs columns: ['sample', 'cell_barcode', 'timepoint', 'coarse_refined', 'fine_refined', 'origin_lineage', 'x_um_dbscan', 'y_um_dbscan', 'cell_type', 'cell_subtype', 'auc_MMy', 'auc_MD', 'auc_VSZ', 'auc_FMI', 'auc_C', 'auc_PDZ', 'auc_TDZ', 'auc_SDZ', 'auc_udStr', 'auc_Glan', 'auc_AMMy', 'dpt_pseudotime', 'x_um_qc', 'y_um_qc', 'spatial_qc_reason']
+  obsm keys: ['X_scVI', 'X_spatial', 'X_umap', 'X_umap_scVI']
+  layers: ['counts']
+  fib/dec cells: 43197
+  samples: ['1_dpi_early_mck1', '1_dpi_late_mck12a', '1_dpi_late_mck12b', '2_dpi_mck15', '3_dpi_mck10a', '3_dpi_mck10b', '4_dpi_bleeding_mck11a', 'uninduced_mck8a', 'uninduced_mck8b']
+  timepoints: ['1_dpi_early', '1_dpi_late', '2_dpi', '3_dpi', '4_dpi_bleeding', 'uninduced']
+  .X <- RAW; layers dropped; .raw deleted
+  guard OK: RAW COUNTS — integer-valued, .X max = 876, library sizes median=3254, CV=1.077 (variable, as counts must be)
+Writing inputs_raw/mm_fib_dec_all_raw.h5ad ...
+Done.
+=== prep done (Tue Sep  1 19:02:47 EDT 2026) ===

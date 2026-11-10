@@ -1,0 +1,222 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2/xmens_decidual_vs_fibroblast.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/notebooks/xmens_decidual_vs_fibroblast.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+PyDESeq2 0.5.4, NumPy 2.2.0, pandas 2.3.3
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+object: /n/lab_storage/eddy_lab/users/nhilgert/xmens_final/data/interim/final_mouse.h5ad
+  sha256 7cfa0ebda34812fbfbc9ea4fbe23888e32997ad0bc8263634abc7f9f30ad7116 (the file of record)
+feature manifest: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2/resources/xmens_feature_manifest.tsv
+  sha256 551649d3d30bee8a5a40515bd4b3c28e0426ff0fe1c6c1bbd97816733fbb79cf (the file of record)
+
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+57,033 nuclei x 33,698 features, 114,978,081 nonzero counts
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+33,233 genes from 33,698 features; 465 features dropped
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+coarse_refined  decidual  fibroblast
+timepoint                           
+1_dpi_early         1263        1425
+1_dpi_late          5654        5133
+2_dpi               2404        1170
+3_dpi               8675        1998
+4_dpi_bleeding      4859        1282
+uninduced             64        9270
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+43,133 nuclei in 11 pseudobulks
+
+                                 pseudobulk_id       timepoint       group  \
+0        timepoint=1_dpi_early__group=decidual     1_dpi_early    decidual   
+1      timepoint=1_dpi_early__group=fibroblast     1_dpi_early  fibroblast   
+2         timepoint=1_dpi_late__group=decidual      1_dpi_late    decidual   
+3       timepoint=1_dpi_late__group=fibroblast      1_dpi_late  fibroblast   
+4              timepoint=2_dpi__group=decidual           2_dpi    decidual   
+5            timepoint=2_dpi__group=fibroblast           2_dpi  fibroblast   
+6              timepoint=3_dpi__group=decidual           3_dpi    decidual   
+7            timepoint=3_dpi__group=fibroblast           3_dpi  fibroblast   
+8     timepoint=4_dpi_bleeding__group=decidual  4_dpi_bleeding    decidual   
+9   timepoint=4_dpi_bleeding__group=fibroblast  4_dpi_bleeding  fibroblast   
+10       timepoint=uninduced__group=fibroblast       uninduced  fibroblast   
+
+    n_cells  n_samples                              samples  
+0      1263          1                     1_dpi_early_mck1  
+1      1425          1                     1_dpi_early_mck1  
+2      5654          2  1_dpi_late_mck12a;1_dpi_late_mck12b  
+3      5133          2  1_dpi_late_mck12a;1_dpi_late_mck12b  
+4      2404          1                          2_dpi_mck15  
+5      1170          1                          2_dpi_mck15  
+6      8675          2            3_dpi_mck10a;3_dpi_mck10b  
+7      1998          2            3_dpi_mck10a;3_dpi_mck10b  
+8      4859          1                4_dpi_bleeding_mck11a  
+9      1282          1                4_dpi_bleeding_mck11a  
+10     9270          2      uninduced_mck8a;uninduced_mck8b  
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+16,784 of 33,233 genes pass the expression filter
+
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+11 pseudobulks, 7 coefficients: ['Intercept', 'timepoint[T.1_dpi_late]', 'timepoint[T.2_dpi]', 'timepoint[T.3_dpi]', 'timepoint[T.4_dpi_bleeding]', 'timepoint[T.uninduced]', 'group[T.fibroblast]']
+
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+16,784 genes tested; called DE: 2,520 higher in decidual, 2,183 higher in fibroblast nuclei
+
+      gene_symbol      baseMean  log2FoldChange_unshrunk  \
+8456       Igfbp7   2402.414229                -3.240928   
+6537     Adamtsl1   4506.300128                -3.835563   
+27724       Chodl    262.634588                -4.299445   
+15087      Inpp4b   1530.957090                -3.246140   
+32405       Gpm6b    867.250520                -3.416195   
+3150        Pamr1   1488.372385                -3.553676   
+22096     Zfp36l1   4897.838517                -2.035428   
+9759        Cped1  14470.669748                -2.192912   
+30118     Ldlrad4   5494.177499                -2.461724   
+14383      Angpt2   1738.237642                 2.150839   
+
+       log2FoldChange_shrunk           padj  
+8456               -3.235526  7.935143e-160  
+6537               -3.821426   3.877937e-99  
+27724              -4.278683   2.172096e-82  
+15087              -3.230191   3.525933e-79  
+32405              -3.396783   1.301361e-67  
+3150               -3.532628   9.273094e-66  
+22096              -2.024589   7.308903e-58  
+9759               -2.178995   1.947098e-54  
+30118              -2.446204   1.947098e-54  
+14383               2.136841   1.531879e-50  
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+{
+ "design": "~ timepoint + group",
+ "design_columns": [
+  "Intercept",
+  "timepoint[T.1_dpi_late]",
+  "timepoint[T.2_dpi]",
+  "timepoint[T.3_dpi]",
+  "timepoint[T.4_dpi_bleeding]",
+  "timepoint[T.uninduced]",
+  "group[T.fibroblast]"
+ ],
+ "design_rank": 7,
+ "residual_df": 4,
+ "coefficient": "group[T.fibroblast]",
+ "n_pseudobulks": 11,
+ "n_genes_fitted": 16784,
+ "size_factor_min": 0.15933724354931453,
+ "size_factor_median": 0.7609256950001756,
+ "size_factor_max": 4.694629460498476,
+ "n_padj_na": 0,
+ "n_not_estimable": 0,
+ "pseudobulk_design": "with_uninduced",
+ "pseudobulks_per_arm": {
+  "decidual": 5,
+  "fibroblast": 6
+ },
+ "nuclei_per_arm": {
+  "decidual": 22855,
+  "fibroblast": 20278
+ },
+ "eligible_genes": 16784,
+ "strict_calls": 4703,
+ "calls_up": 2520,
+ "calls_down": 2183
+}
+
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+33,233 genes, the same as the record's (same order: True)
+                   column  present  identical  max_abs_diff
+              gene_symbol     True       True           NaN
+                  biotype     True       True           NaN
+       source_feature_ids     True       True           NaN
+         source_feature_n     True       True           0.0
+                  carrier     True       True           NaN
+      production_eligible     True       True           NaN
+              total_count     True       True           0.0
+      nonzero_pseudobulks     True       True           0.0
+                 baseMean     True       True           0.0
+  log2FoldChange_unshrunk     True       True           0.0
+    log2FoldChange_shrunk     True       True           0.0
+                    lfcSE     True       True           0.0
+                     stat     True       True           0.0
+                   pvalue     True       True           0.0
+                     padj     True       True           0.0
+                estimable     True       True           NaN
+            padj_for_call     True       True           0.0
+   significant_fdr05_lfc1     True       True           NaN
+                source_id     True       True           NaN
+     positive_lfc_meaning     True       True           NaN
+          analysis_method     True       True           NaN
+  n_pseudobulks_numerator     True       True           0.0
+n_pseudobulks_denominator     True       True           0.0
+DE calls identical: True (2,520 up, 2,183 down)
+
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+                             pseudobulk_id  n_cells  n_cells_record
+     timepoint=1_dpi_early__group=decidual     1263            1263
+   timepoint=1_dpi_early__group=fibroblast     1425            1425
+      timepoint=1_dpi_late__group=decidual     5654            5654
+    timepoint=1_dpi_late__group=fibroblast     5133            5133
+           timepoint=2_dpi__group=decidual     2404            2404
+         timepoint=2_dpi__group=fibroblast     1170            1170
+           timepoint=3_dpi__group=decidual     8675            8675
+         timepoint=3_dpi__group=fibroblast     1998            1998
+  timepoint=4_dpi_bleeding__group=decidual     4859            4859
+timepoint=4_dpi_bleeding__group=fibroblast     1282            1282
+     timepoint=uninduced__group=fibroblast     9270            9270
+pseudobulk descriptions identical: True
+
+summed counts: same pseudobulks and genes True; entries that differ: 0
+
+Ending Cell 25-----------------------------------------
+Executing Cell 26--------------------------------------
+Ending Cell 26-----------------------------------------
+Executing Cell 27--------------------------------------
+wrote xmens_broad_all_genes_with_uninduced.csv, xmens_broad_carrier_counts_with_uninduced.tsv, xmens_broad_metadata_with_uninduced.tsv, xmens_broad_genes.tsv, fit_diagnostics_with_uninduced.json in /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/xmens
+
+Ending Cell 27-----------------------------------------
+Executing Cell 28--------------------------------------
+Ending Cell 28-----------------------------------------
+Executing Cell 29--------------------------------------
+genes tested:    16,784
+genes called DE: 4,703 (2,520 up, 2,183 down)
+check:           identical to the record (table, pseudobulks, counts)
+
+Ending Cell 29-----------------------------------------

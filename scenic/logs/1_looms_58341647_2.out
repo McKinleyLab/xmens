@@ -1,0 +1,5 @@
+human: started Fri Nov  6 12:48:19 EST 2026 on holy8a25503.rc.fas.harvard.edu
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_scenic/scenic_seeds/human/human_dsc_pooled.h5ad  [47,533 x 36,601]  (FULL - for AUCell)
+genes: 36,601 -> 15,011 (>= 475 of 47,533 cells) | TF list 1,892, retained 1,308
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_scenic/scenic_seeds/human/human_dsc_pooled.loom  [15,011 genes x 47,533 cells]  (GRN input)
+human: finished Fri Nov  6 12:52:33 EST 2026

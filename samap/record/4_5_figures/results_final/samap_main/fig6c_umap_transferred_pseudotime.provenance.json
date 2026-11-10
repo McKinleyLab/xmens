@@ -1,0 +1,60 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime_humanonly.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime_humanonly.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_pseudotime_humanonly.pdf"
+ ],
+ "written": "2026-11-03T00:11:17",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/fig6c_umap_transferred_pseudotime.ipynb",
+ "notebook_md5": "d02d3df53a401dd96f805903efea5fa6",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "JOINT": "results/samap_figures/final/tables/joint.parquet",
+  "HUMAN_TABLE": "results/plot_tables/final_objects/human_fibdec_plot_table.parquet",
+  "OUT": "results/figures/samap_main/final",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/joint.parquet",
+   "role": "joint",
+   "bytes": 2565586,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/plot_tables/final_objects/human_fibdec_plot_table.parquet",
+   "role": "human_table",
+   "bytes": 10156719,
+   "mtime": "2026-11-03T00:10:10",
+   "sha256": "3f1d0703163a6fe3ac4f5cad831737c32915f02e50bf4690c6dfc1a3853e614f"
+  }
+ ],
+ "font": "DejaVu Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3"
+ },
+ "transferred_column": "transferred_mm_dpt_pseudotime_ranknorm",
+ "rescaled_or_reranked": false,
+ "colormap": "viridis, fixed 0-1",
+ "umap": {
+  "embedding_outliers_omitted": 0,
+  "embedding_outliers_drawn": 6,
+  "umap_human_with_value": 47352,
+  "umap_human_no_value": 181,
+  "umap_mouse_context": 43197,
+  "order_seed": 3,
+  "panel_mm": 90,
+  "dpi": 600
+ }
+}

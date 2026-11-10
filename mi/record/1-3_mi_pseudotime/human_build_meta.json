@@ -1,0 +1,10 @@
+{
+  "h5ad": "data/deliverables/2026_10_22_flagged_harmonized/Cevrim_Human_Only_Fib_Dec_Cells.h5ad",
+  "table": "data/interim/human_pt_2026_10_30_run4_a40/cells.parquet",
+  "column": "pt_rank",
+  "table_sha256": "956a07cdb97d9a99dd769088a66e717b60956b81b45cb3e3d625057dacb2f94f",
+  "pt_key": "pt_harmonized_rank",
+  "n_cells": 47533,
+  "n_finite_pt": 47533,
+  "n_changed_vs_object": 47512
+}

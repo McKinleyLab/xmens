@@ -1,0 +1,29 @@
+{
+ "q_thresh": 0.05,
+ "top_percentile": 90.0,
+ "N": 9587,
+ "K": 1133,
+ "n": 1201,
+ "k": 373,
+ "expected": 141.93522478356107,
+ "fold": 2.6279593425014314,
+ "log10_p": -83.70989626027217,
+ "mouse": {
+  "tested": 14261,
+  "significant": 14261,
+  "threshold_nats": 0.0703682525841338,
+  "threshold_bits": 0.10151992903915183,
+  "top": 1426
+ },
+ "human": {
+  "tested": 15008,
+  "significant": 14887,
+  "threshold_nats": 0.02728268964174116,
+  "threshold_bits": 0.03936060104825266,
+  "top": 1489
+ },
+ "arms": {
+  "mouse": "pt_harmonized_mouse_nall",
+  "human": "pt_harmonized_human_nall"
+ }
+}

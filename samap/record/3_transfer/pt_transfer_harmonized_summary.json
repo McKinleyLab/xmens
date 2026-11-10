@@ -1,0 +1,56 @@
+{
+  "joint": "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/runs_raw/vanilla_raw/samap_transferred.h5ad",
+  "pt_source": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_10_22_flagged_harmonized/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad",
+  "pt_col": "pt_harmonized",
+  "pt_raw": {
+    "source_join": {
+      "exact": 42290,
+      "exact_nan": 907,
+      "canon": 0,
+      "canon_ambiguous": 0,
+      "none": 0
+    },
+    "source_cells_with_pt_on_graph": 42290,
+    "hs_cells_covered": 47352,
+    "hs_coverage": 0.9961921191593209,
+    "transferred_range": [
+      0.045420836487073596,
+      0.8715810090423866
+    ]
+  },
+  "pt_ranknorm": {
+    "source_join": {
+      "exact": 42290,
+      "exact_nan": 907,
+      "canon": 0,
+      "canon_ambiguous": 0,
+      "none": 0
+    },
+    "source_cells_with_pt_on_graph": 42290,
+    "hs_cells_covered": 47352,
+    "hs_coverage": 0.9961921191593209,
+    "transferred_range": [
+      0.0035874558663717107,
+      0.9952554209513648
+    ]
+  },
+  "pt_ranknorm_insample": {
+    "source_join": {
+      "exact": 42290,
+      "exact_nan": 907,
+      "canon": 0,
+      "canon_ambiguous": 0,
+      "none": 0
+    },
+    "source_cells_with_pt_on_graph": 42290,
+    "hs_cells_covered": 47352,
+    "hs_coverage": 0.9961921191593209,
+    "transferred_range": [
+      0.009140778040688847,
+      0.985529101864495
+    ]
+  },
+  "spearman[pt_raw~pt_ranknorm]": 0.9968,
+  "spearman[pt_raw~pt_ranknorm_insample]": 0.5994,
+  "spearman[pt_ranknorm~pt_ranknorm_insample]": 0.5991
+}

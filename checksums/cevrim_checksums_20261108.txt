@@ -1,0 +1,30 @@
+# Cevrim h5ad checksum comparison
+# date: Sun Nov  8 14:10:15 EST 2026   host: holy7c10503.rc.fas.harvard.edu
+# originals: /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data
+# copies:    /n/netscratch/eddy_lab/Everyone/nhilgert
+
+# -rwxrws---. 1 nhilgert eddy_lab 4758762495 Dec 18  2025 /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_Human_All_Cells.h5ad
+# -rwxrws---. 1 nhilgert eddy_lab 3161949223 Dec 18  2025 /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+# -rwxrws---. 1 nhilgert eddy_lab 1168453817 Dec 18  2025 /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_XMens_All_Cells.h5ad
+# -rwxrws---. 1 nhilgert eddy_lab  919917647 Dec 18  2025 /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
+# -rwxr-x---. 1 nhilgert eddy_lab 4758762495 Aug 21 18:09 /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_Human_All_Cells.h5ad
+# -rwxr-x---. 1 nhilgert eddy_lab 3161949223 Aug 21 18:09 /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+# -rwxr-x---. 1 nhilgert eddy_lab 1168453817 Aug 21 18:09 /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_XMens_All_Cells.h5ad
+# -rwxr-x---. 1 nhilgert eddy_lab  919917647 Aug 21 18:09 /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
+
+9ba059e541618487c9ca215491837510  /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_Human_All_Cells.h5ad
+9ba059e541618487c9ca215491837510  /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_Human_All_Cells.h5ad
+# MATCH: 20251008_Cevrim_Human_All_Cells.h5ad
+
+da685009a0a1401e4dd71d07a90d67ba  /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+da685009a0a1401e4dd71d07a90d67ba  /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+# MATCH: 20251008_Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+
+1419b43320c40788990a3da2a93f3052  /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_XMens_All_Cells.h5ad
+1419b43320c40788990a3da2a93f3052  /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_XMens_All_Cells.h5ad
+# MATCH: 20251008_Cevrim_XMens_All_Cells.h5ad
+
+540a05bd28fd269f30200eee6e359f2e  /n/lab_storage/eddy_lab/Lab/mckinley_backup_2025-12-18/data/20251008_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
+540a05bd28fd269f30200eee6e359f2e  /n/netscratch/eddy_lab/Everyone/nhilgert/20251008_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
+# MATCH: 20251008_Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
+

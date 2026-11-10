@@ -1,0 +1,10 @@
+=== TASK INFO ===
+Array job:   7992260
+Task ID:     12 of 32
+Host:        holy8a25504.rc.fas.harvard.edu
+Threads:     4
+Query:       /n/eddy_lab/users/nhilgert/data/proteomes/chunks/hs/Homo_sapiens.GRCh38.pep.all.fa.12 (3870 sequences)
+Target:      /n/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa (66558 sequences)
+Output tbl:  /n/eddy_lab/users/nhilgert/data/proteomes/hm/hu_vs_mu/hu_12.tbl
+Start:       Fri Apr 24 14:18:01 EDT 2026
+

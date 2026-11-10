@@ -1,0 +1,37 @@
+1 inputs mouse nuclei, pseudotime, labels, timepoints: identical; 42,290 nuclei, compared as text (the gzip files store a time stamp)
+1 inputs mouse MI top genes: identical; 1,133 genes
+1 inputs human nuclei, pseudotime, labels, timepoints: identical; 47,533 nuclei, compared as text (the gzip files store a time stamp)
+1 inputs human MI top genes: identical; 1,201 genes
+1 inputs both Fig. 5F genes: identical; 28 genes
+1 inputs mouse Yang et al. panel, published order: identical; 28 genes
+1 inputs mouse counts matrix: read; 33,698 genes x 42,290 nuclei, 87,794,106 non-zero counts
+1 inputs mouse counts of the Fig. 4H genes: identical; 28 genes x 42,290 nuclei; 0 counts differ
+1 inputs mouse counts of the Fig. 5F genes: identical; 28 genes x 42,290 nuclei; 0 counts differ
+1 inputs human counts matrix: read; 36,601 genes x 47,533 nuclei, 88,483,311 non-zero counts
+1 inputs human counts of the Fig. 5F genes: identical; 28 genes x 47,533 nuclei; 0 counts differ
+2 monocle mouse dispersion table, genes: identical; Monocle 27,064 genes, record 27,064, in both 27,064
+2 monocle mouse mean of size-factor-normalized counts: close; largest relative difference 9.4e-13
+2 monocle mouse empirical dispersion: as expected; Monocle (population variance, n) lower than the record (sample variance, n - 1) for 100.0% of the 17,814 genes with dispersion > 0, by a median 1.4e-04 of the value; dispersion 0 (negative estimate) in 9,253 genes, record 9,250; the record's values converted to the population variance (n = 42,290 nuclei, mean 1 / size factor 1.44045) match Monocle's to 9.0e-08 (largest absolute difference), with 0 genes differing in being 0
+2 monocle mouse dispersion trend a + b / mean: close; Monocle a 0.541331, b 0.355792; record (printed to 4 digits) a 0.5415, b 0.3557
+2 monocle mouse z_mouse.tsv fits: as record; 1,133 genes, 0 fallback fits (record: 0)
+2 monocle mouse fig4h_z.tsv fits: as record; 28 genes, 0 fallback fits (record: 0)
+2 monocle mouse Fig. 4H z: close; 28 genes x 100 points, same genes in the same order; largest |difference| in z 1.2e-05 (TCF4), mean 1.3e-06; clipped at +/-3: 4, record 4
+2 monocle mouse Fig. 5F z: close; 28 genes x 100 points, same genes in the same order; largest |difference| in z 6.9e-06 (Prkce), mean 1.2e-06; clipped at +/-3: 11, record 11
+2 monocle human dispersion table, genes: identical; Monocle 31,735 genes, record 31,735, in both 31,735
+2 monocle human mean of size-factor-normalized counts: close; largest relative difference 8.8e-13
+2 monocle human empirical dispersion: as expected; Monocle (population variance, n) lower than the record (sample variance, n - 1) for 100.0% of the 24,827 genes with dispersion > 0, by a median 1.2e-04 of the value; dispersion 0 (negative estimate) in 6,908 genes, record 6,908; the record's values converted to the population variance (n = 47,533 nuclei, mean 1 / size factor 1.20007) match Monocle's to 1.3e-07 (largest absolute difference), with 0 genes differing in being 0
+2 monocle human dispersion trend a + b / mean: same to 4 digits; Monocle a 0.88827, b 0.272493; record (printed to 4 digits) a 0.8883, b 0.2725
+2 monocle human z_human.tsv fits: as record; 1,201 genes, 0 fallback fits (record: 0)
+2 monocle human Fig. 5F z: close; 28 genes x 100 points, same genes in the same order; largest |difference| in z 5e-06 (MCL1), mean 4e-07; clipped at +/-3: 10, record 10
+3 figures mouse MI heatmap rows (centroid order): identical; 1,133 genes; 1,133 in the same row, largest move 0 rows, Spearman rho of the rows 1.000000; largest centroid difference 5.9e-06
+3 figures human MI heatmap rows (centroid order): same genes, other order; 1,201 genes; 1,199 in the same row, largest move 1 rows, Spearman rho of the rows 1.000000; largest centroid difference 5.7e-07; moved: RARB (row 844, record 845), RIPOR3 (row 845, record 844)
+3 figures  Fig. 4H box: identical; byte for byte
+3 figures  Fig. 4H colorbar, 5 pt: same content, layout differs; colours: all 258 fills identical; text: the same 8 strings; rest of the file (positions, layout): 272 of 281 lines differ
+3 figures  Fig. 4H labelled: same content, layout differs; colours: all 3,061 fills identical; text: the same 38 strings; rest of the file (positions, layout): 274 of 3,081 lines differ
+3 figures  Fig. 5F: same content, layout differs; colours: all 5,604 fills identical; image 1: 156 of 1,248 px differ, by at most 3 of 255; text: the same 74 strings; rest of the file (positions, layout): 33,731 of 34,226 lines differ
+3 figures  MI heatmaps: same content, layout differs; colours: all 4 fills identical; image 1: 1229 x 3213 px, record 1228 x 3213 (not compared); image 2: 1229 x 3213 px, record 1228 x 3213 (not compared); image 3: all 50,339 px identical; text: the same 21 strings; rest of the file (positions, layout): 22 of 289 lines differ
+
+Run /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_08_xmens_pt_heatmaps against the heatmaps of record; one row per comparison in /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_08_xmens_pt_heatmaps/compare_with_record_20261107_234917.tsv
+1 inputs: 9 identical, 2 read
+2 monocle: 6 close, 3 as record, 2 identical, 2 as expected, 1 same to 4 digits
+3 figures: 4 same content, layout differs, 2 identical, 1 same genes, other order

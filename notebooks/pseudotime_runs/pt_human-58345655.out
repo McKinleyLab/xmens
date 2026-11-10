@@ -1,0 +1,105 @@
+holy8a28511.rc.fas.harvard.edu
+Model name:          AMD EPYC 9654 96-Core Processor
+16
+Input Notebook:  pseudotime_human.ipynb
+Output Notebook: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/pseudotime_runs/pseudotime_human.executed.ipynb
+Executing notebook with kernel: python3
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+scanpy    1.11.5
+anndata   0.12.11
+cellrank  2.0.7
+moscot    0.5.0
+ott-jax   0.6.0
+jax       0.10.0
+numpy     2.2.0
+scipy     1.17.1
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_Human_Only_Fib_Dec_Cells.h5ad: 47,533 nuclei x 36,601 genes (sha256 e74d038e4460...)
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+latent 30 dimensions; 3000 highly variable genes; source: /n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_10_30_human_fibdec_latent/run4_a40/fibdec/latent_human_stromal_fibdec.h5ad (sha256 80f3f7eac5fd...)
+
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+47,533 nuclei in the object, 47,533 in the run (0 excluded)
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+WARNING: genes are not in var_names and ignored: Index(['FAM64A', 'HN1', 'MLF1IP'], dtype='object')
+
+WARNING: genes are not in var_names and ignored: Index(['GPX1', 'H1-0'], dtype='object')
+
+[34mINFO    [0m Solving `[1;36m1[0m` problems                                                                                      
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m23441[0m, [1;36m24092[0m[1m)[0m[1m][0m.                                
+
+moscot on cpu: 1 coupling(s), all converged = True
+
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+  0%|          | 0/1 [00:00<?, ?time pair/s]
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 36601 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 36601 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+transition matrix (47533, 47533); mass later 0.395 / same 0.605 / earlier 0.000; repaired rows 0
+
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+trajectory component DC1 (rho -0.683); root CGGGTCATCAGATTGC-1-secretory_mck6c (endometrial_fibroblast); global extreme same cell
+
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+pseudotime on 47,533 nuclei; root CGGGTCATCAGATTGC-1-secretory_mck6c; Spearman rho with timepoint 0.32
+
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_pseudotime_notebooks/Cevrim_Human_Only_Fib_Dec_Cells_pseudotime.h5ad (47,533 nuclei; 47,533 with pseudotime) in 171 s
+
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+nuclei without pseudotime: same set True (0)
+pseudotime identical to the record: False
+  Spearman rho with the record 0.999994; |difference| median 2.52e-04, 99th percentile 2.61e-03, largest 7.21e-02; nuclei moved by more than 0.05: 2
+diffusion map identical to the record: False (largest difference 1.56e-03)
+root: CGGGTCATCAGATTGC-1-secretory_mck6c (Methods: CGGGTCATCAGATTGC-1-secretory_mck6c); same True
+
+Ending Cell 25-----------------------------------------
+ALL_DONE

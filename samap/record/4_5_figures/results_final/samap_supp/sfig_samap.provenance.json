@@ -1,0 +1,305 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/sfig_samap.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/sfig_samap_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/sfig_samap.svg"
+ ],
+ "written": "2026-11-03T00:20:41",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_compose.ipynb",
+ "notebook_md5": "bc4181b7d89a3b236b35ca889b4b1efa",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "PANELS": "results/figures/samap_supp/final/panels",
+  "OUT": "results/figures/samap_supp/final",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_a.provenance.json",
+   "role": "panel_a",
+   "bytes": 2656,
+   "mtime": "2026-11-03T00:18:36",
+   "sha256": "21d1129417d360c0471e135103608459768b70d7ad8faff1b1d7a89a5d72f585"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_b.provenance.json",
+   "role": "panel_b",
+   "bytes": 2660,
+   "mtime": "2026-11-03T00:19:03",
+   "sha256": "3a59b20a88bbb09f8e9227e70cb0921bd11c1dc19bdc110c2cde94cdd543ede0"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_c.provenance.json",
+   "role": "panel_c",
+   "bytes": 2656,
+   "mtime": "2026-11-03T00:18:36",
+   "sha256": "89f49451e2fe2aea8195d458764de37fba4cfcd8f348f0a58af2aa899df122f8"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_d.provenance.json",
+   "role": "panel_d",
+   "bytes": 1933,
+   "mtime": "2026-11-03T00:19:20",
+   "sha256": "78118d70c2ae89a4b24f5c6b73ca847f6042a07cad8e4b8d7cf6b4d13ccad235"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_e.provenance.json",
+   "role": "panel_e",
+   "bytes": 1896,
+   "mtime": "2026-11-03T00:18:42",
+   "sha256": "f38322d53ff08e227540f10e81bcf83e86da0d653723b0d391f37179695df1bf"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_f.provenance.json",
+   "role": "panel_f",
+   "bytes": 2539,
+   "mtime": "2026-11-03T00:20:14",
+   "sha256": "f96f7e9bbc95f18f82e3815b0ccbb17b954df8d17c9d93a59fcb568a6040e79f"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_g.provenance.json",
+   "role": "panel_g",
+   "bytes": 5038,
+   "mtime": "2026-11-03T00:20:11",
+   "sha256": "efaae557780fbc95c76fe5b69ff056ce1d4f52149e70171323d05261ae3bee00"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "figure": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/sfig_samap.png",
+ "size_px": [
+  2125,
+  2443
+ ],
+ "size_mm": [
+  179.9,
+  206.8
+ ],
+ "letter_font": [
+  "/usr/share/fonts/urw-base35/NimbusSans-Bold.otf",
+  0
+ ],
+ "layout": {
+  "claim": "Mouse pseudotime carried across the SAMap alignment recovers human pseudotime ordering, strongly within decidual cells, and mouse pseudotime shuffled before the transfer does not.",
+  "width_mm": 180,
+  "ncol": 12,
+  "row_heights_mm": [
+   60,
+   55,
+   84
+  ],
+  "panels": [
+   {
+    "letter": "a",
+    "row": 0,
+    "col": 0,
+    "colspan": 4,
+    "chart_family": "embedding",
+    "message": "mouse source values"
+   },
+   {
+    "letter": "b",
+    "row": 0,
+    "col": 4,
+    "colspan": 4,
+    "chart_family": "embedding",
+    "message": "transferred values"
+   },
+   {
+    "letter": "c",
+    "row": 0,
+    "col": 8,
+    "colspan": 4,
+    "chart_family": "embedding",
+    "message": "human values"
+   },
+   {
+    "letter": "d",
+    "row": 1,
+    "col": 0,
+    "colspan": 4,
+    "chart_family": "100% stacked bars",
+    "message": "edges link matching compartments"
+   },
+   {
+    "letter": "e",
+    "row": 1,
+    "col": 4,
+    "colspan": 8,
+    "chart_family": "scatter + binned median",
+    "message": "order preserved by compartment"
+   },
+   {
+    "letter": "f",
+    "row": 2,
+    "col": 0,
+    "colspan": 7,
+    "chart_family": "spatial maps",
+    "message": "shuffles keep at most the compartment split"
+   },
+   {
+    "letter": "g",
+    "row": 2,
+    "col": 7,
+    "colspan": 5,
+    "chart_family": "null strips",
+    "message": "observed vs 1,000 shuffles"
+   }
+  ]
+ },
+ "panels": {
+  "a": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_a_umap_mouse_pseudotime.ipynb",
+   "notebook_md5": "887f80317ee216afe44f6d6916b844d3",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": false
+   },
+   "written": "2026-11-03T00:18:34"
+  },
+  "b": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_b_umap_transferred_pseudotime.ipynb",
+   "notebook_md5": "5c0f1bc012625f10fa8ec9823195b168",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": false
+   },
+   "written": "2026-11-03T00:19:01"
+  },
+  "c": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_c_umap_human_pseudotime.ipynb",
+   "notebook_md5": "6143fcf668083fc23270161c667cabc7",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": false
+   },
+   "written": "2026-11-03T00:18:35"
+  },
+  "d": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_d_edge_share.ipynb",
+   "notebook_md5": "ed29f341728e5b7142d81301f7ef7109",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": true
+   },
+   "written": "2026-11-03T00:19:19"
+  },
+  "e": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_e_transferred_vs_human.ipynb",
+   "notebook_md5": "42f91817a0d5e63f801eadbaf70d6fbe",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": true
+   },
+   "written": "2026-11-03T00:18:41"
+  },
+  "f": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_f_sections_shuffled.ipynb",
+   "notebook_md5": "fe0e8fded15e0d9ae49cd1ea5357b28b",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": false
+   },
+   "written": "2026-11-03T00:20:13"
+  },
+  "g": {
+   "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_g_permutation_statistics.ipynb",
+   "notebook_md5": "b26a6fbc3b5573b4ea71a27f9a468281",
+   "git": {
+    "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+    "notebook_matches_commit": true
+   },
+   "written": "2026-11-03T00:20:10"
+  }
+ },
+ "sources": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv",
+   "role": "edge_share",
+   "bytes": 355,
+   "mtime": "2026-11-03T00:18:52",
+   "sha256": "438d55f6b2ecd140747685ec8a41f400ccd91e972425a05014733a115d0862e1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/example_transfers.csv",
+   "role": "example_transfers",
+   "bytes": 4393310,
+   "mtime": "2026-11-03T00:19:46",
+   "sha256": "0ef9b9c11976405b67f6fdf6762e57b9095d008433b35d9ec9df3c6cfc0b64a1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/null_replicates.csv",
+   "role": "null_replicates",
+   "bytes": 395755,
+   "mtime": "2026-11-03T00:19:46",
+   "sha256": "600a123e4af12bd0193f1ef3b48af6aa7e3016940543380e653b485417b31020"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/joint.parquet",
+   "role": "joint",
+   "bytes": 2565586,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/mouse_cells.csv",
+   "role": "mouse_cells",
+   "bytes": 3634810,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1c9aa9dd614c526eb8d439dd0376a120b2f114a35a265b6a236a79e33edb61af"
+  }
+ ],
+ "spearman_rho": {
+  "all human cells": 0.7344,
+  "decidual cells": 0.7276,
+  "fibroblasts": 0.2603
+ },
+ "embedding_outliers_not_drawn": {
+  "mouse": 0,
+  "human": 0
+ },
+ "embedding_outliers_flagged": {
+  "mouse": 46,
+  "human": 6
+ },
+ "spatial_nuclei_drawn": {
+  "menstrual": {
+   "nuclei": 14498,
+   "no_value": 76
+  },
+  "secretory": {
+   "nuclei": 18443,
+   "no_value": 41
+  }
+ },
+ "permutation_observed": {
+  "rho_all": 0.7344,
+  "rho_decidual": 0.7276,
+  "rho_fibroblast": 0.2603,
+  "moran_all": 0.66,
+  "moran_within_decidual": 0.5531,
+  "moran_within_fibroblast": 0.3377
+ },
+ "permutation_replicates": {
+  "uniform": 1000,
+  "within_compartment": 1000
+ },
+ "note": "Mouse pseudotime: pt_harmonized_rank (2026_10_22_flagged_harmonized release) and its SAMap transfer of record. Human pseudotime: human_cells.csv pt_human (config pseudotime_of_record.human). Human sections mirrored left-right about their center. Every nucleus is drawn, including those flagged embedding_outlier (policy of 1 Nov 2026)."
+}

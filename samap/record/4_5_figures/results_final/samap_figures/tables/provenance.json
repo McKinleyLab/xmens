@@ -1,0 +1,41 @@
+{
+ "written": "2026-11-03T00:10:26",
+ "script": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/workflow/scripts/samap/export_samap_tables.py",
+ "script_sha256": "63ea759ba4699424de0583c0ae41b199cfff926420c946f5e7145c8a57816d42",
+ "release": "final_objects",
+ "inputs": {
+  "joint": {
+   "path": "/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Samap_Final.h5ad",
+   "sha256": "ce15b9d45b9c774e847f3c2a43358c1b59ea3a4f630049a082e7b87db1a58b4b"
+  },
+  "mouse_table": {
+   "path": "results/plot_tables/final_objects/mouse_fibdec_plot_table.parquet",
+   "sha256": "e0221fef55ca107101bcca077fbf61e52689659bb517f68f67ef4062313cbb4a"
+  },
+  "human_table": {
+   "path": "results/plot_tables/final_objects/human_fibdec_plot_table.parquet",
+   "sha256": "3f1d0703163a6fe3ac4f5cad831737c32915f02e50bf4690c6dfc1a3853e614f"
+  },
+  "human_pt": {
+   "path": "data/interim/human_pt_2026_10_30_run4_a40/cells.parquet",
+   "sha256": "956a07cdb97d9a99dd769088a66e717b60956b81b45cb3e3d625057dacb2f94f"
+  }
+ },
+ "human_pt_source": "results/plot_tables/final_objects/human_fibdec_plot_table.parquet:pseudotime (equal to data/interim/human_pt_2026_10_30_run4_a40/cells.parquet:pt_rank)",
+ "transfer_of_record": "transferred_mm_dpt_pseudotime_ranknorm",
+ "transfer_column_in_joint": "transferred_mouse_pseudotime",
+ "outputs": {
+  "joint.parquet": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1",
+  "mouse_cells.csv": "1c9aa9dd614c526eb8d439dd0376a120b2f114a35a265b6a236a79e33edb61af",
+  "human_cells.csv": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+ },
+ "n_nuclei": {
+  "joint": 90730,
+  "mouse": 43197,
+  "human": 47533
+ },
+ "n_embedding_outlier": {
+  "mouse": 46,
+  "human": 6
+ }
+}

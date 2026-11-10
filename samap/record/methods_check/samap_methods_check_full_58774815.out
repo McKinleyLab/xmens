@@ -1,0 +1,5 @@
+record joint: cell_type_annotations nulls 0
+record_fit_fit_time_labels {"hs_decidual_cell|mm_decidual_cell": 0.5646310830001091, "hs_decidual_cell|mm_endometrial_fibroblast": 0.12049181390469677, "hs_endometrial_fibroblast|mm_decidual_cell": 0.10544669678797444, "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5782444988181761}
+record_fit_final_labels {"hs_decidual_cell|mm_decidual_cell": 0.5816496519981688, "hs_decidual_cell|mm_endometrial_fibroblast": 0.12085482607898498, "hs_endometrial_fibroblast|mm_decidual_cell": 0.08247793581120245, "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5796453155389493}
+fresh_fit_final_labels {"hs_decidual_cell|mm_decidual_cell": 0.5725659644962838, "hs_decidual_cell|mm_endometrial_fibroblast": 0.13045978978861278, "hs_endometrial_fibroblast|mm_decidual_cell": 0.08149540037885258, "hs_endometrial_fibroblast|mm_endometrial_fibroblast": 0.5742728938328164}
+done

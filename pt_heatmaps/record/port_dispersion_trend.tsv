@@ -1,0 +1,3 @@
+species	genes_in_fit	asymptDisp	extraPois	outliers_removed	variance	printed_by
+mouse	27064	0.5415	0.3557	9740	sample (n - 1)	code/yang/monocle_heatmap_repro.R and code/crossspecies/monocle_conserved_smooth.R
+human	31735	0.8883	0.2725	7717	sample (n - 1)	code/crossspecies/monocle_conserved_smooth.R

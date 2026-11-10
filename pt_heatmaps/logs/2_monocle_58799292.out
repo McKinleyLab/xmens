@@ -1,0 +1,16 @@
+[  30 s] mouse: 42290 nuclei x 33698 genes
+Removing 490 outliers
+Warning messages:
+1: `group_by_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `group_by()` instead.
+ℹ See vignette('programming') for more help
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+2: `select_()` was deprecated in dplyr 0.7.0.
+ℹ Please use `select()` instead.
+ℹ The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+[ 270 s] dispersion trend over 27064 genes: asymptDisp 0.541331, extraPois 0.355792
+[ 401 s] 1133 genes on 42290 nuclei; fallback fits: 0
+[ 403 s] 28 Yang panel genes on 32957 induced nuclei; fallback fits: 0
+[ 407 s] wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_08_xmens_pt_heatmaps/z

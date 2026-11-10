@@ -1,0 +1,84 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_f.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_f_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_f.svg"
+ ],
+ "written": "2026-11-03T00:20:13",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_f_sections_shuffled.ipynb",
+ "notebook_md5": "fe0e8fded15e0d9ae49cd1ea5357b28b",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "HUMAN_CELLS": "results/samap_figures/final/tables/human_cells.csv",
+  "EXAMPLE_TRANSFERS": "results/samap_figures/final/ptnull/example_transfers.csv",
+  "OUT": "results/figures/samap_supp/final/panels",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/example_transfers.csv",
+   "role": "example_transfers",
+   "bytes": 4393310,
+   "mtime": "2026-11-03T00:19:46",
+   "sha256": "0ef9b9c11976405b67f6fdf6762e57b9095d008433b35d9ec9df3c6cfc0b64a1"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "panel": {
+  "letter": "f",
+  "row": 2,
+  "col": 0,
+  "colspan": 7,
+  "chart_family": "spatial maps",
+  "message": "shuffles keep at most the compartment split"
+ },
+ "spatial_nuclei_drawn": {
+  "menstrual": {
+   "nuclei": 14498,
+   "no_value": 76
+  },
+  "secretory": {
+   "nuclei": 18443,
+   "no_value": 41
+  }
+ },
+ "sections": {
+  "menstrual": {
+   "limits_um": null,
+   "rotation_deg": 90,
+   "mirrored_left_right": true
+  },
+  "secretory": {
+   "limits_um": [
+    [
+     400,
+     5500
+    ],
+    [
+     750,
+     5250
+    ]
+   ],
+   "rotation_deg": -90,
+   "mirrored_left_right": true
+  }
+ }
+}

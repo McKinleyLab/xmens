@@ -1,0 +1,7 @@
+statistic,observed,uniform_mean,uniform_max,uniform_n_ge_obs,within_compartment_mean,within_compartment_max,within_compartment_n_ge_obs
+rho_all,0.734,0.004,0.17,0,0.552,0.598,0
+rho_decidual,0.728,-0.003,0.199,0,0.094,0.202,0
+rho_fibroblast,0.26,0.003,0.171,0,0.161,0.292,6
+moran_all,0.66,0.023,0.066,0,0.481,0.507,0
+moran_within_decidual,0.553,0.029,0.087,0,0.232,0.259,0
+moran_within_fibroblast,0.338,0.013,0.052,0,0.267,0.285,0

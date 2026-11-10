@@ -1,0 +1,5 @@
+Reading /n/eddy_lab/users/nhilgert/data/proteomes/fasta/Homo_sapiens.GRCh38.pep.all.fa
+  123845 proteins, 1531 without gene_symbol, 8589 truncated at 1022 AA
+  19881 unique gene symbols
+Loading ESM2-650M
+Saved 19881 gene embeddings → /n/eddy_lab/users/nhilgert/data/proteomes/embeddings/Homo_sapiens.GRCh38.gene_symbol_to_embedding_ESM2.pt

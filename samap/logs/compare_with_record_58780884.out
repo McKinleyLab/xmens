@@ -1,0 +1,160 @@
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_fresh_fit/compare_with_record_20261107_204626.csv: 198 comparisons
+
+result        differs  identical  not compared  same  value
+step                                                       
+0 homology          0          2             1     0      0
+1 inputs            0          6             0     0      0
+2 fit               2          1             0     0      2
+3 transfer          3          4             1     0      3
+4 statistics        8          4             0     0      0
+5 figures          37          2             0     0      0
+numbers            88          0             0    34      0
+
+not identical:
+        step                                                                          item  result        run     record                                                                                     detail
+       2 fit                                                  joint graph (connectivities) differs    3535647    3535699                                                       3950486 entries differ, largest by 1
+       2 fit                                                                    joint UMAP differs                                                                               largest coordinate difference 9.88
+  3 transfer                                              obs transferred_mouse_pseudotime differs                                                              transferred_mouse_pseudotime: missing values differ
+  3 transfer                                                  obs transferred_mouse_fibdec differs                                                                      transferred_mouse_fibdec: 794 values differ
+  3 transfer                                  every dataset outside obs and uns/provenance differs         47         47 obsm/X_umap; obsp/connectivities/data; obsp/connectivities/indices; obsp/connectivities...
+4 statistics                                                          tables/joint.parquet differs                       transferred_mm_dpt_pseudotime_ranknorm: missing values differ; X_umap__0: largest diffe...
+4 statistics                                                        tables/human_cells.csv differs                                                                            pt_transferred: missing values differ
+4 statistics                                   edge_share/samap_compartment_edge_share.csv differs                       endometrial_fibroblast: largest difference 0.0145; decidual_cell: largest difference 0....
+4 statistics                               edge_share/samap_compartment_edge_share_all.csv differs                       n_with_cross_edges: 1 values differ; weight_share_endometrial_fibroblast: largest diffe...
+4 statistics                                            ptnull/ptnull_statistics_table.csv differs                       observed: largest difference 0.019; uniform_mean: largest difference 0.001; uniform_max...
+4 statistics                                                    ptnull/null_replicates.csv differs                       rho_all: largest difference 0.066; rho_decidual: largest difference 0.0645; rho_fibrobl...
+4 statistics                                                  ptnull/example_transfers.csv differs                       observed: missing values differ; uniform_example: missing values differ; within_compart...
+4 statistics                                                       graph_block/C_hs_mm.npz differs                                                                             1187345 entries differ, largest by 1
+   5 figures              fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.png differs                                                                                  773333 of 3240000 pixels differ
+   5 figures              fig6/20261027-Human-menstrual-transferred_pseudotime-spatial.svg differs                                                                          beyond the drawing date and element ids
+   5 figures              fig6/20261027-Human-secretory-transferred_pseudotime-spatial.png differs                                                                                 1053759 of 3240000 pixels differ
+   5 figures              fig6/20261027-Human-secretory-transferred_pseudotime-spatial.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                                                fig6/transferred_cell_type.csv differs                       transferred_cell_type: 794 values differ; vote_share: missing values differ; cross_spec...
+   5 figures                                      fig6/umap_dark_transferred_cell_type.png differs                                                                                 1227837 of 4515625 pixels differ
+   5 figures                                      fig6/umap_dark_transferred_cell_type.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                            fig6/umap_dark_transferred_cell_type_humanonly.png differs                                                                                  989501 of 4515625 pixels differ
+   5 figures                            fig6/umap_dark_transferred_cell_type_humanonly.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                                     fig6/umap_dark_transferred_pseudotime.png differs                                                                                 1307962 of 4515625 pixels differ
+   5 figures                                     fig6/umap_dark_transferred_pseudotime.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                           fig6/umap_dark_transferred_pseudotime_humanonly.png differs                                                                                 1075851 of 4515625 pixels differ
+   5 figures                           fig6/umap_dark_transferred_pseudotime_humanonly.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_a.png differs                                                                                   167507 of 479316 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_a.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_a_600dpi.png differs                                                                                  624726 of 1917264 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_b.png differs                                                                                   169413 of 479316 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_b.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_b_600dpi.png differs                                                                                  633769 of 1917264 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_c.png differs                                                                                   176917 of 479316 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_c.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_c_600dpi.png differs                                                                                  663967 of 1917264 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_d.png differs                                                                                     2252 of 439373 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_d.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_d_600dpi.png differs                                                                                    9434 of 1757492 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_e.png differs                                                                                   180196 of 909249 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_e.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_e_600dpi.png differs                                                                                  638179 of 3636996 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_f.png differs                                                                                  286406 of 1210240 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_f.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_f_600dpi.png differs                                                                                 1018754 of 4840960 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_g.png differs                                                                                    19190 of 851136 pixels differ
+   5 figures                                      sfig_samap/panels/sfig_samap_panel_g.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                               sfig_samap/panels/sfig_samap_panel_g_600dpi.png differs                                                                                   65313 of 3404544 pixels differ
+   5 figures                                                     sfig_samap/sfig_samap.png differs                                                                                  983557 of 5191375 pixels differ
+   5 figures                                                     sfig_samap/sfig_samap.svg differs                                                                          beyond the drawing date and element ids
+   5 figures                                              sfig_samap/sfig_samap_600dpi.png differs                                                                                3720913 of 20778888 pixels differ
+     numbers                                   alignment_score.decidual_cell.decidual_cell differs   0.582448    0.58165                                                                        difference 0.000798
+     numbers                          alignment_score.decidual_cell.endometrial_fibroblast differs   0.131782   0.120855                                                                          difference 0.0109
+     numbers                          alignment_score.endometrial_fibroblast.decidual_cell differs   0.080749   0.082478                                                                         difference 0.00173
+     numbers                 alignment_score.endometrial_fibroblast.endometrial_fibroblast differs   0.587265   0.579645                                                                         difference 0.00762
+     numbers                         edge_share.human_to_mouse.decidual_cell.decidual_cell differs   0.805955   0.820434                                                                          difference 0.0145
+     numbers                edge_share.human_to_mouse.decidual_cell.endometrial_fibroblast differs   0.194045   0.179566                                                                          difference 0.0145
+     numbers                edge_share.human_to_mouse.endometrial_fibroblast.decidual_cell differs    0.12088   0.124566                                                                         difference 0.00369
+     numbers       edge_share.human_to_mouse.endometrial_fibroblast.endometrial_fibroblast differs    0.87912   0.875434                                                                         difference 0.00369
+     numbers                         edge_share.mouse_to_human.decidual_cell.decidual_cell differs   0.920565   0.921571                                                                         difference 0.00101
+     numbers                edge_share.mouse_to_human.decidual_cell.endometrial_fibroblast differs   0.079435   0.078429                                                                         difference 0.00101
+     numbers                edge_share.mouse_to_human.endometrial_fibroblast.decidual_cell differs   0.147375    0.15104                                                                         difference 0.00367
+     numbers       edge_share.mouse_to_human.endometrial_fibroblast.endometrial_fibroblast differs   0.852625    0.84896                                                                         difference 0.00367
+     numbers                     edge_weight.human_to_mouse.decidual_cell.max_total_weight differs  19.990396  19.990319                                                                         difference 7.7e-05
+     numbers                    edge_weight.human_to_mouse.decidual_cell.mean_total_weight differs  13.582558  13.460769                                                                           difference 0.122
+     numbers                 edge_weight.human_to_mouse.decidual_cell.n_without_cross_edge differs        1.0        5.0                                                                               difference 4
+     numbers            edge_weight.human_to_mouse.endometrial_fibroblast.max_total_weight differs  19.981046  19.981542                                                                        difference 0.000496
+     numbers           edge_weight.human_to_mouse.endometrial_fibroblast.mean_total_weight differs  13.360285  13.242465                                                                           difference 0.118
+     numbers                     edge_weight.mouse_to_human.decidual_cell.max_total_weight differs  19.994079  19.994298                                                                        difference 0.000219
+     numbers                    edge_weight.mouse_to_human.decidual_cell.mean_total_weight differs  12.654141  12.622997                                                                          difference 0.0311
+     numbers            edge_weight.mouse_to_human.endometrial_fibroblast.max_total_weight differs  19.991122  19.989617                                                                         difference 0.00151
+     numbers           edge_weight.mouse_to_human.endometrial_fibroblast.mean_total_weight differs   13.66768  13.525639                                                                           difference 0.142
+     numbers                                                     fig6c.umap_human_no_value differs      149.0      181.0                                                                              difference 32
+     numbers                                                   fig6c.umap_human_with_value differs    47384.0    47352.0                                                                              difference 32
+     numbers                                    final_object.human_with_transferred_fibdec differs    47513.0    47509.0                                                                               difference 4
+     numbers                                final_object.human_with_transferred_pseudotime differs    47384.0    47352.0                                                                              difference 32
+     numbers                          final_object.transferred_fibdec_counts.decidual_cell differs    21568.0    21934.0                                                                             difference 366
+     numbers                 final_object.transferred_fibdec_counts.endometrial_fibroblast differs    25945.0    25575.0                                                                             difference 370
+     numbers                                                      fit.eval.alignment.hs.mm differs   0.673417    0.66743                                                                         difference 0.00599
+     numbers                                                      fit.eval.alignment.mm.hs differs   0.656496   0.652336                                                                         difference 0.00416
+     numbers                   fit.eval.celltype_mapping.hs_decidual_cell.mm_decidual_cell differs   0.582448   0.564631                                                                          difference 0.0178
+     numbers          fit.eval.celltype_mapping.hs_decidual_cell.mm_endometrial_fibroblast differs   0.131782   0.120492                                                                          difference 0.0113
+     numbers          fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_decidual_cell differs   0.080749   0.105447                                                                          difference 0.0247
+     numbers fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_endometrial_fibroblast differs   0.587265   0.578244                                                                         difference 0.00902
+     numbers                                                       fit.eval.mean_alignment differs   0.664957   0.659883                                                                         difference 0.00507
+     numbers                                     fit.eval.within_hs.knn_celltype_agreement differs   0.897977   0.886266                                                                          difference 0.0117
+     numbers                                      fit.eval.within_hs.knn_subtype_agreement differs   0.897977   0.886266                                                                          difference 0.0117
+     numbers                                     fit.eval.within_hs.leiden_vs_celltype_ARI differs   0.132282   0.124802                                                                         difference 0.00748
+     numbers                                     fit.eval.within_hs.leiden_vs_celltype_NMI differs   0.238674   0.218382                                                                          difference 0.0203
+     numbers                                       fit.eval.within_hs.leiden_vs_sample_NMI differs   0.146966   0.147012                                                                         difference 4.6e-05
+     numbers                                      fit.eval.within_hs.leiden_vs_subtype_ARI differs   0.132282   0.124802                                                                         difference 0.00748
+     numbers                                      fit.eval.within_hs.leiden_vs_subtype_NMI differs   0.238674   0.218382                                                                          difference 0.0203
+     numbers                   fit.eval.within_hs.sample_mixing.expected_other_sample_frac differs   0.829191    0.82919                                                                        difference 8.37e-07
+     numbers                                 fit.eval.within_hs.sample_mixing.mixing_ratio differs   0.794675   0.794673                                                                        difference 1.83e-06
+     numbers                   fit.eval.within_hs.sample_mixing.observed_other_sample_frac differs   0.658937   0.658935                                                                        difference 2.18e-06
+     numbers                                     fit.eval.within_mm.knn_celltype_agreement differs   0.956734     0.9567                                                                        difference 3.36e-05
+     numbers                                      fit.eval.within_mm.knn_subtype_agreement differs   0.814096     0.8141                                                                        difference 3.99e-06
+     numbers                                     fit.eval.within_mm.leiden_vs_celltype_ARI differs   0.119848   0.123492                                                                         difference 0.00364
+     numbers                                     fit.eval.within_mm.leiden_vs_celltype_NMI differs   0.288868   0.290823                                                                         difference 0.00196
+     numbers                                       fit.eval.within_mm.leiden_vs_sample_NMI differs   0.500212   0.490159                                                                          difference 0.0101
+     numbers                                      fit.eval.within_mm.leiden_vs_subtype_ARI differs   0.198887    0.20123                                                                         difference 0.00234
+     numbers                                      fit.eval.within_mm.leiden_vs_subtype_NMI differs   0.397196   0.393273                                                                         difference 0.00392
+     numbers                   fit.eval.within_mm.sample_mixing.expected_other_sample_frac differs   0.883523   0.883526                                                                        difference 2.94e-06
+     numbers                                 fit.eval.within_mm.sample_mixing.mixing_ratio differs   0.396032   0.396068                                                                        difference 3.57e-05
+     numbers                   fit.eval.within_mm.sample_mixing.observed_other_sample_frac differs   0.349904   0.349936                                                                        difference 3.28e-05
+     numbers                                                       fit.meta.mean_alignment differs   0.664957   0.659883                                                                         difference 0.00507
+     numbers                                                         label_agreement.agree differs    39878.0    40032.0                                                                             difference 154
+     numbers                       label_agreement.by_native_cell_type.decidual_cell.agree differs    18520.0    18780.0                                                                             difference 260
+     numbers                    label_agreement.by_native_cell_type.decidual_cell.labelled differs    23107.0    23103.0                                                                               difference 4
+     numbers              label_agreement.by_native_cell_type.endometrial_fibroblast.agree differs    21358.0    21252.0                                                                             difference 106
+     numbers                                          label_agreement.percent_of_all_human differs       83.9      84.22                                                                            difference 0.32
+     numbers                                           label_agreement.percent_of_labelled differs      83.93      84.26                                                                            difference 0.33
+     numbers                                                     ptnull.moran_all.observed differs      0.641       0.66                                                                           difference 0.019
+     numbers                                                  ptnull.moran_all.uniform_max differs      0.059      0.066                                                                           difference 0.007
+     numbers                                       ptnull.moran_all.within_compartment_max differs      0.505      0.507                                                                           difference 0.002
+     numbers                                         ptnull.moran_within_decidual.observed differs      0.542      0.553                                                                           difference 0.011
+     numbers                                      ptnull.moran_within_decidual.uniform_max differs      0.098      0.087                                                                           difference 0.011
+     numbers                                     ptnull.moran_within_decidual.uniform_mean differs       0.03      0.029                                                                           difference 0.001
+     numbers                           ptnull.moran_within_decidual.within_compartment_max differs      0.261      0.259                                                                           difference 0.002
+     numbers                          ptnull.moran_within_decidual.within_compartment_mean differs      0.238      0.232                                                                           difference 0.006
+     numbers                                       ptnull.moran_within_fibroblast.observed differs      0.321      0.338                                                                           difference 0.017
+     numbers                                    ptnull.moran_within_fibroblast.uniform_max differs      0.049      0.052                                                                           difference 0.003
+     numbers                         ptnull.moran_within_fibroblast.within_compartment_max differs      0.288      0.285                                                                           difference 0.003
+     numbers                        ptnull.moran_within_fibroblast.within_compartment_mean differs      0.265      0.267                                                                           difference 0.002
+     numbers                                                       ptnull.rho_all.observed differs      0.732      0.734                                                                           difference 0.002
+     numbers                                                    ptnull.rho_all.uniform_max differs      0.184       0.17                                                                           difference 0.014
+     numbers                                                   ptnull.rho_all.uniform_mean differs      0.003      0.004                                                                           difference 0.001
+     numbers                                         ptnull.rho_all.within_compartment_max differs      0.588      0.598                                                                            difference 0.01
+     numbers                                        ptnull.rho_all.within_compartment_mean differs      0.548      0.552                                                                           difference 0.004
+     numbers                                                  ptnull.rho_decidual.observed differs      0.723      0.728                                                                           difference 0.005
+     numbers                                               ptnull.rho_decidual.uniform_max differs       0.22      0.199                                                                           difference 0.021
+     numbers                                    ptnull.rho_decidual.within_compartment_max differs      0.175      0.202                                                                           difference 0.027
+     numbers                                   ptnull.rho_decidual.within_compartment_mean differs      0.069      0.094                                                                           difference 0.025
+     numbers                                                ptnull.rho_fibroblast.observed differs      0.263       0.26                                                                           difference 0.003
+     numbers                                             ptnull.rho_fibroblast.uniform_max differs      0.163      0.171                                                                           difference 0.008
+     numbers                                            ptnull.rho_fibroblast.uniform_mean differs      0.002      0.003                                                                           difference 0.001
+     numbers                                  ptnull.rho_fibroblast.within_compartment_max differs      0.313      0.292                                                                           difference 0.021
+     numbers                                 ptnull.rho_fibroblast.within_compartment_mean differs      0.158      0.161                                                                           difference 0.003
+     numbers                             ptnull.rho_fibroblast.within_compartment_n_ge_obs differs        7.0        6.0                                                                               difference 1
+
+measured:
+      step                                                 item result       run record                                   detail
+     2 fit                  joint graph: edges shared (Jaccard)  value    0.7816    1.0          3102313 of 3535699 record edges
+     2 fit mouse neighbors of each human nucleus (mean Jaccard)  value    0.6184    1.0 identical for 1187 of 47533 human nuclei
+3 transfer    transferred pseudotime: Pearson r with the record  value  0.991669    1.0             47323 human nuclei with both
+3 transfer transferred pseudotime: Spearman rho with the record  value  0.991783    1.0                                         
+3 transfer            transferred cell type: same as the record  value     46739  47533                             human nuclei

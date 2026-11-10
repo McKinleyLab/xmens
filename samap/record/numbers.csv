@@ -1,0 +1,149 @@
+key,value,source
+fit.meta.n_iter,3.0,record/2_samap/meta.json
+fit.meta.min_expression,1.0,record/2_samap/meta.json
+fit.meta.samap_run_minutes,33.146433651447296,record/2_samap/meta.json
+fit.meta.mean_alignment,0.6598829476706702,record/2_samap/meta.json
+fit.eval.n_cells_joint,90730.0,record/2_samap/eval.json
+fit.eval.alignment.hs.hs,0.0,record/2_samap/eval.json
+fit.eval.alignment.hs.mm,0.6674296467557758,record/2_samap/eval.json
+fit.eval.alignment.mm.hs,0.6523362485855648,record/2_samap/eval.json
+fit.eval.alignment.mm.mm,0.0,record/2_samap/eval.json
+fit.eval.mean_alignment,0.6598829476706702,record/2_samap/eval.json
+fit.eval.within_hs.sample_mixing.observed_other_sample_frac,0.6589352669062499,record/2_samap/eval.json
+fit.eval.within_hs.sample_mixing.expected_other_sample_frac,0.8291900666685645,record/2_samap/eval.json
+fit.eval.within_hs.sample_mixing.mixing_ratio,0.794673372720989,record/2_samap/eval.json
+fit.eval.within_hs.sample_mixing.n_samples,6.0,record/2_samap/eval.json
+fit.eval.within_hs.knn_celltype_agreement,0.8862657817433967,record/2_samap/eval.json
+fit.eval.within_hs.leiden_vs_celltype_ARI,0.12480219526381031,record/2_samap/eval.json
+fit.eval.within_hs.leiden_vs_celltype_NMI,0.21838180958241074,record/2_samap/eval.json
+fit.eval.within_hs.leiden_vs_sample_NMI,0.1470116253953078,record/2_samap/eval.json
+fit.eval.within_hs.knn_subtype_agreement,0.8862657817433967,record/2_samap/eval.json
+fit.eval.within_hs.leiden_vs_subtype_ARI,0.12480219526381031,record/2_samap/eval.json
+fit.eval.within_hs.leiden_vs_subtype_NMI,0.21838180958241074,record/2_samap/eval.json
+fit.eval.within_mm.sample_mixing.observed_other_sample_frac,0.3499364968836888,record/2_samap/eval.json
+fit.eval.within_mm.sample_mixing.expected_other_sample_frac,0.8835262426444553,record/2_samap/eval.json
+fit.eval.within_mm.sample_mixing.mixing_ratio,0.3960680283092719,record/2_samap/eval.json
+fit.eval.within_mm.sample_mixing.n_samples,9.0,record/2_samap/eval.json
+fit.eval.within_mm.knn_celltype_agreement,0.9567001917352778,record/2_samap/eval.json
+fit.eval.within_mm.leiden_vs_celltype_ARI,0.12349240021434181,record/2_samap/eval.json
+fit.eval.within_mm.leiden_vs_celltype_NMI,0.29082331517361093,record/2_samap/eval.json
+fit.eval.within_mm.leiden_vs_sample_NMI,0.49015925178396086,record/2_samap/eval.json
+fit.eval.within_mm.knn_subtype_agreement,0.8141001436788655,record/2_samap/eval.json
+fit.eval.within_mm.leiden_vs_subtype_ARI,0.2012303699266569,record/2_samap/eval.json
+fit.eval.within_mm.leiden_vs_subtype_NMI,0.39327295868186984,record/2_samap/eval.json
+fit.eval.celltype_mapping.hs_decidual_cell.mm_decidual_cell,0.5646310830001091,record/2_samap/eval.json
+fit.eval.celltype_mapping.hs_decidual_cell.mm_endometrial_fibroblast,0.12049181390469677,record/2_samap/eval.json
+fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_decidual_cell,0.10544669678797444,record/2_samap/eval.json
+fit.eval.celltype_mapping.hs_endometrial_fibroblast.mm_endometrial_fibroblast,0.5782444988181761,record/2_samap/eval.json
+final_object.human_with_transferred_pseudotime,47352.0,record/3_transfer/samap_final_slim_report.json
+final_object.human_with_transferred_fibdec,47509.0,record/3_transfer/samap_final_slim_report.json
+final_object.transferred_fibdec_counts.endometrial_fibroblast,25575.0,record/3_transfer/samap_final_slim_report.json
+final_object.transferred_fibdec_counts.decidual_cell,21934.0,record/3_transfer/samap_final_slim_report.json
+final_object.mouse_rows_with_any_transfer,0.0,record/3_transfer/samap_final_slim_report.json
+cell_identity_umap.umap_human_labelled,47509.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.umap_human_no_mouse_neighbor,24.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.umap_mouse_context,43197.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.transferred.decidual_cell,21934.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.transferred.endometrial_fibroblast,25575.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.exact_ties,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.embedding_outliers_omitted,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.embedding_outliers_drawn,6.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.order_seed,3.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.panel_mm,90.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+cell_identity_umap.dpi,600.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.agree,40032.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.percent_of_labelled,84.26,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.percent_of_all_human,84.22,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.decidual_cell.agree,18780.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.decidual_cell.labelled,23103.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.decidual_cell.all,23108.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.endometrial_fibroblast.agree,21252.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.endometrial_fibroblast.labelled,24406.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.by_native_cell_type.endometrial_fibroblast.all,24425.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+label_agreement.median_vote_share,1.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6_umap_transferred_cell_type.provenance.json
+fig6c.embedding_outliers_omitted,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.embedding_outliers_drawn,6.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.umap_human_with_value,47352.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.umap_human_no_value,181.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.umap_mouse_context,43197.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.order_seed,3.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.panel_mm,90.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6c.dpi,600.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6c_umap_transferred_pseudotime.provenance.json
+fig6e.secretory.drawn,18443.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.secretory.no_value,41.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.secretory.median_transferred,0.2608,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.secretory.rotation_deg,-90.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.menstrual.drawn,14498.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.menstrual.no_value,76.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.menstrual.median_transferred,0.6291,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+fig6e.menstrual.rotation_deg,90.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/fig6e_sections_transferred_pseudotime.provenance.json
+edge_share.human_to_mouse.endometrial_fibroblast.endometrial_fibroblast,0.8754341647978384,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.human_to_mouse.endometrial_fibroblast.decidual_cell,0.1245658352021616,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.human_to_mouse.decidual_cell.endometrial_fibroblast,0.1795660000261053,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.human_to_mouse.decidual_cell.decidual_cell,0.8204339999738947,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.mouse_to_human.endometrial_fibroblast.endometrial_fibroblast,0.8489597699871321,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.mouse_to_human.endometrial_fibroblast.decidual_cell,0.1510402300128679,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.mouse_to_human.decidual_cell.endometrial_fibroblast,0.0784286040159522,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+edge_share.mouse_to_human.decidual_cell.decidual_cell,0.9215713959840478,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv
+ptnull.rho_all.observed,0.734,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.uniform_mean,0.004,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.uniform_max,0.17,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.within_compartment_mean,0.552,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.within_compartment_max,0.598,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_all.within_compartment_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.observed,0.728,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.uniform_mean,-0.003,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.uniform_max,0.199,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.within_compartment_mean,0.094,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.within_compartment_max,0.202,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_decidual.within_compartment_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.observed,0.26,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.uniform_mean,0.003,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.uniform_max,0.171,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.within_compartment_mean,0.161,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.within_compartment_max,0.292,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.rho_fibroblast.within_compartment_n_ge_obs,6.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.observed,0.66,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.uniform_mean,0.023,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.uniform_max,0.066,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.within_compartment_mean,0.481,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.within_compartment_max,0.507,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_all.within_compartment_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.observed,0.553,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.uniform_mean,0.029,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.uniform_max,0.087,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.within_compartment_mean,0.232,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.within_compartment_max,0.259,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_decidual.within_compartment_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.observed,0.338,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.uniform_mean,0.013,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.uniform_max,0.052,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.uniform_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.within_compartment_mean,0.267,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.within_compartment_max,0.285,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+ptnull.moran_within_fibroblast.within_compartment_n_ge_obs,0.0,/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/ptnull/ptnull_statistics_table.csv
+edge_weight.human_to_mouse.decidual_cell.mean_total_weight,13.460769417530562,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.decidual_cell.max_total_weight,19.99031866789152,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.decidual_cell.n_without_cross_edge,5,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.decidual_cell.max_cross_edges,20,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.endometrial_fibroblast.mean_total_weight,13.242465027003057,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.endometrial_fibroblast.max_total_weight,19.981541825681763,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.endometrial_fibroblast.n_without_cross_edge,19,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.human_to_mouse.endometrial_fibroblast.max_cross_edges,20,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.decidual_cell.mean_total_weight,12.622997079397965,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.decidual_cell.max_total_weight,19.994297925451434,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.decidual_cell.n_without_cross_edge,0,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.decidual_cell.max_cross_edges,20,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.endometrial_fibroblast.mean_total_weight,13.525639044298792,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.endometrial_fibroblast.max_total_weight,19.989616891820678,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.endometrial_fibroblast.n_without_cross_edge,1,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+edge_weight.mouse_to_human.endometrial_fibroblast.max_cross_edges,20,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+alignment_score.decidual_cell.decidual_cell,0.5816496519981688,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+alignment_score.decidual_cell.endometrial_fibroblast,0.12085482607898498,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+alignment_score.endometrial_fibroblast.decidual_cell,0.08247793581120245,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"
+alignment_score.endometrial_fibroblast.endometrial_fibroblast,0.5796453155389493,"record/methods_check/graph_numbers_full.json (fit of record, final labels; independent recomputation)"

@@ -1,0 +1,12 @@
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_phmmer_task1/compare_with_record_20261107_201223.csv: 4 comparisons
+
+result      incomplete
+step                  
+0 homology           4
+
+not identical:
+      step                       item     result  run  record                                                                detail
+0 homology         hs proteome chunks incomplete    1      32                                           1 of 1 chunks byte for byte
+0 homology         mm proteome chunks incomplete    0      32                                           0 of 0 chunks byte for byte
+0 homology phmmer hit tables hu_vs_mu incomplete    1      32 1 of 1 tables with the same hits in every field, 0 also byte for byte
+0 homology phmmer hit tables mu_vs_hu incomplete    0      32 0 of 0 tables with the same hits in every field, 0 also byte for byte

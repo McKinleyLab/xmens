@@ -1,0 +1,90 @@
+=== arm: vanilla_raw (arm=vanilla min_expression=1) (Tue Sep  1 19:04:06 EDT 2026) ===
+[19:05:29] === arm: vanilla ===
+[19:05:29] building SAM for hs ...
+[19:05:45]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 345, in __getattr__
+    return globals()[name]
+           ~~~~~~~~~^^^^^^
+KeyError: 'sparse'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 343, in <module>
+    main()
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 310, in main
+    sams[sid], latent_keys[sid] = build_sam(
+                                  ^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 98, in build_sam
+    log(describe_input_scale(sam))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 77, in describe_input_scale
+    X = X.tocsr() if sp.sparse.issparse(X) else sp.sparse.csr_matrix(X)
+                     ^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 347, in __getattr__
+    raise AttributeError(
+AttributeError: Module 'scipy.sparse' has no attribute 'sparse'. Did you mean: 'issparse'?
+!!! ARM vanilla_raw FAILED (continuing) !!!
+=== arm: harmony_raw (arm=harmony min_expression=1) (Tue Sep  1 19:05:46 EDT 2026) ===
+[19:06:12] === arm: harmony ===
+[19:06:12] building SAM for hs ...
+[19:06:28]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 345, in __getattr__
+    return globals()[name]
+           ~~~~~~~~~^^^^^^
+KeyError: 'sparse'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 343, in <module>
+    main()
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 310, in main
+    sams[sid], latent_keys[sid] = build_sam(
+                                  ^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 98, in build_sam
+    log(describe_input_scale(sam))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 77, in describe_input_scale
+    X = X.tocsr() if sp.sparse.issparse(X) else sp.sparse.csr_matrix(X)
+                     ^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 347, in __getattr__
+    raise AttributeError(
+AttributeError: Module 'scipy.sparse' has no attribute 'sparse'. Did you mean: 'issparse'?
+!!! ARM harmony_raw FAILED (continuing) !!!
+=== arm: vanilla_raw_nofilter (arm=vanilla min_expression=0) (Tue Sep  1 19:06:28 EDT 2026) ===
+[19:06:49] === arm: vanilla ===
+[19:06:49] building SAM for hs ...
+[19:07:06]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 345, in __getattr__
+    return globals()[name]
+           ~~~~~~~~~^^^^^^
+KeyError: 'sparse'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 343, in <module>
+    main()
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 310, in main
+    sams[sid], latent_keys[sid] = build_sam(
+                                  ^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 98, in build_sam
+    log(describe_input_scale(sam))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py", line 77, in describe_input_scale
+    X = X.tocsr() if sp.sparse.issparse(X) else sp.sparse.csr_matrix(X)
+                     ^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/samap_harmony_uv/lib/python3.11/site-packages/scipy/sparse/__init__.py", line 347, in __getattr__
+    raise AttributeError(
+AttributeError: Module 'scipy.sparse' has no attribute 'sparse'. Did you mean: 'issparse'?
+!!! ARM vanilla_raw_nofilter FAILED (continuing) !!!
+=== compare (Tue Sep  1 19:07:06 EDT 2026) ===
+[skip] runs_raw/vanilla_raw/eval.json missing (arm failed?)
+[skip] runs_raw/harmony_raw/eval.json missing (arm failed?)
+[skip] runs_raw/vanilla_raw_nofilter/eval.json missing (arm failed?)
+No eval.json found in any arm dir.
+=== done (Tue Sep  1 19:07:11 EDT 2026) ===

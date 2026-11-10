@@ -1,0 +1,194 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2/ulrich_decidual_vs_C7_fibroblast.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/notebooks/ulrich_decidual_vs_C7_fibroblast.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Python 3.11.15, PyDESeq2 0.5.4, NumPy 2.2.0, SciPy 1.17.1, pandas 2.3.3
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+85,875 cells x 36,166 genes
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+46,456 cells in the two states
+
+label  C7-Fibroblast   dS1   dS2   dS3
+donor                                 
+14                 6   171   619   204
+19                 2     0   142    39
+20                16   384  2056   656
+29                13     9  2373   573
+39                26   108  2423  1445
+41                 0     0   123    22
+57                11   139   645   289
+58                40    51  1339   896
+60                 7     6   786   529
+63                 3     1   254   131
+A13              251    97  4345  5124
+A30              448  1722   899   130
+D1               240    76   800  1065
+D2               125     5   366  1812
+D3                56    35   806   195
+D4                18    58  1688   483
+D5                25     0   290    27
+E1                59   444  3313  1605
+E2                12    35  1230   651
+E3                21     0   885   478
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+39 donor-state pseudobulks before the cell floor
+
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Kept 10 of 20 donors. Dropped, with fewer than 20 cells in a state (decidual / C7-Fibroblast cells): 14 (994 / 6), 19 (181 / 2), 20 (3096 / 16), 29 (2955 / 13), 41 (145 / 0), 57 (1073 / 11), 60 (1321 / 7), 63 (386 / 3), D4 (2229 / 18), E2 (1916 / 12)
+20 pseudobulks, 32,072 cells: 30,781 decidual stroma, 1,291 C7-Fibroblasts
+
+      menstrual_phase_at_collection   Data_source  cells_decidual  \
+donor                                                               
+39                           luteal          Wang            3976   
+58                           luteal          Wang            2286   
+A13                      follicular  GarciaAlonso            9566   
+A30                          luteal  GarciaAlonso            2751   
+D1                           luteal    This_study            1941   
+D2                       follicular    This_study            2183   
+D3                   not applicable    This_study            1036   
+D5                       follicular    This_study             317   
+E1                           luteal  GarciaAlonso            5362   
+E3                       follicular  GarciaAlonso            1363   
+
+       cells_reference  counts_decidual  counts_reference  
+donor                                                      
+39                  26         31373988            171135  
+58                  40         25291602            389263  
+A13                251         90882163           1282177  
+A30                448          5969229            795350  
+D1                 240         25238816           1646073  
+D2                 125         26622114           1188519  
+D3                  56          8403285            485537  
+D5                  25          2769075            172153  
+E1                  59         66158222            549998  
+E3                  21         18124952            200637  
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+13,772 of 36,166 genes eligible
+
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+20 pseudobulks x 13,772 genes
+design: 11 columns, 9 residual degrees of freedom
+size factors 0.051 to 28.96
+genes with counts replaced as outliers: 0
+
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+p-values missing: 0
+
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+13,772 genes tested, 886 DE: 337 up, 549 down
+
+                gene_symbol    baseMean  log2FoldChange_unshrunk  \
+ensembl_gene_id                                                    
+ENSG00000255690        TRIL   32.496722                -3.834829   
+ENSG00000164056       SPRY1  403.434175                -1.809089   
+ENSG00000154262       ABCA6  181.346568                -3.034111   
+ENSG00000170801       HTRA3  216.481699                -1.910155   
+ENSG00000157368        IL34   24.905116                -3.088052   
+ENSG00000106819        ASPN  533.123615                -2.933700   
+ENSG00000136546       SCN7A  342.211892                -4.681187   
+ENSG00000154258       ABCA9  137.264935                -3.287295   
+ENSG00000172260       NEGR1  157.703356                -3.650452   
+ENSG00000078596       ITM2A  249.702638                -3.047053   
+
+                 log2FoldChange_shrunk          padj  
+ensembl_gene_id                                       
+ENSG00000255690              -3.741505  1.013082e-23  
+ENSG00000164056              -1.769993  3.531110e-18  
+ENSG00000154262              -2.961033  3.972887e-18  
+ENSG00000170801              -1.867621  4.120197e-18  
+ENSG00000157368              -2.993998  5.048480e-18  
+ENSG00000106819              -2.859655  2.862398e-17  
+ENSG00000136546              -4.519963  3.781383e-17  
+ENSG00000154258              -3.195412  2.423653e-16  
+ENSG00000172260              -3.541022  3.828118e-15  
+ENSG00000078596              -2.952008  1.543201e-14  
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+                   column  n_differing  max_abs_difference
+              gene_symbol            0                 NaN
+                  biotype            0                 NaN
+       source_feature_ids            0                 NaN
+         source_feature_n            0                 0.0
+                  carrier            0                 NaN
+      production_eligible            0                 NaN
+              total_count            0                 0.0
+      nonzero_pseudobulks            0                 0.0
+                 baseMean            0                 0.0
+  log2FoldChange_unshrunk            0                 0.0
+    log2FoldChange_shrunk            0                 0.0
+                    lfcSE            0                 0.0
+                     stat            0                 0.0
+                   pvalue            0                 0.0
+                     padj            0                 0.0
+                estimable            0                 NaN
+            padj_for_call            0                 0.0
+   significant_fdr05_lfc1            0                 NaN
+                source_id            0                 NaN
+     positive_lfc_meaning            0                 NaN
+          analysis_method            0                 NaN
+  n_pseudobulks_numerator            0                 0.0
+n_pseudobulks_denominator            0                 0.0
+all-genes table: identical (36,166 genes, 24 columns, 886 DE)
+
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+pseudobulks: identical (20 pseudobulks, 10 columns)
+
+Ending Cell 25-----------------------------------------
+Executing Cell 26--------------------------------------
+Ending Cell 26-----------------------------------------
+Executing Cell 27--------------------------------------
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/ulrich/ulrich_dS_vs_C7fib_all_donors_all_genes.csv
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/ulrich/ulrich_dS_vs_C7fib_all_donors_metadata.tsv
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/ulrich/ulrich_dS_vs_C7fib_all_donors_counts.tsv
+
+Ending Cell 27-----------------------------------------
+Executing Cell 28--------------------------------------
+Ending Cell 28-----------------------------------------
+Executing Cell 29--------------------------------------
+pseudobulks: 20 (10 donors, 32,072 cells)
+genes tested: 13,772 of 36,166
+DE (padj < 0.05, |log2 FC| > 1): 886 (337 up, 549 down)
+residual degrees of freedom: 9
+check against the record: all-genes table identical (36,166 genes, 24 columns, 886 DE); pseudobulks identical (20 pseudobulks, 10 columns)
+
+Ending Cell 29-----------------------------------------

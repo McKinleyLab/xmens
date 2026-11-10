@@ -1,0 +1,190 @@
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2/human_decidual_vs_fibroblast.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/notebooks/human_decidual_vs_fibroblast.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/deseq2
+Executing notebook with kernel: rsc
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Python 3.11.15, NumPy 2.2.0, pandas 2.3.3, PyDESeq2 0.5.4
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+47,533 nuclei x 36,601 genes
+
+cell_type        decidual  fibroblast
+donor timepoint                      
+mck5  menstrual     17371        6721
+mck6  secretory      5737       17704
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+                donor  timepoint         arm  n_cells  total_counts
+id                                                                 
+mck5_fibroblast  mck5  menstrual  fibroblast     6721      16614767
+mck5_decidual    mck5  menstrual    decidual    17371      66260825
+mck6_fibroblast  mck6  secretory  fibroblast    17704      62615774
+mck6_decidual    mck6  secretory    decidual     5737      28563200
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+4 of 4 pseudobulks have at least 20 nuclei
+20,211 of 36,601 genes pass the filter
+
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/pydeseq2/dds.py:548: UserWarning: As the residual degrees of freedom is less than 3, the distribution of log dispersions is especially asymmetric and likely to be poorly estimated by the MAD.
+  self.fit_dispersion_prior()
+
+residual degrees of freedom: 1
+
+                 Intercept  donor[T.mck6]  group[T.fibroblast]
+id                                                            
+mck5_fibroblast        1.0              0                    1
+mck5_decidual          1.0              0                    0
+mck6_fibroblast        1.0              1                    1
+mck6_decidual          1.0              1                    0
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+0 tested genes have no adjusted p-value
+
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+   ensembl_gene_id  gene_symbol  production_eligible   baseMean  \
+0  ENSG00000243485  MIR1302-2HG                False        NaN   
+1  ENSG00000237613      FAM138A                False        NaN   
+2  ENSG00000186092        OR4F5                False        NaN   
+3  ENSG00000238009   AL627309.1                 True  24.461246   
+4  ENSG00000239945   AL627309.3                False        NaN   
+
+   log2FoldChange_unshrunk     lfcSE      stat    pvalue      padj  estimable  \
+0                      NaN       NaN       NaN       NaN       NaN      False   
+1                      NaN       NaN       NaN       NaN       NaN      False   
+2                      NaN       NaN       NaN       NaN       NaN      False   
+3                -0.314652  0.896278 -0.351065  0.725539  0.848643       True   
+4                      NaN       NaN       NaN       NaN       NaN      False   
+
+   ...  padj_for_call pct_detected_mck5_menstrual_fibroblast  \
+0  ...       1.000000                                  0.000   
+1  ...       1.000000                                  0.000   
+2  ...       1.000000                                  0.000   
+3  ...       0.848643                                  0.119   
+4  ...       1.000000                                  0.000   
+
+   pct_detected_mck5_menstrual_decidual  \
+0                                 0.000   
+1                                 0.000   
+2                                 0.000   
+3                                 0.167   
+4                                 0.000   
+
+   pct_detected_mck6_secretory_fibroblast  \
+0                                   0.023   
+1                                   0.000   
+2                                   0.000   
+3                                   0.367   
+4                                   0.000   
+
+   pct_detected_mck6_secretory_decidual  \
+0                                 0.000   
+1                                 0.000   
+2                                 0.000   
+3                                 0.331   
+4                                 0.017   
+
+                                         source_id  label_column  \
+0  human_decidual_vs_fibroblast_cell_type_by_donor     cell_type   
+1  human_decidual_vs_fibroblast_cell_type_by_donor     cell_type   
+2  human_decidual_vs_fibroblast_cell_type_by_donor     cell_type   
+3  human_decidual_vs_fibroblast_cell_type_by_donor     cell_type   
+4  human_decidual_vs_fibroblast_cell_type_by_donor     cell_type   
+
+        positive_lfc_meaning            analysis_method  \
+0  decidual_minus_fibroblast  pydeseq2_wald_fixed_block   
+1  decidual_minus_fibroblast  pydeseq2_wald_fixed_block   
+2  decidual_minus_fibroblast  pydeseq2_wald_fixed_block   
+3  decidual_minus_fibroblast  pydeseq2_wald_fixed_block   
+4  decidual_minus_fibroblast  pydeseq2_wald_fixed_block   
+
+                                              object  
+0  xmens_final/data/deliverables/2026_09_15/Cevri...  
+1  xmens_final/data/deliverables/2026_09_15/Cevri...  
+2  xmens_final/data/deliverables/2026_09_15/Cevri...  
+3  xmens_final/data/deliverables/2026_09_15/Cevri...  
+4  xmens_final/data/deliverables/2026_09_15/Cevri...  
+
+[5 rows x 24 columns]
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+20,211 genes tested; 3,198 called DE (1,867 up and 1,331 down in decidual nuclei)
+
+             log2FoldChange_unshrunk     lfcSE          padj  \
+gene_symbol                                                    
+PRL                         5.271816  0.653499  4.009579e-14   
+IGFBP1                      6.005714  1.428499  2.590557e-04   
+LEFTY2                      2.284218  0.339919  5.453410e-10   
+FOXO1                       1.402043  0.198610  5.821643e-11   
+BMP2                        2.400947  0.321702  3.593484e-12   
+ZBTB16                     -2.867014  0.223835  6.898600e-35   
+HAND2                       0.100535  0.215496  7.973374e-01   
+
+             significant_fdr05_lfc1  log2_cpm_ratio_mck5_menstrual  \
+gene_symbol                                                          
+PRL                            True                          3.066   
+IGFBP1                         True                          3.774   
+LEFTY2                         True                          1.138   
+FOXO1                          True                          1.393   
+BMP2                           True                          2.730   
+ZBTB16                         True                         -3.290   
+HAND2                         False                         -0.150   
+
+             log2_cpm_ratio_mck6_secretory  
+gene_symbol                                 
+PRL                                  3.368  
+IGFBP1                               7.061  
+LEFTY2                               3.225  
+FOXO1                                1.226  
+BMP2                                 1.729  
+ZBTB16                              -2.602  
+HAND2                                0.165  
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+genes: 36,601 here, 36,601 in the record; same genes in the same order: True
+columns compared: 24 (gene ID included); with any difference: none
+record columns not reproduced: none
+DE calls: 3,198 here, 3,198 in the record; identical: True
+identical to the record
+
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_deseq2/human: check_against_record.csv, human_decidual_vs_fibroblast_all_genes.csv, pseudobulk_counts.csv.gz, pseudobulk_detected.csv.gz, pseudobulks.csv
+
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+pseudobulks: 4 (residual degrees of freedom: 1)
+genes tested: 20,211
+genes called DE (padj < 0.05, |log2FC| > 1): 3,198 (1,867 up, 1,331 down)
+check against the record: identical to the record
+
+Ending Cell 24-----------------------------------------

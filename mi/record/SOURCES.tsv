@@ -1,0 +1,23 @@
+file	copied_from	source_modified	sha256
+config/config.yaml	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/config/config.yaml	2026-11-03 05:54:45	919b18e182f0ef6c245cda41f8d4cb5151da3eb9f0a5197d95e43431e2bc4011
+1-3_mi_pseudotime/22_mi_pseudotime.smk	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/workflow/rules/22_mi_pseudotime.smk	2026-10-31 21:28:23	5d606c929466709b90f177596c128405a16084341e59be04bc06d24967bb4e12
+1-3_mi_pseudotime/mi_pseudotime.py	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/workflow/scripts/mi/mi_pseudotime.py	2026-10-31 17:32:18	56e1a9d28239915195aa371e0612473ff936906a723acdeb5f66f397d3453318
+1-3_mi_pseudotime/build_mi_record_input.py	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/workflow/scripts/mi/build_mi_record_input.py	2026-10-31 21:28:24	3a4090e7959f3d33431914c2f47da943201ba16c887a059f888341878bb3106a
+1-3_mi_pseudotime/mouse_worker.sbatch	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_mouse_nall/worker.sbatch	2026-10-22 18:01:47	229480273f1abc9caeb6683151c91d752445e10919a43003f44dde700c66e824
+1-3_mi_pseudotime/mouse_manifest.json	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_mouse_nall/manifest.json	2026-10-26 14:33:02	430d3f72f33e9e0f9da3d94a18baebde3400b5444581269111731780a56fa99d
+1-3_mi_pseudotime/mouse_worker_task0.out	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/pt_harmonized_mouse_nall_0.out	2026-10-22 22:09:02	0de0b2e86d13840f3b747208325290fa9ab1631ac02f2bd92e0997063a17db2f
+1-3_mi_pseudotime/human_build_meta.json	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_human_nall/build_meta.json	2026-10-31 21:50:23	08e2aca8ed185fe9add5fa981581d814f34e9852e903d9c81b0c5046d4ab7b05
+1-3_mi_pseudotime/human_manifest.json	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/pt_harmonized_human_nall/manifest.json	2026-10-31 21:54:04	2c9ee44efd7d8ac67d72192cff44ea99cfee119144dbde7f101faa4b33eaad73
+1-3_mi_pseudotime/human_prep.log	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/pt_harmonized_human_nall_prep.log	2026-10-31 21:53:22	f2a48580e84fd014921507e32f0565c59de382d71aee2e3d7ff74792a5efa306
+1-3_mi_pseudotime/human_worker_000.log	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/pt_harmonized_human_nall_worker_000.log	2026-11-01 01:31:50	58bd896b57720beaec1c6a1272df9a66afe07f764a3151b03261d8bc502f13d7
+1-3_mi_pseudotime/human_merge.log	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/pt_harmonized_human_nall_merge.log	2026-11-01 01:48:48	88dc9ddc06bba8fd0081ed51b0dcddd2632f9caa8c0c3006e091f7790690f16e
+4_overlap/mi_overlap.py	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/workflow/scripts/mi/mi_overlap.py	2026-10-31 21:28:24	1cb0a66d3986c6d5c34ceeb141cc246b0233f0e29276859a8143ec3dfc8c0c36
+4_overlap/overlap.log	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/overlap.log	2026-11-01 01:51:29	cb402abb211e3ab352e3ab3dba5e9832980a27b096ff6c177c1a332f98947624
+4_overlap/methods_overlap.json	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/methods_overlap.json	2026-11-01 01:52:08	f9bd00ce5bc23ad097c3060273d63dc90b35f61cfdd783eb67e23209604cbca4
+6_fig5f/crossspecies_gene_selection.py	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/workflow/scripts/mi/crossspecies_gene_selection.py	2026-10-31 21:28:24	d1fa73928bc612a911d83ec725d0d1411da50c0f916ff954cd3b83e7a349c163
+6_fig5f/heatmap_selection.log	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/logs/mi_dpt/heatmap_selection.log	2026-11-01 01:54:53	04a567350eb338fe260a3c7f487d67a2bc1cde54beb0805abf4cae649dfb44bb
+6_fig5f/fig5f_panel_genes.csv	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/resources/methods_numbers/fig5f_panel_genes.csv	2026-10-31 21:28:22	8f04f02cb06fa3743b5b32750e5fdfab8d942e73fbb9a3987bc03e8ae49af05b
+6_fig5f/selection_summary.json	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/crossspecies_heatmap_selection/selection_summary.json	2026-11-01 01:55:51	708473c5c1213b18edd342d173eb37bfc0acad557166e8529733a1b04fd1a60a
+6_fig5f/conserved_profiles_selected_genes.csv	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_of_record/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv	2026-11-01 01:55:51	8f04f02cb06fa3743b5b32750e5fdfab8d942e73fbb9a3987bc03e8ae49af05b
+5_table/SuppTable_pseudotime_MI.xlsx	session artifact (see README.md)	2026-11-06 13:04:15	ad1536da2be6c8a3a55f1abe7cde46cba67c6641d9bb63c7aa73f0bb593bf845
+5_table/build_human_mouse_mi_table.py	session artifact (see README.md)	2026-11-06 13:04:15	a981bdeb2985875cac3ba17ba9f59a8bf1f65d332695f917425b7277b5d1aebf

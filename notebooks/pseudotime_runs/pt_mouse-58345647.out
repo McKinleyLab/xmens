@@ -1,0 +1,133 @@
+holy8a27307.rc.fas.harvard.edu
+Model name:          Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+8
+Input Notebook:  pseudotime_mouse.ipynb
+Output Notebook: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/notebooks/pseudotime_runs/pseudotime_mouse.executed.ipynb
+Executing notebook with kernel: python3
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+scanpy    1.11.5
+anndata   0.12.11
+cellrank  2.0.7
+moscot    0.5.0
+ott-jax   0.6.0
+jax       0.10.0
+numpy     2.2.0
+scipy     1.17.1
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad: 43,197 nuclei x 33,698 genes (sha256 e3e7ad3df4fd...)
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+latent 30 dimensions; 3000 highly variable genes
+
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+43,197 nuclei in the object, 42,290 in the run (907 excluded)
+
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+WARNING: genes are not in var_names and ignored: Index(['Fam64a', 'Hn1', 'Mlf1ip'], dtype='object')
+
+WARNING: genes are not in var_names and ignored: Index(['Adck3', 'Gnb2l1', 'H2afj', 'Hist1h1c', 'Hist3h2a', 'Ikbkap', 'Lrmp'], dtype='object')
+
+[34mINFO    [0m Solving `[1;36m5[0m` problems                                                                                      
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m9333[0m, [1;36m2686[0m[1m)[0m[1m][0m.                                  
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m10649[0m, [1;36m5442[0m[1m)[0m[1m][0m.                                 
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m2686[0m, [1;36m10656[0m[1m)[0m[1m][0m.                                 
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m3524[0m, [1;36m10649[0m[1m)[0m[1m][0m.                                 
+
+[34mINFO    [0m Solving problem BirthDeathProblem[1m[[0m[33mstage[0m=[32m'prepared'[0m, [33mshape[0m=[1m([0m[1;36m10656[0m, [1;36m3524[0m[1m)[0m[1m][0m.                                 
+
+moscot on cpu: 5 coupling(s), all converged = True
+
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+  0%|          | 0/5 [00:00<?, ?time pair/s]
+WARNING: Coupling at `(3.0, 4.0)` contains `3` empty row(s), e.g., due to unbalancedness or 0s in the source marginals. Using uniform distribution
+
+WARNING: Coupling at `(1.5, 2.0)` contains `8` empty row(s), e.g., due to unbalancedness or 0s in the source marginals. Using uniform distribution
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/neighbors/__init__.py:577: UserWarning: You’re trying to run this on 33698 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.
+  x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+
+transition matrix (42290, 42290); mass later 0.697 / same 0.303 / earlier 0.000; repaired rows 0
+
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+trajectory component DC1 (rho -0.889); root ACCCTTGAGCATGAAT-1-uninduced_mck8b (eFib1); global extreme same cell
+
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+pseudotime on 42,290 nuclei; root ACCCTTGAGCATGAAT-1-uninduced_mck8b; Spearman rho with timepoint 0.62
+
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_pseudotime_notebooks/Cevrim_XMens_Only_Fib_Dec_Cells_pseudotime.h5ad (43,197 nuclei; 42,290 with pseudotime) in 201 s
+
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+nuclei without pseudotime: same set True (907)
+pseudotime identical to the record: True
+  Spearman rho with the record 1.000000; |difference| median 0.00e+00, 99th percentile 0.00e+00, largest 0.00e+00; nuclei moved by more than 0.05: 0
+diffusion map identical to the record: True (largest difference 0.00e+00)
+root: ACCCTTGAGCATGAAT-1-uninduced_mck8b (Methods: ACCCTTGAGCATGAAT-1-uninduced_mck8b); same True
+
+Ending Cell 25-----------------------------------------
+ALL_DONE

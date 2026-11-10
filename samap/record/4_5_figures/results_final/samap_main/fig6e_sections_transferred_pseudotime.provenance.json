@@ -1,0 +1,93 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-secretory-transferred_pseudotime-spatial.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-secretory-transferred_pseudotime-spatial.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-secretory-transferred_pseudotime-spatial.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-menstrual-transferred_pseudotime-spatial.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-menstrual-transferred_pseudotime-spatial.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-Human-menstrual-transferred_pseudotime-spatial.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-spatial_key_transferred_pseudotime.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-spatial_key_transferred_pseudotime.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/20261027-spatial_key_transferred_pseudotime.svg"
+ ],
+ "written": "2026-11-03T00:18:41",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/fig6e_sections_transferred_pseudotime.ipynb",
+ "notebook_md5": "dc0de3f91fea5b5a96cdcbfc979bd69d",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "JOINT": "results/samap_figures/final/tables/joint.parquet",
+  "HUMAN_TABLE": "results/plot_tables/final_objects/human_fibdec_plot_table.parquet",
+  "OUT": "results/figures/samap_main/final",
+  "DATE": "20261027",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/joint.parquet",
+   "role": "joint",
+   "bytes": 2565586,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/plot_tables/final_objects/human_fibdec_plot_table.parquet",
+   "role": "human_table",
+   "bytes": 10156719,
+   "mtime": "2026-11-03T00:10:10",
+   "sha256": "3f1d0703163a6fe3ac4f5cad831737c32915f02e50bf4690c6dfc1a3853e614f"
+  }
+ ],
+ "font": "DejaVu Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3"
+ },
+ "transferred_column": "transferred_mm_dpt_pseudotime_ranknorm",
+ "rescaled_or_reranked": false,
+ "colormap": "viridis, fixed 0-1",
+ "embedding_outliers_omitted": 0,
+ "embedding_outliers_drawn": 6,
+ "spatial": {
+  "secretory": {
+   "libraries": [
+    "secretory_mck6a",
+    "secretory_mck6b",
+    "secretory_mck6c"
+   ],
+   "drawn": 18443,
+   "no_value": 41,
+   "median_transferred": 0.2608,
+   "limits_um": [
+    [
+     400,
+     5500
+    ],
+    [
+     750,
+     5250
+    ]
+   ],
+   "rotation_deg": -90,
+   "mirrored_left_right": true
+  },
+  "menstrual": {
+   "libraries": [
+    "menstrual_mck5a",
+    "menstrual_mck5b",
+    "menstrual_mck5c"
+   ],
+   "drawn": 14498,
+   "no_value": 76,
+   "median_transferred": 0.6291,
+   "limits_um": null,
+   "rotation_deg": 90,
+   "mirrored_left_right": true
+  }
+ }
+}

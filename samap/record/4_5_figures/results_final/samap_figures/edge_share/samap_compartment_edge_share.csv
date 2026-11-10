@@ -1,0 +1,5 @@
+direction,source_compartment,endometrial_fibroblast,decidual_cell
+human_to_mouse,endometrial_fibroblast,0.8754341647978384,0.12456583520216165
+human_to_mouse,decidual_cell,0.17956600002610537,0.8204339999738947
+mouse_to_human,endometrial_fibroblast,0.8489597699871321,0.15104023001286795
+mouse_to_human,decidual_cell,0.0784286040159522,0.9215713959840478

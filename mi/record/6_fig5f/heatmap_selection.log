@@ -1,0 +1,61 @@
+universe 9,638 one-to-one pairs; top 10% = 964 per species; pool 273
+/n/netscratch/eddy_lab/Everyone/nhilgert/2026_10_22_flagged_harmonized/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad: 42,290 nuclei with pt_harmonized_rank (907 without)
+results/mi_dpt/pt_harmonized_human_nall/input.h5ad: 47,533 nuclei with pt_harmonized_rank (0 without)
+{
+ "mi_arms": {
+  "mouse": "pt_harmonized_mouse_nall",
+  "human": "pt_harmonized_human_nall"
+ },
+ "universe": 9638,
+ "k_top": 964,
+ "pool": 273,
+ "n_r_gt": 92,
+ "rmin": 0.8,
+ "phase_counts_r_gt": {
+  "late": 62,
+  "early": 29,
+  "mid": 1
+ },
+ "median_r50_pool": 0.627,
+ "n_selected": 28,
+ "r50_range_selected": [
+  0.882,
+  0.991
+ ],
+ "centroid_definition": "per species: sum_b max(z_b,0)*b/(nbin-1) / sum_b max(z_b,0) on 50-bin z-profiles; gene = mean of species",
+ "panel_genes": "resources/methods_numbers/fig5f_panel_genes.csv",
+ "overlap_with_previous_28": 28,
+ "kept": [
+  "BNIP3L",
+  "CALU",
+  "CD63",
+  "CEBPB",
+  "COL6A1",
+  "DPYD",
+  "ELL",
+  "FBXW7",
+  "GJA1",
+  "IGF1",
+  "IGFBP5",
+  "KCNMA1",
+  "MATN2",
+  "MCL1",
+  "MYCBP2",
+  "P4HB",
+  "PALLD",
+  "PLEKHH2",
+  "PRKCE",
+  "RAB7A",
+  "REV3L",
+  "RGMA",
+  "ROR2",
+  "RORA",
+  "SERPINE1",
+  "SIPA1L1",
+  "TJP1",
+  "ZNF697"
+ ],
+ "dropped": [],
+ "added": [],
+ "previous_genes_in_new_pool": 28
+}

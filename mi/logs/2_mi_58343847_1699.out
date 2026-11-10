@@ -1,0 +1,13 @@
+chunk 1499 of 1500: genes 14997 to 15007 (11 genes), 47,533 nuclei, 1000 permutations
+MT-CO3: MI 0.0295 nats, p 0.000999
+MT-ND3: MI 0.0240 nats, p 0.000999
+MT-ND4: MI 0.0171 nats, p 0.000999
+MT-ND5: MI 0.0133 nats, p 0.000999
+MT-ND6: MI 0.0575 nats, p 0.000999
+MT-CYB: MI 0.0196 nats, p 0.000999
+MAFIP: MI 0.0030 nats, p 0.000999
+AC011043.1: MI 0.0093 nats, p 0.000999
+AL354822.1: MI 0.0032 nats, p 0.000999
+AL592183.1: MI 0.0123 nats, p 0.000999
+AC240274.1: MI 0.0020 nats, p 0.000999
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test/chunks/human/mi_1499.csv

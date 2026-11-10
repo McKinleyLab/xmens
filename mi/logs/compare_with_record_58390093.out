@@ -1,0 +1,33 @@
+1 inputs mouse genes: identical; 14,261 genes, record 14,261
+1 inputs mouse pseudotime: identical; 42,290 nuclei, record 42,290
+1 inputs mouse expression: identical; 42,290 nuclei x 14,261 genes, float32; 0 values differ
+1 inputs human genes: identical; 15,008 genes, record 15,008
+1 inputs human pseudotime: identical; 47,533 nuclei, record 47,533
+1 inputs human expression: identical; 47,533 nuclei x 15,008 genes, float32; 0 values differ
+2 chunks human 2 chunks: identical; 2 of 2 identical (gene, mi, p as written)
+3 combine mouse mi table: identical; 14,261 genes
+3 combine human mi table: identical; 15,008 genes
+4 overlap both one-to-one pairs: identical; 16,275 pairs
+4 overlap both methods_overlap.json: identical; N 9,587, K 1,133, n 1,201, k 373, log10 p -83.709896
+4 overlap both percentile sweep: identical; 60 percentile cutoffs, 40th to 99th
+5 table both sheets: identical; overlap, README, human_mouse_mi, human_genes, mouse_genes, p_value_terms, checks
+5 table both sheet overlap: identical; 81 cells, 0 differ
+5 table both sheet README: identical; 50 cells, 0 differ
+5 table both sheet human_mouse_mi: identical; 182,771 cells, 0 differ
+5 table both sheet human_genes: identical; 104,821 cells, 0 differ
+5 table both sheet mouse_genes: identical; 99,834 cells, 0 differ
+5 table both sheet p_value_terms: identical; 28,921 cells, 0 differ
+5 table both sheet checks: identical; 56 cells, 0 differ
+6 fig5f both selected genes: identical; 28 genes: RGMA, MATN2, DPYD, MYCBP2, COL6A1, IGFBP5, RORA, REV3L, KCNMA1, ROR2, PRKCE, IGF1, PLEKHH2, PALLD, GJA1, CD63, SIPA1L1, TJP1, CEBPB, FBXW7, P4HB, CALU, RAB7A, ELL, ZNF697, MCL1, BNIP3L, SERPINE1
+6 fig5f both pool concordance: identical; 273 pool genes
+6 fig5f mouse per-nucleus pool counts: identical; 42,290 nuclei x 273 genes, compared as text (the gzip files store a time stamp)
+6 fig5f human per-nucleus pool counts: identical; 47,533 nuclei x 273 genes, compared as text (the gzip files store a time stamp)
+6 fig5f both genes drawn in Fig. 5F: identical; 28 of the 28 drawn genes selected
+
+Run /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test against the run of record; one row per comparison in /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_mi_test/compare_with_record_20261106_154211.tsv
+1 inputs: 6 identical
+2 chunks: 1 identical
+3 combine: 2 identical
+4 overlap: 3 identical
+5 table: 8 identical
+6 fig5f: 5 identical

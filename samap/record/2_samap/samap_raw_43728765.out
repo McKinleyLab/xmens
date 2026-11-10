@@ -1,0 +1,255 @@
+=== arm: vanilla_raw (arm=vanilla min_expression=1) (Tue Sep  1 19:10:35 EDT 2026) ===
+[19:11:00] === arm: vanilla ===
+[19:11:00] building SAM for hs ...
+[19:11:15]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+[19:11:16]   INPUT SCALE = RAW COUNTS: integer=True, max=1243.0, library median=3189, CV=0.612, has_raw=False
+[19:11:16]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 1.0})
+[19:12:47]   SAM.run done in 1.4 min
+[19:12:47] building SAM for mm ...
+[19:13:03]   loaded inputs_raw/mm_fib_dec_all_raw.h5ad: (43197, 33698)
+[19:13:04]   INPUT SCALE = RAW COUNTS: integer=True, max=876.0, library median=3254, CV=1.077, has_raw=False
+[19:13:04]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 1.0})
+[19:13:58]   SAM.run done in 0.8 min
+[19:13:58] SAMAP init ...
+INFO: Using backend: cpu
+INFO: Not updating the manifold...
+INFO: Not updating the manifold...
+INFO: 18870 'hs' gene symbols match between the datasets and the BLAST graph.
+INFO: 20973 'mm' gene symbols match between the datasets and the BLAST graph.
+[19:24:54] SAMAP init done in 10.9 min
+[19:24:54] SAMAP run (NUMITERS=3) ...
+/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py:323: DeprecationWarning: NUMITERS is deprecated, use n_iterations instead
+  sm.run(NUMITERS=args.n_iter, ncpus=args.ncpus)
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 39.12s
+INFO: Correcting data with means. 0.15s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 1 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.607915
+mm  0.563289  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 23.831 GB (density~63.5%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 37.42s
+INFO: Correcting data with means. 0.22s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 2 complete.
+INFO: Alignment scores:
+         hs        mm
+hs  0.00000  0.661498
+mm  0.63685  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 23.854 GB (density~63.6%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 36.31s
+INFO: Correcting data with means. 0.23s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 3 complete.
+INFO: Alignment scores:
+          hs       mm
+hs  0.000000  0.66743
+mm  0.652336  0.00000
+INFO: Running UMAP on the stitched manifolds.
+INFO: Elapsed time: 33.15 minutes.
+[19:58:03] SAMAP run done in 33.1 min
+INFO: Saved SAMAP object to runs_raw/vanilla_raw/samap.pkl
+[19:59:49] wrote runs_raw/vanilla_raw/samap.pkl
+[19:59:49] evaluating ...
+[19:59:56]   joint leiden: 14 clusters (7s)
+[20:00:11] === arm vanilla complete; mean alignment 0.660 ===
+=== arm: harmony_raw (arm=harmony min_expression=1) (Tue Sep  1 20:00:12 EDT 2026) ===
+[20:00:37] === arm: harmony ===
+[20:00:37] building SAM for hs ...
+[20:00:53]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+[20:00:54]   INPUT SCALE = RAW COUNTS: integer=True, max=1243.0, library median=3189, CV=0.612, has_raw=False
+[20:00:54]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 1.0})
+[20:00:59]   SAM.run with batch_key='sample' (harmonypy inside the loop)
+2026-09-01 20:01:13,859 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:01:25,377 - harmonypy - INFO - sklearn.KMeans initialization complete.
+2026-09-01 20:02:13,350 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:02:25,350 - harmonypy - INFO - sklearn.KMeans initialization complete.
+2026-09-01 20:03:16,340 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:03:29,235 - harmonypy - INFO - sklearn.KMeans initialization complete.
+[20:04:07]   SAM.run done in 3.1 min
+[20:04:07] building SAM for mm ...
+[20:04:24]   loaded inputs_raw/mm_fib_dec_all_raw.h5ad: (43197, 33698)
+[20:04:24]   INPUT SCALE = RAW COUNTS: integer=True, max=876.0, library median=3254, CV=1.077, has_raw=False
+[20:04:24]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 1.0})
+[20:04:29]   SAM.run with batch_key='sample' (harmonypy inside the loop)
+2026-09-01 20:04:41,338 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:04:52,628 - harmonypy - INFO - sklearn.KMeans initialization complete.
+2026-09-01 20:05:38,775 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:05:50,377 - harmonypy - INFO - sklearn.KMeans initialization complete.
+2026-09-01 20:06:55,060 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+2026-09-01 20:07:06,365 - harmonypy - INFO - sklearn.KMeans initialization complete.
+[20:07:56]   SAM.run done in 3.5 min
+[20:07:56] SAMAP init ...
+INFO: Using backend: cpu
+INFO: Not updating the manifold...
+INFO: Not updating the manifold...
+INFO: 18870 'hs' gene symbols match between the datasets and the BLAST graph.
+INFO: 20973 'mm' gene symbols match between the datasets and the BLAST graph.
+[20:18:22] SAMAP init done in 10.4 min
+[20:18:22] SAMAP run (NUMITERS=3) ...
+/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py:323: DeprecationWarning: NUMITERS is deprecated, use n_iterations instead
+  sm.run(NUMITERS=args.n_iter, ncpus=args.ncpus)
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 39.24s
+INFO: Correcting data with means. 0.15s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 1 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.591681
+mm  0.545134  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 23.856 GB (density~63.6%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 40.78s
+INFO: Correcting data with means. 0.29s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 2 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.647614
+mm  0.618658  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 23.860 GB (density~63.6%, 90730 cells x 34451 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 40.57s
+INFO: Correcting data with means. 0.23s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 3 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.657199
+mm  0.634227  0.000000
+INFO: Running UMAP on the stitched manifolds.
+INFO: Elapsed time: 35.50 minutes.
+[20:53:52] SAMAP run done in 35.5 min
+INFO: Saved SAMAP object to runs_raw/harmony_raw/samap.pkl
+[20:56:00] wrote runs_raw/harmony_raw/samap.pkl
+[20:56:00] evaluating ...
+[20:56:08]   joint leiden: 11 clusters (8s)
+[20:56:22] === arm harmony complete; mean alignment 0.646 ===
+=== arm: vanilla_raw_nofilter (arm=vanilla min_expression=0) (Tue Sep  1 20:56:23 EDT 2026) ===
+[20:56:50] === arm: vanilla ===
+[20:56:50] building SAM for hs ...
+[20:57:06]   loaded inputs_raw/hs_fib_dec_all_raw.h5ad: (47533, 36601)
+[20:57:07]   INPUT SCALE = RAW COUNTS: integer=True, max=1243.0, library median=3189, CV=0.612, has_raw=False
+[20:57:07]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 0.0})
+[20:59:00]   SAM.run done in 1.8 min
+[20:59:00] building SAM for mm ...
+[20:59:17]   loaded inputs_raw/mm_fib_dec_all_raw.h5ad: (43197, 33698)
+[20:59:18]   INPUT SCALE = RAW COUNTS: integer=True, max=876.0, library median=3254, CV=1.077, has_raw=False
+[20:59:18]   preprocess_data({'sum_norm': 'cell_median', 'norm': 'log', 'thresh_low': 0.0, 'thresh_high': 0.96, 'min_expression': 0.0})
+[21:00:26]   SAM.run done in 1.1 min
+[21:00:26] SAMAP init ...
+INFO: Using backend: cpu
+INFO: Not updating the manifold...
+INFO: Not updating the manifold...
+INFO: 18870 'hs' gene symbols match between the datasets and the BLAST graph.
+INFO: 20973 'mm' gene symbols match between the datasets and the BLAST graph.
+[21:25:46] SAMAP init done in 25.3 min
+[21:25:46] SAMAP run (NUMITERS=3) ...
+/n/lab_storage/eddy_lab/users/nhilgert/code/samap-scvi/full_fibdec/run_arm.py:323: DeprecationWarning: NUMITERS is deprecated, use n_iterations instead
+  sm.run(NUMITERS=args.n_iter, ncpus=args.ncpus)
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 58.61s
+INFO: Correcting data with means. 0.15s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 1 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.593489
+mm  0.566575  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 33.545 GB (density~85.3%, 90730 cells x 36139 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 49.61s
+INFO: Correcting data with means. 0.22s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 2 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.646771
+mm  0.649319  0.000000
+INFO: Calculating gene-gene correlations in the homology graph...
+INFO: Correlation: estimated Xavg 33.581 GB (density~85.3%, 90730 cells x 36139 genes) >= 2.0 GB threshold — using streaming path (batch_size=512).
+INFO: Prepping datasets for translation.
+INFO: Translating feature spaces pairwise.
+INFO: Projecting data into joint latent space. 50.73s
+INFO: Correcting data with means. 0.23s
+INFO: Expanding neighbourhoods of species hs...
+INFO: Expanding neighbourhoods of species mm...
+INFO: Indegree coarsening
+INFO: Rescaling edge weights by expression correlations.
+INFO: Concatenating SAM objects...
+INFO: Iteration 3 complete.
+INFO: Alignment scores:
+          hs        mm
+hs  0.000000  0.653998
+mm  0.660587  0.000000
+INFO: Running UMAP on the stitched manifolds.
+INFO: Elapsed time: 38.94 minutes.
+[22:04:42] SAMAP run done in 38.9 min
+INFO: Saved SAMAP object to runs_raw/vanilla_raw_nofilter/samap.pkl
+[22:07:03] wrote runs_raw/vanilla_raw_nofilter/samap.pkl
+[22:07:03] evaluating ...
+[22:07:10]   joint leiden: 14 clusters (7s)
+[22:07:24] === arm vanilla complete; mean alignment 0.657 ===
+=== compare (Tue Sep  1 22:07:25 EDT 2026) ===
+
+================ ARM COMPARISON ================
+         mean_alignment  hs_mix_ratio  hs_knn_celltype  hs_knn_subtype  hs_NMI_ct  hs_NMI_sample  mm_mix_ratio  mm_knn_celltype  mm_knn_subtype  mm_NMI_ct  mm_NMI_sample  map_dec~dec  map_end~end
+arm                                                                                                                                                                                                
+vanilla           0.660         0.795            0.886           0.886      0.218          0.147         0.396            0.957           0.814      0.291          0.490        0.565        0.578
+harmony           0.646         0.901            0.882           0.882      0.242          0.076         0.670            0.952           0.783      0.328          0.219        0.553        0.578
+vanilla           0.657         0.792            0.890           0.890      0.227          0.146         0.384            0.959           0.834      0.268          0.493        0.559        0.590
+
+Key: *_mix_ratio = within-species sample mixing, observed/expected (1.0 = perfectly batch-mixed); *_knn_celltype/subtype = fraction of within-species neighbor weight sharing the cell's label (higher = manifold respects cell types); *_NMI_ct vs *_NMI_sample = joint-leiden agreement with cell types (want HIGH) vs samples (want LOW); map_dec~dec / map_end~end = cross-species alignment score of matched coarse cell types; mean_alignment = hs<->mm average.
+
+wrote runs_raw/summary.csv
+=== done (Tue Sep  1 22:07:30 EDT 2026) ===

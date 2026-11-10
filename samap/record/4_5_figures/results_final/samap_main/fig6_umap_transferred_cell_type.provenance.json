@@ -1,0 +1,102 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type_humanonly.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type_humanonly.svg",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/umap_dark_transferred_cell_type_humanonly.pdf",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_main/final/transferred_cell_type.csv"
+ ],
+ "written": "2026-11-03T00:19:38",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/fig6_umap_transferred_cell_type.ipynb",
+ "notebook_md5": "74ab3b6a14ffbc500089db99ff90dc70",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": false
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "JOINT": "results/samap_figures/final/tables/joint.parquet",
+  "MOUSE_CELLS": "results/samap_figures/final/tables/mouse_cells.csv",
+  "HUMAN_CELLS": "results/samap_figures/final/tables/human_cells.csv",
+  "GRAPH_DIR": "results/samap_figures/final/graph_block",
+  "OUT": "results/figures/samap_main/final",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/joint.parquet",
+   "role": "joint",
+   "bytes": 2565586,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "2bc320dc88b903d3b92eef40208e5d5a716eb691ef6630fed5e8acbd5b2ee8b1"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/mouse_cells.csv",
+   "role": "mouse_cells",
+   "bytes": 3634810,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1c9aa9dd614c526eb8d439dd0376a120b2f114a35a265b6a236a79e33edb61af"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/tables/human_cells.csv",
+   "role": "human_cells",
+   "bytes": 6923600,
+   "mtime": "2026-11-03T00:10:28",
+   "sha256": "1638bc589cf287ef83fb9578cf42415e1015adb973cbda9d46641ee97df7ae71"
+  },
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/graph_block/C_hs_mm.npz",
+   "role": "graph_block",
+   "bytes": 8791198,
+   "mtime": "2026-11-03T00:18:59",
+   "sha256": "4d6a2f65488885e0ea960afaefe4e59ee3c7a317285303c5dfaedf3517b032d4"
+  }
+ ],
+ "font": "DejaVu Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3"
+ },
+ "operator": "argmax over mouse cell_type of the summed SAMap connectivities to mouse neighbors (samap_label_stain_full.py vote); all mouse nuclei vote",
+ "colors": {
+  "eFib": "#CC79A7",
+  "dec": "#00B4C5"
+ },
+ "umap": {
+  "umap_human_labelled": 47509,
+  "umap_human_no_mouse_neighbor": 24,
+  "umap_mouse_context": 43197,
+  "transferred": {
+   "decidual_cell": 21934,
+   "endometrial_fibroblast": 25575
+  },
+  "exact_ties": 0,
+  "embedding_outliers_omitted": 0,
+  "embedding_outliers_drawn": 6,
+  "order_seed": 3,
+  "panel_mm": 90,
+  "dpi": 600
+ },
+ "agreement_with_native": {
+  "agree": 40032,
+  "percent_of_labelled": 84.26,
+  "percent_of_all_human": 84.22,
+  "by_native_cell_type": {
+   "decidual_cell": {
+    "agree": 18780,
+    "labelled": 23103,
+    "all": 23108
+   },
+   "endometrial_fibroblast": {
+    "agree": 21252,
+    "labelled": 24406,
+    "all": 24425
+   }
+  },
+  "median_vote_share": 1.0
+ }
+}

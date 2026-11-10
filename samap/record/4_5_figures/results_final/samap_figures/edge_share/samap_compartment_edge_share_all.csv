@@ -1,0 +1,5 @@
+graph,labels,direction,source_compartment,n_source_cells,n_with_cross_edges,weight_share_endometrial_fibroblast,weight_share_decidual_cell,percell_share_endometrial_fibroblast,percell_share_decidual_cell
+connectivities,release,human_to_mouse,endometrial_fibroblast,24425,24406,0.8754341647978384,0.12456583520216165,0.8687324778646667,0.1312675221353318
+connectivities,release,human_to_mouse,decidual_cell,23108,23103,0.17956600002610537,0.8204339999738947,0.20619758142341457,0.793802418576588
+connectivities,release,mouse_to_human,endometrial_fibroblast,20278,20277,0.8489597699871321,0.15104023001286795,0.82550487227764,0.17449512772236012
+connectivities,release,mouse_to_human,decidual_cell,22919,22919,0.0784286040159522,0.9215713959840478,0.09669379148726964,0.9033062085127281

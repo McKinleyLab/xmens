@@ -1,0 +1,3 @@
+/n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Homo_sapiens.GRCh38.pep.all.fa: sha256 as pinned
+/n/lab_storage/eddy_lab/users/nhilgert/data/proteomes/fasta/Mus_musculus.GRCm39.pep.all.fa: sha256 as pinned
+/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_07_xmens_samap_phmmer_task1/0_homology/phmmer/hu_vs_mu/hu_1.tbl: 398695 hits for 3871 query proteins

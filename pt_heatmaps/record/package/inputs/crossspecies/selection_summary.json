@@ -1,0 +1,73 @@
+{
+ "mi_arms": {
+  "mouse": "pt_harmonized_mouse_nall",
+  "human": "pt_harmonized_human_nall"
+ },
+ "universe": 9638,
+ "k_top": 964,
+ "pool": 273,
+ "pool_in_shared_topdecile": 273,
+ "shared_topdecile": 373,
+ "n_r_gt": 92,
+ "rmin": 0.8,
+ "phase_counts_r_gt": {
+  "late": 62,
+  "early": 29,
+  "mid": 1
+ },
+ "median_r50_pool": 0.627,
+ "n_selected": 28,
+ "r50_range_selected": [
+  0.8819,
+  0.9906
+ ],
+ "same_genes_as_record": true,
+ "same_order_as_record": true,
+ "max_abs_diff_vs_record": {
+  "r50": 1.1102230246251565e-16,
+  "r20": 1.1102230246251565e-16,
+  "centroid": 1.1102230246251565e-16
+ },
+ "previous_selection": "/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/results/mi_dpt/overlap_harmonized_nall/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv",
+ "prev_columns": [
+  "human",
+  "mouse",
+  "profile_r_50bins",
+  "profile_r_20bins",
+  "phase",
+  "pt_centroid",
+  "peak_h",
+  "peak_m"
+ ],
+ "overlap_with_previous": 26,
+ "order": [
+  "RGMA",
+  "MATN2",
+  "DPYD",
+  "MYCBP2",
+  "COL6A1",
+  "IGFBP5",
+  "RORA",
+  "REV3L",
+  "KCNMA1",
+  "ROR2",
+  "PRKCE",
+  "IGF1",
+  "PLEKHH2",
+  "PALLD",
+  "GJA1",
+  "CD63",
+  "SIPA1L1",
+  "TJP1",
+  "CEBPB",
+  "FBXW7",
+  "P4HB",
+  "CALU",
+  "RAB7A",
+  "ELL",
+  "ZNF697",
+  "MCL1",
+  "BNIP3L",
+  "SERPINE1"
+ ]
+}

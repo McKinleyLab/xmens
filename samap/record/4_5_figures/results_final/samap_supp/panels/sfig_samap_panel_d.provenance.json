@@ -1,0 +1,51 @@
+{
+ "outputs": [
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_d.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_d_600dpi.png",
+  "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/figures/samap_supp/final/panels/sfig_samap_panel_d.svg"
+ ],
+ "written": "2026-11-03T00:19:19",
+ "host": "holy8a25503.rc.fas.harvard.edu",
+ "notebook": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/notebooks/samap/sfig_samap_d_edge_share.ipynb",
+ "notebook_md5": "ed29f341728e5b7142d81301f7ef7109",
+ "git": {
+  "commit": "fd1859c38a50b457abfd9780a4dd2fed88de3f80",
+  "notebook_matches_commit": true
+ },
+ "parameters": {
+  "REPO": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo",
+  "EDGE_SHARE": "results/samap_figures/final/edge_share/samap_compartment_edge_share.csv",
+  "OUT": "results/figures/samap_supp/final/panels",
+  "FORCE": true
+ },
+ "inputs": [
+  {
+   "path": "/n/lab_storage/eddy_lab/users/nhilgert/tmp/2026_11_03_fig6c_pipeline/repo/results/samap_figures/final/edge_share/samap_compartment_edge_share.csv",
+   "role": "edge_share",
+   "bytes": 355,
+   "mtime": "2026-11-03T00:18:52",
+   "sha256": "438d55f6b2ecd140747685ec8a41f400ccd91e972425a05014733a115d0862e1"
+  }
+ ],
+ "font": "Nimbus Sans",
+ "versions": {
+  "python": "3.11.15",
+  "matplotlib": "3.10.8",
+  "pandas": "2.3.3",
+  "numpy": "2.2.0"
+ },
+ "panel": {
+  "letter": "d",
+  "row": 1,
+  "col": 0,
+  "colspan": 4,
+  "chart_family": "100% stacked bars",
+  "message": "edges link matching compartments"
+ },
+ "matching_share": {
+  "human_to_mouse/endometrial_fibroblast": 0.8754,
+  "human_to_mouse/decidual_cell": 0.8204,
+  "mouse_to_human/endometrial_fibroblast": 0.849,
+  "mouse_to_human/decidual_cell": 0.9216
+ }
+}
