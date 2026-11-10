@@ -1,0 +1,37 @@
+compared uninduced_mck8a
+compared uninduced_mck8b
+compared 1_dpi_early_mck1
+compared 1_dpi_late_mck12a
+compared 1_dpi_late_mck12b
+compared 2_dpi_mck15
+compared 3_dpi_mck10a
+compared 3_dpi_mck10b
+compared 4_dpi_bleeding_mck11a
+compared secretory_mck6a
+compared secretory_mck6b
+compared secretory_mck6c
+compared menstrual_mck5a
+compared menstrual_mck5b
+compared menstrual_mck5c
+
+Run /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_preprocess against the November 2026 run of record; one row per sample in /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_preprocess/compare_with_record_20261108_180940.tsv
+1 Cell Ranger (15 lanes): raw .h5 identical 15/15, filtered .h5 identical 15/15, metrics identical 15/15
+2 CellBender (15 samples): record 190,222, run 190,222, both 190,222; identical 190,222 of 190,222 (100.00%)
+3 QC (15 samples): log identical in 15/15; numbers:
+    uninduced_mck8a: same
+    uninduced_mck8b: same
+    1_dpi_early_mck1: same
+    1_dpi_late_mck12a: same
+    1_dpi_late_mck12b: same
+    2_dpi_mck15: same
+    3_dpi_mck10a: same
+    3_dpi_mck10b: same
+    4_dpi_bleeding_mck11a: same
+    secretory_mck6a: same
+    secretory_mck6b: same
+    secretory_mck6c: same
+    menstrual_mck5a: same
+    menstrual_mck5b: same
+    menstrual_mck5c: same
+4 concat (15 samples): record 139,456, run 139,456, both 139,456; identical 139,456 of 139,456 (100.00%)
+5 positions (15 samples): both 139,456; identical 139,456 of 139,456 (100.00%)

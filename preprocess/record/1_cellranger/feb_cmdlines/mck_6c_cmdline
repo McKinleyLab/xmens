@@ -1,0 +1,1 @@
+/n/eddy_lab/users/nhilgert/software/cellranger-7.2.0/cellranger count --id=mck_6c --transcriptome=/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A --fastqs=/n/eddy_lab/users/nhilgert/decidualization/lanes/mck_6c/gex --sample=SI-TT-A10 --output-dir=/n/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger --localcores=8 --localmem=96

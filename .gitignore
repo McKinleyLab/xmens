@@ -31,3 +31,22 @@ pseudotime/results/
 *.tmp
 *.swp
 .env
+
+# 2026 pipeline folders keep their tables, checksums, reference files and SLURM logs (provenance)
+!preprocess/**/*.tsv
+!preprocess/**/*.txt
+!preprocess/**/*.csv
+!preprocess/**/*.fa
+!preprocess/**/*.gtf
+!preprocess/**/*.out
+!preprocess/logs/
+!preprocess/logs/**
+!scenic/**/*.tsv
+!scenic/**/*.txt
+!scenic/**/*.out
+!scenic/logs/
+!scenic/logs/**
+# objects never
+*.h5ad
+*.h5
+*.loom

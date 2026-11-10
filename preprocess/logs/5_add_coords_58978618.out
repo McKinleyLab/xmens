@@ -1,0 +1,37 @@
+mouse mck_1: pipeline x/y = Nick's CSV for 3,497 nuclei
+mouse mck_10a: pipeline x/y = Nick's CSV for 8,407 nuclei
+mouse mck_10b: pipeline x/y = Nick's CSV for 8,246 nuclei
+mouse mck_11a: pipeline x/y = Nick's CSV for 8,746 nuclei
+mouse mck_12a: pipeline x/y = Nick's CSV for 7,768 nuclei
+mouse mck_12b: pipeline x/y = Nick's CSV for 7,037 nuclei
+mouse mck_15: pipeline x/y = Nick's CSV for 5,153 nuclei
+mouse mck_8a: pipeline x/y = Nick's CSV for 12,027 nuclei
+mouse mck_8b: pipeline x/y = Nick's CSV for 8,426 nuclei
+human mck_5a: pipeline x/y = Nick's CSV for 12,742 nuclei
+human mck_5b: pipeline x/y = Nick's CSV for 12,634 nuclei
+human mck_5c: pipeline x/y = Nick's CSV for 11,625 nuclei
+human mck_6a: pipeline x/y = Nick's CSV for 12,983 nuclei
+human mck_6b: pipeline x/y = Nick's CSV for 12,696 nuclei
+human mck_6c: pipeline x/y = Nick's CSV for 7,469 nuclei
+qc_passed_mouse.h5ad: 69,307 nuclei x 32,287 genes; obsm ['spatial', 'spatial_andy']; uns ['coordinate_sources']; checks passed
+qc_passed_human.h5ad: 70,149 nuclei x 38,606 genes; obsm ['spatial', 'spatial_andy']; uns ['coordinate_sources']; checks passed
+species                sample    lane  nuclei  placed, Nick coords  placed, Andy coords  placed by both  both, >1 um apart  Nick only  Andy only
+  mouse      1_dpi_early_mck1   mck_1    3497                 1787                 1853            1781                  0          6         72
+  mouse          3_dpi_mck10a mck_10a    8407                 4121                 4121            4121                  0          0          0
+  mouse          3_dpi_mck10b mck_10b    8246                 4625                 4625            4625                  0          0          0
+  mouse 4_dpi_bleeding_mck11a mck_11a    8746                 6143                 6145            6108                282         35         37
+  mouse     1_dpi_late_mck12a mck_12a    7768                 4478                 4478            4478                  0          0          0
+  mouse     1_dpi_late_mck12b mck_12b    7037                 3129                 3129            3129                  0          0          0
+  mouse           2_dpi_mck15  mck_15    5153                 2978                 2978            2978                  0          0          0
+  mouse       uninduced_mck8a  mck_8a   12027                 4108                 4104            4103                  0          5          1
+  mouse       uninduced_mck8b  mck_8b    8426                 3570                 3569            3569                  0          1          0
+  human       menstrual_mck5a  mck_5a   12742                 7594                 7591            7591                  1          3          0
+  human       menstrual_mck5b  mck_5b   12634                 7879                 7770            7498               3690        381        272
+  human       menstrual_mck5c  mck_5c   11625                 7028                 7028            7028                  0          0          0
+  human       secretory_mck6a  mck_6a   12983                 9693                 9693            9693                  0          0          0
+  human       secretory_mck6b  mck_6b   12696                 9463                 9463            9463                  0          0          0
+  human       secretory_mck6c  mck_6c    7469                 5694                 5695            5694                  0          0          1
+         nuclei  placed, Nick coords  placed, Andy coords  placed by both  both, >1 um apart  Nick only  Andy only
+species                                                                                                           
+human     70149                47351                47240           46967               3691        384        273
+mouse     69307                34939                35002           34892                282         47        110

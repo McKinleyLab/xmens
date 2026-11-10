@@ -1,0 +1,1 @@
+/n/eddy_lab/users/nhilgert/software/cellranger-7.2.0/cellranger count --id=mck_10a --transcriptome=/n/eddy_lab/users/nhilgert/reference/transgenic_mus --fastqs=/n/eddy_lab/users/nhilgert/decidualization/lanes/mck_10a/gex --sample=SI-TT-G4 --output-dir=/n/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger --localcores=8 --localmem=96

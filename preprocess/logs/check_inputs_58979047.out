@@ -1,0 +1,14 @@
+158 label, FASTQ, record, software and source checks done; hashing the references
+
+result              PASS  INFO
+section                       
+labels                45    15
+FASTQs                16     0
+Cell Ranger record    75     0
+software               3     0
+sources                4     0
+mouse reference       11     1
+human reference        3     1
+
+
+report: /n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/reports/check_inputs_2026_11_08_1446.tsv

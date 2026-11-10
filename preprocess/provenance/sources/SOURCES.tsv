@@ -1,0 +1,5 @@
+file	origin	obtained	sha256
+samples_sheet_2026_11_06.csv	Samples sheet of the lab spreadsheet McKinley - SlideTags Samples, downloaded as CSV; matches the .xlsx download (sha256 7f139d2e39c31d4e) in the columns check_inputs.py reads	2026-11-06	ee72beb0453e8439563663a1f0c9ef6de801e5a4cc1e627ffdb0227332dbc111
+transgenes/GqD_transgene.fa	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/GqD_transgene.fa, dated 2024-02-26	2026-11-06	bc9688c4ae1a490bd2137858b24ce098538454df649e0298e33f328cdfaca4cb
+transgenes/GsD_Berdeaux.fa	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/GsD_Berdeaux.fa, dated 2024-02-26	2026-11-06	14ba32c25931f7b65b99ca28c8c69a7156f1e44ae65a8a6ba0076ad3fb0c74ef
+fastq_md5_2026_11_06.txt	md5sum of every FASTQ under xmens_final/dataverse/fastqs, job 58355661	2026-11-06	f6802269ef0380b4b2497539ae32cbe5d86f57af8437838f3f64d297f787580a

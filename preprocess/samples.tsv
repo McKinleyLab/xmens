@@ -1,0 +1,16 @@
+sample_id	lane	species	timepoint	modality	fastq_dir	fastq_prefix
+uninduced_mck8a	mck_8a	mouse	uninduced	slidetags	FG/SI-TT-F7	SI-TT-F7
+uninduced_mck8b	mck_8b	mouse	uninduced	slidetags	FG/SI-TT-F8	SI-TT-F8
+1_dpi_early_mck1	mck_1	mouse	1_dpi_early	slidetags	mck_1/SI-TT-A5	SI-TT-A5
+1_dpi_late_mck12a	mck_12a	mouse	1_dpi_late	slidetags	FG/SI-TT-F4	SI-TT-F4
+1_dpi_late_mck12b	mck_12b	mouse	1_dpi_late	slidetags	FG/SI-TT-F5	SI-TT-F5
+2_dpi_mck15	mck_15	mouse	2_dpi	slidetags	FG/SI-TT-G6	SI-TT-G6
+3_dpi_mck10a	mck_10a	mouse	3_dpi	slidetags	FG/SI-TT-G4	SI-TT-G4
+3_dpi_mck10b	mck_10b	mouse	3_dpi	slidetags	FG/SI-TT-G5	SI-TT-G5
+4_dpi_bleeding_mck11a	mck_11a	mouse	4_dpi_bleeding	slidetags	FG/SI-TT-F1	SI-TT-F1
+secretory_mck6a	mck_6a	human	secretory	slidetags	AE/SI-TT-A8	SI-TT-A8
+secretory_mck6b	mck_6b	human	secretory	slidetags	AE/SI-TT-A9	SI-TT-A9
+secretory_mck6c	mck_6c	human	secretory	slidetags	AE/SI-TT-A10	SI-TT-A10
+menstrual_mck5a	mck_5a	human	menstrual	slidetags	AE/SI-TT-A5	SI-TT-A5
+menstrual_mck5b	mck_5b	human	menstrual	slidetags	AE/SI-TT-A6	SI-TT-A6
+menstrual_mck5c	mck_5c	human	menstrual	slidetags	AE/SI-TT-A7	SI-TT-A7

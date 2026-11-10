@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/n/lab_storage/eddy_lab/users/nhilgert/xmens_preprocess/scripts/ingest.py", line 53, in <module>
+    adata = sc.read_10x_h5(counts_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/legacy_api_wrap/__init__.py", line 88, in fn_compatible
+    return fn(*args_all, **kw)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/scanpy/readwrite.py", line 221, in read_10x_h5
+    with h5py.File(str(path), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/h5py/_hl/files.py", line 555, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/lab_storage/eddy_lab/users/nhilgert/.uv/envs/rsc_uv/lib/python3.11/site-packages/h5py/_hl/files.py", line 232, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = '/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_06_xmens_preprocess/cellbender/secretory_mck6a/secretory_mck6a_cellbender_filtered.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)

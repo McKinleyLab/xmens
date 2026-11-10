@@ -1,0 +1,175 @@
+section	check	lane	result	observed	expected	evidence
+labels	GEX index (FASTQ prefix)	mck_8a	PASS	SI-TT-F7	SI-TT-F7	Samples sheet, Mck 8a
+labels	timepoint	mck_8a	PASS	uninduced	uninduced	Samples sheet, Mck 8a
+labels	animal or donor, age	mck_8a	INFO	F355, 85	-	Samples sheet, Mck 8a
+labels	GEX index (FASTQ prefix)	mck_8b	PASS	SI-TT-F8	SI-TT-F8	Samples sheet, Mck 8b
+labels	timepoint	mck_8b	PASS	uninduced	uninduced	Samples sheet, Mck 8b
+labels	animal or donor, age	mck_8b	INFO	F355, 85	-	Samples sheet, Mck 8b
+labels	GEX index (FASTQ prefix)	mck_1	PASS	SI-TT-A5	SI-TT-A5	Samples sheet, Mck 1
+labels	timepoint	mck_1	PASS	1_dpi_early	1dpi_early	Samples sheet, Mck 1
+labels	animal or donor, age	mck_1	INFO	1637, 72	-	Samples sheet, Mck 1
+labels	GEX index (FASTQ prefix)	mck_12a	PASS	SI-TT-F4	SI-TT-F4	Samples sheet, Mck 12a
+labels	timepoint	mck_12a	PASS	1_dpi_late	1dpi_late	Samples sheet, Mck 12a
+labels	animal or donor, age	mck_12a	INFO	F565, 80	-	Samples sheet, Mck 12a
+labels	GEX index (FASTQ prefix)	mck_12b	PASS	SI-TT-F5	SI-TT-F5	Samples sheet, Mck 12b
+labels	timepoint	mck_12b	PASS	1_dpi_late	1dpi_late	Samples sheet, Mck 12b
+labels	animal or donor, age	mck_12b	INFO	F565, 80	-	Samples sheet, Mck 12b
+labels	GEX index (FASTQ prefix)	mck_15	PASS	SI-TT-G6	SI-TT-G6	Samples sheet, Mck 15
+labels	timepoint	mck_15	PASS	2_dpi	2dpi	Samples sheet, Mck 15
+labels	animal or donor, age	mck_15	INFO	5024, 69	-	Samples sheet, Mck 15
+labels	GEX index (FASTQ prefix)	mck_10a	PASS	SI-TT-G4	SI-TT-G4	Samples sheet, Mck 10a
+labels	timepoint	mck_10a	PASS	3_dpi	3dpi	Samples sheet, Mck 10a
+labels	animal or donor, age	mck_10a	INFO	2034, 81	-	Samples sheet, Mck 10a
+labels	GEX index (FASTQ prefix)	mck_10b	PASS	SI-TT-G5	SI-TT-G5	Samples sheet, Mck 10b
+labels	timepoint	mck_10b	PASS	3_dpi	3dpi	Samples sheet, Mck 10b
+labels	animal or donor, age	mck_10b	INFO	2034, 81	-	Samples sheet, Mck 10b
+labels	GEX index (FASTQ prefix)	mck_11a	PASS	SI-TT-F1	SI-TT-F1	Samples sheet, Mck 11a
+labels	timepoint	mck_11a	PASS	4_dpi_bleeding	4dpi_bleeding	Samples sheet, Mck 11a
+labels	animal or donor, age	mck_11a	INFO	F351, 87	-	Samples sheet, Mck 11a
+labels	GEX index (FASTQ prefix)	mck_6a	PASS	SI-TT-A8	SI-TT-A8	Samples sheet, Mck 6a
+labels	timepoint	mck_6a	PASS	secretory	secretory	Samples sheet, Mck 6a
+labels	animal or donor, age	mck_6a	INFO	D#6, 27y	-	Samples sheet, Mck 6a
+labels	GEX index (FASTQ prefix)	mck_6b	PASS	SI-TT-A9	SI-TT-A9	Samples sheet, Mck 6b
+labels	timepoint	mck_6b	PASS	secretory	secretory	Samples sheet, Mck 6b
+labels	animal or donor, age	mck_6b	INFO	D#6, 27y	-	Samples sheet, Mck 6b
+labels	GEX index (FASTQ prefix)	mck_6c	PASS	SI-TT-A10	SI-TT-A10	Samples sheet, Mck 6c
+labels	timepoint	mck_6c	PASS	secretory	secretory	Samples sheet, Mck 6c
+labels	animal or donor, age	mck_6c	INFO	D#6, 27y	-	Samples sheet, Mck 6c
+labels	GEX index (FASTQ prefix)	mck_5a	PASS	SI-TT-A5	SI-TT-A5	Samples sheet, Mck 5a
+labels	timepoint	mck_5a	PASS	menstrual	menstrual	Samples sheet, Mck 5a
+labels	animal or donor, age	mck_5a	INFO	D#16, 25y	-	Samples sheet, Mck 5a
+labels	GEX index (FASTQ prefix)	mck_5b	PASS	SI-TT-A6	SI-TT-A6	Samples sheet, Mck 5b
+labels	timepoint	mck_5b	PASS	menstrual	menstrual	Samples sheet, Mck 5b
+labels	animal or donor, age	mck_5b	INFO	D#16, 25y	-	Samples sheet, Mck 5b
+labels	GEX index (FASTQ prefix)	mck_5c	PASS	SI-TT-A7	SI-TT-A7	Samples sheet, Mck 5c
+labels	timepoint	mck_5c	PASS	menstrual	menstrual	Samples sheet, Mck 5c
+labels	animal or donor, age	mck_5c	INFO	D#16, 25y	-	Samples sheet, Mck 5c
+labels	sequencing run in the read headers	mck_8a	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_8b	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_1	PASS	run 237, flowcell AAF57MWM5	231217_VL00297_237_AAF57MWM5	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_12a	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_12b	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_15	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_10a	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_10b	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_11a	PASS	run 341, flowcell 22CTCMLT4	240808_SL-EXC_0341_A22CTCMLT4	first read of 1 R1 files
+labels	sequencing run in the read headers	mck_6a	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+labels	sequencing run in the read headers	mck_6b	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+labels	sequencing run in the read headers	mck_6c	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+labels	sequencing run in the read headers	mck_5a	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+labels	sequencing run in the read headers	mck_5b	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+labels	sequencing run in the read headers	mck_5c	PASS	run 305, flowcell 22K775LT3	240515_SL-EXB_0305_B22K775LT3	first read of 6 R1 files
+FASTQs	complete set of files	mck_8a	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-F7
+FASTQs	complete set of files	mck_8b	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-F8
+FASTQs	complete set of files	mck_1	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/mck_1/SI-TT-A5
+FASTQs	complete set of files	mck_12a	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-F4
+FASTQs	complete set of files	mck_12b	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-F5
+FASTQs	complete set of files	mck_15	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-G6
+FASTQs	complete set of files	mck_10a	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-G4
+FASTQs	complete set of files	mck_10b	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-G5
+FASTQs	complete set of files	mck_11a	PASS	1 I1, 1 I2, 1 R1, 1 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/FG/SI-TT-F1
+FASTQs	complete set of files	mck_6a	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A8
+FASTQs	complete set of files	mck_6b	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A9
+FASTQs	complete set of files	mck_6c	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A10
+FASTQs	complete set of files	mck_5a	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A5
+FASTQs	complete set of files	mck_5b	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A6
+FASTQs	complete set of files	mck_5c	PASS	6 I1, 6 I2, 6 R1, 6 R2	the same number of I1, I2, R1 and R2 files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_final/dataverse/fastqs/AE/SI-TT-A7
+FASTQs	md5 manifest lists every FASTQ	-	PASS	624 listed, 624 on disk	the same files	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/sources/fastq_md5_2026_11_06.txt (sha256 f6802269ef0380b4)
+Cell Ranger record	sample index read	mck_8a	PASS	SI-TT-F7	SI-TT-F7	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8a/cellranger
+Cell Ranger record	FASTQ folder read	mck_8a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-F7	.../FG/SI-TT-F7	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8a/cellranger
+Cell Ranger record	mouse reference	mck_8a	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8a/cellranger
+Cell Ranger record	introns counted	mck_8a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8a/cellranger
+Cell Ranger record	Cell Ranger version	mck_8a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8a/cellranger
+Cell Ranger record	sample index read	mck_8b	PASS	SI-TT-F8	SI-TT-F8	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8b/cellranger
+Cell Ranger record	FASTQ folder read	mck_8b	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-F8	.../FG/SI-TT-F8	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8b/cellranger
+Cell Ranger record	mouse reference	mck_8b	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8b/cellranger
+Cell Ranger record	introns counted	mck_8b	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8b/cellranger
+Cell Ranger record	Cell Ranger version	mck_8b	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_8b/cellranger
+Cell Ranger record	sample index read	mck_1	PASS	SI-TT-A5	SI-TT-A5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_1/cellranger
+Cell Ranger record	FASTQ folder read	mck_1	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/mck_1/SI-TT-A5	.../mck_1/SI-TT-A5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_1/cellranger
+Cell Ranger record	mouse reference	mck_1	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_1/cellranger
+Cell Ranger record	introns counted	mck_1	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_1/cellranger
+Cell Ranger record	Cell Ranger version	mck_1	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_1/cellranger
+Cell Ranger record	sample index read	mck_12a	PASS	SI-TT-F4	SI-TT-F4	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12a/cellranger
+Cell Ranger record	FASTQ folder read	mck_12a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-F4	.../FG/SI-TT-F4	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12a/cellranger
+Cell Ranger record	mouse reference	mck_12a	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12a/cellranger
+Cell Ranger record	introns counted	mck_12a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12a/cellranger
+Cell Ranger record	Cell Ranger version	mck_12a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12a/cellranger
+Cell Ranger record	sample index read	mck_12b	PASS	SI-TT-F5	SI-TT-F5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12b/cellranger
+Cell Ranger record	FASTQ folder read	mck_12b	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-F5	.../FG/SI-TT-F5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12b/cellranger
+Cell Ranger record	mouse reference	mck_12b	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12b/cellranger
+Cell Ranger record	introns counted	mck_12b	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12b/cellranger
+Cell Ranger record	Cell Ranger version	mck_12b	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_12b/cellranger
+Cell Ranger record	sample index read	mck_15	PASS	SI-TT-G6	SI-TT-G6	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_15/cellranger
+Cell Ranger record	FASTQ folder read	mck_15	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-G6	.../FG/SI-TT-G6	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_15/cellranger
+Cell Ranger record	mouse reference	mck_15	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_15/cellranger
+Cell Ranger record	introns counted	mck_15	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_15/cellranger
+Cell Ranger record	Cell Ranger version	mck_15	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_15/cellranger
+Cell Ranger record	sample index read	mck_10a	PASS	SI-TT-G4	SI-TT-G4	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger
+Cell Ranger record	FASTQ folder read	mck_10a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-G4	.../FG/SI-TT-G4	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger
+Cell Ranger record	mouse reference	mck_10a	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger
+Cell Ranger record	introns counted	mck_10a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger
+Cell Ranger record	Cell Ranger version	mck_10a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10a/cellranger
+Cell Ranger record	sample index read	mck_10b	PASS	SI-TT-G5	SI-TT-G5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10b/cellranger
+Cell Ranger record	FASTQ folder read	mck_10b	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-G5	.../FG/SI-TT-G5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10b/cellranger
+Cell Ranger record	mouse reference	mck_10b	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10b/cellranger
+Cell Ranger record	introns counted	mck_10b	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10b/cellranger
+Cell Ranger record	Cell Ranger version	mck_10b	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_10b/cellranger
+Cell Ranger record	sample index read	mck_11a	PASS	SI-TT-F1	SI-TT-F1	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_11a/cellranger
+Cell Ranger record	FASTQ folder read	mck_11a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/FG/SI-TT-F1	.../FG/SI-TT-F1	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_11a/cellranger
+Cell Ranger record	mouse reference	mck_11a	PASS	/n/eddy_lab/users/nhilgert/reference/transgenic_mus	transgenic_mus	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_11a/cellranger
+Cell Ranger record	introns counted	mck_11a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_11a/cellranger
+Cell Ranger record	Cell Ranger version	mck_11a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_11a/cellranger
+Cell Ranger record	sample index read	mck_6a	PASS	SI-TT-A8	SI-TT-A8	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6a/cellranger
+Cell Ranger record	FASTQ folder read	mck_6a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A8	.../AE/SI-TT-A8	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6a/cellranger
+Cell Ranger record	human reference	mck_6a	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6a/cellranger
+Cell Ranger record	introns counted	mck_6a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6a/cellranger
+Cell Ranger record	Cell Ranger version	mck_6a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6a/cellranger
+Cell Ranger record	sample index read	mck_6b	PASS	SI-TT-A9	SI-TT-A9	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6b/cellranger
+Cell Ranger record	FASTQ folder read	mck_6b	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A9	.../AE/SI-TT-A9	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6b/cellranger
+Cell Ranger record	human reference	mck_6b	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6b/cellranger
+Cell Ranger record	introns counted	mck_6b	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6b/cellranger
+Cell Ranger record	Cell Ranger version	mck_6b	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6b/cellranger
+Cell Ranger record	sample index read	mck_6c	PASS	SI-TT-A10	SI-TT-A10	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger
+Cell Ranger record	FASTQ folder read	mck_6c	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A10	.../AE/SI-TT-A10	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger
+Cell Ranger record	human reference	mck_6c	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger
+Cell Ranger record	introns counted	mck_6c	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger
+Cell Ranger record	Cell Ranger version	mck_6c	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_6c/cellranger
+Cell Ranger record	sample index read	mck_5a	PASS	SI-TT-A5	SI-TT-A5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5a/cellranger
+Cell Ranger record	FASTQ folder read	mck_5a	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A5	.../AE/SI-TT-A5	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5a/cellranger
+Cell Ranger record	human reference	mck_5a	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5a/cellranger
+Cell Ranger record	introns counted	mck_5a	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5a/cellranger
+Cell Ranger record	Cell Ranger version	mck_5a	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5a/cellranger
+Cell Ranger record	sample index read	mck_5b	PASS	SI-TT-A6	SI-TT-A6	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5b/cellranger
+Cell Ranger record	FASTQ folder read	mck_5b	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A6	.../AE/SI-TT-A6	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5b/cellranger
+Cell Ranger record	human reference	mck_5b	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5b/cellranger
+Cell Ranger record	introns counted	mck_5b	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5b/cellranger
+Cell Ranger record	Cell Ranger version	mck_5b	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5b/cellranger
+Cell Ranger record	sample index read	mck_5c	PASS	SI-TT-A7	SI-TT-A7	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5c/cellranger
+Cell Ranger record	FASTQ folder read	mck_5c	PASS	/n/eddy_lab/users/nhilgert/decidualization/fastqs/AE/SI-TT-A7	.../AE/SI-TT-A7	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5c/cellranger
+Cell Ranger record	human reference	mck_5c	PASS	/n/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A	refdata-gex-GRCh38-2024-A	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5c/cellranger
+Cell Ranger record	introns counted	mck_5c	PASS	true	true	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5c/cellranger
+Cell Ranger record	Cell Ranger version	mck_5c	PASS	cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/velocity/mck_5c/cellranger
+software	Cell Ranger	-	PASS	cellranger cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/software/cellranger-7.2.0/cellranger
+software	cellbender	-	PASS	0.2.2	0.2.2	/n/lab_storage/eddy_lab/users/nhilgert/.conda/envs/cellbender_022
+software	doubletdetection	-	PASS	4.2	4.2	/n/lab_storage/eddy_lab/users/nhilgert/.conda/envs/cuda11.8_env
+sources	unchanged since copied	-	PASS	fastq_md5_2026_11_06.txt: sha256 f6802269ef0380b4	sha256 f6802269ef0380b4	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/sources/SOURCES.tsv
+sources	unchanged since copied	-	PASS	samples_sheet_2026_11_06.csv: sha256 ee72beb0453e8439	sha256 ee72beb0453e8439	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/sources/SOURCES.tsv
+sources	unchanged since copied	-	PASS	transgenes/GqD_transgene.fa: sha256 bc9688c4ae1a490b	sha256 bc9688c4ae1a490b	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/sources/SOURCES.tsv
+sources	unchanged since copied	-	PASS	transgenes/GsD_Berdeaux.fa: sha256 14ba32c25931f7b6	sha256 14ba32c25931f7b6	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/provenance/sources/SOURCES.tsv
+mouse reference	genome.fa unchanged since mkref built it	-	PASS	968a2ead03826a11ebea454a34e27536c72bfb9f	968a2ead03826a11ebea454a34e27536c72bfb9f	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus/reference.json
+mouse reference	mkref's input genome.fa is the built genome.fa	-	PASS	968a2ead03826a11ebea454a34e27536c72bfb9f	968a2ead03826a11ebea454a34e27536c72bfb9f	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/fasta/genome.fa
+mouse reference	genome.fa before the transgenes is 10x mm10-2020-A	-	PASS	c9c31fef9ba3b93f99ad59d9345aeee0c9cb0640	c9c31fef9ba3b93f99ad59d9345aeee0c9cb0640	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/reference.json (10x)
+mouse reference	genome.fa ends with exactly the transgene records	-	PASS	last 6,642 bytes	GqD_transgene.fa + GsD_Berdeaux.fa	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/fasta/genome.fa
+mouse reference	genes.gtf identical to mkref's input	-	PASS	0c7b0e5a5744c87467b8670ea7abc0ba2992d137	0c7b0e5a5744c87467b8670ea7abc0ba2992d137	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/genes.gtf
+mouse reference	genes.gtf before the transgenes is 10x mm10-2020-A	-	PASS	a1e5c2938abad988e67a268a16ff6f1af33c035e	a1e5c2938abad988e67a268a16ff6f1af33c035e	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/reference.json (10x)
+mouse reference	CHRM3_Jax026220 annotated as one exon spanning its sequence	-	PASS	CHRM3_Jax026220 exon 1 3592 +	CHRM3_Jax026220 exon 1 3592 +	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/genes.gtf
+mouse reference	GsD_Berdeaux annotated as one exon spanning its sequence	-	PASS	GsD_Berdeaux exon 1 3017 +	GsD_Berdeaux exon 1 3017 +	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/genes.gtf
+mouse reference	record/ copy of the build script is identical	-	PASS	sha256 dda5c508ecd91001	sha256 dda5c508ecd91001	/n/lab_storage/eddy_lab/users/nhilgert/xmens_scripts/preprocess/record/0_reference/mus.sh
+mouse reference	build script runs mkref on these inputs	-	PASS	/n/eddy_lab/users/nhilgert/cellranger-7.2.0/cellranger mkref --genome=transgenic_mus --fasta=/n/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/fasta/genome.fa --genes=/n/eddy_lab/users/nhilgert/reference/transgenic_mus_premkref/genes/genes.gtf	--genome=transgenic_mus, transgenic_mus_premkref/fasta/genome.fa, transgenic_mus_premkref/genes/genes.gtf	/n/lab_storage/eddy_lab/users/nhilgert/reference/mus.sh
+mouse reference	mkref version	-	PASS	cellranger mkref cellranger-7.2.0	cellranger-7.2.0	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus/reference.json
+mouse reference	files mkref didn't write	-	INFO	added: genes/genes.gtf, velocity.sh; missing: genes/genes.gtf.gz	-	/n/lab_storage/eddy_lab/users/nhilgert/reference/transgenic_mus
+human reference	genome.fa unchanged since 10x built it	-	PASS	b6f131840f9f337e7b858c3d1e89d7ce0321b243	b6f131840f9f337e7b858c3d1e89d7ce0321b243	/n/lab_storage/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A/reference.json (10x)
+human reference	genes.gtf.gz unchanged since 10x built it	-	PASS	432db3ab308171ef215fac5dc4ca40096099a4c6	432db3ab308171ef215fac5dc4ca40096099a4c6	/n/lab_storage/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A/reference.json (10x)
+human reference	release	-	PASS	2024-A	2024-A	/n/lab_storage/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A/reference.json (10x)
+human reference	files mkref didn't write	-	INFO	added: fasta/Homo_sapiens.GRCh38.cdna.all.fa; missing: none	-	/n/lab_storage/eddy_lab/users/nhilgert/reference/human/refdata-gex-GRCh38-2024-A
