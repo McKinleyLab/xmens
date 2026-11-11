@@ -1,0 +1,24 @@
+/n/lab_storage/eddy_lab/Lab/mckinley/data/20261107_Human_fibdec_final_nick_pdt.h5ad: sha256 as pinned
+/n/lab_storage/eddy_lab/Lab/mckinley/data/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad: sha256 as pinned
+Input Notebook:  /n/lab_storage/eddy_lab/users/nhilgert/xmens/samap/notebooks/1_inputs.ipynb
+Output Notebook: /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_samap_final/notebooks/1_inputs.partial.ipynb
+Working directory: /n/lab_storage/eddy_lab/users/nhilgert/xmens/samap/notebooks
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Executing notebook with kernel: samap
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+hs {"source": "/n/lab_storage/eddy_lab/Lab/mckinley/data/20261107_Human_fibdec_final_nick_pdt.h5ad", "source_sha256": "12429594a2e71ba39861e96edb0a19d23088fd1f026e11f7ade8856a10a4c425", "nuclei": 46818, "genes": 38606, "integer": true, "max": 1624.0, "library_median": 3262.5, "library_cv": 0.608, "nuclei_without_counts": 0}
+
+mm {"source": "/n/lab_storage/eddy_lab/Lab/mckinley/data/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad", "source_sha256": "e31372ba5fdd706ad620e8259e34216bc96b8f3b6394e4d2eedc0baeec8760dd", "nuclei": 42966, "genes": 32287, "integer": true, "max": 10318.0, "library_median": 3222.0, "library_cv": 1.093, "nuclei_without_counts": 0}
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_samap_final/1_inputs: ['hs_fib_dec_all_raw.h5ad', 'inputs.json', 'mm_fib_dec_all_raw.h5ad']
+
+Ending Cell 6------------------------------------------

@@ -61,4 +61,5 @@ run_notebook "$HERE/notebooks/4_statistics.ipynb" rsc "$OUT/notebooks/4_statisti
     -p OUT "$OUT" \
     -p SAMAP_FINAL "$SAMAP_FINAL" \
     -p HUMAN_H5AD "$HUMAN_H5AD" \
-    -p MOUSE_H5AD "$MOUSE_H5AD"
+    -p MOUSE_H5AD "$MOUSE_H5AD" \
+    -p X_COLUMN "$X_COLUMN" -p Y_COLUMN "$Y_COLUMN"

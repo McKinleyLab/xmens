@@ -61,4 +61,5 @@ verify_sha256 "$MOUSE_H5AD" "$MOUSE_H5AD_SHA256"
 run_notebook "$HERE/notebooks/1_inputs.ipynb" samap "$OUT/notebooks/1_inputs.ipynb" \
     -p OUT "$OUT" \
     -p HUMAN_H5AD "$HUMAN_H5AD" \
-    -p MOUSE_H5AD "$MOUSE_H5AD"
+    -p MOUSE_H5AD "$MOUSE_H5AD" \
+    -p COUNTS_LAYER "$COUNTS_LAYER"

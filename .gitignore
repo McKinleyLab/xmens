@@ -103,3 +103,6 @@ pseudotime/results/
 *.tif
 *.tiff
 *.eps
+
+# BLAST alignments of the homology step: inputs of record on disk, ~400 MB
+samap/blast/alignments/

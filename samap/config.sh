@@ -8,11 +8,18 @@ OUT=${OUT:?export OUT, the run folder, before running a step (see README.md)}
 NH=/n/lab_storage/eddy_lab/users/nhilgert
 NS=/n/netscratch/eddy_lab/Everyone/nhilgert
 
-# The deposited fibroblast/decidual objects (steps 1, 3 and 4): each species' counts, labels, positions and pseudotime
-# of record.
-FINAL_OBJECTS=$NS/final_objects
-MOUSE_H5AD=$FINAL_OBJECTS/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
-HUMAN_H5AD=$FINAL_OBJECTS/Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+# The fibroblast/decidual objects of 6-10 Nov 2026 with the pseudotime of 10 Nov (steps 1, 3 and 4): each species'
+# counts, labels, positions and pseudotime. (The deposited objects of record: $NS/final_objects/
+# Cevrim_XMens_Only_Fib_Dec_Cells.h5ad and Cevrim_Human_Only_Fib_Dec_Cells.h5ad.)
+FINAL_OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
+MOUSE_H5AD=$FINAL_OBJECTS/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad
+HUMAN_H5AD=$FINAL_OBJECTS/20261107_Human_fibdec_final_nick_pdt.h5ad
+
+# The objects' raw-counts layer (step 1) and the human section coordinates (step 4). In the deposited objects:
+# counts, x_um_qc and y_um_qc.
+COUNTS_LAYER=raw_counts
+X_COLUMN=x_um_dbscan
+Y_COLUMN=y_um_dbscan
 
 # Step 0: the human and mouse proteomes of Ensembl release 113, byte-identical to the decompressed
 #   https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/pep/Homo_sapiens.GRCh38.pep.all.fa.gz
@@ -26,8 +33,8 @@ PHMMER=$NH/software/hmmer-3.4/src/phmmer
 # Checksums of the four input files above. Each step that reads one checks it first and stops if it differs, so a
 # replaced file (netscratch is purgeable, and the final objects were rewritten once, on 2 Nov 2026) cannot flow
 # through unnoticed. To run on other files, change their paths and checksums here.
-MOUSE_H5AD_SHA256=e3e7ad3df4fd9ca58888a1e703ab70d27847be90d33fc46eae6e6860756344e7
-HUMAN_H5AD_SHA256=e74d038e446049fe7bea8d18a5612379ebfbc22f1084eb104f75eb0695998ada
+MOUSE_H5AD_SHA256=e31372ba5fdd706ad620e8259e34216bc96b8f3b6394e4d2eedc0baeec8760dd
+HUMAN_H5AD_SHA256=12429594a2e71ba39861e96edb0a19d23088fd1f026e11f7ade8856a10a4c425
 HUMAN_PROTEOME_SHA256=f38587d8e87564a08f99378c3416b47a866cd0aff5ed0bdeaeab0ca2d2a8ea3b
 MOUSE_PROTEOME_SHA256=54cb3f64f6dd1d0a398713016e866c355cff8e21968f8d18e0d60f7b498712d6
 
