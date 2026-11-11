@@ -10,7 +10,7 @@ from matplotlib.lines import Line2D
 from sfig_samap_style import PSEUDOTIME_CMAP, PSEUDOTIME_NORM, new_panel, panel_title
 
 DOT = 0.22                 # pt^2: about 90,000 nuclei share each 57 mm panel
-OTHER_SPECIES = "#d4d4d4"  # nuclei of the species whose values a panel does not show
+OTHER_SPECIES = "#3a3a3a"  # nuclei of the species whose values a panel does not show (as Fig. 6, MOUSE_CONTEXT)
 AXIS_GREY = "#555555"      # UMAP axis arrows and their labels
 
 
@@ -64,8 +64,12 @@ def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_ti
     """
     fig, width_mm, height_mm = new_panel(letter)
     top_mm, bottom_mm, left_mm = 10.0, 4.0, 6.0
+    side_mm = 26.0  # room on the right for the key or colorbar, so their labels stay inside the panel
     axes_h = (height_mm - top_mm - bottom_mm) / height_mm
     axes_w = axes_h * height_mm * cells["aspect"] / width_mm
+    if axes_w * width_mm > width_mm - left_mm - side_mm:  # too wide: shrink, keeping the aspect
+        axes_w = (width_mm - left_mm - side_mm) / width_mm
+        axes_h = axes_w * width_mm / cells["aspect"] / height_mm
     ax = fig.add_axes([left_mm / width_mm, bottom_mm / height_mm, axes_w, axes_h])
     xlim, ylim = cells["xlim"], cells["ylim"]
     ax.set_xlim(xlim)
@@ -98,7 +102,7 @@ def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_ti
         cax = fig.add_axes([right, 0.42, 2.2 / width_mm, 0.30])
         bar = fig.colorbar(mpl.cm.ScalarMappable(norm=PSEUDOTIME_NORM, cmap=PSEUDOTIME_CMAP), cax=cax,
                            ticks=[0, 0.5, 1])
-        bar.ax.set_yticklabels(["0 early", "0.5", "1 late"])
+        bar.ax.set_yticklabels(["0", "0.5", "1"])
         bar.outline.set_visible(False)
         bar.ax.tick_params(length=1.5, pad=1.5)
         cax.set_title(colorbar_title, fontsize=8, loc="left", pad=8)

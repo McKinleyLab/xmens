@@ -12,8 +12,11 @@ notebook is named after its folder. The notebooks never write there (the setup c
 `xmens_figures`): run one, check its panels against the files of record in its last section, then copy them over by
 hand.
 
-**Outlines, 8 Nov 2026.** No notebook draws anything yet. Each one lists its panels, the file of record, the code that
-drew it and how closely that code's output matches the file of record; the code moves in one panel at a time.
+**Status.** Three notebooks draw their panels (11 Nov 2026): `Fig4_mouse_decidual_maturation` (4D),
+`Fig6_crossspecies_radial_patterning` (6A-6C, 6E, 6F) and `S32_samap_supp` (the composite, Supplementary Fig. S32; was S30). The rest are still the
+outlines of 8 Nov: each lists its panels, the file of record, the code that drew it and how closely that code's
+output matches the file of record; the code moves in one panel at a time. In the table, *this notebook* means the
+notebook replaces the earlier code named after it; that code is kept where it is.
 
 ## The notebooks
 
@@ -24,9 +27,9 @@ colours, text and embedded-image pixels (positions not compared); *close*, diffe
 | notebook | panels | drawn now by | match |
 |---|---|---|---|
 | Fig3_mouse_celltypes_spatial | 3A-D, 2 options | xmens_final `30_fig_mouse_tissue.smk` | identical |
-| Fig4_mouse_decidual_maturation | 4H | `xmens_pt_heatmaps/` step 3 | identical (unlabelled); same content (labelled, colour bar) |
+| Fig4_mouse_decidual_maturation | 4D (new panel, 10 Nov 2026); 4H | 4D: this notebook, ported from xmens_final `plot_pt_spatial_sections.py` (30 Oct), framing of Ç. Cevrim's cell-type panels; 4H: `pt_heatmaps/` step 3 | 4D: no file of record yet; 4H: identical (unlabelled); same content (labelled, color bar) |
 | Fig5_human_mouse_shared_programs | 5B, 5C, 5E, 5F, 1 option | xmens_final `32_fig_human_tissue.smk` (5B, 5C); `scenic/` step 6 (5E); `xmens_pt_heatmaps/` step 3 (5F) | identical; 5F redrawn with 156 px differing by at most 3 of 255 |
-| Fig6_crossspecies_radial_patterning | 6A-E | xmens_final `34_fig_cross_species.smk` (6A, 6D); `samap/` step 5 (6B, 6C, 6E) | identical (6A, 6D); same content (6B, 6E); 6C: same pixels, one legend label changed since |
+| Fig6_crossspecies_radial_patterning | 6A-F | this notebook, from `Samap_Final.h5ad` of the SAMap run of record (6A-6C, 6E, 6F); it replaces xmens_final `34_fig_cross_species.smk` (6A) and `samap/notebooks/5_figures/fig6*.ipynb` (6B, 6C, 6E), whose SVGs it reproduces; 6D (cell types on sections): cell added by hand, see the notebook | 6B, 6C, 6E identical to step 5 of the final run; 6A, 6F new drawings (final objects) |
 | S12_mouse_qc_annotation | S12A-D | xmens_final `30_fig_mouse_tissue.smk` | identical |
 | S13_mouse_spatial_celltypes | S13 | xmens_final `30_fig_mouse_tissue.smk` | identical |
 | S15_mouse_cxcl12 | S15A, S15B | xmens_final `31_fig_mouse_stroma.smk` | same content (A); identical (B) |
@@ -40,7 +43,7 @@ colours, text and embedded-image pixels (positions not compared); *close*, diffe
 | S27_human_pseudotime | composite | `tmp/2026_11_02_pt_supplements/make_pseudotime_supplements_v2.py` | same content |
 | S28_scenic_supp | S28 | `scenic/` step 6 | identical |
 | S29_mi_gene_selection | S29A-D | `tmp/2026_10_30_s29_5f_bigheat/mi_gene_selection_figS29_fibdec_latent/` notebook | same drawing; B identical |
-| S30_samap_supp | composite | `samap/` step 5 | same content |
+| S32_samap_supp | S32 composite (numbered S30 until 11 Nov 2026) | this notebook composes panels a-g drawn by `samap/notebooks/5_figures/sfig_samap_*.ipynb` (step 5 of the run of record); it replaces `sfig_samap_compose.ipynb` | same content as step 5's composite |
 | big_mi_heatmaps | 1 | `xmens_pt_heatmaps/` step 3 | same colours and text; two embedded images 1 px wider |
 | C7 | 1 | not found (v7: `xmens_figures/c7_figure/`) | none found |
 | IVD_comparison_bars | 20 files | not found (numbers: xmens_final `39_ivd_comparisons.smk`) | none found |
