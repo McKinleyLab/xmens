@@ -38,6 +38,16 @@ fi
 # config.sh sets $OUT, $PY, $H5AD_MOUSE, $H5AD_HUMAN, h5ad <species> and exists <path>.
 source "$HERE/config.sh"
 
+# The objects must be the files config.sh names (netscratch is purgeable; the objects were rewritten).
+for species in mouse human; do
+    expected=$([ $species = mouse ] && echo "$H5AD_MOUSE_SHA256" || echo "$H5AD_HUMAN_SHA256")
+    actual=$(sha256sum "$(h5ad $species)" | cut -c1-64)
+    if [ "$actual" != "$expected" ]; then
+        echo "$(h5ad $species) has sha256 $actual, not $expected as config.sh pins; stopping" >&2
+        exit 1
+    fi
+done
+
 if [ "${1:-}" = "--check" ]; then
     for species in mouse human; do
         echo "$species: object $(exists "$(h5ad $species)"), inputs $(exists "$OUT/inputs/$species")"
@@ -54,6 +64,7 @@ for species in mouse human; do
     fi
     "$PY" "$HERE/scripts/mi_inputs.py" \
         --h5ad "$(h5ad $species)" \
+        --counts-layer "$COUNTS_LAYER" \
         --out-dir "$OUT/inputs/$species" \
         2>&1 | tee "$OUT/logs/1_inputs_$species.log"
 done

@@ -47,5 +47,6 @@ mkdir -p "$OUT/logs"
     --pairs "$OUT/overlap/ortholog_pairs_one2one.csv" \
     --h5ad-mouse "$H5AD_MOUSE" \
     --h5ad-human "$H5AD_HUMAN" \
+    --counts-layer "$COUNTS_LAYER" \
     --out-dir "$OUT/fig5f" \
     2>&1 | tee "$OUT/logs/6_fig5f_genes.log"

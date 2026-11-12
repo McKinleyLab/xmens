@@ -23,7 +23,7 @@
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=8G
 #SBATCH --time=12:00:00  # the run of record's limit for mouse chunks
-#SBATCH --array=0-1699%200  # 200 mouse + 1,500 human chunks, at most 200 at a time
+#SBATCH --array=0-1699  # 200 mouse + 1,500 human chunks; override with sbatch --array
 #SBATCH --output=logs/%x_%A_%a.out  # job name, job ID, task; relative to the folder sbatch was run from
 
 # Stop at the first failed command, unset variable or failed stage of a pipe.

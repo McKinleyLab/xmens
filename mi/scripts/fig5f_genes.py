@@ -34,9 +34,10 @@ parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
 parser.add_argument("--mi-mouse", required=True, help="step 3's mi_mouse.csv")
 parser.add_argument("--mi-human", required=True, help="step 3's mi_human.csv")
 parser.add_argument("--pairs", required=True, help="step 4's ortholog_pairs_one2one.csv")
-parser.add_argument("--h5ad-mouse", required=True, help="final mouse object (raw counts in layers['counts'])")
+parser.add_argument("--h5ad-mouse", required=True, help="final mouse object (raw counts in layers[--counts-layer])")
 parser.add_argument("--h5ad-human", required=True, help="final human object")
 parser.add_argument("--pt-key", default="pseudotime", help="obs column holding the pseudotime (default: pseudotime)")
+parser.add_argument("--counts-layer", default="counts", help="layer holding the raw counts (default: counts)")
 parser.add_argument("--top-fraction", type=float, default=0.10, help="top fraction by MI in both species (default: 0.10)")
 parser.add_argument("--rmin", type=float, default=0.8, help="keep genes with profile r above this (default: 0.8)")
 parser.add_argument("--n-early", type=int, default=14, help="early genes drawn (default: 14)")
@@ -82,7 +83,7 @@ def per_nucleus_counts(h5ad, pt_key, genes):
     if (columns < 0).any():
         raise ValueError(f"{h5ad}: {int((columns < 0).sum())} pool genes missing from var")
 
-    counts = sp.csr_matrix(adata.layers["counts"])[np.flatnonzero(has_pt)]
+    counts = sp.csr_matrix(adata.layers[args.counts_layer])[np.flatnonzero(has_pt)]
     total = np.asarray(counts.sum(axis=1)).ravel()
     table = pd.DataFrame(
         counts[:, columns].toarray(),

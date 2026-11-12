@@ -20,8 +20,9 @@ import numpy as np
 import scipy.sparse as sp
 
 parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-parser.add_argument("--h5ad", required=True, help="final object, with raw counts in layers['counts']")
+parser.add_argument("--h5ad", required=True, help="final object, with raw counts in layers[--counts-layer]")
 parser.add_argument("--pt-key", default="pseudotime", help="obs column holding the pseudotime (default: pseudotime)")
+parser.add_argument("--counts-layer", default="counts", help="layer holding the raw counts (default: counts)")
 parser.add_argument("--min-detect-frac", type=float, default=0.01,
                     help="keep genes detected in at least this fraction of nuclei (default: 0.01)")
 parser.add_argument("--min-counts", type=int, default=10,
@@ -40,7 +41,7 @@ print(f"{args.h5ad}: {adata.n_obs:,} nuclei x {adata.n_vars:,} genes", flush=Tru
 pseudotime = adata.obs[args.pt_key].to_numpy(dtype=float)
 has_pt = np.isfinite(pseudotime)
 print(f"{has_pt.sum():,} nuclei with a pseudotime; {(~has_pt).sum():,} without, dropped", flush=True)
-counts = sp.csr_matrix(adata.layers["counts"])[np.flatnonzero(has_pt)]
+counts = sp.csr_matrix(adata.layers[args.counts_layer])[np.flatnonzero(has_pt)]
 pseudotime = pseudotime[has_pt]
 genes = adata.var_names.to_numpy().astype(str)
 

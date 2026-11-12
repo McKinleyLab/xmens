@@ -5,17 +5,24 @@
 
 OUT=${OUT:?export OUT, the run folder, before running a step (see README.md)}
 NH=/n/lab_storage/eddy_lab/users/nhilgert
+NS=/n/netscratch/eddy_lab/Everyone/nhilgert
 
 # The Python environment of the run of record: Python 3.11, scikit-learn 1.8.0, numpy 2.2.0, pandas 2.3.3, scipy 1.17.1,
 # statsmodels 0.14.6, anndata 0.12.11, openpyxl 3.1.5.
 PY=$NH/.uv/envs/rsc_uv/bin/python
 
 # The final objects (read only): fibroblast and decidual nuclei, raw counts in layers['counts'], and the rank-normalized
-# pseudotime in obs['pseudotime'] (NaN for the 907 apoptotic mouse decidual nuclei). netscratch is purged after 90 days:
+# pseudotime in obs['pseudotime'] (NaN for the 1,175 apoptotic mouse decidual nuclei). netscratch is purged after 90 days:
 # point OBJECTS at a permanent copy of the same files (sha256 in record/OUTPUTS.tsv) once there is one.
-OBJECTS=/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects
-H5AD_MOUSE=$OBJECTS/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
-H5AD_HUMAN=$OBJECTS/Cevrim_Human_Only_Fib_Dec_Cells.h5ad
+# The fibroblast/decidual objects of 6-10 Nov 2026 with the pseudotime of 10 Nov. (The deposited objects of
+# record: $NS/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad and Cevrim_Human_Only_Fib_Dec_Cells.h5ad,
+# layer counts.) Step 1 checks the checksums before reading.
+OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
+H5AD_MOUSE=$OBJECTS/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad
+H5AD_HUMAN=$OBJECTS/20261107_Human_fibdec_final_nick_pdt.h5ad
+H5AD_MOUSE_SHA256=e31372ba5fdd706ad620e8259e34216bc96b8f3b6394e4d2eedc0baeec8760dd
+H5AD_HUMAN_SHA256=12429594a2e71ba39861e96edb0a19d23088fd1f026e11f7ade8856a10a4c425
+COUNTS_LAYER=raw_counts  # the objects' raw-counts layer
 
 # Ensembl Compara release 116 human-mouse homology components (read only).
 ORTHOLOGS=$NH/human_ivd_repro/orthogroups/ensembl_human_mouse_components.tsv
