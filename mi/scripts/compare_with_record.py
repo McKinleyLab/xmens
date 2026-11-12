@@ -4,8 +4,10 @@
   2 chunks   every chunk the run has: genes, MI and p as written, against the record's results/mi_<chunk>.csv
   3 combine  mi_<species>.csv against the record's mi_all.csv: byte for byte, else the rows as text in any order
   4 overlap  the one-to-one pairs, methods_overlap.json and the percentile sweep, against overlap_of_record/
-  5 table    every sheet of the workbook, cell by cell, against the approved workbook of 3 Nov 2026 (the build date, input
-             paths and the label of the step-4 check differ by design and are not compared; the inputs' sha256 are)
+  5 table    every sheet of the workbook, cell by cell, against the approved workbook of 3 Nov 2026. Not compared, as
+             they differ by design: README except the inputs' sha256 (its text was rewritten on 12 Nov 2026), and the
+             2025 numbers the record carries beside the live values (overlap columns C-D, labels A2 and A27, and
+             sheet checks)
   6 fig5f    the selected genes, the pool concordance table and the per-nucleus pool counts, against
              overlap_of_record/crossspecies_heatmap_selection/, and the selection against the 28 genes drawn in Fig. 5F
 Writes one row per comparison to --out (TSV) and prints a summary.
@@ -152,22 +154,25 @@ if overlap.exists():
 
 
 # ---- 5 table ----------------------------------------------------------------------------------------------------------
+# The approved workbook carried the 2025 numbers beside the live values (overlap columns C-D, sheet checks) and labels
+# that referred to them (overlap A2, A27); since 12 Nov 2026 the workbook has neither, so they are not compared.
+OVERLAP_LABELS_REWORDED = {(2, 1), (27, 1)}
+
+
 def workbook_cells(path):
-    """Every non-empty cell of every sheet (formulas as text), with the cells that differ by design normalized."""
+    """Every non-empty cell of every sheet (formulas as text), without the cells that differ by design."""
     cells = {}
     for ws in openpyxl.load_workbook(path):
+        if ws.title == "checks":
+            continue
         sheet = {(cell.row, cell.column): cell.value for row in ws.iter_rows() for cell in row if cell.value is not None}
         if ws.title == "README":
-            for (row, column), value in list(sheet.items()):
-                field = sheet.get((row, 1))
-                if column == 2 and field == "Built":
-                    sheet[(row, column)] = "<build date and script>"
-                elif column == 2 and str(field).startswith("Input:"):
-                    sheet[(row, column)] = re.findall(r"sha256 ([0-9a-f]{64})", str(value))   # path not compared
-        if ws.title == "checks":
-            for (row, column), value in list(sheet.items()):
-                if column == 1 and str(value).startswith("N, K, n, k vs"):
-                    sheet[(row, column)] = "N, K, n, k vs the overlap record"
+            # Only the inputs' sha256 are compared; the paths, build date and descriptions are not.
+            sheet = {(row, column): re.findall(r"sha256 ([0-9a-f]{64})", str(value))
+                     for (row, column), value in sheet.items()
+                     if column == 2 and str(sheet.get((row, 1))).startswith("Input:")}
+        if ws.title == "overlap":
+            sheet = {key: value for key, value in sheet.items() if key[1] <= 2 and key not in OVERLAP_LABELS_REWORDED}
         cells[ws.title] = sheet
     return cells
 

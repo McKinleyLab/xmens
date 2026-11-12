@@ -1,10 +1,10 @@
 #!/bin/bash
 # Step 5 of 6: the supplementary table of pseudotime MI for one-to-one human-mouse orthologs, with a live overlap
 # calculator on its front sheet (MI in bits).
-#   Reads:  $OUT/mi_mouse.csv and $OUT/mi_human.csv (step 3), $OUT/overlap/ortholog_pairs_one2one.csv and
-#           methods_overlap.json (step 4)
-#   Writes: $OUT/table/SuppTable_pseudotime_MI.xlsx, its sheets as CSVs (SuppTable_pseudotime_MI__*.csv,
-#           SuppTable_pseudotime_MI_methods_checks.csv) and SuppTable_pseudotime_MI_provenance.json
+#   Reads:  $OUT/inputs/<species>/pseudotime.npy (step 1, for the nuclei counts), $OUT/mi_mouse.csv and
+#           $OUT/mi_human.csv (step 3), $OUT/overlap/ortholog_pairs_one2one.csv and methods_overlap.json (step 4)
+#   Writes: $OUT/table/SuppTable_pseudotime_MI.xlsx, its data sheets as CSVs (SuppTable_pseudotime_MI__*.csv) and
+#           SuppTable_pseudotime_MI_provenance.json
 #   Logs:   $OUT/logs/5_table.log and logs/5_table_<job ID>.out
 # Skipped if $OUT/table exists.
 #
@@ -46,5 +46,6 @@ mkdir -p "$OUT/logs"
     --mi-human "$OUT/mi_human.csv" \
     --pairs "$OUT/overlap/ortholog_pairs_one2one.csv" \
     --overlap "$OUT/overlap/methods_overlap.json" \
+    --inputs "$OUT/inputs" \
     --out-dir "$OUT/table" \
     2>&1 | tee "$OUT/logs/5_table.log"
