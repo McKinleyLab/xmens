@@ -59,6 +59,7 @@ mkdir -p "$OUT/logs"
     --mi-human "$MI_HUMAN" \
     --pairs "$PAIRS" \
     --fig5f-genes "$FIG5F_GENES" \
+    --counts-layer "$COUNTS_LAYER" \
     --yang "$HERE/resources/yang2023_panel.tsv" \
     --out-dir "$OUT/inputs" \
     2>&1 | tee "$OUT/logs/1_inputs.log"

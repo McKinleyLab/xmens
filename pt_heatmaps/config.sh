@@ -15,22 +15,22 @@ R_MODULE=R/4.4.1-fasrc01
 # search path. The lab's main library, $R_LIBS_USER, supplies everything else and is not changed.
 MONOCLE_LIB=$NH/R/library-4.4.1-monocle2
 
-# The final objects (read only): fibroblast and decidual nuclei, raw counts in layers['counts'], and the rank-normalized
-# pseudotime in obs['pseudotime'] (NaN for the 907 apoptotic mouse decidual nuclei). netscratch is purged after 90 days:
-# point OBJECTS at a permanent copy of the same files once there is one.
-OBJECTS=/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects
-H5AD_MOUSE=$OBJECTS/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad
-H5AD_HUMAN=$OBJECTS/Cevrim_Human_Only_Fib_Dec_Cells.h5ad
-
-# The MI of record and the one-to-one ortholog pairs, which give the genes of the big MI heatmaps, and the 28 genes of
-# Fig. 5F in drawing order. xmens_mi makes the same files ($OUT of xmens_mi: mi_mouse.csv, mi_human.csv,
-# overlap/ortholog_pairs_one2one.csv and fig5f/conserved_profiles_selected_genes.csv).
-RESULTS=$NH/xmens_final/results/mi_dpt
-MI_MOUSE=$RESULTS/pt_harmonized_mouse_nall/mi_all.csv
-MI_HUMAN=$RESULTS/pt_harmonized_human_nall/mi_all.csv
-PAIRS=$RESULTS/overlap_of_record/ortholog_pairs_one2one.csv
-FIG5F_GENES=$RESULTS/overlap_of_record/crossspecies_heatmap_selection/conserved_profiles_selected_genes.csv
-
+# The final objects (read only): the fibroblast/decidual objects of 11 Nov 2026 with the pseudotime of 10 Nov in
+# obs['pseudotime'] (NaN for the apoptotic mouse decidual nuclei) and raw counts in layers[$COUNTS_LAYER]. (The
+# deposited objects of 2 Nov, drawn in the record, are $NS/final_objects/Cevrim_*_Only_Fib_Dec_Cells.h5ad with the
+# counts in layers['counts'].)
+OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
+H5AD_MOUSE=$OBJECTS/20261111_mouse_only_eFib_dec_final_nick.h5ad
+H5AD_HUMAN=$OBJECTS/20261111_Human_only_eFib_dec_final_nick.h5ad
+COUNTS_LAYER=raw_counts
+# The MI run of November 2026 (xmens_mi on the objects above) and its one-to-one ortholog pairs, which give the genes
+# of the big MI heatmaps, and its 28 genes of Fig. 5F in drawing order. (The MI of record, drawn in the record:
+# $NH/xmens_final/results/mi_dpt/pt_harmonized_{mouse,human}_nall/mi_all.csv and overlap_of_record/.)
+RESULTS=/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_november
+MI_MOUSE=$RESULTS/mi_mouse.csv
+MI_HUMAN=$RESULTS/mi_human.csv
+PAIRS=$RESULTS/overlap/ortholog_pairs_one2one.csv
+FIG5F_GENES=$RESULTS/fig5f/conserved_profiles_selected_genes.csv
 # Caches, temporary files and R packages go to lab storage, never to the home directory.
 CACHE=$NH/.cache_scratch
 export HDF5_USE_FILE_LOCKING=FALSE

@@ -1,13 +1,13 @@
 """Step 1: the final objects, the MI tables and the gene lists -> the inputs of Monocle (step 2) and of the figures.
 
-Per species, from the final object: the nuclei with a pseudotime (in mouse, the 907 apoptotic decidual nuclei have
+Per species, from the final object: the nuclei with a pseudotime (in mouse, the apoptotic decidual nuclei have
 none) and the raw counts of all their genes, which Monocle needs for its size factors and dispersion trend.
 The genes drawn:
   Fig. 4H  the Yang et al. (2023) panel (--yang), in published order, matched to the mouse gene symbols
   Fig. 5F  the 28 genes of --fig5f-genes, in drawing order (xmens_mi step 6)
   MI       per species, the top pseudotime-associated genes among the one-to-one orthologs significant in both species:
-           MI above the 90th percentile of the species' significant genes (q < 0.05); 1,133 mouse and 1,201 human
-           genes, 373 pairs in both (the K, n and k of the Methods)
+           MI above the 90th percentile of the species' significant genes (q < 0.05); the log reports the
+           number per species and the number of pairs top in both (the K, n and k of the Methods)
 Writes the folder --out-dir:
   <species>/counts.mtx        raw counts, genes x nuclei (Matrix Market, integer)
   <species>/genes.txt         the genes, in the row order of counts.mtx
@@ -16,8 +16,9 @@ Writes the folder --out-dir:
   yang_panel.tsv              gene (published name), symbol (mouse gene), published_row
   fig5f_genes.csv             a copy of --fig5f-genes
   mi_top_<species>.csv        gene, partner (one-to-one ortholog), mi (nats), shared (top in both species); by MI
-Same cells, counts and gene sets as export_heatmap_inputs_final_objects.py of the 2 Nov 2026 heatmap package
-(record/), which wrote per-gene count tables and a dispersion table instead of the full counts.
+On the inputs of record it gives the same cells, counts and gene sets as export_heatmap_inputs_final_objects.py of
+the 2 Nov 2026 heatmap package (record/), which wrote per-gene count tables and a dispersion table instead of the
+full counts.
 """
 import argparse
 import os
@@ -39,6 +40,7 @@ parser.add_argument("--pairs", required=True, help="one-to-one ortholog pairs (c
 parser.add_argument("--fig5f-genes", required=True, help="the Fig. 5F genes (columns human, mouse), in drawing order")
 parser.add_argument("--yang", required=True, help="the Yang et al. (2023) panel (column gene), in published order")
 parser.add_argument("--out-dir", required=True, help="output folder; must not exist yet")
+parser.add_argument("--counts-layer", default="counts", help="layer holding the raw counts")
 args = parser.parse_args()
 
 out_dir = args.out_dir.rstrip("/")
@@ -58,7 +60,7 @@ for species, h5ad in (("mouse", args.h5ad_mouse), ("human", args.h5ad_human)):
     genes = adata.var_names.astype(str)
     if genes.duplicated().any():
         sys.exit(f"{h5ad}: gene names are not unique")
-    counts = sp.csr_matrix(adata.layers["counts"])[np.flatnonzero(keep)]
+    counts = sp.csr_matrix(adata.layers[args.counts_layer])[np.flatnonzero(keep)]
     counts.data = np.round(counts.data).astype(np.int64)
     counts.sort_indices()
     obs = adata.obs.loc[keep]
