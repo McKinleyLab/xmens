@@ -1,0 +1,15 @@
+                                           quantity                  Methods               this table  agrees
+             one-to-one pairs (Ensembl Compara 116)                   16,275                   16,275    True
+                        genes tested, mouse / human          14,261 / 15,008          14,261 / 15,008    True
+              significant (q < 0.05), mouse / human          14,261 / 14,887          14,261 / 14,887    True
+               top genes genome-wide, mouse / human            1,426 / 1,489            1,426 / 1,489    True
+        top-gene MI threshold (bits), mouse / human            0.102 / 0.039            0.102 / 0.039    True
+          background pairs N (ortholog_univ = TRUE)                    9,587                    9,587    True
+                   top mouse genes in background, K                    1,133                    1,133    True
+                   top human genes in background, n                    1,201                    1,201    True
+    overlap k (top_10_pct_mi = both, in background)                      373                      373    True
+                         expected overlap K x n / N                    141.9                    141.9    True
+                                    fold enrichment                     2.63                     2.63    True
+                                   hypergeometric p            1.95 x 10^-84            1.95 x 10^-84    True
+N, K, n, k vs step 4 (overlap/methods_overlap.json) 9,587, 1,133, 1,201, 373 9,587, 1,133, 1,201, 373    True
+12,245 pairs (4,030 with neither gene tested left out); wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_record_check/table

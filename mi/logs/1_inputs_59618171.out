@@ -1,0 +1,10 @@
+/n/lab_storage/eddy_lab/Lab/mckinley/data/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad: 42,966 nuclei x 32,287 genes
+41,791 nuclei with a pseudotime; 1,175 without, dropped
+14,016 genes detected in at least 1% of nuclei
+14,016 of them with at least 10 counts: the genes tested
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_november/inputs/mouse: 41,791 nuclei x 14,016 genes
+/n/lab_storage/eddy_lab/Lab/mckinley/data/20261107_Human_fibdec_final_nick_pdt.h5ad: 46,818 nuclei x 38,606 genes
+44,949 nuclei with a pseudotime; 1,869 without, dropped
+15,354 genes detected in at least 1% of nuclei
+15,354 of them with at least 10 counts: the genes tested
+wrote /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_november/inputs/human: 44,949 nuclei x 15,354 genes

@@ -1,0 +1,27 @@
+universe 9,638 one-to-one pairs; top 10% = 964 per species; pool 273
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad: 42,290 nuclei with pseudotime (907 without)
+/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Cevrim_Human_Only_Fib_Dec_Cells.h5ad: 47,533 nuclei with pseudotime (0 without)
+{
+ "mi_tables": {
+  "mouse": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_record_check/mi_mouse.csv",
+  "human": "/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_record_check/mi_human.csv"
+ },
+ "universe": 9638,
+ "k_top": 964,
+ "pool": 273,
+ "n_r_gt": 92,
+ "rmin": 0.8,
+ "phase_counts_r_gt": {
+  "late": 62,
+  "early": 29,
+  "mid": 1
+ },
+ "median_r50_pool": 0.627,
+ "n_selected": 28,
+ "r50_range_selected": [
+  0.882,
+  0.991
+ ],
+ "centroid_definition": "per species: sum_b max(z_b,0)*b/(nbin-1) / sum_b max(z_b,0) on 50-bin z-profiles; gene = mean of species"
+}
+selected (28, in drawing order): RGMA, MATN2, DPYD, MYCBP2, COL6A1, IGFBP5, RORA, REV3L, KCNMA1, ROR2, PRKCE, IGF1, PLEKHH2, PALLD, GJA1, CD63, SIPA1L1, TJP1, CEBPB, FBXW7, P4HB, CALU, RAB7A, ELL, ZNF697, MCL1, BNIP3L, SERPINE1
