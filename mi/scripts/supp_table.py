@@ -4,7 +4,7 @@ Sheets of the workbook:
   overlap          front sheet with live Excel formulas: change the percentile cutoff in B4, and the MI thresholds,
                    top-gene counts, N, K, n, k, expected overlap, fold enrichment and hypergeometric p recalculate from
                    the other sheets
-  README           what each column means, and the input files with their sha256
+  README           what each sheet and column means (run details: the provenance JSON beside the workbook)
   human_mouse_mi   one row per one-to-one pair with at least one gene tested; MI in bits
   human_genes, mouse_genes
                    every tested gene of the species, genome-wide; MI in bits
@@ -109,7 +109,6 @@ pair_table["ortholog_univ"] = significant["human"] & significant["mouse"]
 
 # Pairs with neither gene tested are left out; rows sorted by top_10_pct_mi (both, human, mouse, neither), then by
 # human rank, then mouse rank.
-n_pairs = len(pair_table)
 n_neither_tested = int((pair_table["expr_1_pct"] == "neither").sum())
 pair_table = pair_table[pair_table["expr_1_pct"] != "neither"]
 columns = ["human_gene", "mouse_gene", "top_10_pct_mi", "human_mi_rank", "mouse_mi_rank", "human_mi_percentile",
@@ -149,64 +148,36 @@ if (step4["N"], step4["K"], step4["n"], step4["k"]) != (N, K, n, k):
 # ---- nuclei with a pseudotime: the rows of step 1's matrices ---------------------------------------------------------
 n_nuclei = {species: len(np.load(os.path.join(args.inputs, species, "pseudotime.npy"))) for species in SPECIES}
 
-# ---- README ---------------------------------------------------------------------------------------------------------
-built = datetime.date.today().isoformat()
-tested_in = pair_table["expr_1_pct"].value_counts()
+built = datetime.date.today().isoformat()  # recorded in the provenance JSON
+
+# ---- README: what the sheets and columns mean (run details are in the provenance JSON) -------------------------------
 readme = pd.DataFrame([
-    ("Table", "Pseudotime-associated genes (mutual information with pseudotime) in human and mouse fibroblasts and "
-              "decidual cells, for strict one-to-one human-mouse orthologs. New version of human_mouse_mi (2 Jul 2026), "
-              "rebuilt on the final pseudotime run."),
-    ("Built", f"{built} by xmens_mi step 5 (scripts/supp_table.py) from the inputs below (with their sha256)."),
-    ("Pseudotime", "obs['pseudotime'] of the final fibroblast/decidual objects (rank-normalized diffusion pseudotime): "
-                   f"{n_nuclei['mouse']:,} mouse and {n_nuclei['human']:,} human nuclei. Apoptotic decidual nuclei "
-                   "have no pseudotime and are not used."),
-    ("MI", "Per gene, MI between log-normalized expression and pseudotime (sklearn mutual_info_regression, n_neighbors = "
-           "3, fixed random state); p from 1,000 pseudotime permutations, (count >= observed + 1) / 1,001; BH-adjusted "
-           "q. MI is in bits."),
-    ("Rows", f"Ensembl Compara 116 one-to-one pairs ({n_pairs:,}) with at least one gene tested: {len(pair_table):,} "
-             f"pairs (tested in both {tested_in.get('both', 0):,}, human only {tested_in.get('human', 0):,}, mouse only "
-             f"{tested_in.get('mouse', 0):,}); {n_neither_tested:,} pairs with neither gene tested are omitted. Sorted by "
-             "top_10_pct_mi (both, human, mouse, neither), then human rank, then mouse rank."),
-    ("Untested genes", "A gene detected in < 1% of nuclei was not tested and has no MI, p, q, rank or percentile."),
-    ("human_gene / mouse_gene", "Ensembl Compara 116 one-to-one ortholog pair (homology type ortholog_one2one, "
-                                "protein-coding genes), matched to the objects' genes by Ensembl gene ID; gene "
-                                "names as in the objects."),
-    ("top_10_pct_mi", "Species in which the gene is a top pseudotime-associated gene: MI above the 90th percentile of MI "
-                      f"among that species' significant genes (mouse {mouse['threshold'] / LN2:.3f} bits; human "
-                      f"{human['threshold'] / LN2:.3f} bits). both / human / mouse / neither. Genome-wide sets "
-                      f"({len(mouse['top']):,} mouse, {len(human['top']):,} human); within the background they give K, "
-                      "n and the overlap k."),
-    ("human_mi_rank / mouse_mi_rank", "Rank of the gene's MI among all significant genes of its species, genome-wide "
-                                      "(1 = highest). Empty if not significant."),
-    ("human_mi_percentile / mouse_mi_percentile", "100 x (1 - (rank - 1) / number of significant genes in the "
-                                                  "species). A top gene has percentile >= 90; the gene exactly at the "
-                                                  "90th-percentile MI is not counted as top (strict >)."),
-    ("human_mi / mouse_mi", "Mutual information with pseudotime (bits)."),
-    ("human_q / mouse_q", "Benjamini-Hochberg q over all tested genes of the species."),
-    ("human_p / mouse_p", "Permutation p-value (1,000 permutations; minimum 1/1,001)."),
-    ("significant", "Species in which the gene is tested and q < 0.05: both / human / mouse / neither."),
-    ("expr_1_pct", "Species in which the gene was detected in >= 1% of nuclei and so tested: both / human / mouse."),
-    ("ortholog_univ", "TRUE if both genes are significant: the background of the cross-species comparison "
-                      f"(N = {N:,} pairs; hypergeometric test on the overlap sheet)."),
-    ("Changes from the 2 Jul version", "Final pseudotime and MI of record; ortholog pairs from Ensembl Compara 116 (the "
-                                       "July table had 15,134 pairs from the earlier homology set, including "
-                                       "non-coding genes such as NEAT1 and MALAT1); untested genes now "
-                                       "have no MI (the July run scored every gene and flagged expression afterwards); "
-                                       "'significant' is now q < 0.05 among tested genes (the July file repeated "
-                                       "expr_1_pct in this column); top_10_pct_mi is MI above the 90th percentile "
-                                       "among significant genes."),
-    ("Input: MI, mouse", f"{args.mi_mouse} (sha256 {sha256(args.mi_mouse)})"),
-    ("Input: MI, human", f"{args.mi_human} (sha256 {sha256(args.mi_human)})"),
-    ("Input: ortholog pairs", f"{args.pairs} (sha256 {sha256(args.pairs)})"),
-    ("Sheet: overlap", "Front sheet. Live Excel formulas: change the cutoff in B4 and the thresholds, top-gene counts, "
-                       "background N, K, n, overlap k, expected overlap, fold enrichment and the hypergeometric p "
-                       "recalculate from the other sheets."),
-    ("Sheet: human_genes / mouse_genes", "Every tested gene of the species (genome-wide, not only orthologs): MI (bits), "
-                                         "p, q, significant (q < 0.05), rank among significant genes, and "
-                                         "mi_if_significant (the column the percentile threshold is taken over)."),
-    ("Sheet: p_value_terms", "Helper for the overlap sheet: log hypergeometric probability of each overlap x (log-gamma "
-                             "form), so the upper tail P(X >= k) is summed without underflow (a p this small cannot "
-                             "be computed as 1 - CDF)."),
+    ("Table", "Genes whose expression changes along pseudotime in human and mouse endometrial fibroblasts and decidual "
+              "cells, measured as mutual information (MI) between expression and pseudotime, for one-to-one "
+              "human-mouse orthologs."),
+    ("Pseudotime", "Rank-normalized diffusion pseudotime of the fibroblast and decidual nuclei."),
+    ("MI", "MI between log-normalized expression and pseudotime, in bits; p from 1,000 permutations of pseudotime; "
+           "q by Benjamini-Hochberg over the tested genes of each species."),
+    ("Tested genes", "Genes detected in at least 1% of nuclei. Untested genes have no MI, p, q, rank or percentile."),
+    ("Orthologs", "One-to-one protein-coding orthologs from Ensembl Compara release 116, matched to the data by "
+                  "Ensembl gene ID (by symbol where the ID changed between annotation releases)."),
+    ("Sheet overlap", "Overlap of the two species' top genes among the ortholog pairs (hypergeometric test). Live "
+                      "formulas: change the percentile cutoff in B4 and every value recalculates."),
+    ("Sheet human_mouse_mi", "One row per ortholog pair with at least one gene tested; pairs top in both species "
+                             "first."),
+    ("Sheets human_genes, mouse_genes", "Every tested gene of the species: MI, p, q, significance and rank; "
+                                        "mi_if_significant holds the values the percentile cutoff is taken over."),
+    ("Sheet p_value_terms", "Helper for the p-value on the overlap sheet."),
+    ("human_gene, mouse_gene", "The ortholog pair."),
+    ("top_10_pct_mi", "Species in which the gene is a top pseudotime-associated gene, i.e. its MI is above the 90th "
+                      "percentile of the species' significant genes: both, human, mouse or neither."),
+    ("human_mi_rank, mouse_mi_rank", "Rank of the gene's MI among the species' significant genes (1 = highest)."),
+    ("human_mi_percentile, mouse_mi_percentile", "Percentile of that rank."),
+    ("human_mi, mouse_mi", "MI with pseudotime (bits)."),
+    ("human_q, mouse_q, human_p, mouse_p", "q and permutation p."),
+    ("significant", "Species in which the gene has q < 0.05."),
+    ("expr_1_pct", "Species in which the gene was tested."),
+    ("ortholog_univ", "TRUE if both genes are significant: the background of the overlap test."),
 ], columns=["field", "description"])
 
 # ---- the workbook -----------------------------------------------------------------------------------------------------
