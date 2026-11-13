@@ -1,7 +1,8 @@
 #!/bin/bash
 # Step 4 of 6: overlap of the human and mouse top MI genes among one-to-one orthologs: the Methods numbers (N 9,587,
 # K 1,133, n 1,201, k 373, p = 1.95 x 10^-84 in the run of record) and the percentile sweep of Supplementary Fig. S29C-D.
-#   Reads:  $OUT/mi_mouse.csv and $OUT/mi_human.csv (step 3), $ORTHOLOGS (config.sh)
+#   Reads:  $OUT/mi_mouse.csv and $OUT/mi_human.csv (step 3), $ORTHOLOGS, and the gene IDs (var) of $H5AD_MOUSE and
+#           $H5AD_HUMAN (config.sh), to match the pairs to the MI tables by Ensembl gene ID
 #   Writes: $OUT/overlap/ortholog_pairs_one2one.csv, methods_overlap.json and overlap_percentile_sweep.csv
 #   Logs:   $OUT/logs/4_overlap.log and logs/4_overlap_<job ID>.out
 # Skipped if $OUT/overlap exists.
@@ -31,7 +32,7 @@ if [ ! -e "$HERE/config.sh" ]; then
     exit 2
 fi
 
-# config.sh sets $OUT, $PY and $ORTHOLOGS.
+# config.sh sets $OUT, $PY, $ORTHOLOGS, $H5AD_MOUSE and $H5AD_HUMAN.
 source "$HERE/config.sh"
 
 if [ -e "$OUT/overlap" ]; then
@@ -43,5 +44,7 @@ mkdir -p "$OUT/logs"
     --mi-mouse "$OUT/mi_mouse.csv" \
     --mi-human "$OUT/mi_human.csv" \
     --orthologs "$ORTHOLOGS" \
+    --h5ad-mouse "$H5AD_MOUSE" \
+    --h5ad-human "$H5AD_HUMAN" \
     --out-dir "$OUT/overlap" \
     2>&1 | tee "$OUT/logs/4_overlap.log"

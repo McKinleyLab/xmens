@@ -107,14 +107,17 @@ pair_table["significant"] = label(significant["human"], significant["mouse"])
 pair_table["expr_1_pct"] = label(tested["human"], tested["mouse"])
 pair_table["ortholog_univ"] = significant["human"] & significant["mouse"]
 
-# Pairs with neither gene tested are left out; rows sorted by human rank, then mouse rank.
+# Pairs with neither gene tested are left out; rows sorted by top_10_pct_mi (both, human, mouse, neither), then by
+# human rank, then mouse rank.
 n_pairs = len(pair_table)
 n_neither_tested = int((pair_table["expr_1_pct"] == "neither").sum())
 pair_table = pair_table[pair_table["expr_1_pct"] != "neither"]
 columns = ["human_gene", "mouse_gene", "top_10_pct_mi", "human_mi_rank", "mouse_mi_rank", "human_mi_percentile",
            "mouse_mi_percentile", "human_mi", "mouse_mi", "human_q", "mouse_q", "human_p", "mouse_p", "significant",
            "expr_1_pct", "ortholog_univ"]
-pair_table = pair_table.sort_values(["human_mi_rank", "mouse_mi_rank", "human_gene"], na_position="last")
+TOP_ORDER = {"both": 0, "human": 1, "mouse": 2, "neither": 3}
+pair_table = (pair_table.assign(top_order=pair_table["top_10_pct_mi"].map(TOP_ORDER))
+              .sort_values(["top_order", "human_mi_rank", "mouse_mi_rank", "human_gene"], na_position="last"))
 pair_table = pair_table[columns].reset_index(drop=True)
 for species in SPECIES:
     pair_table[f"{species}_mi_rank"] = pair_table[f"{species}_mi_rank"].astype("Int64")
@@ -163,9 +166,11 @@ readme = pd.DataFrame([
     ("Rows", f"Ensembl Compara 116 one-to-one pairs ({n_pairs:,}) with at least one gene tested: {len(pair_table):,} "
              f"pairs (tested in both {tested_in.get('both', 0):,}, human only {tested_in.get('human', 0):,}, mouse only "
              f"{tested_in.get('mouse', 0):,}); {n_neither_tested:,} pairs with neither gene tested are omitted. Sorted by "
-             "human rank, then mouse rank."),
+             "top_10_pct_mi (both, human, mouse, neither), then human rank, then mouse rank."),
     ("Untested genes", "A gene detected in < 1% of nuclei was not tested and has no MI, p, q, rank or percentile."),
-    ("human_gene / mouse_gene", "Ensembl Compara 116 one-to-one ortholog pair (homology type ortholog_one2one)."),
+    ("human_gene / mouse_gene", "Ensembl Compara 116 one-to-one ortholog pair (homology type ortholog_one2one, "
+                                "protein-coding genes), matched to the objects' genes by Ensembl gene ID; gene "
+                                "names as in the objects."),
     ("top_10_pct_mi", "Species in which the gene is a top pseudotime-associated gene: MI above the 90th percentile of MI "
                       f"among that species' significant genes (mouse {mouse['threshold'] / LN2:.3f} bits; human "
                       f"{human['threshold'] / LN2:.3f} bits). both / human / mouse / neither. Genome-wide sets "
@@ -184,7 +189,8 @@ readme = pd.DataFrame([
     ("ortholog_univ", "TRUE if both genes are significant: the background of the cross-species comparison "
                       f"(N = {N:,} pairs; hypergeometric test on the overlap sheet)."),
     ("Changes from the 2 Jul version", "Final pseudotime and MI of record; ortholog pairs from Ensembl Compara 116 (the "
-                                       "July table had 15,134 pairs from the earlier homology set); untested genes now "
+                                       "July table had 15,134 pairs from the earlier homology set, including "
+                                       "non-coding genes such as NEAT1 and MALAT1); untested genes now "
                                        "have no MI (the July run scored every gene and flagged expression afterwards); "
                                        "'significant' is now q < 0.05 among tested genes (the July file repeated "
                                        "expr_1_pct in this column); top_10_pct_mi is MI above the 90th percentile "
