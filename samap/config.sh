@@ -13,7 +13,7 @@ NS=/n/netscratch/eddy_lab/Everyone/nhilgert
 # Cevrim_XMens_Only_Fib_Dec_Cells.h5ad and Cevrim_Human_Only_Fib_Dec_Cells.h5ad.)
 FINAL_OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
 MOUSE_H5AD=$FINAL_OBJECTS/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad
-HUMAN_H5AD=$FINAL_OBJECTS/20261107_Human_fibdec_final_nick_pdt.h5ad
+HUMAN_H5AD=$FINAL_OBJECTS/20261112_Human_fibdec_final_nick_pdt.h5ad
 
 # The objects' raw-counts layer (step 1) and the human section coordinates (step 4). In the deposited objects:
 # counts, x_um_qc and y_um_qc.
@@ -34,7 +34,7 @@ PHMMER=$NH/software/hmmer-3.4/src/phmmer
 # replaced file (netscratch is purgeable, and the final objects were rewritten once, on 2 Nov 2026) cannot flow
 # through unnoticed. To run on other files, change their paths and checksums here.
 MOUSE_H5AD_SHA256=e31372ba5fdd706ad620e8259e34216bc96b8f3b6394e4d2eedc0baeec8760dd
-HUMAN_H5AD_SHA256=12429594a2e71ba39861e96edb0a19d23088fd1f026e11f7ade8856a10a4c425
+HUMAN_H5AD_SHA256=c7d4bacb40f6472000c372cd005c6712a9c3f0e112ae5b23fb7df04b31dea82b
 HUMAN_PROTEOME_SHA256=f38587d8e87564a08f99378c3416b47a866cd0aff5ed0bdeaeab0ca2d2a8ea3b
 MOUSE_PROTEOME_SHA256=54cb3f64f6dd1d0a398713016e866c355cff8e21968f8d18e0d60f7b498712d6
 

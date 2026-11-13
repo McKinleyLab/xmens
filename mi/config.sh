@@ -19,9 +19,9 @@ PY=$NH/.uv/envs/rsc_uv/bin/python
 # layer counts.) Step 1 checks the checksums before reading.
 OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
 H5AD_MOUSE=$OBJECTS/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad
-H5AD_HUMAN=$OBJECTS/20261107_Human_fibdec_final_nick_pdt.h5ad
+H5AD_HUMAN=$OBJECTS/20261112_Human_fibdec_final_nick_pdt.h5ad
 H5AD_MOUSE_SHA256=e31372ba5fdd706ad620e8259e34216bc96b8f3b6394e4d2eedc0baeec8760dd
-H5AD_HUMAN_SHA256=12429594a2e71ba39861e96edb0a19d23088fd1f026e11f7ade8856a10a4c425
+H5AD_HUMAN_SHA256=c7d4bacb40f6472000c372cd005c6712a9c3f0e112ae5b23fb7df04b31dea82b
 COUNTS_LAYER=raw_counts  # the objects' raw-counts layer
 
 # Ensembl Compara release 116 human-mouse homology components (read only).
