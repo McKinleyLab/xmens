@@ -1,0 +1,19 @@
+name: BulkRnaSeq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - kallisto=0.52.0
+  - fastqc
+  - multiqc
+  - pydeseq2=0.5.4
+  - scanpy=1.11.5
+  - anndata=0.12.19
+  - numpy=2.4.6
+  - pandas=2.3.3
+  - scipy=1.17.1
+  - matplotlib=3.11.2
+  - seaborn
+  - openpyxl
+  - ipykernel
