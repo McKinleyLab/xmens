@@ -91,7 +91,8 @@ export SAMAP_FINAL=/n/netscratch/eddy_lab/Everyone/nhilgert/final_objects/Samap_
 - SAM, for each species (SAMap's defaults, sc-samap 3.0.1): counts scaled to the median library size, log2(x + 1),
   values of 1 or less set to 0, genes expressed in more than 96% of nuclei left out; 3,000 genes, 100 principal
   components, 20 neighbors.
-- SAMap: three iterations with the hmmer human-mouse homology maps (`hsmm_hmmer`), 8 cores. No seed of its own (see
+- SAMap: three iterations with the hmmer human-mouse homology maps (`hsmm_hmmer`), 8 cores. Seeded since 12 Nov 2026
+  (`SEED = 0` in `notebooks/2_samap.ipynb`, with hnswlib held to one thread); the fit of record predates this (see
   "What reproduced").
 - Transfers, over the human x mouse block of the joint graph: cell type by edge-weighted vote of the mouse
   neighbors; pseudotime as the edge-weighted mean of the mouse pseudotime of record (rank / N), over mouse neighbors
@@ -231,9 +232,12 @@ What reproduced in the checks of 6 and 7 November 2026 (run folders on netscratc
   scores 0.58 and 0.59 matched, 0.08 and 0.13 off-diagonal; mean total cross-species edge weight 12.65-13.67.
 
 To reproduce the paper's numbers and figures exactly, start from the fit of record (`SAMAP_JOINT`); a full run from
-the final objects reproduces them to the precision above. The fit sets no seed of its own, and the source of the
-run-to-run differences has not been pinned down (SAM and SAMap build their approximate neighbor indexes on several
-threads).
+the final objects reproduces them to the precision above. The run-to-run differences come from SAMap drawing random
+numbers from numpy's unseeded global state (SAMap issue #135) and from hnswlib building its neighbor indexes on
+several threads: since 12 Nov 2026 the fit cell seeds numpy and holds every hnswlib index to one thread, and two fits
+on the same inputs are then identical bit for bit (joint graph, UMAP, alignment scores; test in
+`$NS/2026_11_12_samap_seed_test/`, two seeded fits against each other and against an unseeded re-run). The fit of
+record of 10 Nov 2026 was unseeded and cannot be regenerated exactly.
 
 Run times on 6 Nov 2026: step 0a 40 min per task (64 tasks; 50-55 min in the run of record), step 0b 20 min,
 step 1 2 min, step 2 56 min, step 3 1-2 min, step 4 2 min, step 5 4-6 min, `compare_with_record` 1-3 min.
