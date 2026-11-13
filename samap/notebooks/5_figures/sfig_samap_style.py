@@ -22,10 +22,9 @@ from PIL import Image
 # fallback. The provenance record names the font actually used.
 FONT_PREFERENCE = ["Helvetica Neue", "Helvetica", "Nimbus Sans", "Arial", "Liberation Sans", "DejaVu Sans"]
 
-# Compartment colors (panels d and e). Blue and orange stay apart under the common color-vision deficiencies
-# and do not collide with viridis, which carries pseudotime in the other panels.
-FIBROBLAST = "#3a78b8"
-DECIDUAL = "#e0836b"
+# Compartment colors (panels d and e), as Fig. 6 (CELL_TYPE_COLORS: eFib, dec).
+FIBROBLAST = "#CC79A7"
+DECIDUAL = "#00B4C5"
 COMPARTMENT_COLORS = {"endometrial_fibroblast": FIBROBLAST, "decidual_cell": DECIDUAL}
 
 # Pseudotime on one fixed 0-1 viridis scale with values as stored, never re-ranked (as in Fig. 6 and the methods).
@@ -42,8 +41,8 @@ TITLE_INSET_MM = 5.2  # from a panel's left edge to its title, leaving room for 
 # 180 mm wide and 12 columns; every panel spans whole columns of one row. Row heights in mm.
 LAYOUT = {
     "claim": (
-        "Mouse pseudotime carried across the SAMap alignment recovers human pseudotime ordering, "
-        "strongly within decidual cells, and mouse pseudotime shuffled before the transfer does not."
+        "Mouse pseudotime carried across the SAMap alignment recovers human pseudotime ordering within decidual "
+        "cells and within fibroblasts, beyond mouse pseudotime shuffled before the transfer."
     ),
     "width_mm": 180,
     "ncol": 12,
@@ -60,7 +59,7 @@ LAYOUT = {
         {"letter": "e", "row": 1, "col": 4, "colspan": 8, "chart_family": "scatter + binned median",
          "message": "order preserved by compartment"},
         {"letter": "f", "row": 2, "col": 0, "colspan": 7, "chart_family": "spatial maps",
-         "message": "shuffles keep at most the compartment split"},
+         "message": "within-compartment shuffles keep only the compartment difference"},
         {"letter": "g", "row": 2, "col": 7, "colspan": 5, "chart_family": "null strips",
          "message": "observed vs 1,000 shuffles"},
     ],

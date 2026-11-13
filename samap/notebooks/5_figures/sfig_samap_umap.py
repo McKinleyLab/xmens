@@ -57,20 +57,21 @@ def load_umap_cells(joint_path, mouse_cells_path, human_cells_path) -> dict:
 
 
 def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_title=None):
-    """One UMAP panel: equal-aspect axes without a box, short axis arrows, and an optional colorbar and key.
+    """One UMAP panel: equal-aspect axes without a box, short axis arrows, and an optional key and colorbar.
 
-    draw(ax) adds the panel's own scatter layers. key is a list of (color, label) for the grey nuclei; the colorbar
-    is the fixed 0-1 pseudotime scale.
+    The key and the colorbar sit in a band between the title and the UMAP, so the UMAP takes the panel's width and
+    has the same size in every panel of the row. draw(ax) adds the panel's own scatter layers. key is a list of
+    (color, label) for the grey nuclei; the colorbar is the fixed 0-1 pseudotime scale.
     """
     fig, width_mm, height_mm = new_panel(letter)
-    top_mm, bottom_mm, left_mm = 10.0, 4.0, 6.0
-    side_mm = 26.0  # room on the right for the key or colorbar, so their labels stay inside the panel
-    axes_h = (height_mm - top_mm - bottom_mm) / height_mm
-    axes_w = axes_h * height_mm * cells["aspect"] / width_mm
-    if axes_w * width_mm > width_mm - left_mm - side_mm:  # too wide: shrink, keeping the aspect
-        axes_w = (width_mm - left_mm - side_mm) / width_mm
-        axes_h = axes_w * width_mm / cells["aspect"] / height_mm
-    ax = fig.add_axes([left_mm / width_mm, bottom_mm / height_mm, axes_w, axes_h])
+    title_mm, band_mm, bottom_mm, left_mm, right_mm = 10.0, 11.0, 4.0, 6.0, 1.5
+    # The largest equal-aspect axes that fit under the band, at the bottom left.
+    axes_h_mm = height_mm - title_mm - band_mm - bottom_mm
+    axes_w_mm = axes_h_mm * cells["aspect"]
+    if axes_w_mm > width_mm - left_mm - right_mm:  # too wide: shrink, keeping the aspect
+        axes_w_mm = width_mm - left_mm - right_mm
+        axes_h_mm = axes_w_mm / cells["aspect"]
+    ax = fig.add_axes([left_mm / width_mm, bottom_mm / height_mm, axes_w_mm / width_mm, axes_h_mm / height_mm])
     xlim, ylim = cells["xlim"], cells["ylim"]
     ax.set_xlim(xlim)
     ax.set_ylim(ylim)
@@ -97,18 +98,21 @@ def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_ti
     ax.text(xlim[0] - 0.03 * dx, ylim[0] + 0.02 * dy, "UMAP 2", ha="right", va="bottom", rotation=90,
             fontsize=7, color=AXIS_GREY)
 
-    right = (left_mm + axes_w * width_mm + 3.0) / width_mm
+    band_top = 1 - title_mm / height_mm
     if colorbar_title:
-        cax = fig.add_axes([right, 0.42, 2.2 / width_mm, 0.30])
+        # A short horizontal bar at the band's right end: its title above, its ticks below.
+        bar_w_mm, bar_h_mm = 15.0, 1.6
+        cax = fig.add_axes([(width_mm - right_mm - 1.0 - bar_w_mm) / width_mm, band_top - (4.0 + bar_h_mm) / height_mm,
+                            bar_w_mm / width_mm, bar_h_mm / height_mm])
         bar = fig.colorbar(mpl.cm.ScalarMappable(norm=PSEUDOTIME_NORM, cmap=PSEUDOTIME_CMAP), cax=cax,
-                           ticks=[0, 0.5, 1])
-        bar.ax.set_yticklabels(["0", "0.5", "1"])
+                           orientation="horizontal", ticks=[0, 0.5, 1])
+        bar.ax.set_xticklabels(["0", "0.5", "1"])
         bar.outline.set_visible(False)
         bar.ax.tick_params(length=1.5, pad=1.5)
-        cax.set_title(colorbar_title, fontsize=8, loc="left", pad=8)
+        cax.set_title(colorbar_title, fontsize=8, loc="left", pad=2.5)
     if key:
-        top = 0.33 if colorbar_title else 1 - top_mm / height_mm
-        kax = fig.add_axes([right - 1.2 / width_mm, bottom_mm / height_mm, 1 - right, top - bottom_mm / height_mm])
+        kax = fig.add_axes([left_mm / width_mm, band_top - band_mm / height_mm,
+                            (width_mm - left_mm - right_mm) / width_mm, band_mm / height_mm])
         kax.axis("off")
         kax.legend(
             handles=[Line2D([], [], ls="none", marker="o", ms=3.2, color=color, label=label) for color, label in key],
@@ -116,7 +120,7 @@ def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_ti
             frameon=False,
             fontsize=8,
             handletextpad=0.2,
-            labelspacing=0.6,
+            labelspacing=0.5,
             borderaxespad=0,
             handlelength=0.9,
         )
