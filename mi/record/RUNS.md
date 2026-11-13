@@ -78,6 +78,6 @@ Jobs:     4_overlap 60288053; 5_table 60288059 (long README, superseded; its tab
 Step 4:   16,314 one-to-one components, 16,246 pairs. Ensembl ID not in the object: human 7 (3 matched by symbol),
           mouse 79 (12 by symbol). Object name differs from the Ensembl 116 symbol: human 147, mouse 627.
 Table:    table/SuppTable_pseudotime_MI.xlsx, sha256 96fb0af44e6e57791aa82082c8b136fd706d5fae7d19f0af5d556250d0d71006;
-          sent 13 Nov as SuppTable_pseudotime_MI_20261113_v2.xlsx
+          sent 13 Nov as SuppTable_pseudotime_MI_20261113.xlsx (the same file, renamed)
 <!-- report 2026_11_13_xmens_mi_final_ids (record/runs_report.py fills in this block) -->
 <!-- end report 2026_11_13_xmens_mi_final_ids -->
