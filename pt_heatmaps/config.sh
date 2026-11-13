@@ -15,18 +15,19 @@ R_MODULE=R/4.4.1-fasrc01
 # search path. The lab's main library, $R_LIBS_USER, supplies everything else and is not changed.
 MONOCLE_LIB=$NH/R/library-4.4.1-monocle2
 
-# The final objects (read only): the fibroblast/decidual objects of 11 Nov 2026 with the pseudotime of 10 Nov in
-# obs['pseudotime'] (NaN for the apoptotic mouse decidual nuclei) and raw counts in layers[$COUNTS_LAYER]. (The
-# deposited objects of 2 Nov, drawn in the record, are $NS/final_objects/Cevrim_*_Only_Fib_Dec_Cells.h5ad with the
-# counts in layers['counts'].)
+# The final objects (read only): the fibroblast/decidual objects of 13 Nov 2026 with the pseudotime of 10 Nov (mouse)
+# and 12 Nov (human, eFib1 root) in obs['pseudotime'] (NaN for the apoptotic decidual nuclei) and raw counts in
+# layers[$COUNTS_LAYER]. (The deposited objects of 2 Nov, drawn in the record, are
+# $NS/final_objects/Cevrim_*_Only_Fib_Dec_Cells.h5ad with the counts in layers['counts'].)
 OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
-H5AD_MOUSE=$OBJECTS/20261111_mouse_only_eFib_dec_final_nick.h5ad
-H5AD_HUMAN=$OBJECTS/20261111_Human_only_eFib_dec_final_nick.h5ad
+H5AD_MOUSE=$OBJECTS/20261113_mouse_only_eFib_dec_final_nick_v2.h5ad
+H5AD_HUMAN=$OBJECTS/20261113_Human_only_eFib_dec_final_nick_v2.h5ad
 COUNTS_LAYER=raw_counts
-# The MI run of November 2026 (xmens_mi on the objects above) and its one-to-one ortholog pairs, which give the genes
+# The final MI run (xmens_mi on the final objects: steps 1-3 of 12 Nov 2026, steps 4-6 of 13 Nov with Ensembl-ID
+# pairs) and its one-to-one ortholog pairs, which give the genes
 # of the big MI heatmaps, and its 28 genes of Fig. 5F in drawing order. (The MI of record, drawn in the record:
 # $NH/xmens_final/results/mi_dpt/pt_harmonized_{mouse,human}_nall/mi_all.csv and overlap_of_record/.)
-RESULTS=/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_11_xmens_mi_november
+RESULTS=/n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_13_xmens_mi_final_ids
 MI_MOUSE=$RESULTS/mi_mouse.csv
 MI_HUMAN=$RESULTS/mi_human.csv
 PAIRS=$RESULTS/overlap/ortholog_pairs_one2one.csv
