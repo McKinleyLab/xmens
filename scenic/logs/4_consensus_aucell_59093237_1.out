@@ -1,7 +1,0 @@
-mouse: started Mon Nov  9 09:16:36 EST 2026 on holy8a27211.rc.fas.harvard.edu; regulons of the runs from /n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/scenic_v3_2026_11_08
-kept regulons: 193
-consensus regulons: 193 | consensus genes: 11897 | missing: 0
-kept regulons: 193
-consensus regulons: 193 | consensus genes: 12293 | missing: 0
-wrote 193 regulons -> /n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/scenic_v3_2026_11_08/scenic_seeds/mouse/consensus_sketch15k_weighted_soft_occ6_pyscenic_cli.partial.59093237/consensus_regulons.yaml (reload identical)
-mouse: finished Mon Nov  9 09:27:03 EST 2026

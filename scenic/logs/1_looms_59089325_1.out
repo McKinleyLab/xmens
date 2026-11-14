@@ -1,5 +1,0 @@
-mouse: started Sun Nov  8 23:58:46 EST 2026 on holy7c10501.rc.fas.harvard.edu
-wrote /n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/scenic_v3_2026_11_08/scenic_seeds/mouse/mouse_dsc_pooled.h5ad  [42,966 x 32,287]  (FULL - for AUCell)
-genes: 32,287 -> 14,011 (>= 430 of 42,966 cells) | TF list 1,860, retained 1,177
-wrote /n/lab_storage/eddy_lab/users/nhilgert/decidualization/revisions/scenic_v3_2026_11_08/scenic_seeds/mouse/mouse_dsc_pooled.loom  [14,011 genes x 42,966 cells]  (GRN input)
-mouse: finished Mon Nov  9 00:07:12 EST 2026
