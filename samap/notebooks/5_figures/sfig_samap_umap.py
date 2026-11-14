@@ -65,13 +65,17 @@ def umap_panel(letter: str, title: str, cells: dict, draw, key=None, colorbar_ti
     """
     fig, width_mm, height_mm = new_panel(letter)
     title_mm, band_mm, bottom_mm, left_mm, right_mm = 10.0, 11.0, 4.0, 6.0, 1.5
-    # The largest equal-aspect axes that fit under the band, at the bottom left.
-    axes_h_mm = height_mm - title_mm - band_mm - bottom_mm
+    # The largest equal-aspect axes that fit under the band, at the left. When the width limits them, they are
+    # shorter than the room under the band and sit near its top (2 mm below), so the key stays next to the UMAP.
+    room_h_mm = height_mm - title_mm - band_mm - bottom_mm
+    axes_h_mm = room_h_mm
     axes_w_mm = axes_h_mm * cells["aspect"]
     if axes_w_mm > width_mm - left_mm - right_mm:  # too wide: shrink, keeping the aspect
         axes_w_mm = width_mm - left_mm - right_mm
         axes_h_mm = axes_w_mm / cells["aspect"]
-    ax = fig.add_axes([left_mm / width_mm, bottom_mm / height_mm, axes_w_mm / width_mm, axes_h_mm / height_mm])
+    gap_mm = min(2.0, room_h_mm - axes_h_mm)
+    axes_bottom_mm = bottom_mm + room_h_mm - axes_h_mm - gap_mm
+    ax = fig.add_axes([left_mm / width_mm, axes_bottom_mm / height_mm, axes_w_mm / width_mm, axes_h_mm / height_mm])
     xlim, ylim = cells["xlim"], cells["ylim"]
     ax.set_xlim(xlim)
     ax.set_ylim(ylim)
