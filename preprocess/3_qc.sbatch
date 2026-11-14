@@ -18,6 +18,7 @@
 #SBATCH --job-name=3_qc
 #SBATCH --partition=eddy
 #SBATCH --account=eddy_lab
+#SBATCH --constraint="genoa|turin"  # AMD nodes for reproducibility
 #SBATCH --cpus-per-task=8  # qc.py runs DoubletDetection on all cores (n_jobs=-1)
 #SBATCH --mem=64G
 #SBATCH --time=06:00:00
