@@ -1,0 +1,14 @@
+{
+ "written": "2026-11-14T09:21:43",
+ "score": "Ulrich2024_sg_Stro7_top50",
+ "inputs": {
+  "/n/lab_storage/eddy_lab/Lab/mckinley/data/20261114_samap_final_ensembl_ids.h5ad": "ad34758a80f910871ee1337ac44298a6f6b4f8cf2fdc07a866650781e79e3a8b",
+  "/n/lab_storage/eddy_lab/Lab/mckinley/data/20261111_Human_only_eFib_dec_final.h5ad": "c8bd88aa36685ff9f51b01a1cb708c3c4549fb4b1e7ba03561174e6046557e9a",
+  "/n/lab_storage/eddy_lab/Lab/mckinley/data/20261111_mouse_only_eFib_dec_final.h5ad": "9c15c1b2d32236b64ad2335bc98a7ec8922442dd6fe86952aa9ba03988947b5e"
+ },
+ "mouse_cells": 42966,
+ "with_a_value": 42966,
+ "output": {
+  "stro7_top50_20261114/Ulrich2024_sg_Stro7_top50_transferred_mouse.csv": "13c665e7b538a87fb7e35cec7bb5331ba2414a5309f5bccde37857de8bc369c7"
+ }
+}
