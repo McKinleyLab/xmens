@@ -1,8 +1,9 @@
 # samap: cross-species alignment of the human and mouse fibroblast/decidual nuclei
 
 SAMap on the final fibroblast/decidual objects, then mouse cell type and pseudotime transferred onto the human
-nuclei, statistics and figures. One notebook per step in `notebooks/`, run by its sbatch script with papermill.
-Paths are in `config.sh`.
+nuclei, and statistics. One notebook per step in `notebooks/`, run by its sbatch script with papermill. Paths are in
+`config.sh`. The figures are drawn from the outputs by `figures/Fig6_crossspecies_radial_patterning.ipynb` and
+`figures/S32_samap_supp.ipynb`; the latter runs the panel notebooks in `notebooks/5_figures/`.
 
 ## Run
 
@@ -20,8 +21,7 @@ c=$(sbatch --parsable --dependency=afterok:$b:$i 0c_relabel.sbatch)          # g
 export MAPS=$OUT/0_homology_relabeled
 s=$(sbatch --parsable --dependency=afterok:$c 2_samap.sbatch)                # the SAMap fit, about 1 h
 x=$(sbatch --parsable --dependency=afterok:$s 3_transfer.sbatch)             # cell type and pseudotime, mouse to human
-y=$(sbatch --parsable --dependency=afterok:$x 4_statistics.sbatch)           # tables, edge shares, permutation control
-sbatch --dependency=afterok:$y 5_figures.sbatch                              # Fig. 6C, 6E and the SAMap supplement
+sbatch --dependency=afterok:$x 4_statistics.sbatch                           # tables, edge shares, permutation control
 ```
 
 `bash <step>.sbatch --check` prints what a step reads and writes, without running anything. A step whose output
@@ -36,7 +36,6 @@ exists in `OUT` is skipped.
 | 2 | `2_samap/samap_joint.h5ad`, `samap.pkl` |
 | 3 | `3_transfer/Samap_Final.h5ad`, `transfers.csv` |
 | 4 | `4_statistics/` |
-| 5 | `5_figures/` |
 
 The executed notebooks, with everything they printed, are in `$OUT/notebooks/`.
 

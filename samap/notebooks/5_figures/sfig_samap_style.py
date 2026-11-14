@@ -1,7 +1,7 @@
 """House style, 12-column grid and output files of the SAMap supplementary figure (panels a-g).
 
-Imported by the panel notebooks sfig_samap_<letter>_*.ipynb and by sfig_samap_compose.ipynb in this directory, so
-every panel is drawn at its exact grid size and the composite places it where it was designed to sit. Nothing is
+Imported by the panel notebooks sfig_samap_<letter>_*.ipynb in this directory, so every panel is drawn at its exact
+grid size and the composite places it where it was designed to sit. Nothing is
 read or written on import; save_panel() and write_json() write the paths they are given.
 """
 import datetime
