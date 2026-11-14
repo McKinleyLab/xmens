@@ -86,3 +86,30 @@ LAB copy: 3_transfer/Samap_Final.h5ad copied to
           as 20261112_samap_final_ensembl_ids.h5ad
 <!-- report 2026_11_13_xmens_samap_relabeled (record/runs_report.py fills in this block) -->
 <!-- end report 2026_11_13_xmens_samap_relabeled -->
+
+## 2026-11-14 — SAMap steps 0a-0c and 2-5, complete phmmer search
+Purpose:  the homology tables from a phmmer search in which every task finished. In the April 2026 search, 15 of the
+          64 tasks (those holding titin) were killed at the 8 GB memory limit, so their tables were incomplete.
+Code:     samap/ @ 19929ae (19929ae750760ced6f6b3954da53391bd79c40e8)
+Submit:   0a_phmmer tasks 12-23,42,56,57 with --mem=250G on the sbatch command line; the other 49 tasks at the
+          script's 8G. SOURCE_MAPS=$OUT/0_homology for step 0c; MAPS=$OUT/0_homology_relabeled for steps 2-5.
+Inputs:   SAMAP_INPUTS /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_12_xmens_samap_final/1_inputs (step 1 not run)
+OUT:      /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_14_xmens_samap_phmmer_complete
+Jobs:     0a_phmmer 60429798 (49 tasks) and 60429810 (15 tasks); 0b_homology 60429813; 0c_relabel 60429827;
+          2_samap 60429830; 3_transfer 60429833; 4_statistics 60429835; 5_figures 60429837 (samap/record/jobs.tsv)
+Ran:      all COMPLETED, 2026-11-14 00:02 to 02:10
+Checks:   all 64 hit tables end with HMMER's "[ok]" line
+Rerun:    2026_11_14_xmens_samap_phmmer_complete_rerun: same results (see that entry)
+
+## 2026-11-14 — SAMap rerun, steps 0a-0c and 2-5, of 2026_11_14_xmens_samap_phmmer_complete
+Purpose:  every step again, phmmer included, to show the run reproduces
+Code:     samap/ @ 19929ae
+Submit:   as above, with 64G for 0a_phmmer tasks 12-23,42,56,57 (submitted with --mem=250G, lowered with scontrol
+          update before the tasks started)
+Inputs:   as above
+OUT:      /n/netscratch/eddy_lab/Everyone/nhilgert/2026_11_14_xmens_samap_phmmer_complete_rerun
+Jobs:     0a_phmmer 60432041 (49 tasks) and 60432043 (15 tasks); 0b_homology 60432044; 0c_relabel 60432047;
+          2_samap 60432048; 3_transfer 60432049; 4_statistics 60432050; 5_figures 60432051 (samap/record/jobs.tsv)
+Ran:      all COMPLETED; submitted 2026-11-14 00:25, ran 02:11 to 04:22
+Checks:   all 64 hit tables end with "[ok]". Against 2026_11_14_xmens_samap_phmmer_complete: both homology tables
+          byte-identical; Samap_Final.h5ad identical in all 35 datasets (obs, UMAP, graph); step-4 statistics identical
