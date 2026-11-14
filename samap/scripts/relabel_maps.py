@@ -1,17 +1,7 @@
 """Step 0c: the SAMap homology maps, with each gene under the name it has in the objects SAMap reads.
 
-Step 0b names the genes of the maps by the gene_symbol of the Ensembl release 113 proteomes. The objects name genes as
-the annotation they were counted with does, which is older: a gene renamed since (mouse Sept2, now Septin2; human
-C1orf112, now FIRRM) is in the maps under its new name only, so SAMap finds no homology for it. This step renames such
-genes in both maps to the objects' names, matched by Ensembl gene ID. Only the first two fields of a line (the two gene
-names) can change; the rest of every line is kept byte for byte.
-
-A map name S becomes the object's name N when
-  - of the Ensembl 113 genes named S (gene IDs from the proteome FASTA headers), exactly one is in the object, under N;
-  - N differs from S, no other map name becomes N, and N is not a map name that stays (two genes would merge).
-Writes --out, which must not exist: hsmm/hs_to_mm.txt and hsmm/mm_to_hs.txt (the relabeled maps), renamed_genes.tsv
-(one row per renamed gene), not_renamed.tsv (candidates left as they were, with the reason) and relabel.json (the
-inputs with their sha256, and the counts).
+A table name S becomes the object's name N when exactly one Ensembl 113 gene named S is in the object, under N, and
+the renaming would not merge two genes. Only the two gene-name fields of a line change.
 """
 import argparse
 import datetime

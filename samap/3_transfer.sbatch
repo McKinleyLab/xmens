@@ -1,13 +1,6 @@
 #!/bin/bash
-# Step 3 of 5: mouse cell type and pseudotime transferred onto the human nuclei, and Samap_Final.h5ad.
-#   notebooks/3_transfer.ipynb (kernel rsc) transfers both over the human x mouse block of the joint SAMap graph and
-#   writes the deposited object: the joint object with obs cut to species, sample, timepoint, cell_type,
-#   transferred_mouse_pseudotime and transferred_mouse_fibdec.
-#   Reads:  $SAMAP_JOINT (step 2), $HUMAN_H5AD, $MOUSE_H5AD (labels and the mouse pseudotime of record)
-#   Writes: $OUT/3_transfer/ Samap_Final.h5ad, transfers.csv (one row per human nucleus), summary.json
-#   Logs:   $OUT/notebooks/3_transfer.ipynb and logs/3_transfer_<job ID>.out
-# Skipped when $SAMAP_FINAL exists (by default $OUT/3_transfer/Samap_Final.h5ad; then it must have been made from
-# $SAMAP_JOINT). The final objects are checked against the checksums config.sh pins.
+# Step 3: mouse cell type and pseudotime transferred onto the human nuclei (notebooks/3_transfer.ipynb).
+# Reads $SAMAP_JOINT (step 2) and the final objects; writes $OUT/3_transfer/Samap_Final.h5ad.
 #
 # Usage:
 #   bash 3_transfer.sbatch --check
@@ -21,11 +14,9 @@
 #SBATCH --time=01:00:00
 #SBATCH --output=logs/%x_%j.out  # job name and job ID; relative to the folder sbatch was run from
 
-# Stop at the first failed command, unset variable or failed stage of a pipe.
 set -euo pipefail
 
-# The pipeline folder holds config.sh. Run with bash, this script sits in it; under sbatch, SLURM runs a copy from its
-# spool folder, and the pipeline folder is then the one sbatch was run from.
+# The pipeline folder: this script's folder, or under sbatch the folder the job was submitted from.
 HERE=$(cd "$(dirname "$0")" && pwd)
 if [ ! -e "$HERE/config.sh" ]; then
     HERE=${SLURM_SUBMIT_DIR:-$PWD}
@@ -35,7 +26,6 @@ if [ ! -e "$HERE/config.sh" ]; then
     exit 2
 fi
 
-# config.sh sets $OUT, $SAMAP_JOINT, $SAMAP_FINAL, $HUMAN_H5AD, $MOUSE_H5AD, run_notebook and exists.
 source "$HERE/config.sh"
 
 if [ "${1:-}" = "--check" ]; then

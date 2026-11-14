@@ -1,15 +1,6 @@
 #!/bin/bash
-# Step 0b of 5: the phmmer hits -> the SAMap homology maps.
-#   notebooks/0_homology.ipynb (kernel rsc) names each hit's proteins by their gene symbols and keeps, for each pair
-#   of human and mouse genes, the best-scoring hit between their proteins (phmmer_to_samap_symbols.py of the run of
-#   record).
-#   Reads:  $PHMMER_HITS/{hu_vs_mu,mu_vs_hu}/<prefix>_<i>.tbl (step 0a), $HUMAN_PROTEOME, $MOUSE_PROTEOME
-#   Writes: $OUT/0_homology/hsmm/hs_to_mm.txt and mm_to_hs.txt (the maps SAMap reads, in BLAST's tabular layout) and
-#           homology.json (counts, known orthologs found, checksums)
-#   Logs:   $OUT/notebooks/0_homology.ipynb and logs/0b_homology_<job ID>.out
-# Skipped when both maps exist in $MAPS/hsmm (by default $OUT/0_homology/hsmm; then they must have been made from
-# $PHMMER_HITS), or when a later step's input is supplied (SAMAP_JOINT or SAMAP_FINAL; see config.sh). The proteomes
-# are checked against the checksums config.sh pins.
+# Step 0b: the phmmer hits -> the homology table SAMap reads (notebooks/0_homology.ipynb).
+# Reads $PHMMER_HITS (step 0a); writes $OUT/0_homology/hsmm/{hs_to_mm,mm_to_hs}.txt.
 #
 # Usage:
 #   bash 0b_homology.sbatch --check
@@ -23,11 +14,9 @@
 #SBATCH --time=01:00:00
 #SBATCH --output=logs/%x_%j.out  # job name and job ID; relative to the folder sbatch was run from
 
-# Stop at the first failed command, unset variable or failed stage of a pipe.
 set -euo pipefail
 
-# The pipeline folder holds config.sh. Run with bash, this script sits in it; under sbatch, SLURM runs a copy from its
-# spool folder, and the pipeline folder is then the one sbatch was run from.
+# The pipeline folder: this script's folder, or under sbatch the folder the job was submitted from.
 HERE=$(cd "$(dirname "$0")" && pwd)
 if [ ! -e "$HERE/config.sh" ]; then
     HERE=${SLURM_SUBMIT_DIR:-$PWD}
@@ -37,7 +26,6 @@ if [ ! -e "$HERE/config.sh" ]; then
     exit 2
 fi
 
-# config.sh sets $OUT, $PHMMER_HITS, $MAPS, the proteomes and their checksums, and the helper functions.
 source "$HERE/config.sh"
 
 if [ "${1:-}" = "--check" ]; then

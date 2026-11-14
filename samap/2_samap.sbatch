@@ -1,14 +1,6 @@
 #!/bin/bash
-# Step 2 of 5: the SAMap fit.
-#   notebooks/2_samap.ipynb (kernel samap) builds each species' SAM with SAMap's defaults and runs SAMap (sc-samap
-#   3.0.1) for three iterations with the hmmer homology maps: arm vanilla_raw of the run of record.
-#   Reads:  $SAMAP_INPUTS/{hs,mm}_fib_dec_all_raw.h5ad (step 1), $MAPS/hsmm/{hs_to_mm,mm_to_hs}.txt (step 0b)
-#   Writes: $OUT/2_samap/ samap_joint.h5ad (graph, UMAP, SAM-processed expression), samap.pkl (the SAMAP object,
-#           about 11 GB), eval.json, mapping_{celltype,subtype,timepoint}.csv, figures/, meta.json
-#   Logs:   $OUT/notebooks/2_samap.ipynb and logs/2_samap_<job ID>.out
-# Resources and run time (about 50 min) are those of the run of record. Skipped when $SAMAP_JOINT exists (by default
-# $OUT/2_samap/samap_joint.h5ad, which appears when the notebook renames 2_samap.partial at the end; then it must have
-# been made from $SAMAP_INPUTS and $MAPS), or when $SAMAP_FINAL, the next step's output, is supplied (see config.sh).
+# Step 2: the SAMap fit (notebooks/2_samap.ipynb), about 1 h.
+# Reads $SAMAP_INPUTS (step 1) and $MAPS/hsmm/ (step 0); writes $OUT/2_samap/.
 #
 # Usage:
 #   bash 2_samap.sbatch --check
@@ -22,11 +14,9 @@
 #SBATCH --time=06:00:00
 #SBATCH --output=logs/%x_%j.out  # job name and job ID; relative to the folder sbatch was run from
 
-# Stop at the first failed command, unset variable or failed stage of a pipe.
 set -euo pipefail
 
-# The pipeline folder holds config.sh. Run with bash, this script sits in it; under sbatch, SLURM runs a copy from its
-# spool folder, and the pipeline folder is then the one sbatch was run from.
+# The pipeline folder: this script's folder, or under sbatch the folder the job was submitted from.
 HERE=$(cd "$(dirname "$0")" && pwd)
 if [ ! -e "$HERE/config.sh" ]; then
     HERE=${SLURM_SUBMIT_DIR:-$PWD}
@@ -36,7 +26,6 @@ if [ ! -e "$HERE/config.sh" ]; then
     exit 2
 fi
 
-# config.sh sets $OUT, $SAMAP_INPUTS, $SAMAP_JOINT, $MAPS, run_notebook and exists.
 source "$HERE/config.sh"
 
 if [ "${1:-}" = "--check" ]; then

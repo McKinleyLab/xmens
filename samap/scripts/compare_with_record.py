@@ -1,23 +1,6 @@
 """Compare a run of this pipeline with the SAMap run of record, for each step that has finished.
 
-A step is compared once the run has its outputs, so this can run at any point:
-  0 homology    the proteome chunks byte for byte, the phmmer hit tables field by field (their comment lines, which
-                hold paths and dates, aside) and the two homology maps, against the run of record (24 Apr 2026);
-                "incomplete" while fewer than the 32 chunks or tables of a direction exist
-  1 inputs      counts, nuclei and genes, against the inputs of record (inputs_raw/, 1 Sep 2026)
-  2 fit         alignment scores and the other numbers of eval.json, the joint graph (edges shared, weights) and the
-                joint UMAP, against the fit of record (runs_raw/vanilla_raw)
-  3 transfer    Samap_Final.h5ad against the deposited one: obs column by column (for the transferred pseudotime also
-                the largest difference and the correlation), every other dataset by checksum
-  4 statistics  the per-nucleus tables, graph block, edge shares and permutation control, value by value, against the
-                3 Nov 2026 set (record/4_5_figures/results_final/samap_figures)
-  5 figures     against the 3 Nov 2026 set: every PNG pixel by pixel, every SVG apart from its drawing date and
-                element ids, the CSV value by value
-  numbers       the numbers of record/numbers.csv that the run computes (the others are counts drawn in the figures,
-                which step 5 compares file by file, and run times)
-Inputs the run took from the run of record (start-from variables) are "not compared", as are numbers read unchanged
-from such an input.
-Writes one row per comparison to --out (CSV) and prints a summary.
+Writes one row per comparison to --out and prints a summary.
 """
 import argparse
 import hashlib
