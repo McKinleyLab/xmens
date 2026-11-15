@@ -1,6 +1,8 @@
 # Reproducing the February-regen QC'd objects
 
-**Status (Nov 8, 2026):** checks 1–4 below pass; CellBender is running; QC, concat and positions are pending.
+**Status:** written on Nov 8, 2026, while the re-run was in progress, and not updated since. The entries marked
+pending below were completed afterwards: every step of the re-run matched the run of record, and the result is in
+`record/qc_chain_2026_11_11.md`.
 
 ## The claim
 
