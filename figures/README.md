@@ -1,4 +1,4 @@
-# figures: one notebook per figure
+# figures
 
 | notebook | draws |
 |---|---|
