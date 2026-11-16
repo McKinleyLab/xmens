@@ -35,11 +35,11 @@ CELLBENDER = NH + "/decidualization/xmens_inputs_regen/{sample}/{sample}_cellben
 QC_RUN = f"{NS}/2026_11_06_qc_regen"
 QC_OBJECTS = {"mouse": f"{NS}/2026_11_06_qc_regen_nick_andy_coords/qc_passed_mouse.h5ad",
               "human": f"{NS}/2026_11_06_qc_regen_nick_andy_coords/qc_passed_human.h5ad"}
-ALL_CELLS = {"mouse": f"{DATA}/Cevrim_XMens_all_cells.h5ad",
-             "human": f"{DATA}/Cevrim_Human_all_cells.h5ad"}
-FIBDEC_OBJECTS = {"mouse": f"{DATA}/Cevrim_XMens_only_eFibDec_cells.h5ad",
-                  "human": f"{DATA}/Cevrim_Human_only_FibDec_cells.h5ad"}
-FIBDEC_TYPES = {"eFib", "Fib", "dec"}  # fibroblasts are eFib in the mouse objects, Fib in the human ones
+ALL_CELLS = {"mouse": f"{DATA}/20261110_mouse_allcells_final.h5ad",
+             "human": f"{DATA}/20261107_Human_allcells_final.h5ad"}
+FIBDEC_OBJECTS = {"mouse": f"{DATA}/20261110_mouse_only_eFib_dec_final.h5ad",
+                  "human": f"{DATA}/20261107_Human_fibdec_final_nick_pdt.h5ad"}
+FIBDEC_TYPES = {"eFib", "dec"}
 ENVS = {"ingest, concat and this notebook (rsc_uv)": f"{NH}/.uv/envs/rsc_uv",
         "QC and DoubletDetection (cuda11.8_env)": f"{NH}/.conda/envs/cuda11.8_env",
         "CellBender (cellbender_022)": f"{NH}/.conda/envs/cellbender_022"}
@@ -453,6 +453,15 @@ for label, env in ENVS.items():
         check("Versions", f"{label}/{tool}", "Imported from", r["Imported from"], where)
         check("Versions", f"{label}/{tool}", "Installed", r["Installed"],
               datetime.date.fromtimestamp(os.path.getmtime(file)).isoformat())
+
+# ---------------------------------------------------------------- README
+readme = " ".join(book["README"]["Note"].astype(str))
+for species in SPECIES:
+    for what, n in (("QC'd", len(qc_objects[species])), ("all-cells", len(all_cells[species])),
+                    ("fibroblast/decidual", len(fibdec_index[species]))):
+        check("README", species, f"{what} count in the objects line", f"({n:,}" in readme, True)
+    for path in (QC_OBJECTS[species], ALL_CELLS[species], FIBDEC_OBJECTS[species]):
+        check("README", species, f"names {Path(path).name}", Path(path).name in readme, True)
 
 # ---------------------------------------------------------------- report
 report = pd.DataFrame(mismatches)
