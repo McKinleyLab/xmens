@@ -1,8 +1,8 @@
 # mi: mutual information between expression and pseudotime, and the human-mouse overlap
 
 For each species, the mutual information (MI) of every gene with pseudotime and a permutation p-value; then the
-overlap of the top genes among one-to-one orthologs, the supplementary table and the genes of Fig. 5F. One script
-per step. Paths and settings are in `config.sh`.
+overlap of the top genes among one-to-one orthologs and the supplementary table. One script per step. Paths and
+settings are in `config.sh`.
 `ORTHOLOGS` in `config.sh` is a lab-storage copy of `../orthology/ensembl_human_mouse_components.tsv` (same
 sha256); point it at the repo's file to run elsewhere.
 
@@ -17,7 +17,7 @@ j2=$(sbatch --parsable --dependency=afterok:$j1 2_mi.sbatch)         # MI and 1,
 j3=$(sbatch --parsable --dependency=afterok:$j2 3_combine.sbatch)    # one table per species, with BH q
 j4=$(sbatch --parsable --dependency=afterok:$j3 4_overlap.sbatch)    # overlap of the top genes among orthologs
 sbatch --dependency=afterok:$j4 5_table.sbatch                       # the supplementary table (MI in bits)
-sbatch --dependency=afterok:$j4 6_fig5f_genes.sbatch                 # the genes of the Fig. 5F heatmap
+sbatch --dependency=afterok:$j4 6_fig5f_genes.sbatch                 # genes for an earlier Fig. 5F, not in the paper
 ```
 
 Step 2 is the long one: a mouse chunk takes 4-6 h, a human chunk about 1 h. `bash 2_mi.sbatch --check` counts the
@@ -36,6 +36,6 @@ finished chunks. A step or task whose output exists is skipped, so after a failu
   test: hypergeometric upper tail.
 - Table: live Excel formulas on the overlap sheet (change the cutoff in B4 and every value recalculates); the sheet
   p_value_terms adds up the hypergeometric tail for p.
-- Fig. 5F: among pairs in the top 10% by MI in both species, Pearson r of the human and mouse z-scored profiles over
-  50 equal-count pseudotime bins; of the genes with r > 0.8, the 14 early (centroid < 0.4) and 14 late (> 0.6) genes
-  with the highest r.
+- Step 6 (an earlier Fig. 5F, not in the paper): among pairs in the top 10% by MI in both species, Pearson r of the
+  human and mouse z-scored profiles over 50 equal-count pseudotime bins; of the genes with r > 0.8, the 14 early
+  (centroid < 0.4) and 14 late (> 0.6) genes with the highest r.

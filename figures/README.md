@@ -13,7 +13,10 @@ Each notebook reads the final objects and writes its panels to a new folder; bot
 | `S32_samap_supp` | Fig. S32: the SAMap supplement; runs the panel notebooks in `samap/notebooks/5_figures/` |
 
 File names carry the figure numbers of an earlier draft; the table gives the current number where it differs.
-Fig. 4H, Fig. 5F and the heatmap of pseudotime-associated genes (Fig. S31) are drawn by `pt_heatmaps/`.
+Fig. 4H and the heatmap of pseudotime-associated genes (Fig. S31) are drawn by `pt_heatmaps/`.
+
+`MI_Genes_Heatmap.ipynb` draws Fig. 5F from the MI table (Data S3) and the deposited fibroblast/decidual objects,
+whose paths are set in its second code cell.
 
 `Figures_Panels.ipynb` (Ç. Çevrim) draws the cell type panels: UMAPs, dot plots, stacked bars and spatial plots. It
 runs in his own conda environment.

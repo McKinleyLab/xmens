@@ -57,11 +57,11 @@ pseudotime/results/
 !samap/**/*.csv
 !samap/**/*.out
 !samap/**/*.log
-!pt_heatmaps/**/*.tsv
-!pt_heatmaps/**/*.txt
-!pt_heatmaps/**/*.csv
-!pt_heatmaps/**/*.out
-!pt_heatmaps/**/*.log
+!figures/pt_heatmaps/**/*.tsv
+!figures/pt_heatmaps/**/*.txt
+!figures/pt_heatmaps/**/*.csv
+!figures/pt_heatmaps/**/*.out
+!figures/pt_heatmaps/**/*.log
 !deseq2/**/*.tsv
 !deseq2/**/*.txt
 !deseq2/**/*.csv

@@ -1,4 +1,4 @@
-# pt_heatmaps: expression along pseudotime with Monocle 2 (Fig. 4H, Fig. 5F, the MI heatmaps)
+# pt_heatmaps: expression along pseudotime with Monocle 2 (Fig. 4H, the MI heatmaps)
 
 Smoothed expression curves along pseudotime from Monocle 2's `genSmoothCurves()`, z-scored per gene as its
 `plot_pseudotime_heatmap()` does, and the heatmaps drawn from them by `xmens_pt_heatmaps.ipynb`. Paths and settings
@@ -7,7 +7,7 @@ are in `config.sh`.
 ## Run
 
 ```bash
-cd pt_heatmaps && mkdir -p logs
+cd figures/pt_heatmaps && mkdir -p logs
 export OUT=/n/netscratch/eddy_lab/Everyone/nhilgert/$(date +%Y_%m_%d)_xmens_pt_heatmaps    # a new folder for each run
 
 sbatch 0_install_monocle.sbatch                                      # once: monocle 2.34.0 in its own R library
@@ -24,5 +24,7 @@ Outputs go to `$OUT/inputs/`, `$OUT/z/` and `$OUT/figures/`. A step whose output
   then `genSmoothCurves()` (negative binomial, `sm.ns(Pseudotime, df = 3)`, 100 points), log10(curve + 1) and z per
   gene. z is clipped at +/-3 when drawn.
 - Fig. 4H uses the induced mouse nuclei only, with pseudotime re-ranked within them.
+- The Fig. 5F heatmap drawn here, from the 28 genes of `mi/` step 6, is not in the paper; Fig. 5F is drawn by
+  `../MI_Genes_Heatmap.ipynb`.
 - Monocle 2's `estimateDispersions()` needs dplyr 1.1.4, so step 0 installs both into a separate R library
   (`$MONOCLE_LIB`). `$OUT/z/sessionInfo_<species>.txt` records every package version.

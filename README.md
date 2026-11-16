@@ -11,7 +11,7 @@ Code for Çevrim *et al.*, *Induction of menstruation in mice reveals the regula
 | 4 | `mi/` | genes associated with pseudotime |
 | 5 | `samap/` | human-mouse alignment (SAMap) |
 | 6 | `notebooks/` | the deposited objects |
-| 7 | `pt_heatmaps/` | heatmaps along pseudotime |
+| 7 | `figures/pt_heatmaps/` | heatmaps along pseudotime |
 | 8 | `figures/` | figures |
 | 9 | `tables/` | QC table |
 
