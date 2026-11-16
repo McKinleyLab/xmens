@@ -16,9 +16,9 @@ Writes the folder --out-dir:
   yang_panel.tsv              gene (published name), symbol (mouse gene), published_row
   fig5f_genes.csv             a copy of --fig5f-genes
   mi_top_<species>.csv        gene, partner (one-to-one ortholog), mi (nats), shared (top in both species); by MI
-On the inputs of record it gives the same cells, counts and gene sets as export_heatmap_inputs_final_objects.py of
-the 2 Nov 2026 heatmap package (record/), which wrote per-gene count tables and a dispersion table instead of the
-full counts.
+On the inputs of record it gives the same cells, counts and gene sets as export_heatmap_inputs_final_objects.py of the
+2 Nov 2026 heatmap package (record/ of commit 3605739), which wrote per-gene count tables and a dispersion table
+instead of the full counts.
 """
 import argparse
 import os

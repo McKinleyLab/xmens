@@ -13,8 +13,8 @@ Procedure (Scanpy + DoubletDetection), faithful to the QC notebook:
      Runs in the DoubletDetection 4.2 environment and stops if the package is missing or the fit fails.
 
 Writes one QC'd .h5ad. Corrected counts kept in layers['counts']. Same code as
-xmens_final/workflow/scripts/ingest_qc/qc.py (commit 59e00dd), with the Snakemake inputs replaced by the
-command-line arguments below; their defaults are the settings of the run of record (record/config/config.yaml).
+xmens_final/workflow/scripts/ingest_qc/qc.py (commit 59e00dd), with the Snakemake inputs replaced by the command-line
+arguments below; their defaults are the settings of the run of record (record/config/config.yaml of commit 3605739).
 """
 import argparse
 import os

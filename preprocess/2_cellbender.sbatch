@@ -5,9 +5,9 @@
 #   Writes: $OUT/cellbender/<sample>/<sample>_cellbender*; <sample>_cellbender_filtered.h5 is step 3's input
 #   Logs:   $OUT/logs/2_cellbender_<sample>.log (CellBender's output), 2_cellbender_<sample>.gpu.txt (GPU, driver
 #           and library versions) and logs/2_cellbender_<job ID>_<task>.out
-# Command and resources are those of the July 2026 run (record/2_cellbender/01_cellbender.smk; cellbender block of
-# xmens_final/workflow/profiles/slurm/config.yaml). Its jobs ran on holygpu7c0530 and holygpu7c0522, the eddy
-# partition's only A40 nodes, so no nodes are excluded. A sample whose filtered .h5 exists is skipped.
+# Command and resources are those of the July 2026 run (record/2_cellbender/01_cellbender.smk of commit 3605739;
+# cellbender block of xmens_final/workflow/profiles/slurm/config.yaml). Its jobs ran on holygpu7c0530 and holygpu7c0522,
+# the eddy partition's only A40 nodes, so no nodes are excluded. A sample whose filtered .h5 exists is skipped.
 #
 # Usage:
 #   bash 2_cellbender.sbatch --check        print each sample's input and command; run nothing

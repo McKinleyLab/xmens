@@ -7,8 +7,8 @@ passed. The bounds are recomputed exactly as qc.py computes them: on the nuclei 
 log10(x + 1). With --qc-log they are checked against the bounds qc.py wrote to its log, so the lines on the figure
 are the thresholds that were applied. Also writes summary.txt (nuclei before and after each filter).
 
-Ported from xmens_final/workflow/scripts/ingest_qc/qc_report.py (record/3_qc/qc_report.py), which was never run;
-that version computed the bounds before the floor, which is not what qc.py does.
+Ported from xmens_final/workflow/scripts/ingest_qc/qc_report.py (record/3_qc/qc_report.py of commit 3605739), which
+was never run; that version computed the bounds before the floor, which is not what qc.py does.
 """
 import argparse
 import os

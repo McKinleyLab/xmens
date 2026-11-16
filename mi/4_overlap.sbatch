@@ -1,6 +1,7 @@
 #!/bin/bash
-# Step 4 of 6: overlap of the human and mouse top MI genes among one-to-one orthologs: the Methods numbers (N 9,587,
-# K 1,133, n 1,201, k 373, p = 1.95 x 10^-84 in the run of record) and the percentile sweep of Supplementary Fig. S29C-D.
+# Step 4 of 6: overlap of the human and mouse top MI genes among one-to-one orthologs: the Methods numbers (N 9,800,
+# K 1,153, n 1,231, k 379, p = 4.84 x 10^-85 with the final objects) and the percentile sweep of Supplementary
+# Fig. S29C-D.
 #   Reads:  $OUT/mi_mouse.csv and $OUT/mi_human.csv (step 3), $ORTHOLOGS, and the gene IDs (var) of $H5AD_MOUSE and
 #           $H5AD_HUMAN (config.sh), to match the pairs to the MI tables by Ensembl gene ID
 #   Writes: $OUT/overlap/ortholog_pairs_one2one.csv, methods_overlap.json and overlap_percentile_sweep.csv

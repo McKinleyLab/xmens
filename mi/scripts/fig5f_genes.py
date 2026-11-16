@@ -1,20 +1,20 @@
 """Step 6: the one-to-one orthologs drawn in the cross-species pseudotime heatmap, Fig. 5F (Methods).
 
-1. Pool: one-to-one pairs with both genes tested (9,638 in the run of record); per species, the top 10% of these pairs
-   by MI (rank over the pairs); pool = pairs in the top 10% in both species (273).
+1. Pool: one-to-one pairs with both genes tested (9,859 with the final objects); per species, the top 10% of these
+   pairs by MI (rank over the pairs); pool = pairs in the top 10% in both species (277).
 2. Per species and pool gene: log1p(CP10K) per nucleus from raw counts (total counts over all genes), mean in 50
    equal-count bins of the pseudotime (pd.qcut on rank(method="first")), z-scored per gene (population SD);
    r = Pearson correlation of the human and mouse z-profiles (also over 20 bins, reported as profile_r_20bins).
 3. Centroid per species = sum_b max(z_b, 0) * b / 49 / sum_b max(z_b, 0); gene centroid = mean of the two species;
    phase early (< 0.4), late (> 0.6) or mid.
-4. Keep r > 0.8 (92 genes); take the 14 early and 14 late genes with the highest r; order them by centroid.
+4. Keep r > 0.8 (98 genes); take the 14 early and 14 late genes with the highest r; order them by centroid.
 Writes the folder --out-dir: conserved_profiles_selected_genes.csv (the 28 genes, in drawing order),
 conserved_profiles_pool_concordance.csv (every pool gene), selection_summary.json, and percell_mouse_pool.tsv.gz /
 percell_human_pool.tsv.gz (raw counts of the pool genes per nucleus with a pseudotime, the input of the Monocle smoothing
 that draws the heatmap).
 Same code as crossspecies_gene_selection.py of the run of record (xmens_final/workflow/scripts/mi/), with the MI tables
 and objects given as files and obs['pseudotime'] of the final objects (the nuclei and pseudotime the MI scored); the
-comparison with the 28 genes drawn in the figure is made by compare_with_record.
+comparison with the 28 genes drawn in the figure is made by scripts/compare_with_record.py of commit 3605739.
 """
 import argparse
 import json

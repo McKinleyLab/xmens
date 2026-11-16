@@ -4,7 +4,7 @@
    human and one mouse gene each, matched to the objects' genes by Ensembl gene ID and named as in the objects (the MI
    tables' gene names); genes found in more than one pair are dropped. Matching by ID rather than by symbol keeps the
    genes that Ensembl 116 renamed after the annotation the objects were counted with (e.g. mouse Sars, now Sars1).
-   Where an object lacks the Ensembl 116 ID (the gene's ID changed between releases, e.g. mouse Cast), the gene is
+   Where an object lacks the Ensembl 116 ID (the gene's ID changed between releases, e.g. human CAST), the gene is
    matched by symbol instead, if the object has exactly one gene of that name and that gene's own ID is not in the
    Ensembl 116 ortholog table.
 2. Per species, the significant genes (q < 0.05) and the top genes: significant genes whose MI is above the 90th

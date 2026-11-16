@@ -1,8 +1,8 @@
 #!/bin/bash
 # Step 1 of 6: final objects -> the expression matrix, pseudotime and gene list that step 2 scores, per species.
 #   scripts/mi_inputs.py keeps the nuclei with a pseudotime and the genes detected in at least 1% of them with at least
-#     10 counts in total (14,261 mouse and 15,008 human genes in the run of record), and computes log1p(CP10K) from the
-#     raw counts of those genes.
+#     10 counts in total (14,016 mouse and 15,354 human genes with the final objects), and computes log1p(CP10K) from
+#     the raw counts of those genes.
 #   Reads:  $H5AD_MOUSE and $H5AD_HUMAN (config.sh)
 #   Writes: $OUT/inputs/<species>/expression.npz, pseudotime.npy and genes.txt
 #   Logs:   $OUT/logs/1_inputs_<species>.log and logs/1_inputs_<job ID>.out

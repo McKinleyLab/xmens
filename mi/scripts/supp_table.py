@@ -13,9 +13,10 @@ Sheets of the workbook:
 N, K, n and k must agree with step 4's methods_overlap.json, or the script stops; the numbers in README come from the
 inputs. Writes the folder --out-dir: the workbook, its human_mouse_mi, human_genes and mouse_genes sheets as CSVs, and a
 provenance JSON (the inputs and their sha256).
-Same tables as build_human_mouse_mi_table.py, which built the approved workbook of 3 Nov 2026 (record/5_table/), with
-the code reorganized for reading. Since 12 Nov 2026 the workbook no longer carries the 2025 numbers beside the live
-values (former column C of overlap, sheet checks); compare_with_record.py compares a run with the record.
+Same tables as build_human_mouse_mi_table.py, which built the approved workbook of 3 Nov 2026 (record/5_table/ of
+commit 3605739), with the code reorganized for reading. Since 12 Nov 2026 the workbook no longer carries the 2025
+numbers beside the live values (former column C of overlap, sheet checks); scripts/compare_with_record.py of the same
+commit compares a run with the record.
 """
 import argparse
 import datetime

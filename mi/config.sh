@@ -11,12 +11,9 @@ NS=/n/netscratch/eddy_lab/Everyone/nhilgert
 # statsmodels 0.14.6, anndata 0.12.11, openpyxl 3.1.5.
 PY=$NH/.uv/envs/rsc_uv/bin/python
 
-# The final objects (read only): fibroblast and decidual nuclei, raw counts in layers['counts'], and the rank-normalized
-# pseudotime in obs['pseudotime'] (NaN for the 1,175 apoptotic mouse decidual nuclei). netscratch is purged after 90 days:
-# point OBJECTS at a permanent copy of the same files (sha256 in record/OUTPUTS.tsv) once there is one.
-# The fibroblast/decidual objects of 6-10 Nov 2026 with the pseudotime of 10 Nov. (The deposited objects of
-# record: $NS/final_objects/Cevrim_XMens_Only_Fib_Dec_Cells.h5ad and Cevrim_Human_Only_Fib_Dec_Cells.h5ad,
-# layer counts.) Step 1 checks the checksums before reading.
+# The final objects (read only): fibroblast and decidual nuclei, raw counts in layers['raw_counts'], and the
+# rank-normalized pseudotime in obs['pseudotime'] (NaN for the apoptotic decidual nuclei: 1,175 mouse, 1,869 human).
+# Step 1 checks the checksums before reading.
 OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
 H5AD_MOUSE=$OBJECTS/20261110_mouse_only_eFib_dec_final_nick_pdt.h5ad
 H5AD_HUMAN=$OBJECTS/20261112_Human_fibdec_final_nick_pdt.h5ad

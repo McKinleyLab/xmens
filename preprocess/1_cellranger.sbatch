@@ -53,9 +53,9 @@ lane_command() {
         REF=$REF_HUMAN
     fi
 
-    # The February 2026 command (record/1_cellranger/feb_cmdlines/) plus --no-bam, which skips the BAM and leaves
-    # the matrices unchanged (byte-identical to February in the November 2026 re-run), and --disable-ui, which
-    # turns off Cell Ranger's web page. --sample is the FASTQ file-name prefix (SI-TT-A5 for
+    # The February 2026 command (record/1_cellranger/feb_cmdlines/ of commit 3605739) plus --no-bam, which skips the BAM
+    # and leaves the matrices unchanged (byte-identical to February in the November 2026 re-run), and --disable-ui,
+    # which turns off Cell Ranger's web page. --sample is the FASTQ file-name prefix (SI-TT-A5 for
     # SI-TT-A5_S1_L001_R1_001.fastq.gz); --localcores and --localmem (GB) keep Cell Ranger within the SLURM request.
     COMMAND=(
         "$CELLRANGER" count
