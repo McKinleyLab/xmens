@@ -94,3 +94,7 @@ pseudotime/results/
 
 # BLAST alignments of the homology step: inputs of record on disk, ~400 MB
 samap/blast/alignments/
+
+# environment records; JupyterLab copies
+!environments/*.txt
+*-Copy*.ipynb
