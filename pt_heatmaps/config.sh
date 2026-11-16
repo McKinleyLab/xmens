@@ -15,13 +15,13 @@ R_MODULE=R/4.4.1-fasrc01
 # search path. The lab's main library, $R_LIBS_USER, supplies everything else and is not changed.
 MONOCLE_LIB=$NH/R/library-4.4.1-monocle2
 
-# The final objects (read only): the fibroblast/decidual objects of 13 Nov 2026 with the pseudotime of 10 Nov (mouse)
+# The final objects (read only): the deposit objects of 14 Nov 2026 with the pseudotime of 10 Nov (mouse)
 # and 12 Nov (human, eFib1 root) in obs['pseudotime'] (NaN for the apoptotic decidual nuclei) and raw counts in
 # layers[$COUNTS_LAYER]. (The deposited objects of 2 Nov, drawn in the record, are
 # $NS/final_objects/Cevrim_*_Only_Fib_Dec_Cells.h5ad with the counts in layers['counts'].)
 OBJECTS=/n/lab_storage/eddy_lab/Lab/mckinley/data
-H5AD_MOUSE=$OBJECTS/20261113_mouse_only_eFib_dec_final_nick_v2.h5ad
-H5AD_HUMAN=$OBJECTS/20261113_Human_only_eFib_dec_final_nick_v2.h5ad
+H5AD_MOUSE=$OBJECTS/Cevrim_XMens_only_fibdec_cells_20261114.h5ad
+H5AD_HUMAN=$OBJECTS/Cevrim_Human_only_fibdec_cells_20261114.h5ad
 COUNTS_LAYER=raw_counts
 # The final MI run (xmens_mi on the final objects: steps 1-3 of 12 Nov 2026, steps 4-6 of 13 Nov with Ensembl-ID
 # pairs) and its one-to-one ortholog pairs, which give the genes
