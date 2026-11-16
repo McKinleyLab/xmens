@@ -14,7 +14,6 @@ j2=$(sbatch --parsable --dependency=afterok:$j1 2_cellbender.sbatch)     # CellB
 j3=$(sbatch --parsable --dependency=afterok:$j2 3_qc.sbatch)             # ingest and QC per sample
 j4=$(sbatch --parsable --dependency=afterok:$j3 4_concat.sbatch)         # one object per species
 sbatch --dependency=afterok:$j4 5_add_coords.sbatch                      # adds the second set of positions
-sbatch --dependency=afterok:$j3 6_qc_figures.sbatch                      # QC figures, one per sample
 ```
 
 `bash 1_cellranger.sbatch --check` (also steps 2 and 3) prints what each task would run, without running anything.
