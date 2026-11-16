@@ -1,31 +1,33 @@
 """Step 5: the supplementary table of pseudotime MI for one-to-one human-mouse orthologs, SuppTable_pseudotime_MI.xlsx.
 
 Sheets of the workbook:
-  overlap          front sheet: the MI thresholds, top-gene counts, N, K, n, k, expected overlap, fold enrichment and
-                   hypergeometric p of the cross-species overlap test, as values computed here
+  overlap          front sheet with live Excel formulas: change the percentile cutoff in B4, and the MI thresholds,
+                   top-gene counts, N, K, n, k, expected overlap, fold enrichment and hypergeometric p recalculate from
+                   the other sheets
   README           what each sheet and column means (run details: the provenance JSON beside the workbook)
   human_mouse_mi   one row per one-to-one pair with at least one gene tested; MI in bits
   human_genes, mouse_genes
                    every tested gene of the species, genome-wide; MI in bits
+  p_value_terms    helper of the overlap sheet: the log hypergeometric probability of each overlap x, summed on the log
+                   scale, as a p this small would underflow as 1 - CDF
 N, K, n and k must agree with step 4's methods_overlap.json, or the script stops; the numbers in README come from the
 inputs. Writes the folder --out-dir: the workbook, its human_mouse_mi, human_genes and mouse_genes sheets as CSVs, and a
 provenance JSON (the inputs and their sha256).
 Same tables as build_human_mouse_mi_table.py, which built the approved workbook of 3 Nov 2026 (record/5_table/), with
 the code reorganized for reading. Since 12 Nov 2026 the workbook no longer carries the 2025 numbers beside the live
-values (former column C of overlap, sheet checks). Since 15 Nov 2026 the overlap sheet holds values, not live Excel
-formulas, and the helper sheet p_value_terms is gone. compare_with_record.py compares a run with the record.
+values (former column C of overlap, sheet checks); compare_with_record.py compares a run with the record.
 """
 import argparse
 import datetime
 import hashlib
 import json
-import math
 import os
 import sys
 
 import numpy as np
 import pandas as pd
-from openpyxl.styles import Alignment, Font
+from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.workbook.properties import CalcProperties
 from scipy.stats import hypergeom
 
 parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
@@ -159,12 +161,13 @@ readme = pd.DataFrame([
     ("Tested genes", "Genes detected in at least 1% of nuclei. Untested genes have no MI, p, q, rank or percentile."),
     ("Orthologs", "One-to-one protein-coding orthologs from Ensembl Compara release 116, matched to the data by "
                   "Ensembl gene ID (by symbol where the ID changed between annotation releases)."),
-    ("Sheet overlap", "Overlap of the two species' top genes among the ortholog pairs (hypergeometric test): the "
-                      "thresholds, the counts, the expected overlap, the fold enrichment and p."),
+    ("Sheet overlap", "Overlap of the two species' top genes among the ortholog pairs (hypergeometric test). Live "
+                      "formulas: change the percentile cutoff in B4 and every value recalculates."),
     ("Sheet human_mouse_mi", "One row per ortholog pair with at least one gene tested; pairs top in both species "
                              "first."),
     ("Sheets human_genes, mouse_genes", "Every tested gene of the species: MI, p, q, significance and rank; "
                                         "mi_if_significant holds the values the percentile cutoff is taken over."),
+    ("Sheet p_value_terms", "Helper for the p-value on the overlap sheet."),
     ("human_gene, mouse_gene", "The ortholog pair."),
     ("top_10_pct_mi", "Species in which the gene is a top pseudotime-associated gene, i.e. its MI is above the 90th "
                       "percentile of the species' significant genes: both, human, mouse or neither."),
@@ -211,56 +214,90 @@ with pd.ExcelWriter(os.path.join(partial, f"{NAME}.xlsx"), engine="openpyxl") as
         for cell in wb["human_mouse_mi"][column][1:]:
             cell.number_format = number_format
 
-    # Sheet overlap, the front sheet: each row is (row, quantity, value, number format). The values are the ones
-    # computed above, which agree with step 4 and the Methods; no cell holds a formula.
+    # Sheet p_value_terms: log P(X = x) of the hypergeometric overlap for x = 0 to N + 50, using the overlap sheet's
+    # N, K, n and k (log binomial coefficients from GAMMALN); F2 sums the upper tail x >= k as a log-sum-exp.
+    terms = wb.create_sheet("p_value_terms")
+    cell_N, cell_K, cell_n, cell_k = "overlap!$B$17", "overlap!$B$18", "overlap!$B$19", "overlap!$B$20"
+    x_max = int(pair_table["ortholog_univ"].sum()) + 50
+
+    def log_choose(a, b):
+        return f"(GAMMALN({a}+1)-GAMMALN({b}+1)-GAMMALN({a}-{b}+1))"
+
+    terms.append(["x", "log P(X = x), x in the upper tail [k, min(K, n)]", "exp(log P - max)", None, "max log P",
+                  "log10 p = log10 P(X >= k)"])
+    for x_value in range(x_max + 1):
+        row = x_value + 2
+        x = f"A{row}"
+        log_pmf = (f"{log_choose(cell_K, x)}+{log_choose(f'({cell_N}-{cell_K})', f'({cell_n}-{x})')}"
+                   f"-{log_choose(cell_N, cell_n)}")
+        in_tail = f"AND({x}>={cell_k},{x}<=MIN({cell_K},{cell_n}),{cell_n}-{x}<={cell_N}-{cell_K})"
+        terms.append([x_value, f"=IF({in_tail},{log_pmf},-1E+300)", f"=EXP(B{row}-$E$2)"])
+    terms["E2"] = f"=MAX($B$2:$B${x_max + 2})"
+    terms["F2"] = f"=($E$2+LN(SUM($C$2:$C${x_max + 2})))/LN(10)"
+    for cell in terms[1]:
+        cell.font = bold
+    for column, width in {"B": 44, "C": 18, "E": 14, "F": 26}.items():
+        terms.column_dimensions[column].width = width
+
+    # Sheet overlap, the live front sheet: each row is (row, quantity, formula, number format).
     overlap = wb.create_sheet("overlap", 0)
-    expected = K * n / N
-    exponent = math.floor(log10_p)
-    p_text = f"{10 ** (log10_p - exponent):.2f} x 10^{exponent}"
-    overlap["A1"] = "Cross-species overlap of top pseudotime-associated genes"
-    overlap["A2"] = "Computed by mi/scripts/supp_table.py from the data in the other sheets."
+    last_pair, last_human, last_mouse = len(pair_table) + 1, len(gene_tables["human"]) + 1, len(gene_tables["mouse"]) + 1
+    univ = f"human_mouse_mi!$P$2:$P${last_pair}"            # ortholog_univ
+    mi_h = f"human_mouse_mi!$H$2:$H${last_pair}"            # human_mi
+    mi_m = f"human_mouse_mi!$I$2:$I${last_pair}"            # mouse_mi
+    sig_h = f"human_genes!$G$2:$G${last_human}"             # mi_if_significant
+    sig_m = f"mouse_genes!$G$2:$G${last_mouse}"
+    genes_h = f"human_genes!$A$2:$A${last_human}"
+    genes_m = f"mouse_genes!$A$2:$A${last_mouse}"
+    overlap["A1"] = ("Cross-species overlap of top pseudotime-associated genes (live: computed from the other sheets of "
+                     "this workbook)")
+    overlap["A2"] = "Change the cutoff in B4; every value below recalculates from the other sheets."
     rows = [
-        (4, "Top-gene cutoff: percentile of MI among each species' significant genes", PERCENTILE, "0"),
-        (6, "Mouse MI threshold (bits)", mouse["threshold"] / LN2, "0.000"),
-        (7, "Human MI threshold (bits)", human["threshold"] / LN2, "0.000"),
-        (10, "Mouse genes tested", len(mi["mouse"]), "#,##0"),
-        (11, "Human genes tested", len(mi["human"]), "#,##0"),
-        (12, "Mouse significant genes (q < 0.05)", len(mouse["significant"]), "#,##0"),
-        (13, "Human significant genes (q < 0.05)", len(human["significant"]), "#,##0"),
-        (14, "Mouse top genes, genome-wide (MI > threshold)", len(mouse["top"]), "#,##0"),
-        (15, "Human top genes, genome-wide (MI > threshold)", len(human["top"]), "#,##0"),
-        (17, "Background pairs N (both genes significant)", N, "#,##0"),
-        (18, "Mouse top genes in the background, K", K, "#,##0"),
-        (19, "Human top genes in the background, n", n, "#,##0"),
-        (20, "Overlap k (top in both species)", k, "#,##0"),
-        (21, "Expected overlap, K x n / N", expected, "0.0"),
-        (22, "Expected overlap, % of the human top set", expected / n, "0%"),
-        (23, "Observed overlap, % of the human top set", k / n, "0%"),
-        (24, "Fold enrichment, k / expected", k / expected, "0.00"),
-        (25, "log10 p, hypergeometric P(X >= k)", log10_p, "0.0000"),
-        (26, "Hypergeometric p, P(X >= k)", 10 ** log10_p, "0.00E+00"),
-        (27, "Hypergeometric p, as text", p_text, "@"),
+        (4, "Top-gene cutoff: percentile of MI among each species' significant genes", 90, "0"),
+        (6, "Mouse MI threshold (bits)", f"=PERCENTILE({sig_m},$B$4/100)", "0.000"),
+        (7, "Human MI threshold (bits)", f"=PERCENTILE({sig_h},$B$4/100)", "0.000"),
+        (10, "Mouse genes tested", f"=COUNTA({genes_m})", "#,##0"),
+        (11, "Human genes tested", f"=COUNTA({genes_h})", "#,##0"),
+        (12, "Mouse significant genes (q < 0.05)", f"=COUNT({sig_m})", "#,##0"),
+        (13, "Human significant genes (q < 0.05)", f"=COUNT({sig_h})", "#,##0"),
+        (14, "Mouse top genes, genome-wide (MI > threshold)", f"=SUMPRODUCT(({sig_m}>B6)*1)", "#,##0"),
+        (15, "Human top genes, genome-wide (MI > threshold)", f"=SUMPRODUCT(({sig_h}>B7)*1)", "#,##0"),
+        (17, "Background pairs N (both genes significant)", f"=SUMPRODUCT(({univ}=TRUE)*1)", "#,##0"),
+        (18, "Mouse top genes in the background, K", f"=SUMPRODUCT(({univ}=TRUE)*({mi_m}>B6))", "#,##0"),
+        (19, "Human top genes in the background, n", f"=SUMPRODUCT(({univ}=TRUE)*({mi_h}>B7))", "#,##0"),
+        (20, "Overlap k (top in both species)", f"=SUMPRODUCT(({univ}=TRUE)*({mi_m}>B6)*({mi_h}>B7))", "#,##0"),
+        (21, "Expected overlap, K x n / N", "=B18*B19/B17", "0.0"),
+        (22, "Expected overlap, % of the human top set", "=B21/B19", "0%"),
+        (23, "Observed overlap, % of the human top set", "=B20/B19", "0%"),
+        (24, "Fold enrichment, k / expected", "=B20/B21", "0.00"),
+        (25, "log10 p, hypergeometric P(X >= k)", "=p_value_terms!$F$2", "0.0000"),
+        (26, "Hypergeometric p, P(X >= k): full-precision number (reads 0 below about 1E-308)", "=10^B25",
+         "0.00E+00"),
+        (27, "Hypergeometric p, as text", '=TEXT(10^(B25-INT(B25)),"0.00")&" x 10^"&INT(B25)', "@"),
     ]
     overlap["A3"], overlap["B3"] = "quantity", "value"
-    for row, quantity, value, number_format in rows:
+    for row, quantity, formula, number_format in rows:
         overlap[f"A{row}"] = quantity
-        overlap[f"B{row}"] = value
+        overlap[f"B{row}"] = formula
         overlap[f"B{row}"].number_format = number_format
-    overlap["A29"] = ("N, K, n and k count the pairs in human_mouse_mi with ortholog_univ TRUE, by top_10_pct_mi. The "
-                      "thresholds and genome-wide counts come from mi_if_significant in human_genes and mouse_genes; "
-                      "each threshold is the 90th percentile with linear interpolation (numpy.percentile). p is "
-                      "P(X >= k) for the hypergeometric distribution (scipy.stats.hypergeom).")
+    overlap["A29"] = ("N, K, n and k are counted in human_mouse_mi; the thresholds and genome-wide counts in human_genes / "
+                      "mouse_genes; p is summed in p_value_terms. MI thresholds use PERCENTILE (linear interpolation, as "
+                      "numpy.percentile).")
     for cell in overlap[3]:
         cell.font = bold
     overlap["A1"].font = Font(bold=True, size=12)
+    overlap["B4"].fill = PatternFill("solid", fgColor="FFF2CC")
+    overlap["B4"].font = bold
     for row in range(17, 28):            # the results of the overlap test, in bold: N, K, n, k, expected, %, fold, p
         overlap[f"B{row}"].font = bold
     for column, width in {"A": 84, "B": 18}.items():
         overlap.column_dimensions[column].width = width
 
-    # Sheet order, the front sheet first.
-    wb._sheets = [wb[sheet] for sheet in ("overlap", "README", "human_mouse_mi", "human_genes", "mouse_genes")]
+    # Sheet order, the front sheet first; Excel recalculates every formula when the file is opened.
+    wb._sheets = [wb[sheet] for sheet in
+                  ("overlap", "README", "human_mouse_mi", "human_genes", "mouse_genes", "p_value_terms")]
     wb.active = 0
+    wb.calculation = CalcProperties(fullCalcOnLoad=True)
 
 # ---- the CSVs and the provenance record; then the folder is renamed when complete -------------------------------------
 pair_table.to_csv(os.path.join(partial, f"{NAME}__human_mouse_mi.csv"), index=False)

@@ -1,6 +1,6 @@
 #!/bin/bash
-# Step 5 of 6: the supplementary table of pseudotime MI for one-to-one human-mouse orthologs, with the overlap
-# test on its front sheet (MI in bits).
+# Step 5 of 6: the supplementary table of pseudotime MI for one-to-one human-mouse orthologs, with a live overlap
+# calculator on its front sheet (MI in bits).
 #   Reads:  $OUT/inputs/<species>/pseudotime.npy (step 1, for the nuclei counts), $OUT/mi_mouse.csv and
 #           $OUT/mi_human.csv (step 3), $OUT/overlap/ortholog_pairs_one2one.csv and methods_overlap.json (step 4)
 #   Writes: $OUT/table/SuppTable_pseudotime_MI.xlsx, its data sheets as CSVs (SuppTable_pseudotime_MI__*.csv) and
