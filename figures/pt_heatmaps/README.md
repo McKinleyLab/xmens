@@ -24,7 +24,6 @@ Outputs go to `$OUT/inputs/`, `$OUT/z/` and `$OUT/figures/`. A step whose output
   then `genSmoothCurves()` (negative binomial, `sm.ns(Pseudotime, df = 3)`, 100 points), log10(curve + 1) and z per
   gene. z is clipped at +/-3 when drawn.
 - Fig. 4H uses the induced mouse nuclei only, with pseudotime re-ranked within them.
-- The Fig. 5F heatmap drawn here, from the 28 genes of `mi/` step 6, is not in the paper; Fig. 5F is drawn by
-  `../MI_Genes_Heatmap.ipynb`.
+- The Fig. 5F heatmap drawn here is no longer in the paper.
 - Monocle 2's `estimateDispersions()` needs dplyr 1.1.4, so step 0 installs both into a separate R library
   (`$MONOCLE_LIB`). `$OUT/z/sessionInfo_<species>.txt` records every package version.

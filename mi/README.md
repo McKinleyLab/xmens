@@ -17,7 +17,7 @@ j2=$(sbatch --parsable --dependency=afterok:$j1 2_mi.sbatch)         # MI and 1,
 j3=$(sbatch --parsable --dependency=afterok:$j2 3_combine.sbatch)    # one table per species, with BH q
 j4=$(sbatch --parsable --dependency=afterok:$j3 4_overlap.sbatch)    # overlap of the top genes among orthologs
 sbatch --dependency=afterok:$j4 5_table.sbatch                       # the supplementary table (MI in bits)
-sbatch --dependency=afterok:$j4 6_fig5f_genes.sbatch                 # genes for an earlier Fig. 5F, not in the paper
+sbatch --dependency=afterok:$j4 6_fig5f_genes.sbatch                 # genes of the old Fig. 5F, no longer in the paper
 ```
 
 Step 2 is the long one: a mouse chunk takes 4-6 h, a human chunk about 1 h. `bash 2_mi.sbatch --check` counts the
@@ -36,6 +36,3 @@ finished chunks. A step or task whose output exists is skipped, so after a failu
   test: hypergeometric upper tail.
 - Table: live Excel formulas on the overlap sheet (change the cutoff in B4 and every value recalculates); the sheet
   p_value_terms adds up the hypergeometric tail for p.
-- Step 6 (an earlier Fig. 5F, not in the paper): among pairs in the top 10% by MI in both species, Pearson r of the
-  human and mouse z-scored profiles over 50 equal-count pseudotime bins; of the genes with r > 0.8, the 14 early
-  (centroid < 0.4) and 14 late (> 0.6) genes with the highest r.
