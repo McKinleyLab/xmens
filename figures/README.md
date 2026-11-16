@@ -15,4 +15,4 @@ Fig. 4H and the heatmap of pseudotime-associated genes (Fig. S31) are drawn by `
 
 Çağrı Çevrim's notebooks run in his own conda environment; `MI_Genes_Heatmap` takes its file paths in its second
 code cell. The others run with the `rsc_uv` kernel: each reads the final objects and writes its panels to a new
-folder, both set in its first code cell (`OUT` must not exist yet, so nothing is overwritten).
+folder, both set in its first code cell (`OUT` must be a new folder).
