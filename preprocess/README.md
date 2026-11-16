@@ -1,6 +1,7 @@
 # preprocess: FASTQs -> Cell Ranger -> CellBender -> QC'd objects
 
 One script per step. Paths are in `config.sh`; the 15 lanes are the rows of `samples.tsv` (row n = array task n).
+`fastq_md5.tsv` lists their 360 FASTQ files (gene expression and spatial libraries) with size and md5.
 
 ## Run
 
@@ -21,8 +22,8 @@ One lane only: `sbatch --array=3 3_qc.sbatch`. A task whose output exists is ski
 
 ## Settings
 
-- Cell Ranger 7.2.0 `count`; mouse reference `reference/transgenic_mus` (mm10-2020-A plus GsD/GqD), human
-  `refdata-gex-GRCh38-2024-A`.
+- Cell Ranger 7.2.0 `count`; mouse reference `reference/transgenic_mus`, mm10-2020-A plus the GsD and GqD
+  transgenes (their sequences and the `mkref` command are in `mouse_reference/`); human `refdata-gex-GRCh38-2024-A`.
 - CellBender 0.2.2 `remove-background --total-droplets-included 50000 --cuda`, defaults otherwise.
 - QC (`scripts/qc.py` defaults): at least 500 UMIs, at most 8% mitochondrial, 3 MADs on log10 total counts and genes;
   DoubletDetection 4.2 with 40 iterations, 3,000 genes, p_thresh 1e-7, voter_thresh 0.5; seed 0. Step 3 runs on AMD
@@ -34,5 +35,6 @@ To start from an existing Cell Ranger or CellBender run, export `CELLRANGER_RAW`
 
 ## Record
 
-`REPRODUCE.md` describes the re-run of 6-8 Nov 2026. `record/` holds the scripts and logs of the run behind the
-objects.
+The scripts and logs of the run behind the objects, and the re-run of 6-8 Nov 2026 with its comparison, are at
+commit `3605739` (`preprocess/record/`, `preprocess/REPRODUCE.md`). Code comments that mention `record/`
+refer to that commit.

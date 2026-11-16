@@ -38,4 +38,5 @@ finished chunks. A step or task whose output exists is skipped, so after a failu
 
 ## Record
 
-`record/RUNS.md` lists the runs behind the paper. `record/` also holds the scripts and logs of earlier runs.
+`mi/record/RUNS.md` at commit `3605739` lists the runs behind the paper, with their scripts and logs.
+Code comments that mention `record/` or `compare_with_record` refer to that commit.

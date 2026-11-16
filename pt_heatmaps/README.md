@@ -26,8 +26,8 @@ Outputs go to `$OUT/inputs/`, `$OUT/z/` and `$OUT/figures/`. A step whose output
 - Fig. 4H uses the induced mouse nuclei only, with pseudotime re-ranked within them.
 - Monocle 2's `estimateDispersions()` needs dplyr 1.1.4, so step 0 installs both into a separate R library
   (`$MONOCLE_LIB`). `$OUT/z/sessionInfo_<species>.txt` records every package version.
-- `figures/` keeps the executed notebook and the MI heatmaps' gene order from an earlier run (8 Nov 2026).
 
 ## Record
 
-`record/` holds the earlier heatmap code and its outputs, described in `record/README.md`.
+The earlier heatmap code (the package of 2 Nov 2026) and its outputs are at commit `3605739`, in
+`pt_heatmaps/record/`. Code comments that mention `record/` refer to that commit.

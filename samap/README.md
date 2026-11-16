@@ -43,8 +43,8 @@ The executed notebooks, with everything they printed, are in `$OUT/notebooks/`.
 
 Kernels in `jupyter/kernels/`: `samap` (sc-samap 3.0.1, anndata 0.12.19, scanpy 1.11.5, hnswlib 0.8.0) for steps 1
 and 2, `rsc` (anndata 0.12.11, scanpy 1.11.5) for the others. phmmer is HMMER 3.4. Package lists are in
-`record/config/`.
+`envs/`.
 
 ## Record
 
-`record/RUNS.md` lists the runs behind the paper. `record/` also holds the scripts and logs of earlier runs.
+`samap/record/RUNS.md` at commit `3605739` lists the runs behind the paper, with their scripts and logs.
