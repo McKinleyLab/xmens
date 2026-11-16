@@ -14,6 +14,14 @@ By Çağrı Çevrim:
   and on the sections
 - `Mouse DEGs.ipynb`: X-Mens decidual vs fibroblast DEGs compared with oil-induced artificial decidualization
 - `CC3_pH3_Segmentation.ipynb`: CC3+ and pH3+ cells across the decidualization stage series
+- `01_DEG_Analysis_Human_InVitro.ipynb`: in vitro decidualization, DEGs at 3, 6 and 8 days of cAMP + MPA
+- `02_DEG_Analysis_Human_InVivo_vs_InVitro.ipynb`: pseudobulk DEGs of decidual vs non-decidual stromal cells in vivo,
+  compared with in vitro decidualization
+- `03_DEG_Analysis_Mouse_InVivo_vs_InVitro.ipynb`: mouse in vitro DEGs vs natural pregnancy, artificial
+  decidualization and X-Mens
+- `04_DEG_Analysis_Mouse_InVivo_Model_Comparisons.ipynb`: mouse in vivo models: natural pregnancy, artificial
+  decidualization (oil) and X-Mens
 
-They run in his conda environments: `BulkRnaSeq` (`../environments/BulkRnaSeq.yml`) for `Mouse DEGs`, `single-cell`
-for `Human-Stro7_scoring`, `pt2.3.0_cuda12.1` for the annotation and `cellpose` for the segmentation.
+They run in his conda environments: `BulkRnaSeq` (`../environments/BulkRnaSeq.yml`) for `Mouse DEGs` and the DEG
+analyses `01`-`04`, `single-cell` for `Human-Stro7_scoring`, `pt2.3.0_cuda12.1` for the annotation and `cellpose`
+for the segmentation.
