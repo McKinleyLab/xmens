@@ -1,7 +1,7 @@
 # xmens
 
-Code for Çevrim *et al.*, *Induction of menstruation in mice reveals the regulation of menstrual shedding*
-([bioRxiv](https://doi.org/10.1101/2025.10.08.681007)).
+Code for Çevrim *et al.*, *Transgenic menstruating mice reveal the spatial logic of pre-menstrual uterine
+differentiation* (earlier version on [bioRxiv](https://doi.org/10.1101/2025.10.08.681007)).
 
 | | folder | |
 |---|---|---|
