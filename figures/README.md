@@ -14,3 +14,6 @@ Each notebook reads the final objects and writes its panels to a new folder; bot
 
 File names carry the figure numbers of an earlier draft; the table gives the current number where it differs.
 Fig. 4H, Fig. 5F and the heatmap of pseudotime-associated genes (Fig. S31) are drawn by `pt_heatmaps/`.
+
+`Figures_Panels.ipynb` (Ç. Çevrim) draws the cell type panels: UMAPs, dot plots, stacked bars and spatial plots. It
+runs in his own conda environment.

@@ -8,5 +8,5 @@ The deposited fibroblast/decidual objects, made in this order (JupyterLab, `rsc_
 4. `update_cevrim_objects_20261114.ipynb`: the columns from the 14 Nov SAMap run; writes the deposited objects
 
 Also `functionalis_basalis_markers/` (cross-species decidual and fibroblast markers) and Çağrı Çevrim's notebooks:
-`Integration, Cleaning, and Annotation.ipynb`, `Figures_Panels.ipynb`, `Human-Stro7_scoring.ipynb`, `Mouse DEGs.ipynb`,
+`Integration, Cleaning, and Annotation.ipynb`, `Human-Stro7_scoring.ipynb`, `Mouse DEGs.ipynb`,
 `CC3_pH3_Segmentation.ipynb` and the bulk RNA-seq DEG analyses `01`-`04_DEG_Analysis_*.ipynb`.
