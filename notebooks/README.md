@@ -1,11 +1,11 @@
 # notebooks
 
-The deposited fibroblast/decidual objects, made in this order (JupyterLab, `rsc_uv` kernel):
+The final fibroblast/decidual objects, made in this order (JupyterLab, `rsc_uv` kernel):
 
 1. `stro7_score_transfer_20261114.ipynb`: the Stro-7 score, transferred from human to mouse through the SAMap graph
 2. `add_columns_20261114.ipynb`: adds pseudotime, the SAMap transfers and the Stro-7 score
 3. `add_pt_samap_pt_info_fibdec_20261114.ipynb`: the SAMap object with labels and pseudotime
-4. `update_cevrim_objects_20261114.ipynb`: the columns from the 14 Nov SAMap run; writes the deposited objects
+4. `update_cevrim_objects_20261114.ipynb`: the columns from the 14 Nov SAMap run; writes the final objects
 
 By Çağrı Çevrim:
 
