@@ -32,6 +32,8 @@ finished chunks. A step or task whose output exists is skipped, so after a failu
 - Top genes: MI above the 90th percentile of the significant genes' MI.
 - Orthologs: Ensembl Compara 116 one-to-one protein-coding pairs, matched to the objects by Ensembl gene ID. Overlap
   test: hypergeometric upper tail.
+- Table: live Excel formulas on the overlap sheet (change the cutoff in B4 and every value recalculates); the sheet
+  p_value_terms adds up the hypergeometric tail for p.
 - Fig. 5F: among pairs in the top 10% by MI in both species, Pearson r of the human and mouse z-scored profiles over
   50 equal-count pseudotime bins; of the genes with r > 0.8, the 14 early (centroid < 0.4) and 14 late (> 0.6) genes
   with the highest r.
