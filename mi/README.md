@@ -3,6 +3,8 @@
 For each species, the mutual information (MI) of every gene with pseudotime and a permutation p-value; then the
 overlap of the top genes among one-to-one orthologs, the supplementary table and the genes of Fig. 5F. One script
 per step. Paths and settings are in `config.sh`.
+`ORTHOLOGS` in `config.sh` is a lab-storage copy of `../orthology/ensembl_human_mouse_components.tsv` (same
+sha256); point it at the repo's file to run elsewhere.
 
 ## Run
 
