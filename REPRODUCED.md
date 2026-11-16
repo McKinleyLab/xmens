@@ -2,8 +2,8 @@
 
 Each step below was run a second time from code in this repository, and its outputs were compared with those of the
 run behind the paper (the run of record). "Committed as" means the rerun used the working tree and was committed
-right after; the committed files are the ones that ran. Run logs, job IDs, checksums and comparison tables are in
-commit `3605739` (`<step>/record/`); the comparisons of 15-16 Nov are in
+right after; the committed files are the ones that ran. Run logs, job IDs, checksums and comparison tables are
+archived in commit `3605739` (`<step>/record/`); the comparisons of 15-16 Nov are in
 `/n/lab_storage/eddy_lab/users/nhilgert/xmens_reproduced/` on the FASRC cluster.
 
 | step | run of record | rerun | result |
@@ -13,9 +13,9 @@ commit `3605739` (`<step>/record/`); the comparisons of 15-16 Nov are in
 | Pseudotime, human | 12 Nov, `pseudotime_human_final_1112.ipynb` at `0b83615` | 12 Nov, the same notebook | object identical (h5diff) |
 | MI steps 1-3 | 12 Nov at `33a8f5c` | 12 Nov at `33a8f5c`, both species from scratch | MI tables identical |
 | MI steps 4-6 | 13 Nov at `4bbaf54` and `0f407dd` | 15 Nov, clean clone at `v2.0` | no result differs |
-| MI table, values only | | 15 Nov at `3051518` | same values as the 13 Nov table |
+| MI table, values only | 13 Nov, step 5 at `0f407dd` | 15 Nov at `3051518` | same values; no formulas |
 | SAMap step 1 | 12 Nov at `33a8f5c` | 12 Nov at `33a8f5c` | identical |
-| SAMap steps 0a-5 | 14 Nov at `19929ae` | 14 Nov at `19929ae` | homology tables and the 19 result tables identical |
+| SAMap steps 0a-0c and 2-4 | 14 Nov at `19929ae` | 14 Nov at `19929ae` | homology tables and every result table identical |
 | Heatmaps, `pt_heatmaps/` | 14 Nov | 15 Nov, committed as `404c480` | every figure and z matrix identical |
 | Figures, `figures/` | 13-14 Nov | 15 Nov, committed as `16f2dc3` | every figure file identical or equal in content |
 | QC table, `tables/` | 14 Nov | 16 Nov, committed as `3605739` | data sheets identical |
@@ -30,6 +30,7 @@ Notes:
   files, 1,715 were identical, 5 equal in content (time stamps and paths) and 7 were logs. The one other file was that
   run's workbook, whose README sheet differed; steps 4-6 were redone on 13 Nov.
 - SAMap: the fit of 12 Nov did not reproduce and was replaced by the runs of 13 and 14 Nov. In the rerun of 14 Nov,
+  the 19 result tables of steps 0c-5 were byte-identical (step 5, the figures, has since moved to `figures/`), and
   `Samap_Final.h5ad` was equal in 41 of its 42 datasets; the other, `uns/provenance`, holds time stamps and the run's
   path.
 - Heatmaps: of 35 files, 28 identical, 2 equal in content (a gz file after decompression; the Monocle PDF without its
