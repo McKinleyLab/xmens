@@ -15,4 +15,6 @@ Code for Çevrim *et al.*, *Induction of menstruation in mice reveals the regula
 | 8 | `figures/` | figures |
 | 9 | `tables/` | QC table |
 
-`orthology/` holds the ortholog table used in step 4; `environments/` lists the software. Data: [accession].
+`orthology/` holds the ortholog table used in step 4; `environments/` lists the software.
+
+Data will be available upon publication.
