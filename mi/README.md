@@ -35,8 +35,3 @@ finished chunks. A step or task whose output exists is skipped, so after a failu
 - Fig. 5F: among pairs in the top 10% by MI in both species, Pearson r of the human and mouse z-scored profiles over
   50 equal-count pseudotime bins; of the genes with r > 0.8, the 14 early (centroid < 0.4) and 14 late (> 0.6) genes
   with the highest r.
-
-## Record
-
-`mi/record/RUNS.md` at commit `3605739` lists the runs behind the paper, with their scripts and logs.
-Code comments that mention `record/` or `compare_with_record` refer to that commit.

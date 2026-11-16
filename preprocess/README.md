@@ -32,9 +32,3 @@ One lane only: `sbatch --array=3 3_qc.sbatch`. A task whose output exists is ski
   in step 5).
 
 To start from an existing Cell Ranger or CellBender run, export `CELLRANGER_RAW` or `CELLBENDER_H5` (see `config.sh`).
-
-## Record
-
-The scripts and logs of the run behind the objects, and the re-run of 6-8 Nov 2026 with its comparison, are at
-commit `3605739` (`preprocess/record/`, `preprocess/REPRODUCE.md`). Code comments that mention `record/`
-refer to that commit.
