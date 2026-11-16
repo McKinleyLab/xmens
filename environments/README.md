@@ -7,6 +7,6 @@
 | `cuda11.8_env` (conda) | `preprocess/` step 3 (QC) | `cuda11.8_env.yml` |
 | `cellbender_022` (conda) | `preprocess/` step 2 (CellBender 0.2.2) | `cellbender_022.yml` |
 | R 4.4.1, Monocle 2.34.0 | `figures/pt_heatmaps/` | `R_monocle_sessionInfo.txt` |
-| `BulkRnaSeq` (conda) | the DEG analyses `01`-`04` in `notebooks/` | `BulkRnaSeq.yml` |
+| `BulkRnaSeq` (conda) | `notebooks/Mouse DEGs.ipynb` | `BulkRnaSeq.yml` |
 
 Also Cell Ranger 7.2.0 (`preprocess/` step 1), HMMER 3.4 (`samap/` step 0a) and gcc 14.2.0 (`samap/`).
